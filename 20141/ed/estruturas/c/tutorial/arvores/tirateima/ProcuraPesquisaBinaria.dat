@@ -1,0 +1,39 @@
+1{
+	criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(400,600); 
+	adicionaNoArvore arvore1 no0 "g";
+	adicionaNoArvore arvore1 no1 "d";
+	adicionaNoArvore arvore1 no2 "i";
+	adicionaNoArvore arvore1 no3 "a";
+	adicionaNoArvore arvore1 no4 "f";
+	adicionaNoArvore arvore1 no5 "h";
+	adicionaNoArvore arvore1 no6 "j";
+	ligaNoArvore arvore1 no0 no1;
+	ligaNoArvore arvore1 no0 no2;
+	ligaNoArvore arvore1 no1 no3;
+	ligaNoArvore arvore1 no1 no4;
+	ligaNoArvore arvore1 no2 no5;
+	ligaNoArvore arvore1 no2 no6;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'F';
+ }
+2;
+4 adicionaPonteiro arvore1 no0 esq "a1" 60 cor(204,0,0);
+5;
+6;
+7;
+8 movePonteiro arvore1 no0 esq no1 esq 60 cor(204,0,0);
+11;
+
+5;
+6;
+7;
+9;
+10 movePonteiro arvore1 no1 esq no4 diagonalSupDir 60 cor(204,0,0);
+11;
+5;
+12{
+	comenta("Nesse momento o programa encerrará, retornando o ponteiro a1.");
+#	som();
+  }
+

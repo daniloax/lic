@@ -1,0 +1,389 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Árvores - Árvores Binárias </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="algoritmos">
+		<h4> 4.2 Árvores Binárias </h4>
+		
+		<p>Árvores binárias são árvores em que todos os nós têm grau menor ou igual a dois. Desse modo, cada nó pode ter no máximo dois 
+		filhos, que são identificados como filho à esquerda e filho à direita.</p>
+		
+		<h4> 4.2.1 Caminhamento em Árvores Binárias </h4>
+		
+		<p>Dada uma árvore binária, é possível estabelecer várias formas para percorrer todos os seus nós, sem repetir nenhum e 
+		sem deixar de passar por nenhum. Esta operação é denominada <b>caminhamento</b>, que é usada, por exemplo,  para consultar ou 
+		alterar as informações contidas nos nós.</p>
+		
+		<p>As três maneiras mais usuais para percorrer os nós são:</p>
+		
+		<p>- caminhamento pré-fixado:<p>
+		<dl>
+			<dd>1. visita a raiz</dd>
+			<dd>2. percorre a sub-árvore da esquerda</dd>
+			<dd>3. percorre a sub-árvore da direita</dd><br>
+		</dl>
+		
+		<p>- caminhamento in-fixado:<p>
+		<dl>
+			<dd>1. percorre a sub-árvore da esquerda</dd>
+			<dd>2. visita a raiz</dd>
+			<dd>3. percorre a sub-árvore da direita</dd><br>
+		</dl>
+		
+		<p>- caminhamento pós-fixado:<p>
+		<dl>
+			<dd>1. percorre a sub-árvore da esquerda</dd>
+			<dd>2. percorre a sub-árvore da direita</dd>
+			<dd>3. visita a raiz</dd><br>
+		</dl>
+		
+		<p>Tomando como exemplo a árvore abaixo, temos, para cada tipo de caminhamento, a correspondente seqüência de nós:</p>
+		
+		<img src="imagens/binaria.png"><br>
+		
+		<p>
+			caminhamento pré-fixado:	A  B  D  E  G  C  F  H  I<br>
+			caminhamento in-fixado;	D  B  G  E  A  C  H  F  I<br>
+			caminhamento pós-fixado:	D  G  E  B  H  I  F  C  A<br>
+		</p>
+		
+		
+		<h4> 4.2.2 Implementação de Árvores Binárias </h4>
+		
+		<p>Na implementação das árvores binárias, utilizaremos para cada nó um registro contendo um campo para dados (<i>dado</i>), 
+		um ponteiro que aponta a sub-árvore da esquerda (<i>esq</i>) e um ponteiro que aponta a sub-árvore da direita (<i>dir</i>).  
+		O acesso à árvore é feito através de um ponteiro que aponta para a raiz (<i>ainicio</i>).</p>
+		
+		<FONT face= "Courier New" size=2>
+			typedef struct nodo {<br>
+			  &nbsp; char dado;<br>
+			  &nbsp; struct nodo *esq, *dir;<br>
+			  &nbsp; arco *pa1, *pa2;<br>
+			} arvore ;<br><br>
+			
+			arvore *ainicio;<br><br><br>
+		</FONT> 
+		
+		<p>Pela própria definição, pode-se perceber que as árvores são estruturas adequadas para o uso de algoritmos recursivos. A 
+		própria definição formalizada acima para uma árvore é uma definição recursiva.</p>
+		
+		<h4> 4.2.3 Algoritmos Básicos em Árvores Binárias </h4>
+		
+		<p>A maior parte dos algoritmos apresentados aqui são recursivos. Para efeitos didáticos, em alguns casos se apresenta também o 
+		algoritmo que realiza a operação equivalente, fazendo uso de uma pilha de ponteiros tipo <i>void</i>, isto é, ponteiros que podem apontar 
+		para qualquer elemento. No caso, são utilizados apontando para os nós da árvore. Os algoritmos recursivos, em geral, são mais simples.</p>
+		
+		<p>Muitas vezes, o acesso à árvore pode se modificar durante a execução de uma função. Neste caso, será passado como parâmetro o 
+		endereço do ponteiro de acesso à árvore, denominado <i>eainicio</i>.</p>
+		
+		<p>As definições dessas variáveis ficam sendo então:</p>
+		
+		<p>
+			arvore *ainicio;<br>
+			arvore **eainicio;<br>
+		</p>
+		
+		<p>Por exemplo:</p>
+		
+		<p>Se uma função é definida como:</p>
+		
+		<p><i>void nome_da_funcao (arvore **eainicio) </i></p>
+		
+		<p>Então a chamada a essa função será efetuada da seguinte forma:</p>
+		
+		<p><i>nome_da_funcao (&aini)</i></p>
+		
+		<p>onde aini é um ponteiro para <i>arvore</i>, ou seja, fora da função foi definido que:</p>
+		
+		<p><i>arvore *aini;</i></p>
+		
+		<p>Abaixo são examinados alguns dos algoritmos básicos que utilizam árvores binárias:</p>
+
+		<p><b>a) Algoritmo de caminhamento em ordem pré-fixada utilizando pilha – versão 1</b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaPreComPilha1" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaPreComPilha1.c', 'tirateima/CaminhaPreComPilha1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>Observação: Nesta versão, a função de caminhamento insere na pilha os ponteiros NULL en-contrados no caminhamento. 
+		Consequentemente, ela verifica se ainicio é NULL em cada retirada da pilha.</p><br>
+		
+		<p><b>b) Algoritmo de caminhamento em ordem pré-fixada utilizando pilha – versão 2</b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaPreComPilha2" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaPreComPilha2.c', 'tirateima/CaminhaPreComPilha2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>Observação: Nesta versão, a função de caminhamento <b>não</b> insere na pilha os ponteiros NULL encontrados no caminhamento. 
+		Consequentemente, ela não verifica se ainicio é NULL em cada retirada da pilha. Na primeira inserção na pilha, deve ser feito um 
+		teste para verificar se a árvore é vazia Comparando-se as duas versões, tem-se que a versão 1 executa muito mais inserções e 
+		retiradas de elementos nas pilhas (aproximadamente metade dos ponteiros de uma árvore binária são NULL).</p>
+		
+		<p><b>c) Algoritmo de caminhamento em ordem in-fixada utilizando pilha – versão 1</b></p>
+		
+		<p>Para o caminhamento em ordem in-fixada, cada elemento da árvore entra na pilha duas vezes (acompanhe o funcionamento no TiraTeima). 
+		Para discernir se o elemento está entrando pela primeira ou pela segunda vez, criou-se um novo tipo de pilha, com um elemento <b>int</b>, 
+		que recebe o valor 0 quando a entrada é feita na primeira vez, e recebe o valor 1 quando a entrada é feita pela segunda vez. 
+		Para facilitar a compreensão, foi desenvolvida a função Empilha, interna à função de caminhamento, que procede à inserção na pilha. </p>
+		
+		<p>A versão 1 processa o caso de ainicio ser igual a NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaInComPilha1" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaInComPilha1.c', 'tirateima/CaminhaInComPilha1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>d) Algoritmo de caminhamento em ordem in-fixada utilizando pilha – versão 2</b></p>
+		
+		<p>Neste caso a pilha utilizada é igual à da versão 1. A função de caminhamento não insere nem retira da pilha os ponteiros 
+		iguais a NULL. Valem as mesmas observações feitas nos itens <b>a)</b> e <b>b)</b>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaInComPilha2" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaInComPilha2.c', 'tirateima/CaminhaInComPilha2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>O caminhamento em ordem pós-fixada utilizando pilhas pode ser feito de forma muito parecida ao caminhamento em ordem in-fixada, 
+		utilizando a pilha com o campo <b>int</b>, que serve para indicar se o elemento está entrando da pilha pela primeira ou pela segunda vez.</p>
+		
+		<p><b>e) Algoritmo recursivo de caminhamento em ordem pré-fixada – versão 1</b></p>
+		
+		<p>Como se nota, o algoritmo recursivo é muito mais simples que aquele que utiliza pilha. Nesta versão, a função de caminhamento 
+		processa os casos em que ainicio vale NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaPre1" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaPre1.c', 'tirateima/CaminhaPre1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>f) Algoritmo recursivo de caminhamento em ordem pré-fixada – versão 2</b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaPre2" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaPre2.c', 'tirateima/CaminhaPre2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>Nesta versão, a função de caminhamento <b>não</b> processa os casos em que ainicio vale NULL. Há muito menos chamadas 
+		recursivas, mas a função perde versatilidade: para ser chamada é necessário testar se a árvore é vazia, caso que a função
+		não resolve.</p>
+		
+		<p>Em todas as funções apresentadas até aqui, com duas versões, a escolhe entre uma delas é uma opção do programador. O 
+		importante é que a escolha seja respeitada e não haja mistura de lógicas dentro de cada função. A partir deste ponto, optaremos 
+		sempre por funções que resolvam o caso de o ponteiro ainicio ser NULL.</p>
+		
+		<p><b>g) Algoritmo recursivo de caminhamento em ordem in-fixada </b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaIn" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaIn.c', 'tirateima/CaminhaIn.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>h) Algoritmo recursivo de caminhamento em ordem pós-fixada </b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="CaminhaPos" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/CaminhaPos.c', 'tirateima/CaminhaPos.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>i) Algoritmo de construção de uma árvore</b></p>
+		
+		<p>Esta função constrói uma árvore binária a partir dos dados contidos em um arquivo que contém os elementos da árvore em ordem 
+		pré-fixada. O nó de cada sub-árvore é seguido pela sua sub-árvore da esquerda e depois pela sua sub-árvore da direita. Quando o 
+		ponteiro <i>esq</i> ou <i>dir</i> de algum nó for NULL, no arquivo aparecerá um ponto.  Abaixo se apresenta um exemplo de um arquivo 
+		com a árvore correspondente</p>
+		
+		<p>A B D	. . . C E G . . H . . F . I . .  </p>
+		
+		<img src="imagens/constroi.png"><br>
+		
+		<p>A partir deste ponto, será adotada sempre esta notação para armazenar uma árvore em um arquivo, por ser mais prática. </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Constrói" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Constroi.c', 'tirateima/Constroi.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>j) Algoritmo para ler uma árvore, gerando a seqüência dos elementos utilizada para ar-mazenagem em arquivos</b></p>
+		
+		<p>Esta função faz o inverso da anterior. A partir de uma árvore dada em memória, ela gera e escreve na tela a seqüência de 
+		caracteres e pontos que representam a árvore, de acordo com a notação vista no item anterior. Em lugar de escrever na tela, a 
+		função poderia gravar a se-qüência em um arquivo, armazenando a árvore.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Ler árvore" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/LeArv.c', 'tirateima/LeArv.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>k) Algoritmo para remover todos os elementos de uma árvore </b></p>
+		
+		<p>A função de remoção dos nós de uma árvore apresentada aqui é recursiva e elimina toda a árvore. Como o ponteiro de acesso à 
+		árvore é passado por referência, depois da execução da função seu valor fica sendo NULL. Se o objetivo for remover apenas uma sub-árvore, 
+		basta chamar a função passando como parâmetro o ponteiro que aponta para a raiz da sub-árvore que se deseja remover, como será visto adiante.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Remove.c', 'tirateima/Remove.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>l) Algoritmo para procurar um elemento em uma árvore</b></p>
+		
+		<p>Os elementos estão distribuídos na árvore sem nenhuma estratégia (a organização dos elementos vai ser feita nas árvores binárias de 
+		pesquisa, no próximo tópico). Portanto, a tarefa de procura consiste em fazer um caminhamento pelos nós da árvore verificando se 
+		algum deles contém a chave procurada.</p>
+		
+		<p>Na função abaixo, o valor retornado é um ponteiro que aponta para o nó da árvore que contém o elemento procurado. Se o elemento 
+		procurado não estiver presente, a função retorna NULL.</p>
+		
+		<p>A forma de caminhamento da árvore é pré-fixada, mas com a ajuda da variável auxiliar <i>a1</i>. Se o elemento não está em um determinado nó, 
+		o algoritmo aciona a procura na sub-árvore da esquerda, devolvendo a resposta em <i>a1</i>. Somente se <i>a1</i> retorna NULL na primeira 
+		chamada recursiva (ou seja, o elemento não foi encontrado na sub-árvore da esquerda), é acionada a procura na sub-árvore da direita. 
+		Desse modo, se o elemento é encontrado, a procura se encerra, sem necessidade de se percorrer toda a árvore. Se o elemento não estiver 
+		presente, toda a árvore será percorrida e a função retorna NULL.</p>
+		
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Procura.c', 'tirateima/Procura.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<p><b>m) Algoritmo para procurar um elemento em uma árvore identificando o pai do elemento procurado</b></p>
+		
+		<p>Esta função também retorna um ponteiro que aponta para o elemento encontrado, como a anterior. Além disso, o parâmetro <i>epai</i> 
+		sai da função guardando o endereço do nó pai do elemento procurado. Se o elemento procurado é a raiz da árvore, ou se ele estiver ausente, 
+		o conteúdo do elemento apontado por <i>epai</i> é NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura com anterior" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ProcuraComAnt.c', 'tirateima/ProcuraComAnt.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<p><b>n) Algoritmo para remover uma sub-árvore</b></p>
+		
+		<p>Esta função procura na árvore um nó com valor <i>chave</i> e, se encontrar, remove da árvore original a sub-árvore que tem como raiz o nó com a <i>chave</i>. Para manter a integridade da árvore que resta depois da remoção, esta função utiliza a procura com a localização do pai, vista no item anterior.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove sub-árvore" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/RemoveSub.c', 'tirateima/RemoveSub.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+				
+		
+		<p><b>4.2.4 Exemplos de aplicação de árvores binárias</b></p>
+		
+		<p><b>a) Determinação do número de vezes que um elemento dado está presente em uma árvore binária</b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Ocorrências" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Ocorrencias.c', 'tirateima/Ocorrencias.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+				
+		<p><b>b) Determinação da altura de uma árvore binária <br /></b></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Determina Altura" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Altura.c', 'tirateima/Altura.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>c) Construção de uma árvore equivalente a outra árvore dada</b></p>
+		
+		<p>Uma árvore é dita equivalente a outra se ambas têm exatamente o mesmo número de nós, distribuídos da mesma maneira e com o mesmo conteúdo 
+		nos nós correspondentes.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Constrói árvore equivalente" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ConstroiEquivalente.c', 'tirateima/ConstroiEquivalente.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<p><b>d) Construção de uma árvore espelhada em relação a outra árvore dada</b></p>
+		
+		<p>Uma árvore é dita espelhada em relação a outra se ambas têm exatamente o mesmo número de nós, distribuídos de forma simetria, uma em 
+		relação a outra, com os conteúdos dos nós também distribuídos simetricamente. Como exemplo, as duas árvores desenhadas a seguir são espelhadas.</p>
+		
+		<img src="imagens/espelhada.png"><br>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Constrói árvore espelhada" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ConstroiEspelhada.c', 'tirateima/ConstroiEspelhada.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<p><b>e) Verificação se duas árvores dadas são espelhadas – versão 1</b></p>
+		
+		<INPUT type="button" value="VerificaEspelhada1" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/VerificaEspelhada1.c', 'tirateima/VerificaEspelhada1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>f) Verificação se duas árvores dadas são espelhadas – versão 2</b></p>
+		
+		<p>A diferença entre esta versão e a anterior é que, nesta versão, todas as condições que correspondem a árvores espelhadas estão 
+		agrupadas em uma única expressão lógica.</p>
+		
+		<INPUT type="button" value="VerificaEspelhada2" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/VerificaEspelhada2.c', 'tirateima/VerificaEspelhada2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>g) Verificação de quais elementos de uma árvore estão presentes em outra</b></p>
+		
+		<p>Neste caso duas funções recursivas são aninhadas. A função <i>ProcuraDuasArvores</i> percorre a primeira árvore e, para cada elemento, 
+		chama a função <i>Verifica</i>. A função <i>Verifica</i> percorre a segunda árvore até encontrar o elemento que está sendo procurado. Ela 
+		pára a procura se encontrar uma ocorrência.</p>
+		
+		<INPUT type="button" value="Verifica" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Verifica.c', 'tirateima/Verifica.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+
+		
+	</div>
+
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+	
+</body>
+</html>

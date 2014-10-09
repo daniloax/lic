@@ -1,0 +1,229 @@
+1;
+2;
+3 char car cor(128,128,192) tamanho(60,30) posicao(120,50);
+4 int i cor(0,198,50) tamanho(60,30) posicao(250,50);
+5 text arq;
+35 criaPilha pilha1 cor(197,37,14) posicao(250,150) tamanho(70,200) cor(255,200,145) 5;
+36 criaPilha pilha2 cor(13,22,142) posicao(480,150) tamanho(70,200) cor(255,200,145) 5;
+37 {
+   assign (arq, "AvaliaExpressaoParentizada.txt");
+   reset (arq);
+  }
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+48;
+
+38 read(arq,car);
+39;
+40;
+41 push pilha1 "6";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+47 push pilha2 "-";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+48;
+
+38 read(arq,car);
+39;
+40;
+41 push pilha1 "2";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+47 push pilha2 "*";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+48;
+
+38 read(arq,car);
+39;
+40;
+41 push pilha1 "5";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+45;
+46;
+47 push pilha2 "-";
+48;
+
+38 read(arq,car);
+39;
+40;
+41 push pilha1 "4";
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+44;
+
+8;
+10{
+	char op cor(128,0,255) tamanho(60,30) posicao(650,40);
+	char c1 cor(149,43,255) tamanho(60,30) posicao(650,140);
+	char c2 cor(172,89,255) tamanho(60,30) posicao(650,240);
+	char caux cor(191,128,255) tamanho(60,30) posicao(650,340);
+  }
+11{
+	int x cor(0,183,0) tamanho(60,30) posicao(780,40);
+	int y cor(0,255,0) tamanho(60,30) posicao(780,140);
+  }
+13;
+19;
+20{
+	pop pilha2;
+	op = '-';
+  }
+21{
+	pop pilha1;
+	c1 = '4';
+  }
+22 x = 4;
+23{
+	pop pilha1;
+	c2 = '5';
+  }
+24 y = 5;
+25;
+26;
+27 push pilha1 "1";
+30;
+31;
+32;
+
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+44;
+
+8;
+10{
+	char op cor(128,0,255) tamanho(60,30) posicao(650,40);
+	char c1 cor(149,43,255) tamanho(60,30) posicao(650,140);
+	char c2 cor(172,89,255) tamanho(60,30) posicao(650,240);
+	char caux cor(191,128,255) tamanho(60,30) posicao(650,340);
+  }
+11{
+	int x cor(0,183,0) tamanho(60,30) posicao(780,40);
+	int y cor(0,255,0) tamanho(60,30) posicao(780,140);
+  }
+13;
+19;
+20{
+	pop pilha2;
+	op = '*';
+  }
+21{
+	pop pilha1;
+	c1 = '1';
+  }
+22 x = 1;
+23{
+	pop pilha1;
+	c2 = '2';
+  }
+24 y = 2;
+25;
+26;
+27;
+28 push pilha1 "2";
+30;
+31;
+32;
+
+48;
+
+38 read(arq,car);
+39;
+40;
+42;
+43;
+44;
+
+8;
+10{
+	char op cor(128,0,255) tamanho(60,30) posicao(650,40);
+	char c1 cor(149,43,255) tamanho(60,30) posicao(650,140);
+	char c2 cor(172,89,255) tamanho(60,30) posicao(650,240);
+	char caux cor(191,128,255) tamanho(60,30) posicao(650,340);
+  }
+11{
+	int x cor(0,183,0) tamanho(60,30) posicao(780,40);
+	int y cor(0,255,0) tamanho(60,30) posicao(780,140);
+  }
+13;
+19;
+20{
+	pop pilha2;
+	op = '-';
+  }
+21{
+	pop pilha1;
+	c1 = '2';
+  }
+22 x = 2;
+23{
+	pop pilha1;
+	c2 = '6';
+  }
+24 y = 6;
+25;
+26;
+27 push pilha1 "4";
+30;
+31;
+32;
+
+48;
+
+38;
+49 close(arq);
+50{
+	writeln("4");
+	pop pilha1;
+  }
+51;

@@ -1,0 +1,219 @@
+1{ 
+   comenta("Esta função vai decobrir se existe caminho entre os nós A e E.");
+#som();   
+   criaGrafo grafo1 25 cor(255,255,220) posicao(0,0) tamanho(250,250);
+   criaGrafo grafo2 30 cor(220,255,255) posicao(280,0) tamanho(600,400);
+
+   adicionaNoGrafo grafo1 no1 "a" posicao(10,100);
+   adicionaNoGrafo grafo1 no2 "b" posicao(100,30);
+   adicionaNoGrafo grafo1 no3 "c" posicao(200,120);
+   adicionaNoGrafo grafo1 no4 "d" posicao(80,220);
+   adicionaNoGrafo grafo1 no5 "e" posicao(180,200);
+
+   ligaNoGrafo grafo1 no1 no2 semSeta;
+   ligaNoGrafo grafo1 no1 no4 semSeta;
+   ligaNoGrafo grafo1 no2 no3 semSeta;
+   ligaNoGrafo grafo1 no2 no4 semSeta;
+   ligaNoGrafo grafo1 no4 no5 semSeta;
+  
+   adicionaNoGrafo grafo2 no1 "a" posicao(90,80);
+   adicionaNoGrafo grafo2 no2 "b" posicao(210,80);
+   adicionaNoGrafo grafo2 no3 "c" posicao(330,80);
+   adicionaNoGrafo grafo2 no4 "d" posicao(450,80);
+   adicionaNoGrafo grafo2 no5 "e" posicao(570,80);
+   adicionaNoGrafo grafo2 no6 "b" posicao(90,180);
+   adicionaNoGrafo grafo2 no7 "a" posicao(210,180);
+   adicionaNoGrafo grafo2 no8 "b" posicao(330,180);
+   adicionaNoGrafo grafo2 no9 "a" posicao(450,180);
+   adicionaNoGrafo grafo2 no10 "d" posicao(570,180);
+   adicionaNoGrafo grafo2 no11 "d" posicao(90,240);
+   adicionaNoGrafo grafo2 no12 "c" posicao(210,240);
+   adicionaNoGrafo grafo2 no13 "b" posicao(450,240);
+   adicionaNoGrafo grafo2 no14 "d" posicao(210,300);
+   adicionaNoGrafo grafo2 no15 "e" posicao(450,300);
+
+   ligaNoGrafo grafo2 no1 no2 semSeta;
+   ligaNoGrafo grafo2 no2 no3 semSeta;
+   ligaNoGrafo grafo2 no3 no4 semSeta;
+   ligaNoGrafo grafo2 no4 no5 semSeta;
+   ligaNoGrafo grafo2 no1 no6 semSeta;
+   ligaNoGrafo grafo2 no6 no11 semSeta;
+   ligaNoGrafo grafo2 no2 no7 semSeta;
+   ligaNoGrafo grafo2 no7 no12 semSeta;
+   ligaNoGrafo grafo2 no12 no14 semSeta;
+   ligaNoGrafo grafo2 no3 no8 semSeta;
+   ligaNoGrafo grafo2 no4 no9 semSeta;
+   ligaNoGrafo grafo2 no9 no13 semSeta;
+   ligaNoGrafo grafo2 no5 no10 semSeta;
+   ligaNoGrafo grafo2 no13 no15 semSeta;
+
+   adicionaPonteiro grafo2 no1 diagonalSupEsq "p1" 80 cor(0,128,192);
+   adicionaPonteiro grafo2 no5 diagonalSupEsq "p2" 80 cor(128,0,255);
+} 
+2;
+3 int achou cor(0,255,100) tamanho(60,30) posicao(180,320);
+5 achou = 0;
+6 coloreNoGrafo grafo1 no1 cor(255,0,0);
+7 adicionaPonteiro grafo2 no6 diagonalSupEsq "pa1" 65 cor(255,0,0);
+8;
+9;
+11;
+12;
+13;
+1{
+	adicionaPonteiro grafo2 no2 diagonalSupEsq "p1'" 80 cor(0,128,192);
+	comenta("Nesse momento a função entrou no primeiro nível de recursividade.");
+#	som();
+  }
+2;
+3 {
+	removerVariavel achou;
+	int achou1 cor(0,255,100) tamanho(60,30) posicao(180,320);
+   comenta("Com o nome de achou1 está representada a variável local achou nesta primeira instância da recursividade");
+#som();
+}
+5 achou1 = 0;
+6 coloreNoGrafo grafo1 no2 cor(255,0,0);
+7 adicionaPonteiro grafo2 no7 diagonalSupEsq "pa1'" 65 cor(255,0,0);
+8;
+9;
+11;
+12;
+14 movePonteiro grafo2 no7 diagonalSupEsq no12 diagonalSupEsq 65 cor(255,0,0);
+15;
+16;
+8;
+9;
+11;
+12;
+13;
+1{
+	adicionaPonteiro grafo2 no3 diagonalSupEsq "p1''" 80 cor(0,128,192);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+  }
+2;
+3 {
+	removerVariavel achou1;
+	int achou2 cor(0,255,100) tamanho(60,30) posicao(180,320);
+}
+5 achou2 = 0;
+6 coloreNoGrafo grafo1 no3 cor(255,0,0);
+7 adicionaPonteiro grafo2 no8 diagonalSupEsq "pa1''" 65 cor(255,0,0);
+8;
+9;
+11;
+12;
+14{
+	removePonteiro grafo2 no8 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1''" cor(255,0,0) posicao(340,230);
+  }
+15;
+16;
+8;
+17{
+	comenta("A função retornará o valor da variável achou2, que nesse ponto é zero.");
+#	som();
+  }
+18;
+
+13{
+	removerVariavel achou2;
+	int achou1 cor(0,255,100) tamanho(60,30) posicao(180,320);
+	achou1 = 0;
+	removePonteiroSoloGrafo grafo2 no;
+	removePonteiro grafo2 no3 diagonalSupEsq;
+   comenta("Neste momento a função está saindo do segundo nível de recursividade e voltando ao primeiro. Note que a variável achou2 deixa de existir e volta a estar acessível a variável achou1. A variável achou1 é feita zero, que foi o retorno da função ExisteCaminho.");
+#	som();
+  }
+14 movePonteiro grafo2 no12 diagonalSupEsq no14 diagonalSupEsq 65 cor(255,0,0);
+15;
+16;
+8;
+9;                    
+11;
+12;
+13;  	
+1{
+	adicionaPonteiro grafo2 no4 diagonalSupEsq "p1''" 80 cor(0,128,192);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+  }
+2;
+3 {
+	removerVariavel achou1;
+	int achou2 cor(0,255,100) tamanho(60,30) posicao(180,320);
+}
+5 achou2 = 0;
+6 coloreNoGrafo grafo1 no4 cor(255,0,0);
+7 adicionaPonteiro grafo2 no9 diagonalSupEsq "pa1''" 65 cor(255,0,0);
+8;
+9;
+11;
+12;
+14 movePonteiro grafo2 no9 diagonalSupEsq no13 diagonalSupEsq 65 cor(255,0,0);
+15;
+16;
+8;
+9;
+11;
+12;
+14 movePonteiro grafo2 no13 diagonalSupEsq no15 diagonalSupEsq 65 cor(255,0,0);
+15;
+16;
+8;
+9;
+10 achou2 = 1;
+16;
+8;
+17{
+	comenta("A função retornará o valor da variável achou2, que nesse ponto é 1.");
+#	som();
+  }
+18;
+13{
+	removerVariavel achou2;
+	int achou1 cor(0,255,100) tamanho(60,30) posicao(180,320);
+	achou1 = 1;
+	removePonteiro grafo2 no15 diagonalSupEsq;
+	removePonteiro grafo2 no4 diagonalSupEsq;
+	comenta("Nesse momento a função voltou um nível de execução.");
+#	som();
+  }
+14{
+	removePonteiro grafo2 no14 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1'" cor(255,0,0) posicao(220,350);
+  }
+15;
+16;
+8;
+17{
+	comenta("A função retornará o valor da variável achou1, que nesse ponto que é 1.");
+#	som();
+  }
+18;
+13{
+	removerVariavel achou1;
+	int achou cor(0,255,100) tamanho(60,30) posicao(180,320);
+	achou = 1;
+	removePonteiroSoloGrafo grafo2 no;
+	removePonteiro grafo2 no2 diagonalSupEsq;
+	comenta("Nesse momento a função voltou para o seu primeiro nível de execução.");
+#	som();
+  }
+14 movePonteiro grafo2 no6 diagonalSupEsq no11 diagonalSupEsq 65 cor(255,0,0);
+15;
+16;
+8;
+17{
+	comenta("A função retornará o valor 1, o que significa que foi encontrado um caminho entre os nós A e E.");
+#	som();
+  }
+18 {
+comenta("Final de execução.");
+#	som();
+}
+	
+
+	
+

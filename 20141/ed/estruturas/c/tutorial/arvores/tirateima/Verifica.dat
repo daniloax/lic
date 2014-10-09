@@ -1,0 +1,1002 @@
+17{
+	criaArvore arvore1 3 40 cor(255,219,183) posicao(80,50) tamanho(400,600); 
+	criaArvore arvore2 3 40 cor(220,255,255) posicao(500,50) tamanho(400,600);
+	
+	adicionaNoArvore arvore1 no0 "a";
+	adicionaNoArvore arvore1 no1 "b";
+	adicionaNoArvore arvore1 no2 "c";
+	adicionaNoArvore arvore1 no3 "d";
+	adicionaNoArvore arvore1 no4 "e";
+  
+	ligaNoArvore arvore1 no0 no1;
+	ligaNoArvore arvore1 no0 no2;
+	ligaNoArvore arvore1 no1 no3;
+	ligaNoArvore arvore1 no1 no4;
+
+	adicionaNoArvore arvore2 no0 "h";
+	adicionaNoArvore arvore2 no1 "i";
+	adicionaNoArvore arvore2 no2 "c";
+	adicionaNoArvore arvore2 no3 "b";
+	adicionaNoArvore arvore2 no4 "a";
+
+	ligaNoArvore arvore2 no0 no1;
+	ligaNoArvore arvore2 no0 no2;
+	ligaNoArvore arvore2 no1 no3;
+	ligaNoArvore arvore2 no1 no4;
+
+	adicionaPonteiro arvore1 no0 dir "ainicio1" 60 cor(0,128,0); 
+	adicionaPonteiro arvore2 no0 dir "ainicio2" 60 cor(204,0,0); 
+ }
+18;
+19{
+	comenta("Nesse momento o programa irá percorrer a função Verifica.");
+#	som();
+  }
+  
+1{
+	adicionaPonteiro arvore2 no0 esq "a1" 60 cor(0,0,191);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'a';
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1 movePonteiro arvore2 no0 esq no1 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(70,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(110,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+10 movePonteiro arvore2 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }	
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no4 diagonalSupDir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+7 achou = 1;
+8;
+10;
+12;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 1.");
+#	som();
+  } 
+
+12{
+	movePonteiro arvore2 no4 diagonalSupDir no1 diagonalSupEsq 60 cor(0,0,191);
+	achou = 1;
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 1.");
+#	som();
+  } 
+
+10{
+	movePonteiro arvore2 no1 diagonalSupEsq no0 esq 60 cor(0,0,191);
+	achou = 1;
+  }
+12;
+13{
+	comenta("Nesse momento a função Verifica encerrará, retornando o valor 1.");
+#	som();
+  }  
+
+
+20{
+	removerVariavel achou;
+	removerVariavel chave;
+	removePonteiro arvore2 no0 esq;
+	writeln("achou: a");
+}
+21{
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num primeiro nível de recursividade.");
+#	som();
+  }
+
+17 movePonteiro arvore1 no0 dir no1 diagonalSupEsq 60 cor(0,128,0);
+18;
+19{
+	comenta("Nesse momento o programa irá percorrer a função Verifica.");
+#	som();
+  }
+  
+  
+1{
+	adicionaPonteiro arvore2 no0 esq "a1" 60 cor(0,0,191);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'b';
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1 movePonteiro arvore2 no0 esq no1 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+7 achou = 1;
+8;
+10;
+12;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 1.");
+#	som();
+  } 
+
+12{
+	movePonteiro arvore2 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,0,191);
+	achou = 1;
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 1.");
+#	som();
+  } 
+
+10{
+	movePonteiro arvore2 no1 diagonalSupEsq no0 esq 60 cor(0,0,191);
+	achou = 1;
+  }
+12;
+13{
+	comenta("Nesse momento a função Verifica encerrará, retornando o valor 1.");
+#	som();
+  }
+  
+20{
+	removerVariavel achou;
+	removerVariavel chave;
+	removePonteiro arvore2 no0 esq;
+	writeln("achou: b");
+  }
+  
+21{
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num segundo nível de recursividade.");
+#	som();
+  }
+
+17 movePonteiro arvore1 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,128,0);
+18;
+19{
+	comenta("Nesse momento o programa irá percorrer a função Verifica.");
+#	som();
+  }
+
+
+1{
+	adicionaPonteiro arvore2 no0 esq "a1" 60 cor(0,0,191);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'd';
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1 movePonteiro arvore2 no0 esq no1 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(70,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(110,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+10 movePonteiro arvore2 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento o programa entrará num segundo nível de recursividade.");
+#	som();
+ }	
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no4 diagonalSupDir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(140,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(170,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12 movePonteiro arvore2 no4 diagonalSupDir no1 diagonalSupEsq 60 cor(0,0,191);
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10 movePonteiro arvore2 no1 diagonalSupEsq no0 esq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+  }
+  
+  
+1 movePonteiro arvore2 no0 esq no2 dir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+ 
+1{
+	removePonteiro arvore2 no2 dir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(205,240);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no2 dir "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no2 dir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(250,240);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no2 dir "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12 movePonteiro arvore2 no2 dir no0 esq 60 cor(0,0,191);
+13{
+	comenta("Nesse momento a função Verifica encerrará, retornando o valor 0.");
+#	som();
+  }
+  
+21{
+	removerVariavel achou;
+	removerVariavel chave;
+	removePonteiro arvore2 no0 esq;
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num terceiro nível de recursividade.");
+#	som();
+  }
+17{
+	removePonteiro arvore1 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(70,325);
+  }
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+22{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no3 diagonalSupEsq "ainicio1" 60 cor(0,128,0);
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num terceiro nível de recursividade.");
+#	som();
+  }
+17{
+	removePonteiro arvore1 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(110,325);
+  }
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+
+23{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no3 diagonalSupEsq "ainicio1" 60 cor(0,128,0);
+  }
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+22{
+	movePonteiro arvore1 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,128,0);
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num segundo nível de recursividade.");
+#	som();
+  }
+
+17 movePonteiro arvore1 no1 diagonalSupEsq no4 diagonalSupDir 60 cor(0,128,0);
+18;
+19{
+	comenta("Nesse momento o programa irá percorrer a função Verifica.");
+#	som();
+  }
+
+
+1{
+	adicionaPonteiro arvore2 no0 esq "a1" 60 cor(0,0,191);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'e';
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1 movePonteiro arvore2 no0 esq no1 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(70,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(110,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+10 movePonteiro arvore2 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento o programa entrará num segundo nível de recursividade.");
+#	som();
+ }	
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no4 diagonalSupDir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(140,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(170,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12 movePonteiro arvore2 no4 diagonalSupDir no1 diagonalSupEsq 60 cor(0,0,191);
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10 movePonteiro arvore2 no1 diagonalSupEsq no0 esq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+  }
+  
+  
+1 movePonteiro arvore2 no0 esq no2 dir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+ 
+1{
+	removePonteiro arvore2 no2 dir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(205,240);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no2 dir "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no2 dir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(250,240);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no2 dir "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12 movePonteiro arvore2 no2 dir no0 esq 60 cor(0,0,191);
+13{
+	comenta("Nesse momento a função Verifica encerrará, retornando o valor 0.");
+#	som();
+  }
+
+21{
+	removerVariavel achou;
+	removerVariavel chave;
+	removePonteiro arvore2 no0 esq;
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num terceiro nível de recursividade.");
+#	som();
+  }
+
+17{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(140,325);
+  }
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+22{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "ainicio1" 60 cor(0,128,0);
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num terceiro nível de recursividade.");
+#	som();
+  }
+17{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(170,325);
+  }	
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+23{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "ainicio1" 60 cor(0,128,0);
+  }
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+23 movePonteiro arvore1 no4 diagonalSupDir no1 diagonalSupEsq 60 cor(0,128,0);
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+22{
+	movePonteiro arvore1 no1 diagonalSupEsq no0 dir 60 cor(0,128,0);
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num primeiro nível de recursividade.");
+#	som();
+  }
+17 movePonteiro arvore1 no0 dir no2 dir 60 cor(0,128,0);
+18;
+19{
+	comenta("Nesse momento o programa irá percorrer a função Verifica.");
+#	som();
+  }
+  
+1{
+	adicionaPonteiro arvore2 no0 esq "a1" 60 cor(0,0,191);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'c';
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1 movePonteiro arvore2 no0 esq no1 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num segundo nível de recursividade.");
+#	som();
+ }
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no3 diagonalSupEsq 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(70,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(110,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no3 diagonalSupEsq "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+10 movePonteiro arvore2 no3 diagonalSupEsq no1 diagonalSupEsq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento o programa entrará num segundo nível de recursividade.");
+#	som();
+ }	
+
+1 movePonteiro arvore2 no1 diagonalSupEsq no4 diagonalSupDir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+8;
+9{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(140,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+11{
+	comenta("Nesse momento a função Verifica entrará num terceiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore2 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore2 noo 5 "a1" cor(0,0,191) posicao(170,325);
+ }
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12{
+	removePonteiroSoloArvore arvore2 noo;
+	adicionaPonteiro arvore2 no4 diagonalSupDir "a1" 60 cor(0,0,191);
+  }
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  } 
+
+12 movePonteiro arvore2 no4 diagonalSupDir no1 diagonalSupEsq 60 cor(0,0,191);
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+
+10 movePonteiro arvore2 no1 diagonalSupEsq no0 esq 60 cor(0,0,191);
+11{
+	comenta("Nesse momento a função Verifica entrará num primeiro nível de recursividade.");
+#	som();
+  }
+  
+  
+1 movePonteiro arvore2 no0 esq no2 dir 60 cor(0,0,191);
+2 int achou cor(0,198,50) tamanho(60,30) posicao(200,50); 
+4 achou = 0;
+5;
+6;
+7 achou = 1;
+8;
+10;
+12;
+13{
+	comenta("Nesse momento a função Verifica voltará um nível de recursividade, retornando o valor 1.");
+#	som();
+  }
+12{
+	movePonteiro arvore2 no2 dir no0 esq 60 cor(0,0,191);
+	achou = 1;
+  }
+13{
+	comenta("Nesse momento a função Verifica encerrará, retornando o valor 1.");
+#	som();
+  }
+20{
+	removePonteiro arvore2 no0 esq;
+	removerVariavel achou;
+	removerVariavel chave;
+	writeln("achou: c");
+  }
+21{
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num segundo nível de recursividade.");
+#	som();
+  }
+
+17{
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(205,240);
+  }
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+22{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no2 dir "ainicio1" 60 cor(0,128,0);
+	comenta("Nesse momento a função ProcuraDuasArvores entrará num segundo nível de recursividade.");
+#	som();
+  }
+17{
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiroSoloArvore arvore1 poo 5 "ainicio1" cor(0,128,0) posicao(250,240);
+  }	
+18;
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+23{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no2 dir "ainicio1" 60 cor(0,128,0);
+  }
+24{
+	comenta("Nesse momento a função ProcuraDuasArvores voltará um nível de recursividade.");
+#	som();
+  }
+  
+23 movePonteiro arvore1 no2 dir no0 dir 60 cor(0,128,0);
+24;
+	

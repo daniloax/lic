@@ -1,0 +1,296 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Grafos - Algoritmos </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="algoritmos">
+		<h4> 5.4 Algoritmos </h4>
+		
+		<p>A estrutura de dados utilizada para a representação de um grafo é formada por listas ligadas a listas, que já foi estudada como 
+		aplicação no capítulo referente a listas. Por este motivo, não há necessidade de se estudar aqui os algoritmos mais simples para 
+		grafos, como por exemplo: construção de um grafo através de um; remoção de um grafo inteiro, inserção ou remoção de um nó, etc.</p>
+		
+		<h4> 5.4.1 Construção de um grafo </h4>
+		
+		<p>A construção dispensa explicações, pois já foi visto um algoritmo muito parecido em listas ligadas a listas.</p>
+		<FONT face= "Courier New" size=2>
+			void ConstroiGrafo2(no **eginicio) {
+			  &nbsp; FILE *arq;<br>
+			  &nbsp; no *pno1, *pno2;<br
+			  &nbsp; arco *pa1, *pa2;<br>
+			  &nbsp; char c, lixo1;<br>
+			  &nbsp; int i, n, valor, lixo2;<br><br>
+
+			  &nbsp; *eginicio = NULL;<br>
+			  &nbsp; arq = fopen ("t1.txt", "r");<br>
+			  &nbsp; while ((c = getc (arq)) != EOF)<br>
+				&nbsp; &nbsp; if (c != '\n'){<br>
+				  &nbsp; &nbsp; &nbsp; pno1 = malloc (sizeof (no));<br>
+				  &nbsp; &nbsp; &nbsp; pno1->dado = c;<br>
+				  &nbsp; &nbsp; &nbsp; fscanf (arq, "%d ", &valor);<br>
+				  &nbsp; &nbsp; &nbsp; pno1->valorno = valor;<br>
+				  &nbsp; &nbsp; &nbsp; pno1->usado = 0;<br>
+				  &nbsp; &nbsp; &nbsp; pno1->pacessoarco = NULL;<br>
+				  &nbsp; &nbsp; &nbsp; pno1->proxno = NULL;<br>
+				  &nbsp; &nbsp; &nbsp; if (*eginicio == NULL)<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; *eginicio = pno1;<br>
+				  &nbsp; &nbsp; &nbsp; else<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pno2->proxno = pno1;<br>
+				  &nbsp; &nbsp; &nbsp; pno2 = pno1;<br>
+				  &nbsp; &nbsp; &nbsp; while ((c = getc (arq)) != '\n');<br>
+				&nbsp; &nbsp; }<br>
+			  &nbsp; fclose (arq);<br>
+			  &nbsp; pno1 = *eginicio;<br>
+			  &nbsp; arq = fopen ("t1.txt", "r");<br>
+			  &nbsp; while ((lixo1 = getc(arq)) != EOF)<br>
+				&nbsp; &nbsp; if (lixo1 != '\n'){<br>
+				  &nbsp; &nbsp; &nbsp; fscanf (arq,"%d %d", &lixo2, &n);<br>
+				  &nbsp; &nbsp; &nbsp; lixo1 = getc(arq);<br>
+				  &nbsp; &nbsp; &nbsp; for (i=1; i !=n+1; i++) {<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; c = getc (arq);<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; fscanf (arq, "%d ", &valor);<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa1 = malloc (sizeof (arco));<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa1->valorarco = valor;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa1->usado = 0;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa1->padj = *eginicio;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; while (pa1->padj->dado != c)<br>
+					  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pa1->padj = pa1->padj->proxno;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa1->proxarco = NULL;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; if (pno1->pacessoarco == NULL)<br>
+					  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pno1->pacessoarco = pa1;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; else pa2->proxarco = pa1;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; pa2 = pa1;<br>
+				  &nbsp; &nbsp; &nbsp; }<br>
+				  &nbsp; &nbsp; &nbsp; pno1 = pno1->proxno;<br>
+				&nbsp; &nbsp; }<br>
+			  &nbsp; fclose (arq);<br>
+			}<br>
+}<br>
+		</FONT> 
+		
+		<h4> 5.4.2 Caminhamento de um grafo </h4>
+		
+		<p>Um problema comum no uso de grafos é caminhar os seus nós seguindo uma determinada estratégia. Naturalmente, se o problema 
+		consiste apenas em “visitar” todos os nós, basta caminhar todos os elementos da lista de nós. Mas em geral o que se deseja é, 
+		a partir de um determinado nó, visitar todos os outros nós aos quais se pode chegar. Dizendo de outro modo, trata-se de visitar 
+		todos os nós para os quais exista caminho, a partir de um determinado nó.</p>
+		<p>Duas estratégias podem ser usadas para efetuar essa tarefa: camihamento em amplitude e  caminhamento em profundidade. 
+		Exemplifiquemos utilizando o grafo abaixo, supondo-se que o nó de saída seja o nó A. Neste caso o grafo é não dirigido e conexo. 
+		Desse modo, todos os nós poderão ser visitados a partir do nó A</p>
+		<img src="imagens/percorrimento.png">
+		<p>No caminhamento em amplitude, depois de visitado o nó A, são visitados seus vizinhos (B,C,D). Em seguida são visitados os 
+		vizinhos de cada um deles (vizinhos do B: nó E; vizi-nhos de C: nó G; vizinhos de D: ninguém) e assim por diante. Cada vez que 
+		um nó é visitado, ele é marcado, para que não seja visitado novamente. A seqüência gerada por essas visitas é:    <b>A B C D E G F</b>.</p>
+		<p>No caminhaimento em profundidade inicia-se pelo nó A e continua-se por um de seus vizinhos (B) e depois um vizinho de B (E), etc., 
+		caminhando-se o caminho mais comprido possível. Esgotado esse caminho, retorna-se ao penúltimo nó desse caminho e aplica-se a mesma 
+		estratégia para seus outros vizinhos. Sempre que um caminho se esgota, volta-se ao nó anterior nesse caminho, até que se chega aos 
+		outros vizinhos de A, que foi o nó de partida. A seqüência gerada por essas visitas é: <b>A B E F G C D</b>.</p>
+		<p>A função <i>CaminhaGrafoAmplitude</i> utiliza estrutura de dados vista anteriormente, na qual foi acrescentado, em cada elemento da lista de nós, 
+		um campo lógico <i>usado</i>, para indicar se o nó já foi visitado. O parâmetro <i>pno1</i> é um ponteiro que aponta para o nó a partir do qual se 
+		dá o caminhamento. É utilizada uma fila (<i>fila</i>) de ponteiros que apontam para os nós do grafo. A figura que representa a estrutura de dados 
+		foi simplificada para facilitar a compreensão: no lugar dos ponteiros “adj” foram colocados os nomes dos nós apontados por esses ponteiros.</p>
+		
+		<FONT face= "Courier New" size=2>
+			&nbsp; typedef struct tipofila { <br>
+			&nbsp; &nbsp; void *dado; <br>
+			&nbsp; &nbsp; struct tipofila *prox; <br>
+			&nbsp; } filageral;<br><br>
+
+			&nbsp; typedef struct elementoarco {<br>
+			&nbsp; &nbsp; int usado;<br>
+			&nbsp; &nbsp; struct elementoarco *proxarco;<br>
+			&nbsp; &nbsp; struct elementono *padj;<br>
+			&nbsp; } arco;<br><br>
+
+			&nbsp; typedef struct elementono {<br>
+			&nbsp; &nbsp; char dado;<br>
+			&nbsp; &nbsp; int usado;<br>
+			&nbsp; &nbsp; struct elementono *proxno;<br>
+			&nbsp; &nbsp; struct elementoarco *pacessoarco;<br>
+			&nbsp; } no;<br>
+		</FONT>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha Amplitude" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/caminha_amplitude.c', 'tirateima/caminha_amplitude.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>A função <i>CaminhaGrafoProfundidade</i> foi construída de forma recursiva, o que a torna bastante simples. Pode-se construir uma versão 
+		análoga ao do caminhamento em amplitude, utilizando uma pilha em lugar de uma fila.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha Profundidade" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/caminha_profundidade.c', 'tirateima/caminha_profundidade.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p>Esta função utiliza a técnica denominada de <i>backtracking</i>. O programa avança por um caminho até não encontrar saída, e então recua um 
+		passo (ao nó anterior no caminho pesqui-sado) e tenta outro caminho, até não encontrar saída novamente, e assim por diante.</p>
+		<p>Esse mecanismo aparece nos próximos algoritmos, com algumas variações.<br><br><br></p>
+		
+		<h4> 5.4.3 Determinação de caminhos </h4>
+		
+		<p><b>a) função que verifica se existe algum caminho entre dois nós</b></p>
+		
+		<p>Esta função apenas verifica se existe algum caminho entre dois nós dados. Retorna 1 quando descobre algum caminho, e retorna 0 se 
+		não há caminho algum entre os dois nós dados. O processo de backtracking é interrompido quando a função encontra algum caminho entre 
+		os dois nós dados.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Existe Caminho" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/existe_caminho.c', 'tirateima/existe_caminho.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>b) função que determina um caminho entre dois nós</b></p>
+		
+		<p>Esta função também procura se existe algum caminho entre dois nós dados. Sua diferença em relação à função anterior é que, 
+		se existe algum caminho, ela guarda em uma pilha a seqüência de nós que forma esse caminho.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Determina Caminho" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/determina_caminho.c', 'tirateima/determina_caminho.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>c) função que determina todos os caminhos existentes entre dois nós</b></p>
+		
+		<p>Neste caso, a função não encerra a execução quando encontra o primeiro caminho, mas continua procurando e registra todos os 
+		caminhos encontrados entre dois nós.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Determina Todos os Caminhos" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/determina_todos_caminhos.c', 'tirateima/determina_todos_caminhos.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>d) função que determina caminho crítico</b></p>
+		
+		<p>Esta função é aplicada a nós que têm os arcos valorados. Chama-se um caminho crítico aquele com o maior ou o menor valor da 
+		soma dos valores dos arcos. Pode-se aplicar um critério análogo para grafos com os nós valorados. Neste caso, a função guarda 
+		o primeiro caminho encontrado na pilha e continua à procura de outros. Cada vez que um novo caminho é encontrado, calcula o seu 
+		valor. Se o valor do novo caminho é maior do que o valor do ca-minho armazenado, o novo ocupa o lugar do antigo, e assim por diante. 
+		No final, o caminho armazenado será o de maior valor.</p>
+		<p>Se o grafo é uma rede, este algoritmo é útil para ser aplicado entre os nós fonte e sorvedouro, para determinar o caminho crítico 
+		da tarefa que a rede modela.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminho Crítico" style="width: 230px"
+		onClick = "abrirtirateima('tirateima/caminho_critico.c', 'tirateima/caminho_critico.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>e) Caixeiro Viajante</b></p>
+		
+		<p>O problema do caixeiro-viajante é clássico na Computação. Faremos aqui uma aplicação de grafos a uma situação simplificada 
+		desse problema. Um vendedor tem que caminhar uma série de cidades interligadas por várias estradas, cada uma delas com um custo 
+		associado (nem to-das as cidades se ligam diretamente a todas as outras).  A questão é determinar qual o melhor percurso a realizar, 
+		de modo que o custo total seja mínimo, ao mesmo tempo em que todas as cidades devem ser caminhadas e nenhuma delas deve ser repetida.</p>
+		
+		<p> Para simplificar o problema, partiremos da suposição de que existe um ou mais ciclos envolvendo as cidades, e não há nenhuma cidade 
+		que deixe de pertencer a algum desses ci-clos. Por exemplo, na figura abaixo, o mapa1 pode ser resolvido pelo nosso programa, mas o mapa2 
+		não pode, pois a cidade C não faz parte de nenhum ciclo (o vendedor teria que percor-rer o trecho BC na ida e na volta). No mapa1 há 
+		vários ciclos passando por todas as cidades:  ABCDEA, AEDCBA, ADCBEA.</p>
+		
+		<img src="imagens/mapa1.png">
+		<br><br>
+		<img src="imagens/mapa2.png">
+		
+		<p>Nossa solução é dada pela função <i>CaixeiroViajante</i>, que efetua a pesquisa dos vários caminhos possíveis. São utilizadas duas pilhas 
+		para armazenar ponteiros para os nós: a <i>pilhaatual</i> armazena os caminhos correntes, que estão sendo pesquisados, e a <i>pilhamin</i> é usada 
+		para guardar ciclos fechados que contêm todas as cidades (caminhos válidos). A variável <i>valoratual</i> guarda o custo atual do caminho que 
+		está sendo pesquisado em <i>pilhaatual</i>, e a variável <i>valormin</i> guarda o custo do caminho válido encontrado e armazenado em 
+		</i>pilhamin.</i> Cada vez que um caminho válido é encontrado, verifica-se se o seu custo é menor que o custo do último caminho válido. 
+		Neste caso, o novo passa a ocupar o lugar do anterior. Ao final do procedimento, em <i>pilhamin</i> está presente o melhor caminho possível, 
+		e seu custo está armazenado em <i>valormin</i>. A variável <i>valormin</i> é inicializada fora de <i>CaixeiroViajante</i>, com o valor da soma 
+		de todos os arcos do grafo.</p>
+		
+		<p>A função CaixeiroViajante é auxiliada pela função TodosNosMarcados, que verifica se todos os nós existentes no grafo estão usados, 
+		ou seja, se o caminho passou por todas as cidades.  </p>
+		
+		<FONT face= "Courier New" size=2>
+			int TodosNosMarcados(no *ginicio) {<br>
+			&nbsp; no *pno1;<br>
+			&nbsp; arco *pa1;<br>
+			&nbsp; int ok;<br><br>
+
+			&nbsp; pno1 = ginicio;<br>
+			&nbsp; ok = 1;<br>
+			&nbsp; while ((ok) && (pno1 != NULL)) {<br>
+			&nbsp; &nbsp; if (!pno1->usado) <br>
+			&nbsp; &nbsp; &nbsp; ok = 0;<br>
+			&nbsp; &nbsp; pno1 = pno1->proxno;<br>
+			&nbsp; }<br>
+			&nbsp; return ok;<br>
+			}<br><br>
+
+			//--- encontra caminho com menor soma dos valores dos arcos ---<br>
+			void CaixeiroViajante (no *ginicio, no *p1, no *pchegada) {<br>
+			&nbsp; arco *pa1;<br>
+			&nbsp; char c;<br>
+			&nbsp; pilhachar *paux;<br><br>
+
+			&nbsp; InserePilha (&pilhaatual, p1->dado);<br>
+			&nbsp; p1->usado = 1;<br>
+			&nbsp; pa1 = p1->pacessoarco;<br>
+			&nbsp; while (pa1 != NULL) {<br>
+			&nbsp; &nbsp; if (pa1->padj == pchegada) {<br>
+			&nbsp; &nbsp; &nbsp; InserePilha (&pilhaatual, pa1->padj->dado);<br>
+			&nbsp; &nbsp; &nbsp; valoratual = valoratual + pa1->valorarco;<br>
+			&nbsp; &nbsp; &nbsp; if ((valoratual < valormin) && (TodosNosMarcados(ginicio))) {<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; valormin = valoratual; <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; while (!PilhaVazia (pilhamin))<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c = RetiraPilha (&pilhamin); <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; InicializaPilha (&paux);<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; while (!PilhaVazia (pilhaatual))<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InserePilha (&paux, RetiraPilha (&pilhaatual));<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; while (!PilhaVazia (paux)) {<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c = RetiraPilha (&paux); <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InserePilha (&pilhaatual, c);<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InserePilha (&pilhamin, c);   <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+			&nbsp; &nbsp; &nbsp; }<br>
+			&nbsp; &nbsp; &nbsp; valoratual = valoratual - pa1->valorarco;<br>
+			&nbsp; &nbsp; &nbsp; c = RetiraPilha (&pilhaatual);<br>
+			&nbsp; &nbsp; }<br>
+			&nbsp; &nbsp; else<br>
+			&nbsp; &nbsp; &nbsp; if (!pa1->padj->usado){ <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; valoratual = valoratual + pa1->valorarco; <br>
+			&nbsp; &nbsp; &nbsp; &nbsp; CaixeiroViajante (ginicio, pa1->padj, pchegada);<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; valoratual = valoratual - pa1->valorarco; <br>
+			&nbsp; &nbsp; &nbsp; }  <br>
+			&nbsp; &nbsp; pa1 = pa1->proxarco;<br>
+			&nbsp; }<br>
+			&nbsp; c = RetiraPilha (&pilhaatual);<br>
+			&nbsp; p1->usado = 0;<br>
+			}<br><br><br><br>
+		</FONT>
+		
+	</div>
+
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

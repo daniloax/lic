@@ -1,0 +1,400 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Listas - Algoritmos </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="algoritmos">
+		<h4> 2.4 Algoritmos </h4>
+		
+		<p>Neste tópico veremos os algoritmos correspondentes às operações mais básicas que podem ser efetuadas com as listas, aplicadas aos 
+		quatro tipos mais comuns de listas. As operações de construção serão desmembradas em duas: construção com inserção do elemento no início 
+		da lista e construção com inserção no final da lista.</p>
+		
+		<p>É interessante notar que, em vários algoritmos, há a necessidade de se analisar separadamente a situação genérica (em geral, o 
+		elemento que interessa está no meio da lista) e as situações particulares (que costumam ser as seguintes: lista vazia, elemento no 
+		começo da lista, elemento no final da lista, lista com apenas um elemento). Sempre que possível, convém que os casos particulares sejam 
+		tratados no mesmo trecho de programa que o caso geral, tornando o programa mais sintético. Dependendo do tipo de lista escolhida, certas 
+		operações se tornam mais simples, pois os casos particulares podem ser tratados juntamente com o caso geral.</p>
+		
+		<p>Em todas as funções que utilizam listas de encadeamento simples, o tipo de cada elemento será:</p>
+		
+		<FONT face= "Courier New" size=2>
+			struct elemento {<br>
+			&nbsp;  char dado;<br>
+			&nbsp;  struct elemento *prox;<br>
+			};<br><br>
+		</FONT> 
+		
+		<p>Em todas as funções que utilizam listas de encadeamento duplo, o tipo de cada elemento será:</p>
+		
+		<FONT face= "Courier New" size=2>
+			struct elemento {<br>
+			&nbsp;  char dado;<br>
+			&nbsp;  struct elemento *prox, *ant;<br>
+			};<br><br>
+		</FONT>
+		
+		
+		<h4> 2.4.1 - Listas Abertas com Encadeamento Simples </h4>
+		
+		<p><b> a) Construção com inserção dos elementos no início da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no começo da lista. Dessa forma, a ordem dos elementos na lista fica invertida 
+		em relação à ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no início da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/ConstroiListaAS1/ConstroiListaAS1.c', 'tirateima/listasAS/ConstroiListaAS1/ConstroiListaAS1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> b) Construção com inserção dos elementos no final da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no final da lista. Dessa forma, a ordem dos elementos na lista fica idêntica à ordem 
+		original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no final da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/ConstroiListaAS2/ConstroiListaAS2.c', 'tirateima/listasAS/ConstroiListaAS2/ConstroiListaAS2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> c) Percurso por todos os elementos da lista </b></p>
+		
+		<p>Esta operação consiste em caminhar por todos os elementos da lista, realizando alguma ação em cada um. Neste exemplo a ação consiste em 
+		escrever o dado na tela. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/PercorreListaAS/PercorreListaAS.c', 'tirateima/listasAS/PercorreListaAS/PercorreListaAS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> d) Procura de um dado na lista </b></p>
+		
+		<p>Esta operação consiste na procura de um determinado dado na lista. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início 
+		da lista, e o dado a ser procurado, denominado aqui de <i>chave</i>, e retorna um ponteiro apontando para o elemento que contem o dado. Se o dado 
+		procurado não estiver presente na lista, a função retorna o valor NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/ProcuraListaAS/ProcuraListaAS.c', 'tirateima/listasAS/ProcuraListaAS/ProcuraListaAS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> e) Inserção de um dado em uma lista ordenada </b></p>
+		
+		<p>Esta operação consiste em inserir um novo dado na lista, no lugar que lhe corresponda. No exemplo a lista está ordenada em ordem 
+		crescente. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser inserido, denominado 
+		aqui de <i>dadonovo</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Insere dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/InsereListaAS/InsereListaAS.c', 'tirateima/listasAS/InsereListaAS/InsereListaAS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> f) Remoção de um dado de uma lista  </b></p>
+		
+		<p>Esta operação consiste em remover um determinado dado da lista. Se o dado não estiver presente, a função não faz nada. Se o dado 
+		estiver presente várias vezes na lista, todos os elementos correspondentes serão removidos. A função recebe como parâmetro o endereço 
+		do ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser removido, aqui denominado <i>chave</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/RemoveListaAS/RemoveListaAS.c', 'tirateima/listasAS/RemoveListaAS/RemoveListaAS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> g) Remoção de toda a lista  </b></p>
+		
+		<p>Esta operação consiste em desfazer totalmente uma lista, removendo todos os elementos, um a um, começando pelo início da lista. A função 
+		recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Destrói lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAS/DestroiListaAS/DestroiListaAS.c', 'tirateima/listasAS/DestroiListaAS/DestroiListaAS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<!-- ****************************************************************** -->
+		
+		<h4> 2.4.2  Listas Abertas com Encadeamento Duplo </h4>
+		
+		<p><b> a) Construção com inserção dos elementos no início da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no começo da lista. Dessa forma, a ordem dos elementos na lista fica invertida em relação 
+		à ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.	</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no início da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/ConstroiListaAD/ConstroiListaAD.c', 'tirateima/listasAD/ConstroiListaAD/ConstroiListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> b) Construção com inserção dos elementos no final da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no final da lista. Dessa forma, a ordem dos elementos na lista fica idêntica à 
+		ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no final da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/ConstroiListaAD1/ConstroiListaAD1.c', 'tirateima/listasAD/ConstroiListaAD1/ConstroiListaAD1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> c) Percurso por todos os elementos da lista </b></p>
+		
+		<p>Esta operação consiste em caminhar por todos os elementos da lista, realizando alguma ação em cada um. Neste exemplo a ação consiste em 
+		escrever o dado na tela. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/PercorreListaAD/PercorreListaAD.c', 'tirateima/listasAD/PercorreListaAD/PercorreListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> d) Procura de um dado na lista </b></p>
+		
+		<p>Esta operação consiste na procura de um determinado dado na lista. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início 
+		da lista, e o dado a ser procurado, denominado aqui de <i>chave</i>, e retorna um ponteiro apontando para o elemento que contem o dado. Se o dado 
+		procurado não estiver presente na lista, a função retorna o valor NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/ProcuraListaAD/ProcuraListaAD.c', 'tirateima/listasAD/ProcuraListaAD/ProcuraListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> e) Inserção de um dado em uma lista ordenada </b></p>
+		
+		<p>Esta operação consiste em inserir um novo dado na lista, no lugar que lhe corresponda. No exemplo a lista está ordenada em ordem 
+		crescente. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser inserido, denominado 
+		aqui de <i>dadonovo</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Insere dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/InsereListaAD/InsereListaAD.c', 'tirateima/listasAD/InsereListaAD/InsereListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> f) Remoção de um dado de uma lista  </b></p>
+		
+		<p>Esta operação consiste em remover um determinado dado da lista. Se o dado não estiver presente, a função não faz nada. Se o dado 
+		estiver presente várias vezes na lista, todos os elementos correspondentes serão removidos. A função recebe como parâmetro o endereço 
+		do ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser removido, aqui denominado <i>chave</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/RemoveListaAD/RemoveListaAD.c', 'tirateima/listasAD/RemoveListaAD/RemoveListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> g) Remoção de toda a lista  </b></p>
+		
+		<p>Esta operação consiste em desfazer totalmente uma lista, removendo todos os elementos, um a um, começando pelo início da lista. A função 
+		recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Destrói lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasAD/DestroiListaAD/DestroiListaAD.c', 'tirateima/listasAD/DestroiListaAD/DestroiListaAD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<!-- ****************************************************************** -->
+		
+		<h4> 2.4.3  Listas Fechadas com Encadeamento Simples </h4>
+		
+		<p><b> a) Construção com inserção dos elementos no início da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no começo da lista. Dessa forma, a ordem dos elementos na lista fica invertida em relação 
+		à ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.	</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no início da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/ConstroiListaFS/ConstroiListaFS.c', 'tirateima/listasFS/ConstroiListaFS/ConstroiListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> b) Construção com inserção dos elementos no final da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no final da lista. Dessa forma, a ordem dos elementos na lista fica idêntica à 
+		ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no final da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/ConstroiListaFS1/ConstroiListaFS1.c', 'tirateima/listasFS/ConstroiListaFS1/ConstroiListaFS1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> c) Percurso por todos os elementos da lista </b></p>
+		
+		<p>Esta operação consiste em caminhar por todos os elementos da lista, realizando alguma ação em cada um. Neste exemplo a ação consiste em 
+		escrever o dado na tela. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/PercorreListaFS/PercorreListaFS.c', 'tirateima/listasFS/PercorreListaFS/PercorreListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> d) Procura de um dado na lista </b></p>
+		
+		<p>Esta operação consiste na procura de um determinado dado na lista. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início 
+		da lista, e o dado a ser procurado, denominado aqui de <i>chave</i>, e retorna um ponteiro apontando para o elemento que contem o dado. Se o dado 
+		procurado não estiver presente na lista, a função retorna o valor NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/ProcuraListaFS/ProcuraListaFS.c', 'tirateima/listasFS/ProcuraListaFS/ProcuraListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> e) Inserção de um dado em uma lista ordenada </b></p>
+		
+		<p>Esta operação consiste em inserir um novo dado na lista, no lugar que lhe corresponda. No exemplo a lista está ordenada em ordem 
+		crescente. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser inserido, denominado 
+		aqui de <i>dadonovo</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Insere dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/InsereListaFS/InsereListaFS.c', 'tirateima/listasFS/InsereListaFS/InsereListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> f) Remoção de um dado de uma lista  </b></p>
+		
+		<p>Esta operação consiste em remover um determinado dado da lista. Se o dado não estiver presente, a função não faz nada. Se o dado 
+		estiver presente várias vezes na lista, todos os elementos correspondentes serão removidos. A função recebe como parâmetro o endereço 
+		do ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser removido, aqui denominado <i>chave</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/RemoveListaFS/RemoveListaFS.c', 'tirateima/listasFS/RemoveListaFS/RemoveListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> g) Remoção de toda a lista  </b></p>
+		
+		<p>Esta operação consiste em desfazer totalmente uma lista, removendo todos os elementos, um a um, começando pelo início da lista. A função 
+		recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Destrói lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFS/DestroiListaFS/DestroiListaFS.c', 'tirateima/listasFS/DestroiListaFS/DestroiListaFS.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<!-- ****************************************************************** -->
+		
+		<h4> 2.4.4  Listas Fechadas com Encadeamento Duplo </h4>
+		
+		<p><b> a) Construção com inserção dos elementos no início da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no começo da lista. Dessa forma, a ordem dos elementos na lista fica invertida em relação 
+		à ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.	</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no início da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/ConstroiListaFD/ConstroiListaFD.c', 'tirateima/listasFD/ConstroiListaFD/ConstroiListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> b) Construção com inserção dos elementos no final da lista </b></p>
+		
+		<p>Neste caso, cada dado lido do arquivo é inserido no final da lista. Dessa forma, a ordem dos elementos na lista fica idêntica à 
+		ordem original do arquivo. A função recebe como parâmetro o endereço do ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Construção com inserção no final da lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/ConstroiListaFD1/ConstroiListaFD1.c', 'tirateima/listasFD/ConstroiListaFD1/ConstroiListaFD1.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> c) Percurso por todos os elementos da lista </b></p>
+		
+		<p>Esta operação consiste em caminhar por todos os elementos da lista, realizando alguma ação em cada um. Neste exemplo a ação consiste em 
+		escrever o dado na tela. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Caminha na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/PercorreListaFD/PercorreListaFD.c', 'tirateima/listasFD/PercorreListaFD/PercorreListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> d) Procura de um dado na lista </b></p>
+		
+		<p>Esta operação consiste na procura de um determinado dado na lista. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início 
+		da lista, e o dado a ser procurado, denominado aqui de <i>chave</i>, e retorna um ponteiro apontando para o elemento que contem o dado. Se o dado 
+		procurado não estiver presente na lista, a função retorna o valor NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/ProcuraListaFD/ProcuraListaFD.c', 'tirateima/listasFD/ProcuraListaFD/ProcuraListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> e) Inserção de um dado em uma lista ordenada </b></p>
+		
+		<p>Esta operação consiste em inserir um novo dado na lista, no lugar que lhe corresponda. No exemplo a lista está ordenada em ordem 
+		crescente. A função recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser inserido, denominado 
+		aqui de <i>dadonovo</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Insere dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/InsereListaFD/InsereListaFD.c', 'tirateima/listasFD/InsereListaFD/InsereListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> f) Remoção de um dado de uma lista  </b></p>
+		
+		<p>Esta operação consiste em remover um determinado dado da lista. Se o dado não estiver presente, a função não faz nada. Se o dado 
+		estiver presente várias vezes na lista, todos os elementos correspondentes serão removidos. A função recebe como parâmetro o endereço 
+		do ponteiro <i>pinicio</i>, que aponta para o início da lista, e o dado a ser removido, aqui denominado <i>chave</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Remove dado na lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/RemoveListaFD/RemoveListaFD.c', 'tirateima/listasFD/RemoveListaFD/RemoveListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b> g) Remoção de toda a lista  </b></p>
+		
+		<p>Esta operação consiste em desfazer totalmente uma lista, removendo todos os elementos, um a um, começando pelo início da lista. A função 
+		recebe como parâmetro o ponteiro <i>pinicio</i>, que aponta para o início da lista.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Destrói lista" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/listasFD/DestroiListaFD/DestroiListaFD.c', 'tirateima/listasFD/DestroiListaFD/DestroiListaFD.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+	</div>
+
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar" 
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

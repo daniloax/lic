@@ -1,0 +1,284 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(900,500) ListaDuplamenteEncadeada;
+
+	adicionaNoLista lista1 no1 "D" posicao(150,150);
+	adicionaNoLista lista1 no2 "A" posicao(300,150);
+	adicionaNoLista lista1 no3 "C" posicao(450,150);
+	adicionaNoLista lista1 no4 "B" posicao(600,150);
+	
+	
+	ligaNoLista lista1 no1 no2 "" acima;
+	ligaNoLista lista1 no2 no3 "" acima;
+	ligaNoLista lista1 no3 no4 "" acima;
+	
+	ligaNoLista lista1 no2 no1 "" abaixo;
+	ligaNoLista lista1 no3 no2 "" abaixo;
+	ligaNoLista lista1 no4 no3 "" abaixo;
+	
+  	adicionaPonteiroLista lista1 no1 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+	adicionaPonteiroSoloLista lista1 no 5 "" cor(0,0,0) posicao(662,175);
+	adicionaPonteiroSoloLista lista1 po 5 "" cor(0,0,0) posicao(152,175);
+  }
+
+2;
+4;
+5 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+6;
+7 adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) acimaDireita;
+8;
+9;
+10;
+11{
+	criaSetaLivreLista lista1 lig13c "" posicoes[(220,165)(240,165)(240,70)(425,70)(425,155)(450,155)] cor(0,0,0);
+	removeLigacaoLista lista1 no1 no2;
+  }
+12{
+	removeLigacaoLista lista1 no2 no1;
+	adicionaPonteiroSoloLista lista1 poo 5 "" cor(0,0,0) posicao(302,175);
+  }
+13;
+14{
+	criaSetaLivreLista lista1 lig31b "" posicoes[(450,190)(430,190)(430,270)(240,270)(240,190)(220,190)] cor(0,0,0);
+	removeLigacaoLista lista1 no3 no2;
+  }
+15;
+17{
+	removeLigacaoLista lista1 no2 no3;
+	criaSetaLivreLista lista1 lig21c "" posicoes[(370,165)(390,165)(390,60)(130,60)(130,155)(150,155)] cor(0,0,0);
+  }
+18{
+	removePonteiroSoloLista lista1 po;
+	criaSetaLivreLista lista1 lig12b "" posicoes[(150,190)(130,190)(130,290)(390,290)(390,190)(370,190)] cor(0,0,0);
+  }
+19;
+20{
+	removePonteiroLista lista1 no1 acimaEsquerda;
+	adicionaPonteiroLista lista1 no2 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+  }
+21 adicionaPonteiroLista lista1 no1 70 "paux" cor(128,0,128) acimaEsquerda;
+22{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) abaixoEsquerda;
+  }
+23{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p2" cor(0,0,191) acimaDireita;
+	removePonteiroLista lista1 no2 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+24;
+44;
+45{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) acimaDireita;
+  }
+46;
+
+8;
+9;
+45{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) acimaDireita;
+  }
+46;
+
+8;
+9;
+45{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroSoloLista lista1 po 5 "p2" cor(0,0,191) posicao(682,175);
+  }
+46;
+
+8;
+47{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  }
+48;
+
+6;
+7{
+	removePonteiroSoloLista lista1 po;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) acimaDireita;
+  }
+8;
+9;
+10;
+11{
+	removeSetaLivreLista lista1 lig13c;
+	criaSetaLivreLista lista1 lig14c "" posicoes[(220,165)(240,165)(240,70)(575,70)(575,155)(600,155)] cor(0,0,0);
+  }
+12{
+	removeSetaLivreLista lista1 lig31b;
+	ligaNoLista lista1 no3 no2 "" abaixo;
+  }
+13;
+14{
+	removeLigacaoLista lista1 no4 no3;
+	criaSetaLivreLista lista1 lig41b "" posicoes[(600,190)(580,190)(580,270)(240,270)(240,190)(220,190)] cor(0,0,0);
+  }
+15;
+16{
+	removeSetaLivreLista lista1 lig21c;
+	ligaNoLista lista1 no2 no3 "" acima;
+  }
+17{
+	removeLigacaoLista lista1 no3 no4;
+	criaSetaLivreLista lista1 lig31c "" posicoes[(520,155)(540,155)(540,60)(130,60)(130,155)(150,155)] cor(0,0,0);
+  }
+18{
+	removeSetaLivreLista lista1 lig12b;
+	criaSetaLivreLista lista1 lig13b "" posicoes[(150,185)(130,185)(130,290)(540,290)(540,190)(520,190)] cor(0,0,0);
+  }
+19;
+21;
+22{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaEsquerda;
+  }
+23{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p2" cor(0,0,191) acimaDireita;
+	removePonteiroLista lista1 no3 acimaEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+24;
+44;
+45{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) acimaEsquerda;
+  }
+46;
+
+8;
+9;
+10;
+25;
+26{
+	removeSetaLivreLista lista1 lig14c;
+	criaSetaLivreLista lista1 lig13c "" posicoes[(220,165)(240,165)(240,70)(425,70)(425,155)(450,155)] cor(0,0,0);
+  }
+27{
+	removeSetaLivreLista lista1 lig13b;
+	criaSetaLivreLista lista1 lig14b "" posicoes[(150,190)(130,190)(130,290)(690,290)(690,190)(670,190)] cor(0,0,0);
+  }
+28;
+30;
+31{
+	removeLigacaoLista lista1 no2 no3;
+	criaSetaLivreLista lista1 lig24c "" posicoes[(370,165)(390,165)(390,65)(580,65)(580,165)(600,165)] cor(0,0,0);
+  }
+32{
+	removePonteiroLista lista1 no1 acimaEsquerda;
+	adicionaPonteiroLista lista1 no2 70 "paux" cor(128,0,128) acimaDireita;
+  }
+33{
+	removeLigacaoLista lista1 no3 no2;
+	criaSetaLivreLista lista1 lig31b "" posicoes[(450,190)(430,190)(430,280)(255,280)(255,175)(220,175)] cor(0,0,0);
+  }
+34{
+	removeSetaLivreLista lista1 lig41b;
+	criaSetaLivreLista lista1 lig42b "" posicoes[(600,190)(580,190)(580,270)(390,270)(390,190)(370,190)] cor(0,0,0);
+  }
+35{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "paux" cor(128,0,128) acimaEsquerda;
+  }
+36{
+	removeSetaLivreLista lista1 lig31c;
+	adicionaPonteiroSoloLista lista1 pooo 5 "" cor(0,0,0) posicao(512,175);
+  }
+37{
+	removePonteiroSoloLista lista1 no;
+	criaSetaLivreLista lista1 lig41c "" posicoes[(670,165)(690,165)(690,55)(130,55)(130,165)(150,165)] cor(0,0,0);
+  }
+38;
+40{
+	removePonteiroLista lista1 no1 acimaEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "paux" cor(128,0,128) acimaEsquerda;
+  }
+41{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) acimaDireita;
+  }
+42{
+	removePonteiroLista lista1 no4 acimaEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) acimaDireita;
+  }
+43;
+44;
+45{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroSoloLista lista1 no 5 "p2" cor(0,0,191) posicao(532,175);
+  }
+46;
+
+8;
+47{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  }
+48;
+
+6;
+7{
+	removePonteiroSoloLista lista1 no;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) acimaDireita;
+  }
+8;
+9;
+10;
+11{
+	removeSetaLivreLista lista1 lig13c;
+	adicionaPonteiroSoloLista lista1 po 5 "" cor(0,0,0) posicao(212,175);
+  }
+12{
+	removeSetaLivreLista lista1 lig31b;
+	criaSetaLivreLista lista1 lig34b "" posicoes[(450,190)(430,190)(430,280)(700,280)(700,180)(670,180)] cor(0,0,0);
+  }
+13;
+15;
+16{
+	removeSetaLivreLista lista1 lig41c;
+	criaSetaLivreLista lista1 lig43c "" posicoes[(670,165)(690,165)(690,55)(430,55)(430,165)(450,165)] cor(0,0,0);
+  }
+17{
+	removePonteiroSoloLista lista1 pooo;
+	criaSetaLivreLista lista1 lig31c "" posicoes[(520,155)(540,155)(540,60)(130,60)(130,155)(150,155)] cor(0,0,0);
+  }
+18{
+	removeSetaLivreLista lista1 lig14b;
+	criaSetaLivreLista lista1 lig13b "" posicoes[(150,185)(130,185)(130,290)(540,290)(540,190)(520,190)] cor(0,0,0);
+  }
+19;
+21{
+	removePonteiroLista lista1 no3 acimaEsquerda;
+	adicionaPonteiroLista lista1 no1 70 "paux" cor(128,0,128) acimaEsquerda;
+  }
+22{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaEsquerda;
+  } 
+23{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p2" cor(0,0,191) acimaDireita;
+  }
+24;
+44;
+45{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroSoloLista lista1 noo 5 "p2" cor(0,0,191) posicao(232,175);
+  }
+46;
+
+8;
+47{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  } 
+48;
+
+6;
+49;
+50;

@@ -1,0 +1,153 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Árvores - Árvores Binárias de Pesquisa </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="pesquisa">
+		<h4> 4.4 Árvores Binárias de Pesquisa </h4>
+		
+		
+		<p>Árvores binárias de pesquisa são árvores binárias nas quais os dados são distribuídos de forma a facilitar a pesquisa de um 
+		determinado elemento.</p>
+
+		<p><b>4.4.1 Conceitos Básicos</b></p>
+
+		<p>Para tornar a pesquisa mais eficiente, na árvore binária de pesquisa adota-se a seguinte estratégia para a distribuição dos 
+		dados: em qualquer sub-árvore, todos os elementos situados à esquerda da raiz são menores que o elemento da raiz, e todos os situados à direita 
+		da raiz são maiores que o da raiz.</p>
+		
+		<img src="imagens/pesquisa.png"><br>
+		
+		<p>Com essa distribuição, a pesquisa de um elemento qualquer fica bem mais eficiente. Em qualquer nível, verifica-se a raiz: se o elemento 
+		for menor que o da raiz procura-se na sub-árvore da esquerda, se for maior, procura-se na sub-árvore da direita. Mas nunca é necessário 
+		procurar nas duas sub-árvores, como foi feito no algoritmo de procura em árvores binárias comuns, visto anteriormente. Para que esta 
+		estratégia seja eficiente é necessário que, em cada nível, a altura da sub-árvore da esquerda não seja muito diferente da altura da 
+		sub-árvore da direita. Mas este é um assunto que será tratado no próximo tópico, balanceamento de árvores binárias.</p>
+
+		<p><b>4.4.2 Implementação</b></p>
+
+		<p>Na implementação das árvores binárias de pesquisa utilizaremos a mesma estrutura de dados utilizada para árvores binárias comuns, vista 
+		anteriormente:</p>
+
+		<FONT face= "Courier New" size=2>
+			typedef struct nodo {<br>
+			&nbsp; char dado;<br>
+			&nbsp; struct nodo *esq, *dir;<br>
+			} arvore ;<br>
+			<br><br>
+		</FONT> 
+
+		<p><b>4.4.3 Algoritmos Básicos</b></p>
+
+		<p>Abaixo são examinados alguns dos algoritmos básicos que utilizam árvores binárias de pesquisa.</p>
+
+		<p><b>a) Construção de uma árvore binária de pesquisa</b></p>
+
+		<p>A construção de uma árvore binária de pesquisa pode ser feita utilizando o mesmo algoritmo visto para a construção de árvores binárias 
+		comuns, desde que o arquivo seja previamente preparado. Por exemplo, para a árvore binária utilizada como exemplo anteriormente, o arquivo 
+		deveria ser formado do seguinte modo:</p>
+		
+		<img src="imagens/constroi_pesquisa.png"><br>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Constrói árvore de pesquisa" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ConstroiPesquisaBinaria.c', 'tirateima/ConstroiPesquisaBinaria.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+
+		<p><b>b) Procura de um elemento em uma árvore binária de pesquisa </b></p>
+
+		<p>Dada a estratégia de distribuição dos elementos na árvore binária de pesquisa, não é necessário que a procura de um elemento 
+		seja recursiva. O ponteiro local <i>a1</i> não percorre todos os ramos da árvore, mas desce diretamente pelo ramo onde o elemento 
+		pode estar. Se estiver presente, a função retorna um ponteiro apontando para ele. Se estiver ausente, a função retorna NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Procura em árvore de pesquisa" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ProcuraPesquisaBinaria.c', 'tirateima/ProcuraPesquisaBinaria.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>c) Inserção de um elemento em uma árvore binária de pesquisa</b></p>
+		
+		<p>Esta função insere o elemento <i>dadonovo</i> na árvore, mantendo a disposição dos dados de forma que a árvore continue a ser binária de 
+		pesquisa.</p>
+		
+		<p>Há uma procura pelo elemento <i>dadonovo</i><b> </b>na árvore, através da função <i>ProcuraComAnt2</i>, que é uma nova versão da 
+		<i>ProcuraComAnt</i> vista anteriormente. Nesta versão, se o dado procurado estiver ausente, o ponteiro <i>*eant</i> não é feito NULL, 
+		mas aponta para o nó que seria o pai do nó procurado, se ele estivesse presente. Ou seja, os ponteiros <i>a1</i> e <i>ant</i> vão descendo 
+		pela árvore, sem uso de recursividade, à procura do elemento <i>dadonovo. </i>Se <i>dadonovo </i>não está presente, a função retorna NULL, 
+		mas o ponteiro <i>ant</i> fica parado no último nó pesquisado, anterior ao local onde deve ser inserido o <i>dadonovo.</i></p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="ProcuraComAnt2" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ProcuraComAnt2.c', 'tirateima/ProcuraComAnt2.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<INPUT type="button" value="Insere" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Insere.c', 'tirateima/Insere.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p><b>d) Remoção de um elemento de uma árvore binária de pesquisa</b></p>
+		
+		<img src="imagens/remover_pesquisa.png"><br>
+		
+		<p>A remoção de um nó de uma árvore binária de pesquisa deve ser efetuada com cuidado, para que os nós que permanecem na árvore continuem 
+		distribuídos de acordo com a mesma estratégia que permite a pesquisa binária. Para isso, devem ser analisados três casos:</p>
+		
+		<p>a) O nó a ser retirado é uma folha, isto é, não tem filhos. Neste caso o nó é simplesmente retirado, como por exemplo, o nó G da figura abaixo.</p>
+		
+		<p>b) O nó a ser retirado tem apenas um filho. Neste caso o nó é retirado e em seu lugar é colocada a raiz da sua única sub-árvore. Na figura 
+		abaixo, o nó retirado é o E, cujo lugar vai ser ocupado pelo nó C.</p>
+		
+		<p>c) O nó a ser retirado tem dois filhos. Neste caso, não se retira o nó desejado, mas altera-se o seu conteúdo. Por exemplo, na figura, 
+		se o nó desejado é o B, altera-se o seu conteúdo para o nó seguinte na ordem, que é o C, e em seguida remove-se o nó que continha originalmente 
+		o valor C. Para determinar o nó seguinte a outro, caminha-se para a sub-árvore da direita do nó original, e em seguida desce-se sempre à esquerda, 
+		até encontrar o nó que não tenha filhos à esquerda.</p>
+		
+		<img src="imagens/removendo_pesquisa.png"><br>
+		
+		<p>A função <i>RetiraNo</i> utiliza a função <i>ProcuraComAnt2</i>, que retorna um ponteiro para o nó procurado e informa qual é o nó pai do 
+		nó procurado.</p>
+		
+		<p>A função <i>RetiraNo</i> verifica se o nó procurado tem alguma sub-árvore vazia (essa situação corresponde aos casos 
+		<span style="text-decoration: underline;">a</span> ou <span style="text-decoration: underline;">b</span> vistos anteriormente, e são 
+		resolvidas diretamente). Caso o nó procurado tenha dois filhos, a função <i>RetiraNo</i> executa a operação prevista no caso 
+		<span style="text-decoration: underline;">c</span>, e é usada recursivamente para eliminar o nó correspondente.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="RetiraNo" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/RetiraNo.c', 'tirateima/RetiraNo.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<br><br><br><br>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

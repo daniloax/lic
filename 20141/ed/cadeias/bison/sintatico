@@ -1,0 +1,32 @@
+/* Verificando a sintaxe de expressoes */
+%{
+#include <stdio.h> 
+%}
+%%
+input:    /* empty */
+        | input line
+;
+line:     '\n'
+        | exp '\n'	{printf("expressao ok!\n");}
+;
+exp:	exp '+' exp
+	| exp '*' exp
+	| exp '/' exp
+	|'(' exp ')'
+	|'[' exp ']'
+	|'{' exp '}'
+	| var
+;
+var:	'A'|'B'|'C'|'D'|'E'|'F'|'G'|'H'|'I'
+;
+%%
+main ()
+{
+	yyparse ();
+}
+yyerror (s) /* Called by yyparse on error */
+	char *s;
+{
+	printf ("expressao nok!\n", s);
+}
+

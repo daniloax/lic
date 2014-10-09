@@ -1,0 +1,109 @@
+1{
+	int n cor(0,183,0) tamanho(60,30) posicao(120,50);
+	n = 4;
+  }
+2;
+3{
+	int fib cor(128,0,255) tamanho(60,30) posicao(250,50);
+	int x cor(172,89,255) tamanho(60,30) posicao(380,50);
+  }
+5 criaPilha p1 cor(197,37,14) posicao(250,150) tamanho(70,200) cor(255,200,145) 5;
+6 push p1 "4";
+7 fib = 0;
+8;
+9{
+	x = 4;
+	pop p1;
+ }
+10;
+12;
+13 push p1 "3";
+14 push p1 "2";
+15;
+16;
+
+8;
+9{
+	x = 2;
+	pop p1;
+ }10;
+12;
+13 push p1 "1";
+14 push p1 "0";
+15;
+16;
+ 
+8;
+9{
+	x = 0;
+	pop p1;
+ }
+10;
+11 fib = 1;
+16;
+
+8;
+9{
+	x = 1;
+	pop p1;
+ }
+10;
+11 fib = 2;
+16;
+
+8;
+9{
+	x = 3;
+	pop p1;
+ }10;
+12;
+13 push p1 "2";
+14 push p1 "1";
+15;
+16;
+
+8;
+9{
+	x = 1;
+	pop p1;
+ }
+10;
+11 fib = 3;
+16;
+
+
+8;
+9{
+	x = 2;
+	pop p1;
+ }10;
+12;
+13 push p1 "1";
+14 push p1 "0";
+15;
+16;
+ 
+8;
+9{
+	x = 0;
+	pop p1;
+ }
+10;
+11 fib = 4;
+16;
+
+8;
+9{
+	x = 1;
+	pop p1;
+ }
+10;
+11 fib = 5;
+16;
+
+8;
+17{
+	comenta("A função retornará o valor 5.");
+#	som();
+  }
+18;

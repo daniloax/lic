@@ -1,0 +1,506 @@
+1{
+	char origem cor(128,0,255) tamanho(60,30) posicao(150,50);
+	char destino cor(0,183,0) tamanho(60,30) posicao(280,50);
+	char auxiliar cor(172,89,255) tamanho(60,30) posicao(410,50);
+	int n cor(0,198,50) tamanho(60,30) posicao(550,50);
+	
+	n = 3;
+	origem = 'A';
+	destino = 'B';
+	auxiliar = 'C';
+  }
+2;
+3;
+4;
+5;
+6;
+7;
+8;
+
+38 criaPilha pilha1 cor(13,22,142) posicao(200,200) tamanho(60,220) cor(255,200,145) 5;
+39;
+
+11;
+12;
+13;
+14{
+	criaListaEncadeada lista1 tamanho(30,80) cor(255,219,183) posicao(261,200) tamanho(350,350) ListaSimples;
+	adicionaNoLista lista1 no1 "" posicao(100,185);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no1 "A" posicao(100,185);
+16 adicionaNoLista lista1 no1 "A | B" posicao(100,185);
+17 adicionaNoLista lista1 no1 "A | B | C" posicao(100,185);
+18 adicionaNoLista lista1 no1 "A | B | C | 3" posicao(100,185);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig1 "" posicoes[(0,200)(100,200)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig1;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'B';
+31 auxiliar = 'C';
+32 n = 3;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no1;
+  }
+34;
+
+42;
+44;
+45;  
+
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no1 "" posicao(100,185);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no1 "C" posicao(100,185);
+16 adicionaNoLista lista1 no1 "C | B" posicao(100,185);
+17 adicionaNoLista lista1 no1 "C | B | A" posicao(100,185);
+18 adicionaNoLista lista1 no1 "C | B | A | 2" posicao(100,185);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig1 "" posicoes[(0,200)(100,200)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+46;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no2 "" posicao(100,145);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,170)(181,170)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no2 "A" posicao(100,145);
+16 adicionaNoLista lista1 no2 "A | B" posicao(100,145);
+17 adicionaNoLista lista1 no2 "A | B | C" posicao(100,145);
+18 adicionaNoLista lista1 no2 "A | B | C | 1" posicao(100,145);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,155)(181,155)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig2 "" posicoes[(0,155)(100,155)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+47;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no3 "" posicao(100,100);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no3 "A" posicao(100,100);
+16 adicionaNoLista lista1 no3 "A | C" posicao(100,100);
+17 adicionaNoLista lista1 no3 "A | C | B" posicao(100,100);
+18 adicionaNoLista lista1 no3 "A | C | B | 2" posicao(100,100);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig3 "" posicoes[(0,115)(100,115)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+48;
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig3;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'C';
+31 auxiliar = 'B';
+32 n = 2;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no3;
+  }
+34;
+
+42;
+44;
+
+45;  
+
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no3 "" posicao(100,100);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no3 "B" posicao(100,100);
+16 adicionaNoLista lista1 no3 "B | C" posicao(100,100);
+17 adicionaNoLista lista1 no3 "B | C | A" posicao(100,100);
+18 adicionaNoLista lista1 no3 "B | C | A | 1" posicao(100,100);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig3 "" posicoes[(0,115)(100,115)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+46;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no4 "" posicao(100,60);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,85)(181,85)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no4 "A" posicao(100,60);
+16 adicionaNoLista lista1 no4 "A | C" posicao(100,60);
+17 adicionaNoLista lista1 no4 "A | C | B" posicao(100,60);
+18 adicionaNoLista lista1 no4 "A | C | B | 1" posicao(100,60);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,70)(181,70)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig4 "" posicoes[(0,75)(100,75)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+47;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no5 "" posicao(100,20);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,45)(181,45)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no5 "A" posicao(100,20);
+16 adicionaNoLista lista1 no5 "A | B" posicao(100,20);
+17 adicionaNoLista lista1 no5 "A | B | C" posicao(100,20);
+18 adicionaNoLista lista1 no5 "A | B | C | 1" posicao(100,20);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,30)(181,30)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig5 "" posicoes[(0,35)(100,35)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+48;
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig5;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,30)(181,30)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,45)(181,45)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'B';
+31 auxiliar = 'C';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no5;
+  }
+34;
+
+42;
+43 writeln("movimento de A para B");
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig4;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,70)(181,70)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,85)(181,85)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'C';
+31 auxiliar = 'B';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no4;
+  }
+34;
+
+42;
+43 writeln("movimento de A para C");
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig3;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+29 origem = 'B';
+30 destino = 'C';
+31 auxiliar = 'A';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no3;
+  }
+34;
+
+42;
+43 writeln("movimento de B para C");
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig2;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,155)(181,155)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,170)(181,170)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'B';
+31 auxiliar = 'C';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no2;
+  }
+34;
+
+42;
+43 writeln("movimento de A para B");
+49;
+
+40;
+41;
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig1;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+29 origem = 'C';
+30 destino = 'B';
+31 auxiliar = 'A';
+32 n = 2;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no1;
+  }
+34;
+
+42;
+44;
+45;  
+
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no1 "" posicao(100,185);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no1 "A" posicao(100,185);
+16 adicionaNoLista lista1 no1 "A | B" posicao(100,185);
+17 adicionaNoLista lista1 no1 "A | B | C" posicao(100,185);
+18 adicionaNoLista lista1 no1 "A | B | C | 1" posicao(100,185);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig1 "" posicoes[(0,200)(100,200)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+46;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no2 "" posicao(100,145);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,170)(181,170)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no2 "C" posicao(100,145);
+16 adicionaNoLista lista1 no2 "C | B" posicao(100,145);
+17 adicionaNoLista lista1 no2 "C | B | A" posicao(100,145);
+18 adicionaNoLista lista1 no2 "C | B | A | 1" posicao(100,145);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,155)(181,155)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig2 "" posicoes[(0,155)(100,155)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+47;
+11;
+12;
+13;
+14{
+	adicionaNoLista lista1 no3 "" posicao(100,100);
+	criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+  }
+15 adicionaNoLista lista1 no3 "C" posicao(100,100);
+16 adicionaNoLista lista1 no3 "C | A" posicao(100,100);
+17 adicionaNoLista lista1 no3 "C | A | B" posicao(100,100);
+18 adicionaNoLista lista1 no3 "C | A | B | 1" posicao(100,100);
+19 criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+20{
+	push pilha1 "";
+	criaSetaLivreLista lista1 lig3 "" posicoes[(0,115)(100,115)] cor(0,0,0);
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+  }
+21;
+
+48;
+49;
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig3;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,110)(181,110)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,125)(181,125)] cor(204,0,0);
+29 origem = 'C';
+30 destino = 'A';
+31 auxiliar = 'B';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no3;
+  }
+34;
+
+42;
+43 writeln("movimento de C para A");
+49;
+
+40;
+41;
+
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig2;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,155)(181,155)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,170)(181,170)] cor(204,0,0);
+29 origem = 'C';
+30 destino = 'B';
+31 auxiliar = 'A';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no2;
+  }
+34;
+
+42;
+43 writeln("movimento de C para B");
+49;
+
+40;
+41;
+24;
+25;
+26;
+27{
+	pop pilha1;
+	removeSetaLivreLista lista1 lig1;
+	criaSetaLivreLista lista1 paux2 "paux2" posicoes[(251,195)(181,195)] cor(0,0,191);
+  }
+28 criaSetaLivreLista lista1 paux1 "paux1" posicoes[(251,210)(181,210)] cor(204,0,0);
+29 origem = 'A';
+30 destino = 'B';
+31 auxiliar = 'C';
+32 n = 1;
+33{
+	removeSetaLivreLista lista1 paux1;
+	removeSetaLivreLista lista1 paux2;
+	removeNo lista1 no1;
+  }
+34;
+
+42;
+43 writeln("movimento de A para B");
+49;
+40;
+50;

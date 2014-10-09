@@ -1,0 +1,183 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Listas - Aplicações </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="aplicacoes">
+		<h4> 2.5 Aplicações </h4>
+		
+		<p>Neste tópico serão apresentadas algumas aplicações de listas. Algumas dessas aplicações são apenas algoritmos aplicados 
+		sobre as listas já estudadas nos tópicos anteriores, como é o caso  da <i>ordenação</i>. Outras aplicações são constituídas por 
+		novas formas de construir listas, como é o caso das <i>listas com descritor</i> e das <i>listas ligadas a listas</i>.</p>
+		
+		<h4> 2.5.1 Ordenação dos dados em uma lista sem alterar a estrutura da lista </h4>
+		
+		<p>São apresentados dois exemplos. No primeiro, trocam-se os conteúdos dos elementos na lista, sem alterar a ordem dos elementos da 
+		lista. No segundo trocam-se as posições dos elementos na lista, através da realocação dos ponteiros. Em ambos utiliza-se o algoritmo 
+		de Seleção Direta. </p>
+		
+		<p><b> Exemplo 1 </b></p>
+		
+		<p>Neste caso, trocam-se os conteúdos dos elementos na lista, sem alterar a ordem dos elementos na lista. Se os dados de 
+		cada elemento da lista não ocupam muita memória, este algoritmo é mais adequado. No exemplo, a lista é aberta com encadeamento 
+		simples. No caso o ponteiro <b>p1</b> ocupa sempre a posição em que será colocado o menor elemento do conjunto ainda desor-denado. O 
+		ponteiro <b>p2</b> percorre esse conjunto, à procura do menor elemento, e <b>p3</b> aponta sempre para o menor elemento encontrado, até que 
+		a varredura termine. Em seguida são tro-cados os dados dos elementos apontados por <b>p1</b>  e <b>p3</b>.</p>
+		
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Ordena Seleção Direta" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/OrdenaSelecaoDireta.c', 'tirateima/malhas/OrdenaSelecaoDireta.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+	
+		
+		<p><b> Exemplo 2 </b></p>
+		
+		<p>Neste caso trocam-se as posições dos elementos na lista, através da realocação dos ponteiros. Este algoritmo é mais adequado na 
+		situação em que os dados da lista ocupam muito espaço, tornando computacionalmente a realocação dos ponteiros mais barata que a 
+		troca dos dados. Neste exemplo a lista é fechada com encadeamento duplo.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Ordena Altera Ponteiros" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/OrdenaAlteraPonteiros.c', 'tirateima/malhas/OrdenaAlteraPonteiros.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<h4> 2.5.2  Listas com descritor </h4>
+		
+		<p>As listas com descritor consistem em listas com um elemento especial, que não guarda dados como os outros elementos, mas apenas 
+		facilita o acesso à lista. Alguns algoritmos ficam sim-plificados através desse recurso, que pode ser aplicado a qualquer dos tipos 
+		de listas vistos anteriormente.</p>
+		
+		<p> Apresentamos aqui dois exemplos. No primeiro, o nó descritor é do mesmo tipo que os outros nós da lista, mas não contém dados 
+		(esse nó também é conhecido como "nó bobo"). A simplificação que se consegue em alguns algoritmos decorre da facilidade no tratamento 
+		de elementos da lista colocados em posições especiais, como no começo ou no final da lista. </p>
+		
+		<p>No segundo exemplo, o nó descritor é completamente diferente dos outros nós da lista, po-dendo eventualmente conter outras 
+		informações sobre a lista. No caso, o elemento descritor foi construído com dois ponteiros de acesso à lista: um apontando para 
+		o começo e outro para o final da lista. Desse modo, ficam simplificados os algoritmos que atuam no final da lista.</p>
+		
+		<p><b> Exemplo 1 </b></p>
+		
+		<p>O nó descritor é do mesmo tipo que os outros nós da lista, que é aberta e com encadeamento simples. A função do exemplo faz 
+		a inserção de um novo elemento no início da lista. Tenha em conta que neste caso, uma lista vazia é formada pelo “nó bobo”; 
+		portanto <i>pinicio</i> não é NULL.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Insere lista nó bobo" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/InsereListaNoBobo.c', 'tirateima/malhas/InsereListaNoBobo.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Percorre lista nó bobo" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/PercorreListaNoBobo.c', 'tirateima/malhas/PercorreListaNoBobo.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<p><b> Exemplo 2 </b></p>
+		
+		<p>O nó descritor neste caso é um elemento diferente dos outros elementos da lista. Ele contém apenas dois ponteiros, um 
+		apontando para o primeiro elemento da lista e o outro apontando para o último. A lista é aberta e com encadeamento simples. 
+		A função faz a construção da lista inserindo os elementos no final.</p>
+		
+		<FONT face= "Courier New" size=2>
+		
+			typedef struct elemento {<br>
+			  &nbsp;  char dado;<br>
+			  &nbsp;  struct elemento *prox;<br>
+			} listaS;<br><br>
+
+			typedef struct descritor {<br>
+			  &nbsp;  struct elemento *acessoinicio, *acessofim;<br>
+			} listaDesc;<br><br>
+		
+		</FONT> 
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Constrói lista com descritor" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/ConstroiListaDesc.c', 'tirateima/malhas/ConstroiListaDesc.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Percorre lista com descritor" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/PercorreListaDesc.c', 'tirateima/malhas/PercorreListaDesc.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+					
+		
+		<h4> 2.5.3  Listas ligadas a listas </h4>
+		
+		<p>Há situações em que, em cada elemento de uma lista, um dos campos é um ponteiro que dá acesso a outra lista. A estrutura 
+		assim formada já não é uma lista, mas um conjunto de listas ligadas a outra lista.</p>
+		
+		<p>Neste exemplo, a primeira lista é formada por elementos que identificam centrais telefônicas, através de letras (A, B, C ...). 
+		A cada central telefônica está ligada uma lista formada por elementos que identificam números de telefone (110,  111, ...). O 
+		algoritmo usado como exemplo faz a montagem de toda a estrutura a partir de um arquivo <i>text</i>.</p>
+		
+		<p>O arquivo contém, em cada linha, a letra identificadora da central, seguida por um número inteiro que indica quantos 
+		telefones existem nessa central, e em seguida os números dos telefones correspondentes. Note que a quantidade de telefones 
+		em cada central é variável (po-dendo ser também nula). O acesso a toda a estrutura é feito através de um único ponteiro 
+		(<b>pacesso</b>), que aponta para o início da lista de centrais. O acesso às listas de telefones é feito, para cada central, 
+		através do ponteiro que aponta para a lista de telefones correspondente a essa central.</p>
+		
+		<FONT face= "Courier New" size=2>
+		
+			typedef struct elem_fone {<br>
+			  &nbsp;  int fone;<br>
+			  &nbsp;  struct elem_fone *proxf;<br>
+			} fone;<br><br>
+
+			typedef struct elem_central {<br>
+			  &nbsp;  char central;<br>
+			  &nbsp;  struct elem_central *proxc;<br>
+			  &nbsp;  fone *pfone;<br>
+			} central;<br><br>
+	
+		</FONT>
+		
+		<INPUT type="button" value="Constrói malha" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/ConstroiMalha.c', 'tirateima/malhas/ConstroiMalha.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<p> </p>
+		<INPUT type="button" value="Percorre malha" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/malhas/PercorreMalha.c', 'tirateima/malhas/PercorreMalha.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+			
+		
+	
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

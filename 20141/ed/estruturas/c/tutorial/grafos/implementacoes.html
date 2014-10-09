@@ -1,0 +1,74 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Grafos - Implementações </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="implementacoes">
+		<h4> 5.3 Implementações </h4>
+		
+		<p>Em aplicações simples, é usual representar-se um grafo através de uma matriz de adjacências. É uma matriz na qual as linhas 
+		representam os nós de onde saem os arcos, e as colunas repre-sentam os nós aos quais chegam os arcos. Assim, cada elemento genérico 
+		da matriz, m[i,j], será 1 se existe um arco ligando o nó i ao nó j, e será 0 em caso contrário (no desenho abaixo o 0 foi substituído 
+		por F (false) e o 1 foi substituído por T (true)).</p>
+		<img src="imagens/implementacoes1.png">
+		<p> Para aplicações genéricas, convém usar uma estrutura dinâmica. A forma mais adequada consiste em uma lista em que cada elemento 
+		corresponde a um nó, e está ligado a outra lista, cujos elementos contêm ponteiros para os nós adjacentes a ele. A estrutura pode ser 
+		definida do seguinte modo: </p>
+		<FONT face= "Courier New" size=2>
+			typedef struct elementoarco {<br>
+			&nbsp;  int valorarco;<br>
+			&nbsp;  int usado;<br>
+			&nbsp;  struct elementoarco *proxarco;<br>
+			&nbsp;  struct elementono *padj;<br>
+			} arco;<br><br>
+
+			typedef struct elementono {<br>
+			&nbsp;  char dado;<br>
+			&nbsp;  int valorno;<br>
+			&nbsp;  int usado;<br>
+			&nbsp;  struct elementono *proxno;<br>
+			&nbsp;  struct elementoarco *pacessoarco;<br>
+			} no;<br>
+		</FONT> 
+		<p> no ginicio; </p>
+		<p>Nessa estrutura, <i>ginicio</i> é a variável que dá acesso ao grafo, apontando para o início da lista de nós. Os nós e os 
+		arcos contêm valores, que estão indicados nos campos <i>valorno</i> e <i>valorarco</i>, que <b>não</b> estão representados na figura abaixo. 
+		Ainda nessa estrutura também há dois campos com o nome <i>usado</i>, um para cada os nós e outro para os arcos. </p>
+		<p>Se o grafo representado for não dirigido, sempre que houver um ponteiro indicando a ligação de um nó A a um nó B, deverá haver também 
+		um ponteiro indicando a ligação de B a A.</p>
+		<img src="imagens/implementacoes2.png">
+		<p> Para armazenar os dados de um grafo em um arquivo, sugere-se um padrão parecido ao utilizado para listas ligadas a listas. Por exemplo, 
+		para o grafo da figura abaixo, o arquivo pode ter a forma indicada abaixo também: </p>
+		<img src="imagens/implementacoes3.png">
+		<p> arquivo:</p>
+		<p>
+			A B C D E F<br>
+			A 100 2 B 1 D 5<br>
+			B 50 2 C 3 E 4<br>
+			C 150 1 F 2<br>
+			D 150 1 E 4<br>
+			E 100 1 F 1<br>
+			F 200 0
+		</p>
+		<p>Na primeira linha, há uma relação completa de todos os nós. No restante do arquivo, há uma linha para cada nó, com os seguintes campos:</p>
+		<p>	&lt;nó> &lt;valor do nó> &lt;número de nós adjacentes>	&lt;nó adjacente1>	&lt;valor do arco para o nó adjacente 1> &lt;nó adjacente2> 
+			&lt;valor do arco para o nó adjacente 2> ...</p>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

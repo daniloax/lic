@@ -1,0 +1,43 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Grafos - Conceitos Básicos </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="conceitos">
+		<h4> 5.1 Conceitos Básicos </h4>
+		
+		<p>Um grafo é uma estrutura de dados bastante genérica, que engloba todas as estruturas estudadas anteriormente. 
+		É constituído por um conjunto de nós e um conjunto de arcos. Cada arco é especificado por um par de nós. </p>
+		<p>Como exemplo, tomemos o grafo formado pelo conjunto de nós N e pelo conjunto de arcos A:</p>
+		<p>	N = { A, B, C, D, E, F } <br>
+			A =  { (A,B), (B,A), (B,C), (B,D), (C,C), (D,A), (D,C), (E,F) } 
+		</p>
+		<p>Este grafo pode ser representado pela figura abaixo:</p>
+		<img src="imagens/grafo.png">
+		<p> Os grafos podem ser utilizados para representar situações bastante diversas, como por exemplo:<br><br>
+			- um mapa representando um conjunto de cidades ligadas por estradas: pode-se desejar saber qual o menor 
+			caminho para ir de uma cidade a outra, entre outras coisas;<br>
+			- um circuito eletrônico, onde os nós correspondem aos terminais dos dispositivos, e os arcos são os próprios 
+			dispositivos: pode-se desejar saber se um terminal de um dispositivo está liga-do a outro, por exemplo;<br>
+			- um conjunto de tarefas de um projeto, no qual os nós representam as tarefas e os arcos indi-cam as relações 
+			de dependência entre elas (se uma determinada tarefa só pode iniciar depois que uma outra estiver terminada): 
+			pode-se, por exemplo, desejar saber qual o prazo mínimo para execução de todo o projeto.<br><br><br><br>
+		</p>	
+	</div>
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

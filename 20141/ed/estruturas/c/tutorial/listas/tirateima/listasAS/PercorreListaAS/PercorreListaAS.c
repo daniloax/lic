@@ -1,0 +1,13 @@
+void CaminhaListaAS(listaS *pinicio) {
+  listaS *p1;
+
+  if (pinicio == NULL)
+    printf ("lista vazia \n");
+  else {          
+    p1 = pinicio;     
+    while (p1 != NULL) {
+      printf("elemento:  %c \n", p1->dado);
+      p1 = p1->prox;   
+    }
+  }     
+}

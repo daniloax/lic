@@ -1,0 +1,187 @@
+1{ criaGrafo grafo1 25 cor(255,255,220) posicao(0,0) tamanho(250,250);
+   criaGrafo grafo2 30 cor(220,255,255) posicao(270,0) tamanho(600,400);
+
+   adicionaNoGrafo grafo1 no1 "a" posicao(10,100);
+   adicionaNoGrafo grafo1 no2 "b" posicao(100,30);
+   adicionaNoGrafo grafo1 no3 "c" posicao(200,120);
+   adicionaNoGrafo grafo1 no4 "d" posicao(80,220);
+   adicionaNoGrafo grafo1 no5 "e" posicao(180,200);
+
+   ligaNoGrafo grafo1 no1 no2 semSeta;
+   ligaNoGrafo grafo1 no1 no4 semSeta;
+   ligaNoGrafo grafo1 no2 no3 semSeta;
+   ligaNoGrafo grafo1 no2 no4 semSeta;
+   ligaNoGrafo grafo1 no4 no5 semSeta;
+  
+   adicionaNoGrafo grafo2 no1 "a" posicao(80,80);
+   adicionaNoGrafo grafo2 no2 "b" posicao(190,80);
+   adicionaNoGrafo grafo2 no3 "c" posicao(300,80);
+   adicionaNoGrafo grafo2 no4 "d" posicao(410,80);
+   adicionaNoGrafo grafo2 no5 "e" posicao(520,80);
+   adicionaNoGrafo grafo2 no6 "b" posicao(80,160);
+   adicionaNoGrafo grafo2 no7 "a" posicao(190,160);
+   adicionaNoGrafo grafo2 no8 "b" posicao(300,160);
+   adicionaNoGrafo grafo2 no9 "a" posicao(410,160);
+   adicionaNoGrafo grafo2 no10 "d" posicao(520,160);
+   adicionaNoGrafo grafo2 no11 "d" posicao(80,240);
+   adicionaNoGrafo grafo2 no12 "c" posicao(190,240);
+   adicionaNoGrafo grafo2 no13 "b" posicao(410,240);
+   adicionaNoGrafo grafo2 no14 "d" posicao(190,320);
+   adicionaNoGrafo grafo2 no15 "e" posicao(410,320);
+
+   ligaNoGrafo grafo2 no1 no2 semSeta;
+   ligaNoGrafo grafo2 no2 no3 semSeta;
+   ligaNoGrafo grafo2 no3 no4 semSeta;
+   ligaNoGrafo grafo2 no4 no5 semSeta;
+   ligaNoGrafo grafo2 no1 no6 semSeta;
+   ligaNoGrafo grafo2 no6 no11 semSeta;
+   ligaNoGrafo grafo2 no2 no7 semSeta;
+   ligaNoGrafo grafo2 no7 no12 semSeta;
+   ligaNoGrafo grafo2 no12 no14 semSeta;
+   ligaNoGrafo grafo2 no3 no8 semSeta;
+   ligaNoGrafo grafo2 no4 no9 semSeta;
+   ligaNoGrafo grafo2 no9 no13 semSeta;
+   ligaNoGrafo grafo2 no5 no10 semSeta;
+   ligaNoGrafo grafo2 no13 no15 semSeta;
+
+   adicionaPonteiro grafo2 no1 diagonalSupEsq "ginicio" 80 cor(0,128,192);
+} 
+2;
+3;
+4;
+6;
+8;
+9 criaFila fila1 cor(197,37,14) posicao(50,270) tamanho(150,50) cor(255,200,145) 5;
+10 adicionaPonteiro grafo2 no1 diagonalSupDir "pno1" 80 cor(0,128,64);
+11 enfileira fila1 "a";
+12 coloreNoGrafo grafo1 no1 cor(255,0,0);
+13 write ("visita no: a \n");
+14;
+15 desenfileira fila1;
+16 adicionaPonteiro grafo2 no6 diagonalSupEsq "pa1" 60 cor(255,0,0);
+17;
+18;
+19 write ("visita no: b \n");
+20 coloreNoGrafo grafo1 no2 cor(255,0,0);
+21 enfileira fila1 "b";
+22;
+23 movePonteiro grafo2 no6 diagonalSupEsq no11 diagonalSupEsq 60 cor(255,0,0);
+24;
+17;
+18;
+19 write ("visita no: d \n");
+20 coloreNoGrafo grafo1 no4 cor(255,0,0);
+21 enfileira fila1 "d";
+22;
+23{
+	removePonteiro grafo2 no11 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao (95,290);
+  }
+24;
+17;
+25;
+14;
+15{
+	desenfileira fila1;
+	movePonteiro grafo2 no1 diagonalSupDir no2 diagonalSupDir 80 cor(0,128,64);
+  }
+16{
+	removePonteiroSoloGrafo grafo2 no;
+	adicionaPonteiro grafo2 no7 diagonalSupEsq "pa1" 60 cor(255,0,0);
+  }
+17;
+18;
+23 movePonteiro grafo2 no7 diagonalSupEsq no12 diagonalSupEsq 60 cor(255,0,0);
+24;
+17;
+18;
+19 write ("visita no: c \n");
+20 coloreNoGrafo grafo1 no3 cor(255,0,0);
+21 enfileira fila1 "c";
+22;
+23 movePonteiro grafo2 no12 diagonalSupEsq no14 diagonalSupEsq 60 cor(255,0,0);
+24;
+17;
+18;
+23{
+	removePonteiro grafo2 no14 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao(205,370);
+  }
+24;
+17;
+25;
+14;
+15 {
+	movePonteiro grafo2 no2 diagonalSupDir no4 diagonalSupDir 80 cor(0,128,64);
+	desenfileira fila1;
+  }
+16{
+	removePonteiroSoloGrafo grafo2 no;
+	adicionaPonteiro grafo2 no9 diagonalSupEsq "pa1" 60 cor(255,0,0);
+  }
+17;
+18;
+23 movePonteiro grafo2 no9 diagonalSupEsq no13 diagonalSupEsq 60 cor(255,0,0);
+24;
+17;
+18;
+23 movePonteiro grafo2 no13 diagonalSupEsq no15 diagonalSupEsq 60 cor(255,0,0);
+24;
+17;
+18;
+19 write ("visita no: e \n");
+20 coloreNoGrafo grafo1 no5 cor(255,0,0);
+21 enfileira fila1 "e";
+22;
+23{
+	removePonteiro grafo2 no15 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao(425,370);
+  }
+24;
+17;
+25;
+14;
+15{
+	movePonteiro grafo2 no4 diagonalSupDir no3 diagonalSupDir 80 cor(0,128,64);
+	desenfileira fila1;
+  }
+16{
+	removePonteiroSoloGrafo grafo2 no;
+	adicionaPonteiro grafo2 no8 diagonalSupEsq "pa1" 60 cor(255,0,0);
+  }
+17;
+18;
+23{
+	removePonteiro grafo2 no8 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao(315,210);
+  }
+24;
+17;
+25;
+14;
+15{
+	movePonteiro grafo2 no3 diagonalSupDir no5 diagonalSupEsq 80 cor(0,128,64);
+	desenfileira fila1;
+  }
+16{
+	removePonteiroSoloGrafo grafo2 no;
+	adicionaPonteiro grafo2 no10 diagonalSupEsq "pa1" 60 cor(255,0,0);
+  }
+17;
+18;
+23{
+	removePonteiro grafo2 no10 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao(535,210);
+  }
+24;
+17;
+25;
+14;
+26;
+27;
+ 
+
+
+
+ 
+

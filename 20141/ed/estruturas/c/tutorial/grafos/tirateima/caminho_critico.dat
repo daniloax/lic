@@ -1,0 +1,295 @@
+1{	
+   	comenta("O objetivo do código é achar o caminho crítico entre os nós A e D, isto é, o caminho com maior soma dos valores dos arcos. Esta função não está otimizada: ela encontra todos os caminhos entre A e D e escolhe o crítico.");
+#	som();
+
+    criaPilha pilhaatual cor(197,37,14) posicao(50,300) tamanho(70,150) cor(255,200,145) 5;
+   	criaPilha pilhamax cor(13,22,142) posicao(130,300) tamanho(70,150) cor(255,200,145) 5;
+   	criaGrafo grafo1 30 cor(255,255,220) posicao(0,0) tamanho(250,250);
+   	criaGrafo grafo2 30 cor(220,255,255) posicao(280,0) tamanho(600,400);
+
+   	adicionaNoGrafo grafo1 no1 "a" posicao(10,130);
+   	adicionaNoGrafo grafo1 no2 "b" posicao(100,30);
+   	adicionaNoGrafo grafo1 no3 "c" posicao(100,220);
+   	adicionaNoGrafo grafo1 no4 "d" posicao(200,130);
+
+   	ligaNoGrafo grafo1 no1 no2 semSeta "10";
+   	ligaNoGrafo grafo1 no1 no3 semSeta "5";
+   	ligaNoGrafo grafo1 no1 no4 semSeta "30";
+   	ligaNoGrafo grafo1 no2 no4 semSeta "15";
+   	ligaNoGrafo grafo1 no3 no4 semSeta "15";
+   
+   	adicionaNoGrafo grafo2 no1 "a" posicao(90,80);
+   	adicionaNoGrafo grafo2 no2 "b" posicao(210,80);
+   	adicionaNoGrafo grafo2 no3 "c" posicao(330,80);
+   	adicionaNoGrafo grafo2 no4 "d" posicao(450,80);
+   	adicionaNoGrafo grafo2 no5 "b" posicao(90,155);
+   	adicionaNoGrafo grafo2 no6 "a" posicao(210,155);
+   	adicionaNoGrafo grafo2 no7 "a" posicao(330,155);
+   	adicionaNoGrafo grafo2 no8 "a" posicao(450,155);
+   	adicionaNoGrafo grafo2 no9 "c" posicao(90,215);
+   	adicionaNoGrafo grafo2 no10 "d" posicao(210,215);
+   	adicionaNoGrafo grafo2 no11 "d" posicao(330,215);
+   	adicionaNoGrafo grafo2 no12 "b" posicao(450,215);
+   	adicionaNoGrafo grafo2 no13 "d" posicao(90,275);
+   	adicionaNoGrafo grafo2 no14 "c" posicao(450,275);
+   	
+   	ligaNoGrafo grafo2 no1 no2 semSeta;
+   	ligaNoGrafo grafo2 no2 no3 semSeta;
+   	ligaNoGrafo grafo2 no3 no4 semSeta;
+   	ligaNoGrafo grafo2 no1 no5 semSeta;
+   	ligaNoGrafo grafo2 no5 no9 semSeta;
+   	ligaNoGrafo grafo2 no9 no13 semSeta;
+   	ligaNoGrafo grafo2 no2 no6 semSeta;
+   	ligaNoGrafo grafo2 no6 no10 semSeta;
+   	ligaNoGrafo grafo2 no3 no7 semSeta;
+   	ligaNoGrafo grafo2 no7 no11 semSeta;
+   	ligaNoGrafo grafo2 no4 no8 semSeta;
+   	ligaNoGrafo grafo2 no8 no12 semSeta;
+   	ligaNoGrafo grafo2 no12 no14 semSeta;
+   	
+   	adicionaPonteiro grafo2 no1 diagonalSupEsq "p1" 80 cor(0,128,192);
+   	adicionaPonteiro grafo2 no4 diagonalSupEsq "p2" 80 cor(128,0,255);
+   
+   	int valoratual cor(128,128,255) tamanho(60,30) posicao (300,400);
+   	valoratual = 0;
+   	int valormax cor(255,128,0) tamanho(60,30) posicao (370,400);
+   	valormax = 0;
+   
+}
+2;
+3 char c cor(0,157,157) tamanho(60,30) posicao(440,400);
+4;
+6 push pilhaatual "a";
+7 coloreNoGrafo grafo1 no1 cor(255,0,0);
+8 adicionaPonteiro grafo2 no5 diagonalSupEsq "pa1" 65 cor(255,0,0);
+9;
+10;
+29;
+30;
+31 valoratual = 10;
+32;
+
+1 { 
+    	adicionaPonteiro grafo2 no2 diagonalSupEsq "p1'" 80 cor(0,128,192);
+   	comenta("Neste momento a função está entrando no primeiro nível de recursividade.");
+#   som();
+  }
+2;
+3 {
+	removerVariavel c;
+	char c1 cor(0,157,157) tamanho(60,30) posicao(440,400);
+	comenta("Com o nome de c1 está representada a variável local c nesta primeira instância da recursividade");
+#som();	
+}
+4;
+6 push pilhaatual "b";
+7 coloreNoGrafo grafo1 no2 cor(255,0,0);
+8 adicionaPonteiro grafo2 no6 diagonalSupEsq "pa1'" 65 cor(255,0,0);
+9;
+10;
+29;
+30;
+35 movePonteiro grafo2 no6 diagonalSupEsq no10 diagonalSupEsq 65 cor(255,0,0);
+36;
+9;
+10;
+11 push pilhaatual "d";
+12 valoratual = 25;
+13;
+14 valormax = 25;
+15;
+17 criaPilha paux cor(128,128,0) posicao(210,300) tamanho(70,150) cor(255,200,145) 5;
+18;
+19 {pop pilhaatual; push paux "d";}
+18;
+19 {pop pilhaatual; push paux "b";}
+18;
+19 {pop pilhaatual; push paux "a";}
+18;
+20;
+21{
+	c1 = 'a';
+	pop paux;
+  }
+22 push pilhaatual "a";
+23 push pilhamax "a";
+24;
+20;
+21{
+	c1 = 'b';
+	pop paux;
+  }
+22 push pilhaatual "b";
+23 push pilhamax "b";
+24;
+20;
+21{
+	c1 = 'd';
+	pop paux;
+  }
+22 push pilhaatual "d";
+23 push pilhamax "d";
+24;
+20;
+25;
+26{
+	c1 = 'd';
+	pop pilhaatual;
+  }
+27 valoratual = 10;
+28;
+35{
+	removePonteiro grafo2 no10 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1'" cor(255,0,0) posicao(220,265);
+  }
+36;
+9;
+37{
+	c1 = 'b';
+	pop pilhaatual;
+  }
+38 coloreNoGrafo grafo1 no2 cor(255,255,255);
+39;
+32{
+	removePonteiroSoloGrafo grafo2 no;
+	removePonteiro grafo2 no2 diagonalSupEsq;
+	removerVariavel c1;
+	char c cor(0,157,157) tamanho(60,30) posicao(440,400);
+    comenta("Neste momento a função está saindo do primeiro nível de recursividade e voltando à execução da função original. Note que a variável c1 deixa de existir e volta a estar acessível a variável c.");
+# 	som;
+  }
+33 valoratual = 0;
+34;
+35 movePonteiro grafo2 no5 diagonalSupEsq no9 diagonalSupEsq 65 cor(255,0,0);
+36;
+9;
+10;
+29;
+30;
+31 valoratual = 5;
+32;
+
+1 { 
+    	adicionaPonteiro grafo2 no3 diagonalSupEsq "p1'" 80 cor(0,128,192);
+   	comenta("Neste momento a função está entrando no primeiro nível de recursividade.");
+#   som();
+  }
+2;
+3 {
+	removerVariavel c;
+	char c1 cor(0,157,157) tamanho(60,30) posicao(440,400);
+}
+4;
+6 push pilhaatual "c";
+7 coloreNoGrafo grafo1 no3 cor(255,0,0);
+8 adicionaPonteiro grafo2 no7 diagonalSupEsq "pa1'" 65 cor(255,0,0);
+9;
+10;
+29;
+30;
+35 movePonteiro grafo2 no7 diagonalSupEsq no11 diagonalSupEsq 65 cor(255,0,0);
+36;
+9;
+10;
+11 push pilhaatual "d";
+12 valoratual = 20;
+13;
+26{
+	c1 = 'd';
+	pop pilhaatual;
+  }
+27 valoratual = 5;
+28;
+35{
+	removePonteiro grafo2 no11 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1'" cor(255,0,0) posicao(340,265);
+  }
+36;
+9;
+37{
+	c1 = 'c';
+	pop pilhaatual;
+  }
+38 coloreNoGrafo grafo1 no3 cor(255,255,255);
+39;
+32{
+	removePonteiroSoloGrafo grafo2 no;
+	removePonteiro grafo2 no3 diagonalSupEsq;
+	removerVariavel c1;
+	char c cor(0,157,157) tamanho(60,30) posicao(440,400);
+	comenta("Neste momento a função está saindo do primeiro nível de recursividade e voltando à sua execução original."); 
+#	som;
+  }
+33 valoratual = 0;
+34;
+35 movePonteiro grafo2 no9 diagonalSupEsq no13 diagonalSupEsq 65 cor(255,0,0);
+36;
+9;
+10;
+11 push pilhaatual "d";
+12 valoratual = 30;
+13;
+14 valormax = 30;
+15;
+16{
+	c = 'd';
+	pop pilhamax;
+  }
+15;
+16{
+	c = 'b';
+	pop pilhamax;
+  }
+
+15;
+16{
+	c = 'a';
+	pop pilhamax;
+  }
+15;
+17;
+18;
+19{pop pilhaatual; push paux "d";}
+18;
+19{pop pilhaatual; push paux "a";}
+18;
+20;
+21{
+	c = 'a';
+	pop paux;
+  }
+22 push pilhaatual "a";
+23 push pilhamax "a";
+24;
+20;
+21{
+	c = 'd';
+	pop paux;
+  }
+22 push pilhaatual "d";
+23 push pilhamax "d";
+24;
+20;
+25;
+26{
+	c = 'd';
+	pop pilhaatual;
+  }
+27 valoratual = 0;
+28;
+35{
+	removePonteiro grafo2 no13 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1" cor(255,0,0) posicao(100,325);
+  }
+36;
+9;
+37{
+	c = 'a';
+	pop pilhaatual;
+  }
+38 coloreNoGrafo grafo1 no1 cor(255,255,255);
+39 {
+	comenta("Final da execução. Na pilha pilhamax está armazenado o caminho crítico e na variável valormax está o valor desse caminho crítico."); 
+#	som;
+  }
+

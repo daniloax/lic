@@ -1,0 +1,193 @@
+1;
+2;
+3;
+4{
+	char c cor(0,183,0) tamanho(60,30) posicao(120,50);
+	char aux cor(191,128,255) tamanho(60,30) posicao(250,50);
+  }
+5 text arq;
+19 criaPilha p1 cor(13,22,142) posicao(480,150) tamanho(60,230) cor(255,200,145) 7;
+20 criaFila f1 cor(197,37,14) posicao(150,180) tamanho(230,60) cor(255,200,145) 6;
+21{
+   assign (arq, "ConversaoParaPosFixada.txt");
+   reset (arq);
+  }
+22 read(arq,c);
+23;
+24;
+26;
+27;
+32;
+33;
+36 push p1 "(";
+37;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+32;
+33;
+36 push p1 "(";
+37;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+25 enfileira f1 "A";
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+32;
+33;
+34{
+	comenta("A função Prioridade retornará 4 para o valor do topo da pilha e retornará 3 para o valor da variável c.");
+#	som();
+  }
+36 push p1 "+";
+37;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+25 enfileira f1 "B";
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+28;
+29{
+	pop p1;
+	enfileira f1 "+";
+  }
+28;
+30{
+	pop p1;
+	aux = '(';
+  }
+31;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+32;
+33;
+34{
+	comenta("A função Prioridade retornará 4 para o valor do topo da pilha e retornará 2 para o valor da variável c.");
+#	som();
+  }
+36 push p1 "*";
+37;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+25 enfileira f1 "C";
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+28;
+29{
+	pop p1;
+	enfileira f1 "*";
+  }
+30{
+	aux = '(';
+	pop p1;
+  }
+31;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+26;
+27;
+32;
+33;
+36 push p1 "/";
+37;
+38;
+39;
+
+22 read(arq,c);
+23;
+24;
+25 enfileira f1 "D";
+38;
+39;
+
+22;
+40 close(arq);
+41;
+42{
+	pop p1;
+	enfileira f1 "/";
+  }
+41;
+
+43;
+44{
+	write("A");
+	desenfileira f1;
+  }
+43;
+44{
+	write("B");
+	desenfileira f1;
+  }
+43;
+44{
+	write("+");
+	desenfileira f1;
+  }
+43;
+44{
+	write("C");
+	desenfileira f1;
+  }
+43;
+44{
+	write("*");
+	desenfileira f1;
+  }
+43;
+44{
+	write("D");
+	desenfileira f1;
+  }
+43;
+44{
+	write("/");
+	desenfileira f1;
+  }
+43;
+45;

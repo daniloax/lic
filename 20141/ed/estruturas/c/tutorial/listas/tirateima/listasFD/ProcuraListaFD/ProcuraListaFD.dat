@@ -1,0 +1,45 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,500) ListaDuplamenteEncadeada;
+	adicionaNoLista lista1 no1 "B" posicao(35,135);
+	adicionaNoLista lista1 no2 "E" posicao(175,135);
+	adicionaNoLista lista1 no3 "C" posicao(315,135);
+	adicionaNoLista lista1 no4 "L" posicao(455,135);
+	adicionaNoLista lista1 no5 "A" posicao(595,135);
+
+	criaSetaLivreLista lista1 lig12 "" posicoes[(105,170)(175,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig21 "" posicoes[(175,150)(105,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig23 "" posicoes[(245,170)(315,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig32 "" posicoes[(315,150)(245,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig34 "" posicoes[(385,170)(455,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig43 "" posicoes[(455,150)(385,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig45 "" posicoes[(525,170)(595,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig54 "" posicoes[(595,150)(525,150)] cor(0,0,0);	
+	criaSetaLivreLista lista1 lig2 "" posicoes[(35,150)(5,150)(5,260)(692,260)(692,150)(665,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig3 "" posicoes[(665,170)(680,170)(680,230)(17,230)(17,170)(35,170)] cor(0,0,0);
+	adicionaPonteiroLista lista1 no1 70 "pinicio" cor(0,128,0) acimaEsquerda;
+	char chave cor(128,128,192) tamanho(60,30) posicao(530,40);
+  	chave = 'C';
+ }
+2;
+4;
+6;
+7 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+8;
+9{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+10;
+8;
+9{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+10;
+11;
+13;
+14{
+	comenta("A função retornará o valor da variável p1.");
+#	som();
+  }
+15;

@@ -1,0 +1,71 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(950,500) ListaSimples;
+	
+	adicionaNoLista lista1 no1 "" posicao(400,80);
+	adicionaNoLista lista1 no2 "a" posicao(125,185);
+	adicionaNoLista lista1 no3 "b" posicao(275,185);
+	adicionaNoLista lista1 no4 "c" posicao(425,185);
+	adicionaNoLista lista1 no5 "d" posicao(575,185);
+	adicionaNoLista lista1 no6 "e" posicao(725,185);
+	
+	criaSetaLivreLista lista1 lig1 "" posicoes[(400,105)(165,105)(165,185)] cor(0,0,0);
+	ligaNoLista lista1 no2 no3 "" meio;
+	ligaNoLista lista1 no3 no4 "" meio;
+	ligaNoLista lista1 no4 no5 "" meio;
+	ligaNoLista lista1 no5 no6 "" meio;
+	criaSetaLivreLista lista1 lig2 "" posicoes[(470,105)(765,105)(765,185)] cor(0,0,0);
+	
+	adicionaPonteiroSoloLista lista1 noo 5 "" cor(0,0,0) posicao(787,210);
+	adicionaPonteiroLista lista1 no1 70 "*pdescritor" cor(0,128,0) acimaDireita;
+	
+  }
+2;
+4;
+6;
+7 adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) abaixoDireita;
+8;
+9 writeln("elemento: a");
+10{
+	removePonteiroLista lista1 no2 abaixoDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+11;
+
+8;
+9 writeln("elemento: b");
+10{
+	removePonteiroLista lista1 no3 abaixoDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+11;
+
+8;
+9 writeln("elemento: c");
+10{
+	removePonteiroLista lista1 no4 abaixoDireita;
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+11;
+
+8;
+9 writeln("elemento: d");
+10{
+	removePonteiroLista lista1 no5 abaixoDireita;
+	adicionaPonteiroLista lista1 no6 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+11;
+
+8;
+9 writeln("elemento: e");
+10{
+	removePonteiroLista lista1 no6 abaixoDireita;
+	adicionaPonteiroSoloLista lista1 poo 5 "p1" cor(204,0,0) posicao(815,210);
+  }
+11;
+
+8;
+12;
+13;
+
+
+		

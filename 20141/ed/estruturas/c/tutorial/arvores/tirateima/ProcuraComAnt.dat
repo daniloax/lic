@@ -1,0 +1,190 @@
+1{
+  criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(400,600); 
+  adicionaNoArvore arvore1 no0 "a";
+  adicionaNoArvore arvore1 no1 "b";
+  adicionaNoArvore arvore1 no2 "c";
+  adicionaNoArvore arvore1 no3 "d";
+  adicionaNoArvore arvore1 no4 "e";
+  adicionaNoArvore arvore1 no5 "f";
+  adicionaNoArvore arvore1 no6 "g";
+  ligaNoArvore arvore1 no0 no1;
+  ligaNoArvore arvore1 no0 no2;
+  ligaNoArvore arvore1 no1 no3;
+  ligaNoArvore arvore1 no1 no4;
+  ligaNoArvore arvore1 no2 no5;
+  ligaNoArvore arvore1 no2 no6;
+  adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+  adicionaPonteiroSoloArvore arvore1 poo 7 "*epai" cor(0,0,191) posicao(63,55);
+  char c cor(128,128,192) tamanho(60,30) posicao(120,50); 
+  c = 'E';
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+5;
+7;
+8{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no0 esq "*epai" 50 cor(0,0,191);
+  }
+9{
+	comenta("Nesse ponto o programa entra num primeiro nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiroSoloArvore arvore1 no;
+	removePonteiro arvore1 no0 dir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+5;
+7;
+8 movePonteiro arvore1 no0 esq no1 diagonalInfDir 50 cor(0,0,191);
+9{
+	comenta("Nesse ponto o programa entra num segundo nível de recursividade.");
+#	som();
+ }
+ 
+1{
+	removePonteiroSoloArvore arvore1 no;
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no3 esq "ainicio''" 60 cor(0,128,0);
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+5;
+7;
+8 movePonteiro arvore1 no1 diagonalInfDir no3 diagonalInfDir 50 cor(0,0,191);
+9{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+	
+1{
+	removePonteiroSoloArvore arvore1 no;
+	removePonteiro arvore1 no3 esq;
+	adicionaPonteiroSoloArvore arvore1 po 5 "ainicio'''" cor(0,128,0) posicao(73,305);
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+16;
+17{
+	removePonteiro arvore1 no3 diagonalInfDir;
+	adicionaPonteiroSoloArvore arvore1 poo 7 "*epai" cor(0,0,191) posicao(63,55);
+  }
+18{
+	comenta("A função voltará um nível de recursividade, retornando o ponteiro a1 que no momento é NULL.");
+#	som();
+  }
+  
+10{
+	removePonteiroSoloArvore arvore1 po;
+	adicionaPonteiro arvore1 no3 esq "ainicio''" 60 cor(0,128,0);
+ }
+11;
+12{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no3 diagonalInfEsq "*epai" 50 cor(0,0,191);
+  }
+13{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+
+1{
+	removePonteiroSoloArvore arvore1 no;
+	removePonteiro arvore1 no3 esq;
+	adicionaPonteiroSoloArvore arvore1 po 5 "ainicio'''" cor(0,128,0) posicao(113,305);
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+16;
+17{
+	removePonteiro arvore1 no3 diagonalInfEsq;
+	adicionaPonteiroSoloArvore arvore1 poo 7 "*epai" cor(0,0,191) posicao(63,55);
+  }
+18{
+	comenta("A função voltará um nível de recursividade, retornando o ponteiro a1 que no momento é NULL.");
+#	som();
+  }
+
+14{
+	removePonteiroSoloArvore arvore1 po;
+	adicionaPonteiro arvore1 no3 esq "ainicio''" 60 cor(0,128,0);
+  }
+15;
+16;
+17{
+	removePonteiro arvore1 no3 diagonalInfEsq;
+	adicionaPonteiroSoloArvore arvore1 poo 7 "*epai" cor(0,0,191) posicao(63,55);
+  }
+18{
+	comenta("A função voltará um nível de recursividade, retornando o ponteiro a1 que no momento é NULL.");
+#	som();
+  }
+
+10{
+	removePonteiro arvore1 no3 esq;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+  }
+11;
+12{
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no1 diagonalInfDir "*epai" 50 cor(0,0,191);
+  }
+13{
+	comenta("Nesse ponto o programa entra num segundo nível de recursividade.");
+#	som();
+ }
+ 
+1{
+	removePonteiroSoloArvore arvore1 no;
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no4 diagonalInfDir "ainicio''" 60 cor(0,128,0);
+ }
+2;
+3 adicionaPonteiroSoloArvore arvore1 no 7 "a1" cor(204,0,0) posicao(73,35);
+4;
+5;
+6{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiro arvore1 no4 diagonalInfEsq "a1" 60 cor(204,0,0);
+ }
+7;
+11;
+15;
+16;
+18{
+	comenta("A função voltará um nível de recursividade, retornando o ponteiro a1, que no momento aponta para o nó E.");
+#	som();
+  }
+  
+14{
+	removePonteiro arvore1 no4 diagonalInfDir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+  }
+15;
+16;
+18{
+	comenta("A função voltará um nível de recursividade, retornando o ponteiro a1, que no momento aponta para o nó E.");
+#	som();
+  }
+  
+10{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+ }
+11;
+15;
+16;
+18{
+	comenta("O programa encerrará retornando o ponteiro a1, que aponta para o nó E.");
+#	som();
+  }
+19;

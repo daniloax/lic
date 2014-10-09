@@ -1,0 +1,38 @@
+4;
+5 {int x cor(0,200,100) tamanho(80,50) posicao (50,50);
+   pointer p1 cor(255,150,0) tamanho(60,40) posicao (60,200);
+  }
+6 {char c cor(0,150,150) tamanho(80,50) posicao (200,50);
+   pointer p2 cor(255,50,0) tamanho(60,40) posicao (210,200);}
+8 x=5;
+9 c='a';
+10 p1 aponta(90,120);
+11 writeln("5");
+12 p2 aponta(240,120);
+13 writeln("a");
+
+15 p1 = NULL;
+16 { 
+   comenta ("ATENÇÃO: ESTE COMANDO PROVOCA ERRO EM TEMPO DE EXECUÇÃO. Como o ponteiro p1 não aponta para nada, não tem sentido mandar imprimir o conteúdo do elemento apontado por p1");
+   som();
+   }
+
+
+18 p1 aponta(90,120);
+19 {
+   comenta ("ATENÇÃO: ESTE COMANDO PROVOCA ERRO DE COMPILAÇÃO. Os tipos dos elementos apontados por p1 e por p2 são diferentes, e portanto não se pode atribuir o valor de um ao outro.");
+   som();
+   }
+
+21 {
+   p1 aponta(240,120);
+   comenta ("ATENÇÃO: ESTE COMANDO PROVOCA UM WARNING DO COMPILADOR. Os ponteiros p1 e p2 apontam para elementos de tipos diferentes, e o programador poderia estar cometendo um erro. Por isso o compilador o avisa. Mas o comando é executado.");
+   som();
+   }
+22 writeln("a");
+
+24;
+25;
+
+
+

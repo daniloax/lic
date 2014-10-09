@@ -1,0 +1,202 @@
+1{	criaListaEncadeada lista1 tamanho(50,60) cor(255,219,183) posicao(220,50) tamanho(130,300) ListaSimples;
+	criaArvore arvore1 3 40 cor(255,219,183) posicao(400,30) tamanho(400,600); 
+	adicionaNoArvore arvore1 no0 "a";
+	adicionaNoArvore arvore1 no1 "b";
+	adicionaNoArvore arvore1 no2 "c";
+	adicionaNoArvore arvore1 no3 "d";
+	adicionaNoArvore arvore1 no4 "e";
+	ligaNoArvore arvore1 no0 no1;
+	ligaNoArvore arvore1 no0 no2;
+	ligaNoArvore arvore1 no1 no3;
+	ligaNoArvore arvore1 no1 no4;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+ }
+2;
+3;
+4;
+5;
+6;
+7;
+8;
+
+10 adicionaPonteiro arvore1 no0 esq "a1" 60 cor(204,0,0);
+11 criaPilha pilha1 cor(13,22,142) posicao(150,130) tamanho(60,180) cor(255,200,145) 6;
+12;
+13 push pilha1 "A | 1";
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "A | 1" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16;
+17;
+19;
+20;
+21 push pilha1 "C | 1";
+22 push pilha1 "A | 0";
+23;
+24 push pilha1 "B | 1";
+25;
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "B | 1" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no0 esq no1 diagonalSupEsq 60 cor(204,0,0);
+17;
+19;
+20;
+21 push pilha1 "E | 1";
+22 push pilha1 "B | 0";
+23;
+24 push pilha1 "D | 1";
+25;
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "D | 1" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no1 diagonalSupEsq no3 diagonalInfDir 60 cor(204,0,0);
+17;
+19;
+20;
+22 push pilha1 "D | 0";
+23;
+25;
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "D | 0" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16;
+17;
+18 write("D");
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "B | 0" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no3 diagonalInfDir no1 diagonalSupEsq 60 cor(204,0,0);
+17;
+18 write("B");
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "E | 1" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no1 diagonalSupEsq no4 diagonalInfDir 60 cor(204,0,0);
+17;
+19;
+20;
+22 push pilha1 "E | 0";
+23;
+25;
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "E | 0" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16;
+17;
+18 write("E");
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "A | 0" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no4 diagonalInfDir no0 esq 60 cor(204,0,0);
+17;
+18 write("A");
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "C | 1" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16 movePonteiro arvore1 no0 esq no2 dir 60 cor(204,0,0);
+17;
+19;
+20;
+22 push pilha1 "C | 0";
+23;
+25;
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+15{
+	pop pilha1;
+	adicionaNoLista lista1 no1 "C | 0" posicao(70,150);
+	adicionaPonteiroLista lista1 no1 60 "paux" cor(0,0,191) acimaDireita;
+ }
+16;
+17;
+18 write("C");
+26{
+	removePonteiroLista lista1 no1 acimaDireita;
+	removeNo lista1 no1;
+ }
+27;
+
+14;
+28;

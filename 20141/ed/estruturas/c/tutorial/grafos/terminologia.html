@@ -1,0 +1,72 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Grafos - Terminologia </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="terminologia">
+		<h4> 5.2 Terminologia </h4>
+		
+		<p>Vejamos agora alguns termos utilizados para identificar certos elementos de um grafo ou tipos especiais de grafos, 
+		utilizando como referência, para alguns casos, o grafo abaixo:</p>
+		<img src="imagens/grafo.png">
+		<p> <br> <b>a) nós-adjacentes </b> - são nós ligados por um arco: o nó A é adjacente ao nó D. </p>
+		<img src="imagens/nos_adjacentes.png">
+		<p> <br> <b>b) arco incidente </b> - um arco é incidente em um nó quando leva a esse nó: o arco (C,D) é incidente em D. </p>
+		<img src="imagens/arco_incidente.png">
+		<p> <br> <b>c) caminho </b> - sequência de um ou mais arcos: um caminho que leva o nó A ao nó C é o caminho dado por: < (A, B), (B, D), (D, C) ></p>
+		<img src="imagens/caminho.png">
+		<p> <br> <b>d) circuito </b> – é um caminho que leva ao mesmo nó do qual saiu: < (A,B), (B,D), (D,A) > </p>
+		<img src="imagens/circuito.png">
+		<p> <br> <b>e) laço </b> – é um circuito de um único arco:  < (C,C) > </p>
+		<img src="imagens/laco.png">
+		<p> <br> <b>f) subgrafo </b> – é o grafo formado por um subconjunto de nós de um grafo dado, contendo todos os arcos cujas duas 
+		extremidades são nós desse subconjunto. Por exemplo, o grafo definido abaixo é um sugrafo do grafo original: </p>
+		<p>	N’ = { A, C, D, E }
+			G’ = { (C, C), (D, A), (D, C) }
+		</p>
+		<img src="imagens/subgrafo.png">
+		<p> <br> <b>g) grafo parcial </b> – é o grafo formado por todos os nós de um grafo dado, contendo um subconjunto de seus arcos. Por exemplo: </p>
+		<p>	N’ = { A, B, C, D, E, F }
+			G’ = { (A, B), (B, C), (B, D), (E, F) }
+		</p>
+		<img src="imagens/grafo_parcial.png">
+		<p> <br> <b>h) grafo conexo </b> – é um grafo no qual existe ao menos um nó a partir do qual existem caminhos para todos os outros nós 
+		(no exemplo abaixo, esse nó é o C). </p>
+		<img src="imagens/grafo_conexo.png">
+		<p> <br> <b>i) grafo fortemente conexo </b> – é um grafo no qual existem, para todos os nós, caminhos para todos os outros nós. </p>
+		<img src="imagens/grafo_fortemente_conexo.png">
+		<p> <br> <b>j) grafo acíclico </b> – é um grafo que não tem circuitos. </p>
+		<img src="imagens/grafo_aciclico.png">
+		<p> <br> <b>k) rede </b> – há muitos tipos de redes. Em nosso curso vamos nos restringir à rede adequada para o uso de sistemas 
+		PERT-CPM (Program Evaluation and Review Technique – Critical Path Method). É definida como um grafo acíclico, com dois nós especiais:<br><br>
+
+			- nó fonte: a partir do qual se podem atingir todos os outros nós (nó A)<br><br>
+			- nó sorvedouro: pode ser atingido a partir de qualquer outro nó (nó F)
+		</p>
+		<img src="imagens/rede.png">
+		<p> <br> <b>l) grafo não dirigido </b> – é um grafo em que as relações entre os nós são simétricas (se existe um arco (A,B) então 
+		também existe o arco (B,A), e ambos são representados apenas por uma linha não orientada ligando A e B </p>
+		<img src="imagens/grafo_nao_dirigido.png">
+		<p> <br> <b>m) grafo valorado </b> – grafo com valores associados aos nós ou aos arcos. A figura abaixo representa uma rede cujos 
+		nós são tarefas avaliadas em $ e cujos arcos estão valorados em dias de duração. </p>
+		<img src="imagens/grafo_valorado.png">
+		<br><br><br><br>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de grafos</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

@@ -1,0 +1,8 @@
+%top{
+   /* This code goes at the "top" of the generated file. */
+   #include <stdint.h>
+   #include <inttypes.h>
+}
+
+DIGIT    [0-9]
+ID       [a-z][a-z0-9]*

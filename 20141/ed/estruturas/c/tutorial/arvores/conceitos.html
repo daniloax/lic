@@ -1,0 +1,104 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Árvores - Conceitos</title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="conceitos">
+		<h4> 5.1 Conceitos Básicos </h4>
+		
+		<p>Uma árvore é uma estrutura de dados que se caracteriza por uma relação de hierarquia entre os elementos que a compõem. 
+		Exemplos de estruturas em forma de árvore são: </p>
+		
+		<p>	- o organograma de uma empresa;<br>
+			- a divisão de um livro em capítulos, seções, tópicos;<br>
+		    - a árvore genealógica de uma pessoa.<br>
+		</p>
+		
+		<p>De um modo um pouco mais formal, podemos dizer que uma árvore é um conjunto finito de um ou mais nós, tais que:</p>
+		
+		<dl>
+		
+			<dd>a) existe um nó denominado raiz;</dd>
+			<dd>b) os demais nós formam m>=0 conjuntos disjuntos s1, s2, ... sm, tais que cada um desses conjuntos também é uma árvore 
+			(denominada sub-árvore).</dd>
+		
+		</dl>
+		
+		<p>As árvores podem ser representadas de diversos modos, como por exemplo:</p>
+		
+		<p><br>a) representação hierárquica</p>
+		
+		<img src="imagens/hierarquica.png">
+		
+		<p>Neste exemplo, <b>A</b> é a raiz da árvore. Os nós <b>B</b> e <b>C</b>  são "filhos" de <b>A</b>, e dão origem a duas sub-árvores, 
+		nas quais <b>D</b> e <b>E</b> são "filhos” de <b>B</b>, e <b>F</b> é "filho" de <b>C</b>.</p>
+		
+		<p><br>b) representação por conjuntos</p>
+		
+		<img src="imagens/conjuntos.png">
+		
+		<p>A árvore aqui representada é a mesma do desenho anterior. Neste caso, cada nó é representado por um conjunto formado por seus "filhos".</p>
+		
+		
+		<p><br>c) representação por expressão parentetizada</p>
+		
+		<p>A mesma árvore pode ser representada pela expressão:</p>
+		
+		<p><b>( A  (  B  (  D  (  )  E  (  )  )  C  (  F  (  )  )  )  )</b></p>
+		
+		<p>Cada conjunto de parêntesis correspondentes contém um nó e seus filhos. Se um nó não tem filhos, ele é seguido por um par de 
+		parêntesis sem conteúdo.</p>
+		
+		<p><br>d) representação por expressão não parentetizada</p>
+		
+		<p>Ainda utilizando a mesma árvore, podemos usar a representação abaixo:</p>
+		
+		<p><b>A  2  B  2  D  0  E  0  C  1  F  0</b></p>
+		
+		<p>Cada nó é seguido por um número que indica a quantidade de filhos desse nó, e em seguida por esses filhos, representados do mesmo modo.</p>
+		
+		<p>Pode-se representar uma árvore de muitos outros modos, mas é interessante notar que, dentre os exemplos apresentados, a representação 
+		<b>a)</b> é a que permite uma melhor visualização, e que será utilizada a partir deste ponto. As representações <b>c)</b> e <b>d)</b> não 
+		permitem boa visualização da estrutura, mas podem ser úteis para guardar em arquivos os dados de uma árvore.</p>
+		
+		<p>Como, por definição, os sub-conjuntos s1, s2, ... sm são disjuntos, cada nó só pode ter um "pai". Assim, o desenho abaixo, por exemplo, 
+		não representa uma árvore:</p>
+		
+		<img src="imagens/nao_arvore.png">
+		
+		<p>Vejamos agora alguns termos utilizados para identificar algumas características de uma árvore ou de alguma parte dela.</p>
+		
+		<p>
+			- raiz – nó de origem da árvore<br>
+			- folhas – nós que não têm filhos<br>
+			- grau de um nó – número de filhos de cada nó<br>
+			- nível de um nó – por definição, é zero para a raiz, e, para os demais nós, é o número de "linhas" que ligam o nó à raiz<br>
+			- altura da árvore – é o nível mais alto da árvore<br>
+			- floresta – conjunto de árvores disjuntas (eliminando-se a raiz de uma árvore, obtém-se uma floresta<br>
+		</p>
+		
+		<img src="imagens/altura.png"><br>
+		
+		<img src="imagens/niveis.png"><br>
+		
+		<img src="imagens/floresta.png"><br><br><br><br>
+		
+		
+	</div>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

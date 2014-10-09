@@ -1,0 +1,86 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,500) ListaDuplamenteEncadeada;
+	adicionaNoLista lista1 no1 "A" posicao(125,135);
+	adicionaNoLista lista1 no2 "B" posicao(275,135);
+	adicionaNoLista lista1 no3 "C" posicao(425,135);
+	adicionaNoLista lista1 no4 "D" posicao(575,135);
+	criaSetaLivreLista lista1 lig12 "" posicoes[(195,170)(275,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig21 "" posicoes[(275,150)(195,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig23 "" posicoes[(345,170)(425,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig32 "" posicoes[(425,150)(345,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig34 "" posicoes[(495,170)(575,170)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig43 "" posicoes[(575,150)(495,150)] cor(0,0,0);	                                            
+	criaSetaLivreLista lista1 lig2 "" posicoes[(125,150)(78,150)(78,260)(692,260)(692,150)(645,150)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig3 "" posicoes[(645,170)(680,170)(680,230)(90,230)(90,170)(125,170)] cor(0,0,0);
+	adicionaPonteiroLista lista1 no1 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+ }
+2;
+4;
+6;
+7 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+8;
+9 writeln ("elemento: A");
+10{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln ("elemento: B");
+10{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln ("elemento: C");
+10{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln ("elemento: D");
+10{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+13;
+14{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) acimaDireita;
+  }
+15 writeln ("elemento (para tras): D");
+16;
+17;
+13;
+14{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+15 writeln ("elemento (para tras): C");
+16;
+17;
+13;
+14{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+15 writeln ("elemento (para tras): B");
+16;
+17;
+13;
+14{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  }
+15 writeln ("elemento (para tras): A");
+16;
+17;
+18;
+19;

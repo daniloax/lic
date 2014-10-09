@@ -1,0 +1,189 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Pilhas e Filas - Implementação </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de pilhas e filas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="implementacoes">
+		<h4> 3.2 Implementação </h4>
+		
+		<p>Como já foi dito, as estruturas de dados são abstratas, e portanto podem ser implementadas de diversos modos.</p>
+		<p>Em nosso caso, faremos a implementação das pilhas e das filas através de listas abertas com encadeamento simples. 
+		O tipo dos elementos será, portanto, o mesmo para os dois casos, ficando a diferença apenas por conta das operações 
+		que se realizam em cada caso. É im-portante observar que, uma vez implementada a lista que representa uma pilha ou uma 
+		fila, o usuário da estrutura (pilha ou fila) apenas tem acesso às operações pré-definidas, não podendo executar outras 
+		que seriam possíveis em listas. Ou seja, o usuário da pilha ou da fila não precisa saber como a estrutura foi implementada, 
+		apenas precisa saber utilizar as funções que permitem as operações básicas.</p>
+		<p>Para exemplificar a implementação das operações básicas utilizaremos as estruturas abaixo, nas quais o dado que se armazena 
+		é um caractere:</p>
+		<FONT face= "Courier New" size=2>
+			typedef struct tipopilha {<br>
+			  &nbsp;  char dado;<br>
+			  &nbsp;  struct tipopilha *prox;<br>
+			} pilhachar;<br><br>
+
+			typedef struct tipofila {<br>
+			  &nbsp;  char dado;<br>
+			  &nbsp;  struct tipofila *prox;<br>
+			} filachar;<br><br>
+		</FONT> 
+		
+		<!--**************************************** PILHAS **************************************-->
+		<h4> 3.2.1 Operações Básicas em Pilhas </h4>
+		
+		<p>a) Inicializar a Pilha</p>
+		<p>Esta função consiste apenas em inicializar a pilha, ou seja, definir uma pilha vazia, que fica apta a ser utilizada. 
+		Recebe como parâmetro o endereço para o ponteiro <i>pilha</i>, que é um ponteiro que dá acesso à pilha.</p>
+		<FONT face= "Courier New" size=2>
+			void InicializaPilha (pilhachar **epilha) {<br>
+			  &nbsp;  *epilha = NULL;<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>b) Verificar se a Pilha está vazia</p>
+		<p>Esta função recebe como parâmetro o ponteiro <i>pilha</i>, que dá acesso à pilha, e retorna <b>1</b> se a pilha estiver 
+		vazia, e <b>0</b> em caso contrário.</p>
+		<FONT face= "Courier New" size=2>
+			int PilhaVazia (pilhachar *pilha) { <br>
+			  &nbsp;  return (pilha == NULL);<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>c) Retornar o elemento que está no topo da pilha</p>
+		<p>Esta função recebe como parâmetro o ponteiro <i>pilha</i>, que dá acesso à pilha, e retorna o elemento que estiver no topo, 
+		sem retirá-lo da pilha. Esta operação só pode ser usada quando se tem certeza de que a pilha não é vazia, o que se pode 
+		testar com a função <i>PilhaVazia</i>.</p>
+		<FONT face= "Courier New" size=2>
+			char TopoPilha(pilhachar *pilha) {<br>
+			  &nbsp;  return pilha->dado;<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>d) Inserir um elemento na Pilha</p>
+		<p>Esta função recebe como parâmetros o valor <i>dadonovo</i>, a ser inserido, e  o endereço do ponteiro <i>pilha</i>, que dá 
+		acesso à pilha. O resultado da operação é a inserção do <i>dadonovo</i> no topo da pilha.</p>
+		<FONT face= "Courier New" size=2>
+			void InserePilha(pilhachar **epilha, char dadonovo) {<br>
+			  &nbsp;  pilhachar *p1;<br>
+			  &nbsp;  p1 = malloc (sizeof (pilhachar));<br>
+			  &nbsp;  p1->dado = dadonovo;<br>
+			  &nbsp;  p1->prox = *epilha;<br>
+			  &nbsp;  *epilha = p1;<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>e) Retirar um elemento da Pilha</p>
+		<p>Esta função recebe como parâmetro o endereço do ponteiro <i>pilha</i>, que dá acesso à pilha, e retorna o elemento que está 
+		no topo da pilha, retirando-o dela. Esta operação só pode ser usa-da quando se tem certeza de que a pilha não é vazia, 
+		o que se pode testar com a função <i>Pilha-Vazia</i>.</p>
+		<FONT face= "Courier New" size=2>
+			char RetiraPilha(pilhachar **epilha) {<br>
+			  &nbsp;  pilhachar *p1;<br>
+			  &nbsp;  char car;<br>
+			  &nbsp;  p1 = *epilha;<br>
+			  &nbsp;  *epilha = p1->prox;<br>
+			  &nbsp;  car = p1->dado;<br>
+			  &nbsp;  free (p1);<br>
+			  &nbsp;  return car;<br>
+			}<br><br>
+		</FONT> 
+		
+		
+		<!--**************************************** FILAS **************************************-->
+		<h4> 3.2.1 Operações Básicas em Filas </h4>
+		
+		<p>a) Inicializar a Fila</p>
+		<p>Esta função consiste apenas em inicializar a fila, ou seja, definir uma fila vazia, que fica apta a ser utilizada. 
+		Recebe como parâmetro o endereço para o ponteiro <i>fila</i>, que é um ponteiro que dá acesso à fila.</p>
+		<FONT face= "Courier New" size=2>
+			void InicializaFila (filachar **efila) {<br>
+			  &nbsp;  *efila = NULL;<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>b) Verificar se a Fila está vazia</p>
+		<p>Esta função recebe como parâmetro o ponteiro <i>fila</i>, que dá acesso à fila, e retorna <b>1</b> se a fila estiver 
+		vazia, e <b>0</b> em caso contrário.</p>
+		<FONT face= "Courier New" size=2>
+			int FilaVazia (filachar *fila) { <br>
+			  &nbsp;  return (fila == NULL);<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>c) Retornar o elemento que está na primeira posição da fila</p>
+		<p>Esta função recebe como parâmetro o ponteiro <i>fila</i>, que dá acesso à fila, e retorna o elemento que estiver na primeira posição, 
+		sem retirá-lo da fila. Esta operação só pode ser usada quando se tem certeza de que a fila não é vazia, o que se pode 
+		testar com a função <i>FilaVazia</i>.</p>
+		<FONT face= "Courier New" size=2>
+			char FrenteFila(filachar *fila) {<br>
+			  &nbsp;  return fila->dado;<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>d) Inserir um elemento na Fila</p>
+		<p>Esta função recebe como parâmetros o valor <i>dadonovo</i>, a ser inserido, e  o endereço do ponteiro <i>fila</i>, que dá 
+		acesso à fila. O resultado da operação é a inserção do <i>dadonovo</i> no fim da fila.</p>
+		<FONT face= "Courier New" size=2>
+			void InsereFila(filachar **efila, char dadonovo) {<br>
+			  &nbsp;  filachar *f1, *f2;<br>
+			  &nbsp;  f1 = malloc (sizeof (filachar));<br>
+			  &nbsp;  f1->dado = dadonovo;<br>
+			  &nbsp;  f1->prox = NULL;<br>
+			  &nbsp;  if (*efila == NULL)<br>
+			  &nbsp;  &nbsp;  efila = f1;<br>
+			  &nbsp;  else {<br>
+			  &nbsp;  &nbsp;  f2 = *efila;<br>
+			  &nbsp;  &nbsp;  while (f2->prox != NULL)<br>
+			  &nbsp;  &nbsp;  &nbsp;  f2 = f2->prox;<br>
+			  &nbsp;  &nbsp;  f2->prox = f1;<br>
+			  &nbsp;  }<br>
+			  &nbsp;  }<br>
+			}<br><br>
+		</FONT> 
+		
+		<p>e) Retirar um elemento da Fila</p>
+		<p>Esta função recebe como parâmetro o endereço do ponteiro <i>fila</i>, que dá acesso à fila, e retorna o elemento que está 
+		no topo da fila, retirando-o dela. Esta operação só pode ser usa-da quando se tem certeza de que a fila não é vazia, 
+		o que se pode testar com a função <i>FilaVazia</i>.</p>
+		<FONT face= "Courier New" size=2>
+			char RetiraFila(filachar **efila) {<br>
+			  &nbsp;  filachar *f1;<br>
+			  &nbsp;  char car;<br>
+			  &nbsp;  f1 = *efila;<br>
+			  &nbsp;  *efila = f1->prox;<br>
+			  &nbsp;  car = f1->dado;<br>
+			  &nbsp;  free (f1);<br>
+			  &nbsp;  return car;<br>
+			}<br><br>
+		</FONT> 
+		
+		
+		<br><br><br>
+		
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de pilhas e filas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

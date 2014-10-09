@@ -1,0 +1,11 @@
+Python é uma poderosa linguagem fácil de aprender. Ela possui estruturas de dados de alto nível eficientes e uma abordagem simples, mas eficaz para programação orientada a objetos. A sintaxe de Python é elegante e sua tipagem é dinâmica, em conjunto com a sua natureza interpretada, tornam Python ideal para scripting e desenvolvimento rápido de aplicações em diversas áreas na maioria das plataformas.
+
+O interpretador Python e sua extensa biblioteca padrão estão disponíveis gratuitamente na fonte ou binário para as principais plataformas no site da Python Software Foundation - http://www.python.org/ - e pode ser distribuída livremente. O mesmo site também contém distribuições de Python e referências para diversos módulos, programas, ferramentas e documentação adicional gratuitos de terceiros.
+
+O interpretador Python pode ser facilmente estendido com novas funções e tipos de dados implementados em C ou C ++ (ou outros linguagens que podem ser chamados a partir de C). Python também se adequa como linguagem de extensão para aplicações personalizadas.
+
+Este tutorial introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Python. Ela ajuda a ter um interpretador Python útil para a experiência prática, mas todos os exemplos são auto-suficientes, de modo que o tutorial pode ser lido off-line também.
+
+Para uma descrição de objetos e módulos padrão, consulte a biblioteca padrão do Python. A referência da linguagem Python oferece uma definição mais formal da língua. Para escrever extensões em C ou C ++, leia o alargamento e Incorporação do Interpretador Python e Manual de Referência da API Python/C. Existem também diversos livros abordando Python em profundidade.
+
+Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo todos os mais frequentes. Em vez disso, ele introduz muitas das características mais marcantes do Python, e lhe dará uma boa idéia de sabor e estilo da linguagem. Depois de lê-lo, você vai ser capaz de ler e escrever programas e módulos em Python, e você estará pronto para aprender mais sobre os diversos módulos de biblioteca Python descritos na biblioteca padrão do Python.

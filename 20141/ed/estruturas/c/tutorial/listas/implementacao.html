@@ -1,0 +1,98 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Listas - Implementação </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="implementacoes">
+		<h4> 2.2 Implementação </h4>
+		
+		<p>Como já foi dito, as estruturas de dados são abstratas e portanto podem ser implementadas de diversos modos.</p>
+		<p>Para implementar as listas vamos utilizar a técnica de encadeamento por ponteiros. Cada elemento de uma lista é um registro que contém, 
+		entre outros campos, um campo de tipo ponteiro, que aponta para outro elemento da lista.</p>
+		<FONT face= "Courier New" size=2>
+			struct objeto {<br>
+			&nbsp;  tipodado dado;<br>
+			&nbsp;  struct objeto *prox;<br>
+			};<br><br>
+		</FONT> 
+		<img src="imagens/implementacao.png">
+		<p> A título de exemplo, vejamos como se poderia construir uma lista contendo a seqüência de caracteres 'x', 'y', 'z'.  Esta função está 
+		dividida em três blocos, cada um deles responsável por acrescentar um dos elementos na lista.  </p>
+		<FONT face= "Courier New" size=2>
+			struct elemento {<br>
+			&nbsp;  char x;<br>
+			&nbsp;  struct elemento *prox;<br>
+			};<br><br>
+
+			void ConstroiLista1 (lista *pinicio) {<br>
+			&nbsp;  pinicio = NULL;<br>
+			&nbsp;  lista *p1;<br><br>
+
+			&nbsp;  p1 = malloc (sizeof (struct elemento));<br>
+			&nbsp;  p1->x = 'x';   <br>
+			&nbsp;  p1->prox = pinicio;<br>
+			&nbsp;  pinicio = p1;<br><br>
+
+			&nbsp;  p1 = malloc (sizeof (struct elemento));<br>
+			&nbsp;  p1->x = 'y';   <br>
+			&nbsp;  p1->prox = pinicio;<br>
+			&nbsp;  pinicio = p1;<br><br>
+
+			&nbsp;  p1 = malloc (sizeof (struct elemento));<br>
+			&nbsp;  p1->x = 'z';   <br>
+			&nbsp;  p1->prox = pinicio;<br>
+			&nbsp;  pinicio = p1;<br><br>
+
+			&nbsp;  printf("elemento1  %c \n", pinicio->x);<br>
+			&nbsp;  printf("elemento2  %c \n", pinicio->prox->x);<br>
+			&nbsp;  printf("elemento3  %c \n", pinicio->prox->prox->x);<br>
+			}<br><br>
+
+		</FONT> 
+		<p> Se os três blocos forem unificados em apenas um, dentro de um laço comandado pela leitura de um arquivo, temos a possibilidade 
+		de construir a lista com qualquer número de elementos.  O número de elementos da lista será o número de elementos presentes no 
+		arquivo de entrada. O programa ficaria do seguinte modo: </p>
+		
+		<FONT face= "Courier New" size=2>
+
+			void ConstroiLista2 (lista *pinicio) {<br>
+			&nbsp;  FILE *arq;<br>
+			&nbsp;  char c;<br>
+			&nbsp;  lista *p1;<br><br>
+
+			&nbsp;  arq = fopen ("t100.txt", "r");<br>
+			&nbsp;  pinicio = NULL;<br>
+			&nbsp;  while (((c = getc (arq)) != EOF) && (c != '\n')) {<br>
+			&nbsp;  &nbsp;  p1 = malloc (sizeof (lista));<br>
+			&nbsp;  &nbsp;  p1->x = c; <br>
+			&nbsp;  &nbsp;  p1->prox = pinicio;<br>
+			&nbsp;  &nbsp;  pinicio = p1;<br>
+			&nbsp;  }<br><br>
+			&nbsp;  fclose (arq);   <br>
+
+			&nbsp;  printf("elemento1  %c \n", pinicio->x);<br>
+			&nbsp;  printf("elemento2  %c \n", pinicio->prox->x);<br>
+			&nbsp;  printf("elemento3  %c \n", pinicio->prox->prox->x);<br>
+			}<br><br>
+
+		</FONT> 
+		
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

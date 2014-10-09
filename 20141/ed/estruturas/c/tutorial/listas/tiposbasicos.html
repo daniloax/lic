@@ -1,0 +1,47 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Listas - Tipos Básicos </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="tiposbasicos">
+		<h4> 2.3 Tipos Básicos </h4>
+		
+		<p>Há muitos modos de se implementar uma lista através de ponteiros, dependendo da  disponibilidade de memória, eficiência desejada para 
+		os algoritmos, etc. Há dois critérios mais básicos para classificar as listas: abertas ou fechadas, com encadeamento simples ou encadeamento 
+		duplo, dando origem assim a quatro padrões básicos de listas:</p>
+		<p> <br> <b>lista aberta com encadeamento simples  </b> </p>
+		<img src="imagens/aberta_simples.png">
+		<p> <br> <b>lista aberta com encadeamento duplo</b> </p>
+		<img src="imagens/aberta_duplo.png">
+		<p> <br> <b>lista fechada com encadeamento simples </b></p>
+		<img src="imagens/fechada_simples.png">
+		<p> <br> <b>lista fechada com encadeamento duplo </b> </p>
+		<img src="imagens/fechada_duplo.png">
+		<p> <br> Nas listas abertas, o último elemento tem seu campo <i>prox</i> valendo NULL (se o encadeamento for duplo, o mesmo acontece com o campo 
+		<i>ant</i> do primeiro elemento). Nas listas fechadas, o campo <i>prox</i> do último elemento aponta para o primeiro elemento (se o encadeamento for 
+		duplo, o campo <i>ant</i> do primeiro elemento aponta para o último elemento). </p>
+		
+		<p> Nas listas com encadeamento simples, cada elemento tem apenas um campo do tipo ponteiro, apontando para o elemento seguinte na lista. 
+		Nas listas com encadeamento duplo, cada elemento tem dois ponteiros: o <i>prox</i>, apontando para o elemento seguinte, e o <i>ant</i>, apontando 
+		para o elemento anterior. </p>
+		<p>	Outros padrões e modos de implementação de listas podem ser encontrados no tópico de Aplicações.</p>
+		<br><br><br><br>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de listas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

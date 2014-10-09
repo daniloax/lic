@@ -1,0 +1,122 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(15,50) tamanho(850,250) ListaDuplamenteEncadeada;
+	adicionaNoLista lista1 no1 "D" posicao(125,135);
+	adicionaNoLista lista1 no2 "B" posicao(265,135);
+	adicionaNoLista lista1 no3 "D" posicao(405,135);
+	adicionaNoLista lista1 no4 "C" posicao(545,135);  
+	adicionaNoLista lista1 no5 "D" posicao(685,135);
+	ligaNoLista lista1 no1 no2 "" acima;
+	ligaNoLista lista1 no2 no3 "" acima;
+	ligaNoLista lista1 no3 no4 "" acima;                                                      
+	ligaNoLista lista1 no4 no5 "" acima;
+	ligaNoLista lista1 no2 no1 "" abaixo;
+	ligaNoLista lista1 no3 no2 "" abaixo;
+	ligaNoLista lista1 no4 no3 "" abaixo;
+	ligaNoLista lista1 no5 no4 "" abaixo;
+  	adicionaPonteiroLista lista1 no1 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+  	adicionaPonteiroSoloLista lista1 no 5 "" cor(0,0,0) posicao(747,160);
+	adicionaPonteiroSoloLista lista1 po 5 "" cor(0,0,0) posicao(127,160);   
+  	char chave cor(128,128,192) tamanho(60,30) posicao(520,50);
+  	chave = 'D';
+  }
+2;
+3 int achou cor(0,198,50) tamanho(60,30) posicao(600,50);
+5;
+7;
+8 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) abaixoEsquerda;
+9 achou = 0;
+10;
+11;
+12;
+13{
+	removePonteiroLista lista1 no1 acimaEsquerda;
+	adicionaPonteiroLista lista1 no2 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+  }
+14 adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) abaixoDireita;
+15;
+16{
+	removeLigacaoLista lista1 no2 no1;
+	adicionaPonteiroSoloLista lista1 poo 5 "" cor(0,0,0) posicao(267,160);
+  }
+17;
+19{
+	removeLigacaoLista lista1 no1 no2;
+	removePonteiroLista lista1 no1 abaixoEsquerda;
+	removePonteiroSoloLista lista1 po;
+	removeNo lista1 no1;
+  }
+20 adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) abaixoEsquerda;
+21 achou = 1;
+22;
+25;
+10;
+11;
+23;
+24{
+	removePonteiroLista lista1 no2 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) abaixoEsquerda;
+  }
+25;
+10;
+11;
+12;
+14{
+	removePonteiroLista lista1 no2 abaixoDireita;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) abaixoDireita;
+  }
+15;
+16{
+	removeLigacaoLista lista1 no4 no3;
+	criaSetaLivreLista lista1 lig1 "" posicoes[(545,175)(490,175)(490,125)(375,125)(375,175)(335,175)] cor(255,0,0);
+  }
+17;
+18{ 
+	criaSetaLivreLista lista1 lig2 "" posicoes[(335,145)(365,145)(365,110)(510,110)(510,145)(545,145)] cor(255,0,0); 
+ 	removeLigacaoLista lista1 no2 no3;
+ }
+19{
+	removeLigacaoLista lista1 no3 no4;
+	removeLigacaoLista lista1 no3 no2;
+	removePonteiroLista lista1 no3 abaixoEsquerda;
+	removeNo lista1 no3;	
+  }
+20 adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) abaixoEsquerda;
+21 achou = 1;
+22;
+25;
+10;
+11;
+23;
+24{
+	removePonteiroLista lista1 no4 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) abaixoEsquerda;
+  }
+25;
+10;
+11;
+12;
+14{
+	removePonteiroLista lista1 no4 abaixoDireita;
+	adicionaPonteiroSoloLista lista1 pp 5 "p2" cor(0,0,191) posicao(765,165);
+  }
+15;
+17;
+18{
+	removeLigacaoLista lista1 no4 no5;
+	adicionaPonteiroSoloLista lista1 noo 5 "" cor(0,0,0) posicao(607,160);
+  }
+19{
+	removeNo lista1 no5;
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	removePonteiroSoloLista lista1 no;
+	removeLigacaoLista lista1 no5 no4;
+  }
+20 adicionaPonteiroSoloLista lista1 ppp 5 "p1" cor(204,0,0) posicao(630,165);
+21 achou = 1;
+22;
+25;
+10;
+26;
+28;
+29;
+

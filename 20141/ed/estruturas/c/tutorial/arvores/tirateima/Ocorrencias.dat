@@ -1,0 +1,459 @@
+1{
+  criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(400,600); 
+  adicionaNoArvore arvore1 no0 "X";
+  adicionaNoArvore arvore1 no1 "X";
+  adicionaNoArvore arvore1 no2 "C";
+  adicionaNoArvore arvore1 no3 "D";
+  adicionaNoArvore arvore1 no4 "E";
+  adicionaNoArvore arvore1 no5 "X";
+  adicionaNoArvore arvore1 no6 "F";
+  ligaNoArvore arvore1 no0 no1;
+  ligaNoArvore arvore1 no0 no2;
+  ligaNoArvore arvore1 no1 no3;
+  ligaNoArvore arvore1 no1 no4;
+  ligaNoArvore arvore1 no2 no5;
+  ligaNoArvore arvore1 no2 no6;
+  adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+  char c cor(128,128,192) tamanho(60,30) posicao(120,50); 
+  c = 'X';
+ }
+2{
+	int ocdir cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num primeiro nível de recursividade.");
+#	som();
+ }
+ 
+1{
+	removePonteiro arvore1 no0 dir;
+	adicionaPonteiro arvore1 no2 diagonalSupDir "ainicio'" 60 cor(0,128,0);
+  }
+2{
+	removerVariavel ocdir;
+	removerVariavel ocesq;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore1 no2 diagonalSupDir;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+  }
+2{
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+
+1{
+	removePonteiro arvore1 no6 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(290,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+8{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir2 = 0;
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ }
+	
+1{
+	removePonteiro arvore1 no6 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(260,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+9{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq2 = 0;
+	ocdir2 = 0;
+ }
+ 
+11;
+12{
+	comenta("Nesse momento o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+  
+  
+8{
+	removePonteiro arvore1 no6 diagonalSupDir;
+	adicionaPonteiro arvore1 no2 diagonalSupDir "ainicio'" 60 cor(0,128,0);
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir1 = 0;
+	comenta("Nesse momento o programa vai para um segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore1 no2 diagonalSupDir;
+	adicionaPonteiro arvore1 no5 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+ }
+
+2{
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+
+1{
+	removePonteiro arvore1 no5 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(230,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+8{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no5 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir2 = 0;
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ }
+	
+1{
+	removePonteiro arvore1 no5 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(200,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+
+9{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no5 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq2 = 0;
+	ocdir2 = 0;
+ }
+10{
+	comenta("Nesse momento o programa volta um nível de recursividade, retornando o valor 1.");
+#	som();
+  }
+  
+9{
+	removePonteiro arvore1 no5 diagonalSupEsq;
+	adicionaPonteiro arvore1 no2 diagonalSupDir "ainicio'" 60 cor(0,128,0);
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq1 = 1;
+	ocdir1 = 0;
+ }
+11;
+12{
+	comenta("Nesse momento o programa volta para o seu primeiro nível de execução, retornando o valor 1.");
+#	som();
+ }
+
+8{
+	removePonteiro arvore1 no2 diagonalSupDir;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir = 1;
+}
+
+1{
+	removePonteiro arvore1 no0 dir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+}
+
+2{
+	removerVariavel ocdir;
+	removerVariavel ocesq;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+	
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+  }
+2{
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+
+1{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(170,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+8{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir2 = 0;
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ }
+	
+1{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(140,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+9{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq2 = 0;
+	ocdir2 = 0;
+}
+ 
+11;
+12{
+	comenta("Nesse momento o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+  
+  
+8{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir1 = 0;
+	comenta("Nesse momento o programa vai para um segundo nível de recursividade.");
+#	som();
+ }
+
+1{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no3 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+ }
+
+2{
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+6;
+7{
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ } 
+
+1{
+	removePonteiro arvore1 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(100,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+ 
+8{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no3 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocdir2 = 0;
+	comenta("Nesse ponto o programa entra num terceiro nível de recursividade.");
+#	som();
+ }
+	
+1{
+	removePonteiro arvore1 no3 diagonalSupEsq;
+	adicionaPonteiroSoloArvore arvore1 noo 5 "ainicio'''" cor(0,128,0) posicao(70,300);
+  }
+2{
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir3 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq3 cor(255,37,0) tamanho(60,30) posicao(120,170);
+ }
+4;
+5{
+	comenta("Nesse ponto o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+ }
+
+9{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no3 diagonalSupEsq "ainicio''" 60 cor(0,128,0);
+	removerVariavel ocdir3;
+	removerVariavel ocesq3;
+	int ocdir2 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq2 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq2 = 0;
+	ocdir2 = 0;
+ }
+11;
+12{
+	comenta("Nesse momento o programa volta um nível de recursividade, retornando o valor 0.");
+#	som();
+  }
+  
+9{
+	removePonteiro arvore1 no3 diagonalSupEsq;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+	removerVariavel ocdir2;
+	removerVariavel ocesq2;
+	int ocdir1 cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq1 cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq1 = 0;
+	ocdir1 = 0;
+ }
+10{
+	comenta("Nesse momento o programa volta para o seu primeiro nível de execução, retornando o valor 1.");
+#	som();
+ }
+ 
+9{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+	removerVariavel ocdir1;
+	removerVariavel ocesq1;
+	int ocdir cor(0,198,50) tamanho(60,30) posicao(120,110);
+	int ocesq cor(255,37,0) tamanho(60,30) posicao(120,170);
+	ocesq = 1;
+	ocdir = 1;
+ }
+10{
+	comenta("Nesse momento o programa acaba, retornando o valor 1+1+1 = 3.");
+#	som();
+}
+	

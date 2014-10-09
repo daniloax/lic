@@ -1,0 +1,53 @@
+Corrida Maluca
+
+Se preparem para a largada!
+Carta turbo
+
+Todos iniciam descalços
+
+1 - Anda uma casa
+2 - Pega uma carta preguiça
+3 - Joga o dado de vogais
+
+	Se a letra do dado está na palavra da carta preguiça
+		Anda duas casas
+	Senão
+		Guarda a letra
+
+4 - Pega uma carta de letras
+	
+	Se a letra da carta está escrita na palavra da carta turbo
+		Anda três casas
+	Senão
+		Guarda a letra
+
+5 - Pula duas casas
+6 - Pega uma carta preguiça
+
+Calça o sapato
+
+7 - Joga dado de vogais
+
+	Se letra completa carta preguiça
+		Anda duas casas
+	Senão
+		Guarda a letra
+
+
+8 - Pega uma carta de letras
+
+	Se letra da carta está escrita na palavra da carta turbo
+		Anda três casas
+	Senão
+		Guarda a letra
+
+9 - Pega uma carta preguiça
+
+Escolhe um veículo
+
+10 - 
+
+
+Pula de um pé só
+Faz uma careta
+Faz uma cambalhota

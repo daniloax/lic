@@ -1,0 +1,7457 @@
+1
+00:00:01,506 --> 00:00:07,890
+É permitida e promovida a reprodução total ou parcial, 
+cópia, modificação, tradução,
+
+2
+00:00:07,890 --> 00:00:13,980
+dobragem e/ou redistribuição, e exibição pública 
+deste trabalho para fins não lucrativos.
+
+3
+00:00:14,458 --> 00:00:20,458
+Este filme é o resumo de uma aprendizagem que continua permanentemente 
+e sob nenhuma circunstância, deve ser considerado conclusivo.
+
+4
+00:00:20,458 --> 00:00:23,458
+As pessoas apresentadas neste filme
+têm ideias e opiniões diversas,
+
+5
+00:00:23,458 --> 00:00:27,469
+a sua aparição não expressa necessariamente
+conformidade com todo o conteúdo do mesmo.
+
+6
+00:00:51,569 --> 00:00:53,252
+Co-produtores
+
+7
+00:00:53,973 --> 00:00:57,251
+A todas as crianças e jovens que querem crescer em liberdade.
+
+8
+00:00:57,745 --> 00:01:02,857
+<i> Sempre me lembro de uma aula de filosofia 
+onde o professor nos contou esta história ... </ i>
+
+9
+00:01:04,710 --> 00:01:08,546
+<i> Numa caverna encontrava-se um grupo de homens, 
+prisioneiros de nascimento, </i>
+
+10
+00:01:08,832 --> 00:01:13,203
+<i> encadeados de tal forma que só podiam 
+olhar para o fundo da gruta.</i>
+
+11
+00:01:17,039 --> 00:01:21,953
+<i>Uma fogueira e figuras manipuladas por outros homens
+projetavam na parede todo tipo de sombras.</i>
+
+12
+00:01:24,134 --> 00:01:28,007
+<i>Para os prisioneiros, as sombras eram
+a única referência do mundo exterior ...</i>
+
+13
+00:01:30,736 --> 00:01:33,900
+<i>Estas sombras eram o seu mundo, a sua realidade ...</i>
+
+14
+00:01:35,759 --> 00:01:40,598
+<i>Um dos prisioneiros era liberado e lhe permitiam
+ver a realidade inteira fora da caverna</i>
+
+15
+00:01:43,135 --> 00:01:47,239
+<i>Quanto tempo ia lhe tomar acostumar-se
+ao exterior depois de toda uma vida de confinamento? </i>
+
+16
+00:01:48,746 --> 00:01:51,646
+<i>Possivelmente a sua reação seria
+de um profundo temor à realidade...</i>
+
+17
+00:01:54,183 --> 00:01:58,180
+<i>Poderia entender o que é uma árvore,
+o mar, o sol?</i>
+
+18
+00:02:00,700 --> 00:02:04,500
+<i>Assumamos que este homem pode ver
+a realidade tal qual ela é</i>
+
+19
+00:02:04,500 --> 00:02:08,370
+<i>e entender o grande engano que era a caverna...</i>
+
+20
+00:02:08,370 --> 00:02:10,828
+<i>O professor nos explicou brevemente
+as interpretações do mito </i>
+
+21
+00:02:11,434 --> 00:02:15,587
+<i>em relação ao conhecimento, à ilusão,
+à realidade, e como possivelmente </i>
+
+22
+00:02:15,587 --> 00:02:20,225
+<i>estamos dentro de uma grande caverna,
+que por sua vez está dentro de outra...</i>
+
+23
+00:02:20,325 --> 00:02:23,916
+<i>Mas não há dúvida, da necessidade de esse homem livre, </i>
+
+24
+00:02:23,916 --> 00:02:28,839
+<i>de voltar e compartilhar com o mundo o que tinha visto...</i>
+
+25
+00:02:28,939 --> 00:02:34,774
+"A Educação Proibida"
+
+26
+00:02:47,187 --> 00:02:52,240
+-Bem, e é assim como na sua décima primeira tese
+ele chega à ideia de que 
+
+27
+00:02:52,479 --> 00:02:57,553
+o filósofo não só tem que entender a realidade,
+mas também tem que conseguir transformá-la.
+
+28
+00:03:00,162 --> 00:03:03,381
+<i>Meios de comunicação, milhares de livros,
+todos os discursos políticos,</i>
+
+29
+00:03:03,872 --> 00:03:07,201
+<i>organismos internacionais, especialistas,
+filósofos, páginas de internet.</i>
+
+30
+00:03:08,128 --> 00:03:10,463
+<i>Todos coincidem na importância 
+que tem a educação. </i>
+
+31
+00:03:14,724 --> 00:03:17,288
+<i>Investe-se em capacitações, melhoras na infra-estrutura,
+investigações, </i>
+
+32
+00:03:17,750 --> 00:03:19,790
+<i>compram-se livros, notebooks, lousas digitais. </i>
+
+33
+00:03:20,133 --> 00:03:24,462
+<i>Se dão cursos, sobem salários, baixam salários,
+imitam-se modelos estrangeiros. </i>
+
+34
+00:03:25,315 --> 00:03:26,752
+<i>Tudo para melhorar a educação.</i>
+
+35
+00:03:29,953 --> 00:03:32,509
+<i>Isto não impede que existam tantas escolas 
+como realidades sociais. </i>
+
+36
+00:03:33,161 --> 00:03:35,534
+<i>Escolas marginais, para pobres, 
+escolas depósito, </i>
+
+37
+00:03:36,133 --> 00:03:39,179
+<i>escola de operários, profissionais, 
+escolas de classe média, </i>
+
+38
+00:03:40,156 --> 00:03:41,400
+<i>escolas públicas e privadas, </i>
+
+39
+00:03:43,006 --> 00:03:44,771
+<i>escolas para ricos, escolas da elite.</i>
+
+40
+00:03:45,885 --> 00:03:49,221
+<i>Grande parte delas pretende incluir e conter
+à maior quantidade de estudantes, </i>
+
+41
+00:03:49,756 --> 00:03:53,135
+<i>muitas outras se ocupam de formar 
+trabalhadores de diferentes hierarquias, </i>
+
+42
+00:03:53,909 --> 00:03:57,182
+<i>e só umas poucas se dedicam aos
+ supostos resultados de excelência.</i>
+
+43
+00:03:59,112 --> 00:04:03,783
+<i>Além das suas diferenças, todas trabalham e aspiram
+a um ideal de escola comum...</i>
+
+44
+00:04:04,389 --> 00:04:08,659
+<i>Até que ponto esta escola ideal nos ajuda 
+a desenvolver-nos individual e coletivamente? </i>
+
+45
+00:04:09,674 --> 00:04:13,396
+<i>Realmente este paradigma educativo procura 
+que as pessoas tenham uma boa qualidade de vida </i>
+
+46
+00:04:13,496 --> 00:04:14,496
+<i>e trabalhem para melhorar a sua comunidade? </i>
+
+47
+00:04:17,131 --> 00:04:21,268
+<i>Há outro tipo de escola que o consiga? 
+Há alguma educação pensada com estes ideais? </i>
+
+48
+00:04:22,739 --> 00:04:26,162
+<i>Isto nos levou a abrir as portas de um mundo 
+oculto para muitos de nós...</i>48
+
+49
+00:04:27,327 --> 00:04:31,131
+<i>Este filme é parte de um processo
+que possivelmente não tenha fim,</i>
+
+50
+00:04:31,131 --> 00:04:33,463
+<i>uma pergunta que seguramente não tenha resposta,</i>
+
+51
+00:04:33,463 --> 00:04:36,463
+<i>uma pesquisa sobre qual é a natureza 
+da aprendizagem e da educação, </i>
+
+52
+00:04:36,463 --> 00:04:38,014
+<i>que erros cometemos, </i>
+
+53
+00:04:38,014 --> 00:04:41,930
+<i>e principalmente que ideias são úteis para seguir procurando, </i>
+
+54
+00:04:42,847 --> 00:04:43,952
+<i>seguir aprendendo...</i>
+
+55
+00:04:49,080 --> 00:04:51,988
+- Bem, acho que o que Alicia quer,
+o que a diretora quer é
+
+56
+00:04:52,135 --> 00:04:55,645
+simplesmente estar de acordo, 
+entrar em consenso para ver o que é que vai ser dito,
+
+57
+00:04:55,753 --> 00:04:58,312
+é um ato do colégio, o colégio tem  
+que saber o que é que vai ser dito.
+
+58
+00:04:58,554 --> 00:05:00,544
+- Claro, claro.
+
+59
+00:05:02,667 --> 00:05:03,757
+- Javier, e como ficamos?
+
+60
+00:05:04,221 --> 00:05:08,828
+- Bem, eu proponho à turma como um exercício, 
+que escrevam um texto,
+
+61
+00:05:09,338 --> 00:05:13,309
+nos contando qual era o balanço 
+desses anos na escola, é isso.
+
+62
+00:05:14,269 --> 00:05:18,229
+- "Muito pouco do que se passa na nossa escola 
+é verdadeiramente importante."
+
+63
+00:05:18,827 --> 00:05:22,312
+"Nos ensinam a estar longe uns dos outros e a competir."
+
+64
+00:05:23,927 --> 00:05:26,265
+"Pais e professores não nos escutam."
+
+65
+00:05:28,579 --> 00:05:30,786
+"Por tudo isso dizemos: chega!"
+
+66
+00:05:32,861 --> 00:05:35,129
+"A educação está proibida."
+
+67
+00:05:41,850 --> 00:05:46,076
+"Se você busca resultados diferentes, não faça sempre a mesma coisa"
+
+68
+00:05:47,427 --> 00:05:51,284
+O estudante não aprende depois de 12 anos
+a ler compreensivamente,
+
+69
+00:05:51,614 --> 00:05:57,866
+não aprende as operações matemáticas, 
+não aprende...enfim, aprende muito pouco...
+
+70
+00:06:03,506 --> 00:06:05,566
+O que é que faz que o estudante fracasse na escola?
+
+71
+00:06:06,288 --> 00:06:11,143
+E o convencimento vai pela comprovação
+de que não é o estudante quem fracassa,
+
+72
+00:06:11,490 --> 00:06:13,433
+é o sistema que está mal projetado.
+
+73
+00:06:18,431 --> 00:06:23,598
+É que as reformas educativas atuais 
+em voga em muitas partes, estão mal enfocadas.
+
+74
+00:06:23,994 --> 00:06:28,512
+São arranjos cosméticos do que nós
+pensamos que devemos melhorar na escola,
+
+75
+00:06:29,064 --> 00:06:33,574
+o problema está no modo como concebemos
+paradigmaticamente a escola,
+
+76
+00:06:33,574 --> 00:06:37,135
+é um problema de concepção básica.
+
+77
+00:06:42,535 --> 00:06:47,551
+As escolas e os colégios da América Latina
+não são mais que espaços de tédio e aborrecimento.
+
+78
+00:06:49,618 --> 00:06:51,921
+E eu sempre os convido para que passemos pelos colégios
+
+79
+00:06:54,291 --> 00:06:56,550
+para que vejamos uma caricatura que deve ser rompida...
+
+80
+00:06:59,277 --> 00:07:02,375
+e é o professor em uma quadro negro ditando aulas,
+
+81
+00:07:04,005 --> 00:07:08,171
+em pleno século XXI, isso não tem sentido.
+
+82
+00:07:08,605 --> 00:07:11,782
+É uma matéria estática, 
+uma matéria que não tem movimento,
+
+83
+00:07:12,390 --> 00:07:15,335
+uma matéria que diz somente palavras.
+
+84
+00:07:18,992 --> 00:07:23,069
+Eu sou o adulto, sou eu quem vai dar a vocês
+esta informação.
+
+85
+00:07:23,169 --> 00:07:25,623
+Isso tem que ser aprendido assim como está.
+
+86
+00:07:25,723 --> 00:07:27,156
+Porque é assim.
+
+87
+00:07:27,256 --> 00:07:29,825
+Vocês são as crianças, tem que calar e obedecer.
+
+88
+00:07:29,925 --> 00:07:31,417
+Silêncio!
+
+89
+00:07:31,517 --> 00:07:34,456
+Cale-se, que você nunca sabe nada!
+
+90
+00:07:35,052 --> 00:07:39,860
+Não buscam, por assim dizer, outro desenvolvimento
+que o desenvolvimento curricular.
+
+91
+00:07:40,338 --> 00:07:42,716
+Estão muito centrados nos próprios conteúdos.
+
+92
+00:07:43,092 --> 00:07:47,927
+Quem não aprende a ler, escrever e calcular,
+então não está educado.
+
+93
+00:07:48,488 --> 00:07:54,901
+Porque somente se enfoca o trabalho em 
+algumas capacidades, em algumas áreas.
+
+94
+00:08:03,408 --> 00:08:08,121
+O conhecimento atual está particializado, 
+porque a visão é parcial.
+
+95
+00:08:08,502 --> 00:08:12,718
+Nós dizemos que nas escolas convencionais
+a aprendizagem é preventiva.
+
+96
+00:08:12,818 --> 00:08:20,391
+"Senhora, para quê serve isso?" e a professora lhe diz: 
+"Ah, algum dia você poderá necessitá-lo"
+
+97
+00:08:20,491 --> 00:08:25,352
+Mas temos visto que esses conhecimentos
+não duram nem prevalecem durante muito tempo.
+
+98
+00:08:25,452 --> 00:08:28,345
+Hoje em dia, os paradigmas estão mudando muito rapidamente.
+
+99
+00:08:28,288 --> 00:08:30,063
+O conhecimento está mudando permanentemente.
+
+100
+00:08:30,448 --> 00:08:34,274
+Então, o que passou foi que
+os sistemas educativos não tem mudado.
+
+101
+00:08:34,274 --> 00:08:37,023
+Tão rapidamente quanto o resto da sociedade.
+
+102
+00:08:37,023 --> 00:08:38,624
+É aí que está o problema de fundo.
+
+103
+00:08:39,362 --> 00:08:43,666
+Nas escolas normais e nas faculdades de educação 
+nos disseram que
+
+104
+00:08:43,766 --> 00:08:48,230
+um objetivo é aquele que é medível, quantificável e observável.
+
+105
+00:08:49,610 --> 00:08:54,059
+Então, começamos a buscar a regra
+que nos permita medir os objetivos.
+
+106
+00:08:54,159 --> 00:09:00,482
+E a isso chamaram de qualificações. 
+Seja um A, uma carinha feliz ou uma triste.
+
+107
+00:09:00,935 --> 00:09:03,373
+Mas a lógica sempre será a mesma: comparar.
+
+108
+00:09:03,859 --> 00:09:06,901
+Comparar o sujeito, suas aprendizagens.
+
+109
+00:09:07,556 --> 00:09:12,118
+Frente a uma escala padrão que mede, o quê?
+
+110
+00:09:13,042 --> 00:09:15,609
+Se cada sujeito é único, singular e irrepetível.
+
+111
+00:09:17,429 --> 00:09:24,416
+Busca que um número defina, 
+inclusive, a qualidade de pessoa que você é.
+
+112
+00:09:34,419 --> 00:09:40,185
+Então, por exemplo, crio conflitos em nível cognitivo. 
+"Vamos ver quem é o primerio que realiza..."
+
+113
+00:09:40,647 --> 00:09:43,112
+Com o qual uns são ganhadores e os outros são perdedores.
+
+114
+00:09:43,764 --> 00:09:47,549
+Cada vez que existem perdedores, há alguém 
+que se sente feio, era óbvio.
+
+115
+00:09:48,835 --> 00:09:52,620
+Se estimula muito às crianças a competir entre elas.
+
+116
+00:09:52,620 --> 00:09:56,228
+Os melhores alunos têm reconhecimentos, 
+têm prêmios.
+
+117
+00:09:56,328 --> 00:10:03,177
+Aquelas crianças que não se saem bem nos exames, 
+são chamadas à atenção.
+
+118
+00:10:04,912 --> 00:10:07,219
+em muitos casos, nem sequer são levados em conta.
+
+119
+00:10:08,419 --> 00:10:10,889
+Todo mundo fala de paz, mas ninguém educa para a paz.
+
+120
+00:10:11,747 --> 00:10:15,824
+As pessoas educam para a competição e a competição
+é o principio de qualquer guerra.
+
+121
+00:10:16,320 --> 00:10:20,527
+<i>Em teoria, todas as leis de educação nos falam 
+de objetivos de desenvolvimentos humanos profundos, <i>
+
+122
+00:10:20,748 --> 00:10:24,745
+<i>valores humanos, cooperação, comunidade, solidariedade, igualdade,   <i>
+
+123
+00:10:24,745 --> 00:10:29,081
+<i> liberdade, paz, felicidade e se enchem de palavras bonitas.<i>
+
+124
+00:10:29,181 --> 00:10:33,807
+<i>A realidade é que a estrutura básica do sistema, 
+promove justamente os valores opostos, </i>
+
+125
+00:10:34,530 --> 00:10:40,966
+<i>a concorrência, o individualismo, a discriminação, 
+o condicionamento, a violência emocional, o materialismo. </i>
+
+126
+00:10:41,340 --> 00:10:46,431
+<i>Qualquer idéia que se promova a partir do discurso 
+é incoerente com o que a estrutura sustenta.</i>
+
+127
+00:10:46,775 --> 00:10:52,442
+Bem, apesar de que a escola teoriza e discute 
+sobre princípios e valores,
+
+128
+00:10:53,396 --> 00:10:54,459
+os discute como conteúdos.
+
+129
+00:10:55,365 --> 00:11:00,699
+Se eu venho de um paradigma fragmentado, 
+onde o que me interessa é ensinar história.
+
+130
+00:11:00,967 --> 00:11:04,467
+Vou ver quanto de história sabe este sujeito depois que
+
+131
+00:11:04,467 --> 00:11:08,547
+eu lhe fale de história e o faça ler um livro de história.
+
+132
+00:11:08,547 --> 00:11:14,103
+E para mim esse sujeito terminou, 
+não tem mais nada a ver comigo,
+
+133
+00:11:14,600 --> 00:11:19,471
+se esse sujeito sofre ou não, vem de boa família ou não, 
+tem dinheiro ou não.
+
+134
+00:11:20,208 --> 00:11:25,144
+Para o professor tradicional, o mais fácil é seguir 
+fazendo o que fez durante muitos anos.
+
+135
+00:11:25,135 --> 00:11:26,776
+Você quer ser um medíocre por toda a sua vida?
+
+136
+00:11:27,751 --> 00:11:29,377
+Ou o que tem aprendido por tradição.
+
+137
+00:11:29,795 --> 00:11:32,087
+Você já não é mais uma criança de segundo grau.
+
+138
+00:11:32,410 --> 00:11:37,003
+Então, o ensinar se converte simplesmente 
+num processo de reprodução simbólica.
+
+139
+00:11:37,966 --> 00:11:41,066
+Não quero que voe uma mosca.
+
+140
+00:11:42,477 --> 00:11:45,987
+Na Argentina, a imensa maioria das crianças
+neste momento diz:
+
+141
+00:11:45,987 --> 00:11:50,922
+"Que chato! Hoje é segunda e tenho que ir outra vez a essa escola!"
+
+142
+00:11:51,022 --> 00:11:58,068
+Mas esse não é o pior dos dados, a imensa maioria dos docentes na Argentina diz o mesmo.
+
+143
+00:11:58,514 --> 00:12:01,083
+Eu acredito que os professores atuais, são filhos de um sistema.
+
+144
+00:12:03,207 --> 00:12:05,825
+Não é que o professor nasça ou queira ser professor
+para ser bom ou mau.
+
+145
+00:12:06,746 --> 00:12:07,864
+É o que o estado lhe permite.
+
+146
+00:12:08,744 --> 00:12:11,159
+Chega, vão ficar sem recreio.
+
+147
+00:12:12,136 --> 00:12:16,665
+Ah, não, não me diga que você tem problemas em casa.
+
+148
+00:12:20,945 --> 00:12:24,544
+Como eu faço para educar a emoção destas crianças
+se no meu curso
+
+149
+00:12:24,544 --> 00:12:29,127
+de formação docente nunca me falaram 
+uma palavra sobre as emoções?
+
+150
+00:12:29,327 --> 00:12:31,974
+Se continuam falando, eu vou separar vocês, hein!
+
+151
+00:12:37,272 --> 00:12:41,494
+Não quero que vá à escola para perder tempo, 
+não quero que vá passar um mau momento.
+
+152
+00:12:42,398 --> 00:12:47,014
+Nestes momentos, um garoto de 8 anos passa na escola 
+mais horas que um universitário na universidade,
+
+153
+00:12:47,343 --> 00:12:50,734
+não tem sentido algum, não há tantos conhecimentos 
+para aprender na escola.
+
+154
+00:12:52,067 --> 00:12:54,681
+A escola então não é nem sequer o lugar de formação.
+
+155
+00:12:55,449 --> 00:12:59,071
+É uma grande creche ou, como eu chamo, 
+un grande estacionamento de crianças.
+
+156
+00:13:01,215 --> 00:13:06,787
+Penso que são cárceres. Penso que é horror. 
+Pensar que se tenha que encerrar as crianças,
+
+157
+00:13:07,024 --> 00:13:09,707
+que deva haver guardas os custodiando 
+para que não escapem.
+
+158
+00:13:13,613 --> 00:13:17,129
+E, então, cada vez se encerram mais. 
+Cada vez lhes colocamos muros mais altos.
+
+159
+00:13:17,129 --> 00:13:22,548
+Os muros podem ser de tijolos ou de árvores. 
+Mas, de qualquer forma, são muros que isolam, que separam.
+
+160
+00:13:24,550 --> 00:13:30,618
+Quero que a escola seja para ele 
+em espaço de crescimento pessoal,
+
+161
+00:13:31,511 --> 00:13:38,107
+e não um lugar aonde o adestram para
+um futuro ensino médio,
+
+162
+00:13:38,107 --> 00:13:42,627
+e depois para uma universidade e depois para o trabalho,
+
+163
+00:13:43,627 --> 00:13:45,627
+e depois, Para quê?
+
+164
+00:13:45,961 --> 00:13:49,312
+Mas é muito mais fácil dizer: 
+"Agora, calem a boca,
+
+165
+00:13:50,815 --> 00:13:52,569
+agora, abram o caderno,
+
+166
+00:13:53,968 --> 00:13:55,747
+agora, peguem o lápis vermelho..."
+
+167
+00:13:57,049 --> 00:13:59,019
+O qual é um adestramento canino,
+
+168
+00:14:00,284 --> 00:14:01,944
+isso não é educação.
+
+169
+00:14:09,137 --> 00:14:16,937
+- Sim, hum... bem, na verdade, o que eles me dizem 
+é que este texto eles pensavam lê-lo na comemoração.
+
+170
+00:14:17,581 --> 00:14:18,581
+É um esboço.
+
+171
+00:14:18,959 --> 00:14:22,324
+- Haha, não é um esboço, hum, não, assim como está vamos lê-lo.
+
+172
+00:14:22,708 --> 00:14:26,161
+- Não, não, não, Martín, aqui há palavras muito ofensivas
+
+173
+00:14:26,481 --> 00:14:29,857
+Não podem nos atacar dessa maneira tão gratuitamente.
+
+174
+00:14:29,967 --> 00:14:32,513
+- Bem, e se se sentem atacados, será por algum motivo. Ou não?
+- Bem, pára um pouco
+
+175
+00:14:32,512 --> 00:14:35,784
+Alicia, o que fizemos foi simplesmente cumprir
+uma tarefa que o professor nos deu.
+
+176
+00:14:37,182 --> 00:14:40,238
+- Alicia, por isso digo, é um esboço. 
+Eles vão suavizar este texto.
+
+177
+00:14:40,419 --> 00:14:44,154
+- Não vamos suavizá-lo, vamos lê-lo assim como está...
+- Martín!
+
+178
+00:14:44,254 --> 00:14:46,044
+- E se não vamos suavizá-lo. - Não!
+
+179
+00:14:46,719 --> 00:14:50,165
+- Martín, assim como está é uma falta de respeito.
+
+180
+00:14:50,763 --> 00:14:53,703
+- Me desculpa. Me esquecia que dizer o que se pensa
+é faltar o respeito. 
+
+181
+00:15:01,000 --> 00:15:06,903
+"Nosso problema para a compreensão da escolarização obrigatória
+tem  sua origem num fato inoportuno:
+
+182
+00:15:06,903 --> 00:15:10,903
+o dano que faz desde uma perspectiva humana,
+
+183
+00:15:10,903 --> 00:15:14,714
+é um bem desde uma perspectiva do sistema."
+
+184
+00:15:14,714 --> 00:15:20,374
+Isso quase não se sabe, mas a educação
+
+185
+00:15:21,278 --> 00:15:24,530
+pública, gratuíta e obrigatória
+
+186
+00:15:25,975 --> 00:15:28,382
+foi inventada em algum momento da história.
+
+187
+00:15:28,868 --> 00:15:29,833
+Antes não existia.
+
+188
+00:15:31,037 --> 00:15:35,180
+<i>A educação na antiguidade se distanciava muito
+ do que hoje entendemos por educação.</i>
+
+189
+00:15:35,799 --> 00:15:40,439
+<i>Na Atenas Clássica, por exemplo, não havia escolas,
+as primeiras academias de Platão</i>
+
+190
+00:15:40,764 --> 00:15:44,359
+<i>eram espaços de reflexão, conversação
+e experimentação livre.</i>
+
+191
+00:15:45,177 --> 00:15:47,719
+<i>A instrução obrigatória era coisa dos escravos.</i>
+
+192
+00:15:49,174 --> 00:15:52,775
+<i>Por outro lado, a educação em Esparta era
+mais parecida a uma instrução militar. </i>
+
+193
+00:15:53,613 --> 00:15:56,686
+<i>O estado se desfazia daqueles que não alcançavam níveis esperados.</i>
+
+194
+00:15:57,412 --> 00:16:03,983
+<i>Havia classes obrigatórias, fortes castigos e
+modelagem da conduta através da dor e do sofrimento.</i>
+
+195
+00:16:05,317 --> 00:16:09,486
+Antigamente, a educação estava nas mãos da igreja católica, 
+pelo menos no mundo cristão ocidental.
+
+196
+00:16:11,662 --> 00:16:19,146
+E foi recentemente, no século XVIII, em uma época da história
+que se chama Despotismo Esclarecido,
+
+197
+00:16:19,586 --> 00:16:24,394
+com certeza escutaram a respeito no colégio, 
+onde se criou o conceito de educação
+
+198
+00:16:24,475 --> 00:16:27,869
+pública, gratuíta e obrigatória.
+
+199
+00:16:28,433 --> 00:16:33,978
+<i>A escola, como hoje a conhecemos, nasce no final do século XVIII 
+e princípios do século XIX na Prússia.</i>
+
+200
+00:16:34,603 --> 00:16:37,589
+<i>Com o objetivo de evitar as revoluções que ocorriam na França, </i>
+
+201
+00:16:37,822 --> 00:16:42,278
+<i>os monarcas incluiram alguns princípios 
+do Iluminismo para satisfazer o povo,</i>
+
+202
+00:16:42,767 --> 00:16:44,904
+<i>mas mantendo o regime absolutista.</i>
+
+203
+00:16:45,644 --> 00:16:49,283
+<i>A escola prussiana se baseava na 
+forte divisão de classes e castas. </i>
+
+204
+00:16:50,037 --> 00:16:56,483
+<i>Sua estrutura, herdeira do modelo Espartano, fomentava
+a disciplina, a obediência e o regime autoritário.</i>
+
+205
+00:16:56,924 --> 00:16:58,875
+O que buscavam estes déspotas esclarecidos?
+
+206
+00:16:58,975 --> 00:17:02,591
+Um povo dócil, obediente
+
+207
+00:17:03,156 --> 00:17:07,805
+e que  pudesse se preparar para as guerras que
+houveram nessa época entre todas as nações
+
+208
+00:17:07,961 --> 00:17:09,054
+que estavam nascendo.
+
+209
+00:17:10,238 --> 00:17:13,406
+Por exemplo, Catarina a Grande, da Rússia,
+
+210
+00:17:13,594 --> 00:17:16,655
+chamou aos enciclopedistas franceses para preparar isso mesmo.
+
+211
+00:17:17,173 --> 00:17:20,824
+Diderot, um dos mais famosos, esteve lá para armar este
+
+212
+00:17:21,860 --> 00:17:27,991
+pacote, sim?, formador, não de cidadãos, senão de
+
+213
+00:17:28,952 --> 00:17:32,403
+obedientes súditos desses estados.
+
+214
+00:17:32,632 --> 00:17:35,730
+<i>As notícias do bem sucedido modelo educativo viajaram rápido,</i>
+
+215
+00:17:36,213 --> 00:17:40,510
+<i>e, em poucos anos, educadores das Américas 
+e Europa visitavam a Prússia para se capacitar.</i>
+
+216
+00:17:41,620 --> 00:17:44,846
+<i>Com o passar do tempo, o modelo se expandiu a nível internacional.</i>
+
+217
+00:17:45,583 --> 00:17:50,308
+<i>Muitos países importaram a escola moderna
+com o discurso de acesso à educação para todos,</i>
+
+218
+00:17:50,853 --> 00:17:55,491
+<i>elevando a bandeira da igualdade, quando justamente
+a essência mesma do sistema</i>
+
+219
+00:17:55,677 --> 00:18:00,602
+<i>provinha do despotismo, buscando perpetuar 
+modelos elitistas e a divisão de classes.
+
+220
+00:18:02,726 --> 00:18:05,012
+Essa é a origem da educação pública.
+
+221
+00:18:06,361 --> 00:18:07,723
+Vejam que Napoleão,
+
+222
+00:18:08,871 --> 00:18:09,940
+um pouco depois,
+
+223
+00:18:11,199 --> 00:18:14,634
+e inimigo jurado de todos estes déspotas fez a mesma coisa.
+
+224
+00:18:15,221 --> 00:18:17,053
+Ele dizia com todas as letras:
+
+225
+00:18:18,284 --> 00:18:19,347
+"Eu quero formar
+
+226
+00:18:20,453 --> 00:18:22,912
+um corpo docente
+
+227
+00:18:24,231 --> 00:18:30,252
+para poder dirigir a opinião dos Franceses".
+
+228
+00:18:31,420 --> 00:18:39,896
+Dá para entender? Ele tinha as coisas claras e isso opera assim, 
+saiba-se ou não, até os dias de hoje. 
+
+229
+00:18:40,449 --> 00:18:44,014
+<i>A escola nasce num mundo positivista
+regido por uma economia industrial,</i>
+
+230
+00:18:44,494 --> 00:18:50,411
+<i>portanto, busca obter os maiores resultados observáveis
+com o menor esforço e investimento possível,</i>
+
+231
+00:18:50,806 --> 00:18:53,773
+<i>aplicando fórmulas científicas e leis gerais.</i>
+
+232
+00:18:56,572 --> 00:18:59,642
+<i>A escola era a resposta ideal à
+necessidade de trabalhadores,</i>
+
+233
+00:19:00,112 --> 00:19:03,198
+<i>e os mesmos empresários industriais do século XIX</i>
+
+234
+00:19:03,331 --> 00:19:08,075
+<i>foram os que financiaram a escolarização obrigatória 
+através de suas fundações.</i>
+
+235
+00:19:09,083 --> 00:19:11,999
+Aonde coloco os filhos dessas pessoas 
+para que possam trabalhar?
+
+236
+00:19:13,595 --> 00:19:16,942
+Como educamos para que aprendam a ler? 
+Como criamos operários inteligentes?
+
+237
+00:19:19,083 --> 00:19:24,434
+A educação continua sendo a mesma, uma ferramenta 
+para formar trabalhadores úteis ao sistema
+
+238
+00:19:24,924 --> 00:19:30,075
+e uma ferramenta útil para que a cultura
+permaneça sempre igual e sempre se repita.
+
+239
+00:19:31,696 --> 00:19:34,699
+O qual é conservar a estrutura atual da sociedade.
+
+240
+00:19:37,234 --> 00:19:40,485
+<i>A escola se complementou com pesquisas
+sobre o controle da conduta,</i>
+
+241
+00:19:41,061 --> 00:19:45,032
+<i>propostas de utopias sociais e
+até teorías de superioridade racial.</i>
+
+242
+00:19:46,263 --> 00:19:49,790
+<i>Não é de se estranhar que os primeiros estados
+com o sistema prussiano, ou similar,</i>
+
+243
+00:19:50,146 --> 00:19:54,752
+<i>foram, com o passo das gerações, focos de
+xenofobia e nacionalismo extremo.</i>
+
+244
+00:19:56,688 --> 00:20:00,734
+<i>O modelo de produção industrial em linha de montagem
+era perfeito para a escola. </i>
+
+245
+00:20:01,704 --> 00:20:05,034
+<i>A educação de uma criança era comparável
+à manufatura de um produto,</i>
+
+246
+00:20:05,639 --> 00:20:09,565
+<i>portanto, requeria uma série de passos
+determinados numa ordem específica,</i>
+
+247
+00:20:10,059 --> 00:20:13,247
+<i>separando as crianças por gerações em graus escolares.</i>
+
+248
+00:20:20,059 --> 00:20:23,668
+<i>e, em cada uma dessas etapas, trabalharia
+sobre determinados elementos,</i>
+
+249
+00:20:24,017 --> 00:20:28,548
+<i>conteúdos que assegurariam o sucesso,
+pensados minuciosamente por um especialista.</i>
+
+250
+00:20:31,041 --> 00:20:39,744
+Digamos que o professor é a figura que é a encarregada
+de ensinar uma série de conteúdos que tocam,
+
+251
+00:20:40,477 --> 00:20:44,010
+porque alguém determinou assim,
+numa idade determinada.
+
+252
+00:20:44,513 --> 00:20:46,444
+Mas a educação não é preparada por biólogos,
+
+253
+00:20:48,722 --> 00:20:51,519
+e, curiosamente, muitas vezes também não
+são educadores que a preparam,
+
+254
+00:20:52,534 --> 00:20:53,827
+são administrativos,
+
+255
+00:20:55,685 --> 00:20:57,288
+são pessoas que não fazem aulas.
+
+256
+00:20:58,946 --> 00:21:03,202
+<i>Nesta linha, uma pessoa estaria a cargo
+de uma pequena parte do processo.</i>
+
+257
+00:21:03,556 --> 00:21:08,386
+<i>insuficiente tanto para conhecer o mecanismo
+na sua totalidade nem às pessoas em profundidade.</i>
+
+258
+00:21:08,926 --> 00:21:12,977
+<i>um docente por ano, por matéria, cada 30 ou 40 alunos.</i>
+
+259
+00:21:13,716 --> 00:21:17,277
+<i>chegando ao ponto de que o processo termine
+sendo meramente mecânico.</i>
+
+260
+00:21:19,723 --> 00:21:22,687
+A educação como estamos vendo hoje é administrativa,
+
+261
+00:21:23,997 --> 00:21:25,946
+há alunos que chegam, professores que dão aula,
+
+262
+00:21:26,313 --> 00:21:29,755
+alunos que se vão, professores que se vão e,
+no dia seguinte, se repete o ciclo.
+
+263
+00:21:31,006 --> 00:21:34,194
+Um professor estatal é um funcionário.
+
+264
+00:21:35,724 --> 00:21:40,761
+A quem a autoridade diz:
+"O senhor tem que ensinar isto, isto e isto, e desta forma."
+
+265
+00:21:42,175 --> 00:21:46,694
+Porque tem que ser repetido a demasiadas crianças
+com um professor com demasiadas horas de aula
+
+266
+00:21:46,828 --> 00:21:49,988
+e com poucas horas de atenção ao aluno em forma particular.
+
+267
+00:21:51,121 --> 00:21:52,800
+Então, vai se dirigir sempre a um grupo coletivo.
+
+268
+00:21:52,907 --> 00:21:55,251
+Porque, evidentemente, se eu tenho 30 crianças
+
+269
+00:21:55,706 --> 00:21:59,718
+Não posso pretender que todas elas
+queiram fazer a mesma coisa ao mesmo tempo.
+
+270
+00:22:00,438 --> 00:22:05,322
+<i>Este sistema de linha de montagem, que nasce com o Taylorismo
+foi aplicado tanto na indústria,</i>
+
+271
+00:22:05,380 --> 00:22:09,594
+<i>na escola e no exército de diferentes países e culturas de Ocidente.</i>
+
+272
+00:22:11,682 --> 00:22:16,999
+Até poucas décadas atrás, a escola tinha estas coisas de quartel e de asilo,
+
+273
+00:22:17,137 --> 00:22:23,164
+inclusive o recreio termina com um sinal anônimo, não humano,
+
+274
+00:22:23,970 --> 00:22:30,765
+que indica às crianças que devem se adestrar, pouco a pouco 
+para parar numa determinada lajota
+
+275
+00:22:30,817 --> 00:22:35,879
+atrás de determinada cabeça, para formar uma fila,
+geralmente do menor ao maior.
+
+276
+00:22:37,107 --> 00:22:40,160
+<i>Durante os últimos séculos, temos construído nossas escolas</i>
+
+277
+00:22:40,160 --> 00:22:43,080
+<i>à imagem e semelhança das prisões e fábricas,</i>
+
+278
+00:22:43,180 --> 00:22:46,564
+<i>priorizando o cumprimento das regras, o controle social.</i>
+
+279
+00:22:48,804 --> 00:22:53,660
+<i>A escola foi pensada como uma fábrica de
+cidadãos obedientes, consumistas e eficazes,</i>
+
+280
+00:22:54,139 --> 00:22:58,769
+<i>aonde, pouco a pouco, pessoas se convertem em números,
+ qualificações e estatísticas.</i>
+
+281
+00:22:59,988 --> 00:23:03,777
+<i>As exigências e pressões do sistema terminam
+desumanizando a todos,</i>
+
+282
+00:23:04,222 --> 00:23:08,465
+<i>porque vão  além dos professores, diretivos
+ou inspetores escolares.</i>
+
+283
+00:23:10,463 --> 00:23:12,235
+Estão considerados como grupos homogêneos,
+
+284
+00:23:13,214 --> 00:23:16,925
+com conteúdos homogêneos que tem que
+obter resultados parelhos.
+
+285
+00:23:17,659 --> 00:23:19,937
+Que todos temos que saber o mesmo.
+
+286
+00:23:21,665 --> 00:23:24,494
+Apesar de que, adultos, não sabemos todos a mesma coisa,
+
+287
+00:23:24,572 --> 00:23:26,679
+apesar de que não nos dedicamos todos à mesma coisa.
+
+288
+00:23:27,328 --> 00:23:31,735
+Nas escolas, todos tem que querer fazer a mesma coisa
+e fazê-la igualmente bem.
+
+289
+00:23:32,958 --> 00:23:36,946
+Então, a escola tem pouca capacidade de responder
+às necessidades individuais,
+
+290
+00:23:38,016 --> 00:23:41,794
+porque a escola instrui, é um centro de instrução
+e é o que faz.
+
+291
+00:23:42,284 --> 00:23:45,182
+Quem não aprende, fica. Essa é a realidade.
+
+292
+00:23:47,151 --> 00:23:52,306
+Isso, de alguma maneira, implica em que o sistema educativo
+é um sistema de exclusão social:
+
+293
+00:23:52,607 --> 00:23:56,295
+seleciona o tipo de pessoas que irão à universidade
+
+294
+00:23:56,418 --> 00:24:00,065
+para chegar a formar parte de uma série de elite
+
+295
+00:24:00,734 --> 00:24:06,050
+que domina as empresas, que domina os sistemas de
+produção, econômico, de comunicação, etc.
+
+296
+00:24:06,153 --> 00:24:07,799
+E outro tipo de pessoas
+
+297
+00:24:08,770 --> 00:24:11,792
+para as quais a escola não é suficientemente adequada
+
+298
+00:24:12,303 --> 00:24:17,836
+que estão destinadas a outro tipo de trabalho mais precário
+porque não vão dispor dos diplomas para fazer isto.
+
+299
+00:24:17,995 --> 00:24:19,816
+Ao sistema e aos estados,
+
+300
+00:24:21,209 --> 00:24:22,209
+não lhes preocupa isso,
+
+301
+00:24:23,282 --> 00:24:28,486
+honestamente, não lhes preocupa o ser humano
+enquanto pessoa, enquanto indivíduo.
+
+302
+00:24:30,326 --> 00:24:35,647
+E, nestes termos, toda a educação que busque outra coisa
+tem que ser proibida.
+
+303
+00:24:37,399 --> 00:24:42,491
+<i>A realidade é que a essência da escola prussiana está
+imersa na estrutura mesma da nossa escola.</i>
+
+304
+00:24:42,997 --> 00:24:46,854
+<i>Os exames padronizados, a divisão de idades,
+as aulas obrigatórias,</i>
+
+305
+00:24:47,183 --> 00:24:51,189
+<i>os currículos desvinculados da realidade,
+o sistema de qualificações,</i>
+
+306
+00:24:51,797 --> 00:24:55,422
+<i>as pressões sobre os professores e crianças, 
+o sistema de prêmios e castigos,</i>
+
+307
+00:24:55,752 --> 00:25:00,339
+<i>os horários estritos, o claustro e a separação da
+comunidade, a estrutura vertical.</i>
+
+308
+00:25:01,419 --> 00:25:04,653
+<i>Tudo isso continua sendo parte das escolas do séclo XXI.</i>
+
+309
+00:25:05,720 --> 00:25:08,632
+A escola está fechada ao mundo exterior.
+
+310
+00:25:10,115 --> 00:25:13,577
+Te explicava o título do meu livro " Do mapa escolar
+ao território educativo",
+
+311
+00:25:14,144 --> 00:25:19,014
+para indicar essa fábula do cartógrafo que conta (Jorge Luis) Borges
+
+312
+00:25:19,632 --> 00:25:23,443
+que começa a fazer um mapa de um território determinado
+
+313
+00:25:24,107 --> 00:25:27,527
+e se entusiasma por fazê-lo o mais perfeito possível.
+
+314
+00:25:28,557 --> 00:25:31,944
+O mapa termina substituindo o território.
+
+315
+00:25:32,722 --> 00:25:35,708
+Então, hoje em dia, a escola se fechou,
+se meteu dentro do mapa.
+
+316
+00:25:36,112 --> 00:25:39,641
+O que se ensina? Verdades que estão no mapa,
+não no território.
+
+317
+00:25:40,279 --> 00:25:45,733
+<i>Escola não é sinônimo de educação.
+A escola pode ser um velho mapa da sabedoria.</i>
+
+318
+00:25:45,942 --> 00:25:49,385
+<i>Mas a educação é o território onde todo
+ o aprendizado acontece.</i>
+
+319
+00:25:55,320 --> 00:26:00,356
+<i>O que é uma boa educação? Conseguir que a maior quantidade
+ de crianças atravesse os padrões de qualidade?</i>
+
+320
+00:26:01,073 --> 00:26:03,945
+<i>Que obtenham ferramentas e conhecimentos
+que não os interessam</i>
+
+321
+00:26:04,052 --> 00:26:06,209
+para superar barreiras que outros lhes impõem?
+
+322
+00:26:07,062 --> 00:26:10,248
+<i>Não era o objetivo da educação alcançar
+ uma boa qualidade de vida?</i>
+
+323
+00:26:12,298 --> 00:26:15,126
+<i>Esqueçamos, por um momento, tudo o que
+sabemos sobre educação,</i>
+
+324
+00:26:15,453 --> 00:26:17,426
+<i>toda nossa forma de entender a escola,</i>
+
+325
+00:26:18,452 --> 00:26:22,899
+<i>tudo o que nos disseram que devemos aprender na vida
+e o que devemos ensinar aos nossos filhos.</i>
+
+326
+00:26:24,435 --> 00:26:26,948
+Começar a ver cada coisa,
+
+327
+00:26:28,182 --> 00:26:30,624
+a revisá-la como se nunca a tivéssemos visto
+
+328
+00:26:31,236 --> 00:26:34,630
+Ou seja, cada ação, cada atitude, cada costume.
+
+329
+00:26:34,991 --> 00:26:39,083
+Se não estivéssemos fazendo as coisas como as estamos
+fazendo porque sempre as fizemos assim.
+
+330
+00:26:39,128 --> 00:26:40,190
+Como as faríamos hoje?
+
+331
+00:26:40,669 --> 00:26:43,206
+Não? É como balançar a cabeça e dizer, bom,
+
+332
+00:26:44,099 --> 00:26:44,894
+começamos de novo.
+
+333
+00:26:52,811 --> 00:26:54,136
+<i>Comecemos de novo.</i>
+
+334
+00:26:57,000 --> 00:27:02,397
+Vejam crianças, vocês tem que entender que o discurso que
+escreveram é algo que pode incomodar muita gente.
+
+335
+00:27:02,470 --> 00:27:05,795
+- Bom, está bem, mas se é o que sentimos e o escrevemos assim,
+por que não podemos lé-lo assim?
+
+336
+00:27:06,058 --> 00:27:09,019
+- São nossas palavras, o que pensamos, qual é o problema?
+- Se faz responsável pelo que escrevemos aí.
+
+337
+00:27:09,071 --> 00:27:11,395
+-Não, não, não para, para, para.</i>
+<i>-(Discussão)</i>
+
+338
+00:27:11,566 --> 00:27:13,825
+- Para, para, para um pouco Martin porque te conheço.
+
+339
+00:27:14,002 --> 00:27:17,630
+Te aborrece tudo nesta escola, te aborreço eu,
+te aborrecem os professores. Te conheço bem.
+
+340
+00:27:17,841 --> 00:27:19,171
+- Não, você a mim não me conhece.
+
+341
+00:27:19,171 --> 00:27:22,771
+- Sim te conheço.
+- Não, não me conhece.
+
+342
+00:27:26,273 --> 00:27:31,162
+“Não me sigam, sigam à criança”
+
+343
+00:27:32,396 --> 00:27:35,943
+Nos não queremos ensinadores, queremos educadores.
+
+344
+00:27:36,665 --> 00:27:39,335
+Isso é fácil. O que é dificil é
+
+345
+00:27:39,568 --> 00:27:43,366
+ajudar a produzir o normal desenvolvimento de uma pessoa.
+
+346
+00:27:44,280 --> 00:27:48,766
+Se eu quero fazer isso tenho que conhecer
+o ser humano intrínseco,
+
+347
+00:27:48,942 --> 00:27:50,815
+Que potencialidades traz?
+
+348
+00:27:51,282 --> 00:27:54,228
+Em que idades traz quais potencialidades?
+
+349
+00:27:57,431 --> 00:28:00,731
+Mas, mas, não segue à criança . Não esta observando à criança.
+
+350
+00:28:01,073 --> 00:28:07,152
+Não conhece realmente à criança, a cada uma particularmente.
+Mas conhece muito à teoria.
+
+351
+00:28:07,361 --> 00:28:13,427
+Então, é como queum adulto que sabe o que deve fazer a criança,
+mas está cego, um pouco, sobre a realidade.
+
+352
+00:28:14,209 --> 00:28:16,813
+Quer dizer, o centro dessa educação é a criança.
+
+353
+00:28:17,044 --> 00:28:20,634
+Então, ela é pensada a partir de quais são suas necessidades.
+
+354
+00:28:21,011 --> 00:28:24,258
+E não desde quais são as nossas necessidades como adultos.
+
+355
+00:28:29,851 --> 00:28:37,994
+As crianças desde que nascem, nascem com essa capacidade de criar,
+são criativas, observadoras e curiosas.
+
+356
+00:28:38,507 --> 00:28:40,958
+E na escola podem acontecer duas coisas:
+
+357
+00:28:41,446 --> 00:28:47,486
+Que o processo seja acompanhado e se propiciem-se atividades/npara desenvolver essa capacidade ou que seja frustrada.
+
+358
+00:28:47,982 --> 00:28:52,231
+De fato, poderiamos caracterizar que o ser humano
+tende a aprender.
+
+359
+00:28:53,012 --> 00:28:56,960
+Inclusive podemos dizer mas ainda, não é  merito nenhum
+do ser humano aprender.
+
+360
+00:28:57,738 --> 00:28:59,938
+Porém, é que não pode não aprender.
+
+361
+00:29:00,786 --> 00:29:04,482
+Você o vê. O tempo todo está te perguntando
+"E isto por quê? E isto por quê? ".
+
+362
+00:29:04,547 --> 00:29:09,031
+Não é que alguém tenha que lhe proporcionar a vontade 
+de perguntar, ele a tem na sua essência.
+
+363
+00:29:11,725 --> 00:29:16,176
+Basta que tenha órgãos sensoriais e percebe, 
+não é verdade?
+
+364
+00:29:16,541 --> 00:29:23,733
+Basta que tenha seu cérebro e pense, raciocine/n e imagina, cria e fantasia.
+
+365
+00:29:24,390 --> 00:29:27,231
+Mas na escola, consegue-se apenas silenciá-lo.
+
+366
+00:29:32,792 --> 00:29:37,594
+Assim, se prestares atenção, cada vez,
+à medida que crescem as crianças,
+
+367
+00:29:37,594 --> 00:29:40,147
+vão perdendo sua curiosidade e seu desejo de aprender.
+
+368
+00:29:40,247 --> 00:29:41,515
+Uma criança com 12 anos
+
+369
+00:29:42,705 --> 00:29:45,610
+dificilmente quando sai da escola pega um livro,
+
+370
+00:29:46,390 --> 00:29:48,356
+É a minoria que faz isso.
+
+371
+00:29:48,868 --> 00:29:55,488
+Por quê?  Porque está cansado, está totalmente cansado
+de que lhe digam o que deve e o que não deve fazer,
+
+372
+00:29:55,799 --> 00:29:57,940
+e já perdeu toda curiosidade por aprender.
+
+373
+00:29:59,288 --> 00:30:04,303
+<i>A mente da criança tem qualidades de aprendizagem
+qualitativamente superiores às dos adultos,</i>
+
+374
+00:30:04,966 --> 00:30:08,800
+<i>porque está naturalmente desenvolvida
+para perceber o que lhe é apresentado</i>
+
+375
+00:30:08,800 --> 00:30:12,416
+<i>e, com isso, cria sua mente, se constrói a si mesmo.</i>
+
+376
+00:30:15,216 --> 00:30:17,591
+<i>Em poucos anos, aprende a controlar seu corpo,</i>
+
+377
+00:30:17,934 --> 00:30:22,932
+<i>pode comunicar-se em vários idiomas, compreende as regras
+da natureza e as características da sua cultura.</i>
+
+378
+00:30:23,710 --> 00:30:27,271
+<i>Todo este complexo e maravilhoso processo,
+se dá de maneira inconsciente.</i>
+
+379
+00:30:27,802 --> 00:30:30,215
+<i>Aprende sem muito esforço por conta própria.</i>
+
+380
+00:30:31,981 --> 00:30:36,727
+Das coisas que aprendemos na escola, inclusive quando
+na escola aprendíamos muitas coisas,
+
+381
+00:30:37,578 --> 00:30:40,602
+Há muito poucas que necessitamos na vida cotidiana.
+
+382
+00:30:41,587 --> 00:30:46,392
+É possível que a escola seja conveniente,
+eu não acredito que a escola seja necessária.
+
+383
+00:30:47,002 --> 00:30:51,952
+Acredito que pode ser demais, na melhor opção muito conveniente
+na sociedade, mas podemos prescindir dela.
+
+384
+00:30:52,465 --> 00:30:59,308
+Porque podemos viver sem saber logaritmos, mas não podemos
+viver sem saber nos relacionarmos com outras pessoas.
+
+385
+00:30:59,408 --> 00:31:03,102
+ou sem saber caminhar, ou sem saber usar ferramentas.
+
+386
+00:31:03,838 --> 00:31:06,359
+Todas essas coisas as crianças aprendem brincando.
+
+387
+00:31:09,991 --> 00:31:13,259
+<i>As crianças, desde que nascem, têm a habilidade
+de se construir a si mesmas,</i>
+
+388
+00:31:13,734 --> 00:31:15,613
+<i>aprendendo do que encontram à sua volta,</i>
+
+389
+00:31:16,176 --> 00:31:18,640
+<i>através do brincar e explorar o mundo.</i>
+
+390
+00:31:22,164 --> 00:31:28,172
+As crianças absorvem cultura, as crianças vêm
+a absorver a cultura dos pais,
+
+391
+00:31:28,538 --> 00:31:30,380
+e isso se vê inclusive na linguagem.
+
+392
+00:31:31,195 --> 00:31:37,177
+Está no contexto cultural humano, os números e
+as letras e as palavras, então eles o aprendem.
+
+393
+00:31:37,989 --> 00:31:40,880
+Igual que aprendem a andar, porque há adultos que andam.
+
+394
+00:31:41,185 --> 00:31:44,316
+Quer dizer, quando um ser humano nasce,
+
+395
+00:31:45,186 --> 00:31:48,699
+Sua biologia não o obriga a ser humano.
+
+396
+00:31:49,835 --> 00:31:53,176
+Necessita nascer em um entorno humano.
+
+397
+00:31:55,325 --> 00:31:58,733
+<i>Tudo o que nos rodeia, influi tremendamente
+em nossa aprendizagem.</i>
+
+398
+00:31:59,514 --> 00:32:02,734
+<i>Os espaços, os tempos, as atitudes das nossas famílias.</i>
+
+399
+00:32:03,640 --> 00:32:05,333
+<i>As emoções, os gostos, as crenças.</i>
+
+400
+00:32:05,880 --> 00:32:09,267
+<i>Tudo é parte desse ambiente com o qual
+construímos a nós mesmos.</i>
+
+401
+00:32:10,504 --> 00:32:11,638
+<i>A pergunta então é</i>
+
+402
+00:32:12,085 --> 00:32:16,514
+<i>Que ambiente estamos oferecendo às crianças,
+para que os adultos se desenvolvam dessa maneira?<i>
+
+403
+00:32:16,791 --> 00:32:20,136
+Porque a criança entra, e entra a um meio dogmático.
+
+404
+00:32:20,136 --> 00:32:26,150
+“Sente-se aqui”,”Fique 6 ou 7 horas sentado nessa fila”
+Que horrível!
+
+405
+00:32:26,250 --> 00:32:33,961
+Se estamos numa família onde essa rede de afetos é
+supremamente fraca, os níveis de agressão são muito altos,
+
+406
+00:32:34,744 --> 00:32:38,194
+de violência, a criança vai ser uma criança
+provavelmente muito violenta.
+
+407
+00:32:38,874 --> 00:32:44,298
+Não é seguro que vai ser violento, não estou dizendo isso,
+mas, sim, estamos falando que
+
+408
+00:32:44,466 --> 00:32:47,712
+em contextos violentos, a violência se reproduz facilmente.
+
+409
+00:32:48,013 --> 00:32:50,357
+A criança vai dar o que recebe.
+
+410
+00:32:51,646 --> 00:32:57,057
+Então, por isso temos que conseguir relações muito
+mais amorosas, muito mais profundas nas aulas.
+
+411
+00:32:58,025 --> 00:33:04,294
+<i>Estudos indicam que, atualmente, na idade de 5 anos,
+98% das crianças poderiam ser consideradas gênios.</i>
+
+412
+00:33:05,155 --> 00:33:10,308
+<i>São curiosos, criativos, e têm a habilidade de pensar de formas diversas, resolver problemas,</i>
+
+413
+00:33:10,843 --> 00:33:12,376
+<i>quer dizer, têm a mente aberta.</i>
+
+414
+00:33:13,839 --> 00:33:18,186
+<i>O problema é que, 15 anos mais tarde, só
+10% dessas crianças mantém essas capacidades.</i>
+
+415
+00:33:21,167 --> 00:33:24,441
+Ou seja, de alguma forma, estou dizendo
+que desde além da mente,
+
+416
+00:33:24,607 --> 00:33:26,692
+desde o mundo da consciência, todos somos gênios.
+
+417
+00:33:27,278 --> 00:33:31,640
+E, realmente, o que o professor tem que aprender
+é que seus alunos
+
+418
+00:33:32,159 --> 00:33:36,159
+Possam abrir as portas de suas mentes para que
+desça todo esse conhecimento
+
+419
+00:33:36,159 --> 00:33:38,870
+e essa criatividade e essa genialidade que todos temos dentro.
+
+420
+00:33:38,970 --> 00:33:44,024
+Se olharmos os grandes homens da 
+humanidade e mulheres da humanidade,
+
+421
+00:33:45,320 --> 00:33:51,517
+todos tem sido grandes sonhadores, quer dizer
+que tiveram uma imaginação enorme.
+
+422
+00:33:53,150 --> 00:33:57,530
+<i>Como seres humanos, somos o resultado de milhares de anos
+de adaptação natural e evolução.</i>
+
+423
+00:33:58,237 --> 00:34:03,486
+<i>Trazemos dentro aquelas características que nos
+tem permitido sobreviver, transformar-nos e crescer.</i>
+
+424
+00:34:04,115 --> 00:34:08,933
+<i>Desde a vontade de comer quando temos fome,
+até a curiosidade interna das crianças de explorar o mundo.</i>
+
+425
+00:34:10,449 --> 00:34:13,728
+<i>Este potencial está esperando que lhe permitamos manifestar-se.</i>
+
+426
+00:34:14,541 --> 00:34:16,834
+<i>Nas crianças, o vemos nas brincadeiras espontâneas,</i>
+
+427
+00:34:17,236 --> 00:34:21,783
+<i>nos adolescentes de hoje através da rebeldia e
+a necessidade de transformar a realidade.</i>
+
+428
+00:34:22,907 --> 00:34:26,446
+<i>Por que insistimos em matar sua espontaneidade
+e castigar sua rebeldia?</i>
+
+429
+00:34:26,611 --> 00:34:32,510
+<i>quando são estas as características que manifestam
+suas necessidades humanas internas de desenvolver-se?</i>
+
+430
+00:34:33,228 --> 00:34:36,498
+A criança tem um professor interior, sobretudo nos primeiros anos,
+
+431
+00:34:37,195 --> 00:34:41,851
+que a impulsiona a aprender, que a impulsiona a descobrir,
+que a impulsiona ao movimento,
+
+432
+00:34:41,988 --> 00:34:45,505
+que a impulsiona a participar, a trabalhar,
+a repetir comportamentos,
+
+433
+00:34:45,599 --> 00:34:49,878
+que a impulsiona a decidir quando quer deixar de 
+repetir algo porque já o superou.
+
+434
+00:34:50,284 --> 00:34:57,062
+Observando como atuam as crianças, descobrimos que
+usam todos os critérios de um investigador verdadeiro,
+
+435
+00:34:57,233 --> 00:35:02,625
+exatamente os mesmos. É claro que existem distintos
+níveis de complexidade, não é verdade?
+
+436
+00:35:02,822 --> 00:35:05,770
+Mas não há criança que não seja sistemática na observação,
+
+437
+00:35:06,755 --> 00:35:11,495
+não há uma menininha pequena que esteja observando que
+não produza experimentos.
+
+438
+00:35:12,602 --> 00:35:15,132
+Como podemos fazer para que sejam mais criativas?
+Elas já são,
+
+439
+00:35:15,345 --> 00:35:19,635
+a única coisa que temos que fazer é lhes oferecer
+as possibilidades para que possam expressar-se
+
+440
+00:35:20,917 --> 00:35:21,857
+de diferentes maneiras.
+
+441
+00:35:23,738 --> 00:35:27,621
+Se continuarem a fazê-lo, amanhã serão cientistas,
+
+442
+00:35:28,360 --> 00:35:29,833
+amanhã serão artistas.
+
+443
+00:35:30,854 --> 00:35:31,854
+Há que deixá-los.
+
+444
+00:35:35,654 --> 00:35:38,734
+- Basta, deu Martin, não faz falta, vamos ver, que você ganha com isto?
+
+445
+00:35:38,834 --> 00:35:44,149
+- Eles apresentam o tema das notas, por exemplo.
+Dizem que somente o que nos importa é a nota final.
+
+446
+00:35:44,249 --> 00:35:46,827
+- Que não nos importa se estudam o não estudam,
+se aprendem ou não aprendem.
+
+447
+00:35:46,827 --> 00:35:48,207
+- Vai Martin.
+
+448
+00:35:48,207 --> 00:35:51,230
+- Chega, já era, o que ganho? Me tirou a vontade.
+- Por que é tão teimoso?
+
+449
+00:35:51,230 --> 00:35:55,643
+- E, mais ainda, de alguma maneira estamos
+fazendo com que compitam entre eles por isso.
+
+450
+00:35:55,643 --> 00:35:58,844
+- Você também pensa assim?
+
+451
+00:35:58,844 --> 00:36:02,847
+- Olha, acho que não é uma explicação tão equivocada, tão errada.
+
+452
+00:36:02,847 --> 00:36:06,424
+<i>Evidentemente, alguma coisa da estrutura da
+escola não lhes faz bem. </i>
+
+453
+00:36:06,424 --> 00:36:10,532
+<i>Olha, Javier, eu acho que o que faz mal
+para eles é a sociedade </i>
+
+454
+00:36:10,532 --> 00:36:15,030
+E com a sociedade que temos, o melhor que
+pode lhes acontecer é vir à escola, não acha?
+
+455
+00:36:15,030 --> 00:36:18,030
+- Esta bem, mais isto é bastante forte.
+- Eu sei, mas...
+
+456
+00:36:18,030 --> 00:36:20,033
+- Desculpem! - Sim.
+
+457
+00:36:21,408 --> 00:36:24,775
+- Aqui está tudo o que aprendi em cinco anos de escola.
+
+458
+00:36:25,534 --> 00:36:27,753
+- Sabem o que vai acontecer com isto?
+
+459
+00:36:27,753 --> 00:36:29,306
+- Eu vou esquecer tudo.
+
+460
+00:36:30,523 --> 00:36:31,823
+- Ainda mais.
+
+461
+00:36:32,400 --> 00:36:34,000
+- Já me esqueci.
+
+462
+00:36:38,992 --> 00:36:48,783
+"Estudar não é um ato de consumir idéias,
+mas de criá-las e recriá-las"
+
+463
+00:36:49,145 --> 00:36:56,279
+Então, a educação nasce assim, colocar mais informação
+porque achamos que essa informação é necessária. 
+
+464
+00:36:56,279 --> 00:36:58,538
+A pergunta que eu me faço é: 
+
+465
+00:36:58,538 --> 00:37:03,638
+Quanto concordamos do que nos ensinaram
+na educação básica por exemplo?
+
+466
+00:37:02,538 --> 00:37:05,416
+Quanto lembramos dos conteúdos ensinados
+no Ensino Médio?
+
+467
+00:37:05,991 --> 00:37:09,524
+É que a maneira com que o senhor o apresenta,
+não motiva a ninguém.
+
+468
+00:37:10,532 --> 00:37:16,749
+E o estudante acredita que a unica coisa que tem que fazer é repetir,
+repetir, repetir até que tudo se enfie na cabeça.
+
+469
+00:37:17,663 --> 00:37:18,887
+- Repitam, vejamos
+
+470
+00:37:19,370 --> 00:37:25,122
+"Actínio, Ac, 3, metal,
+
+471
+00:37:25,345 --> 00:37:29,953
+"Actínio, Ac, 3, metal"
+
+472
+00:37:30,053 --> 00:37:30,618
+Vejamos.
+
+473
+00:37:32,568 --> 00:37:35,120
+Quando eu repito, quando eu repito
+
+474
+00:37:35,835 --> 00:37:38,037
+alguma coisa que me dizem que devo repetir,
+
+475
+00:37:38,411 --> 00:37:41,225
+simplesmente me transformo num repetidor.
+
+476
+00:37:41,578 --> 00:37:43,749
+"ácido desoxirribonucleico,
+
+477
+00:37:44,175 --> 00:37:47,882
+ácido desoxirribonucleico,
+
+478
+00:37:48,369 --> 00:37:51,572
+ácido desoxirribonucleico"
+
+479
+00:37:52,131 --> 00:37:58,228
+Compreenda ou não compreenda não interessa, porque o que importa
+é que eu diga da mesma maneira o que foi dito.
+
+480
+00:37:59,407 --> 00:38:01,283
+"ácido desoxirribonucleico,
+
+481
+00:38:01,733 --> 00:38:03,825
+ácido desoxirribonucleico",
+
+482
+00:38:04,344 --> 00:38:09,868
+Se eu exijo de uma criança mais do que ela pode dar,
+começo a gerar estresse nesta criança.
+
+483
+00:38:11,775 --> 00:38:13,876
+"ácido desoxirribonucleico,
+
+484
+00:38:14,012 --> 00:38:16,086
+ácido desoxirribonucleico,
+
+485
+00:38:16,242 --> 00:38:18,028
+ácido desoxirribonucleico"
+
+486
+00:38:22,002 --> 00:38:25,384
+Aprender se converte num processo maçante,
+
+487
+00:38:25,921 --> 00:38:27,297
+num processo difícil,
+
+488
+00:38:28,439 --> 00:38:29,798
+e deixo de aprender.
+
+489
+00:38:30,161 --> 00:38:33,347
+Tudo o que você possa aprender na escola no dia a dia,
+
+490
+00:38:34,575 --> 00:38:41,479
+passa a segundo plano, se não é parte da tua decisão,
+se não é parte da tua opção.
+
+491
+00:38:42,554 --> 00:38:48,706
+São conhecimentos frios, são palavras que
+podem se perder com o tempo.
+
+492
+00:38:50,801 --> 00:38:55,571
+<i>A informação ou o saber podemos armazená-la
+no nosso cérebro, em um livro ou um computador.</i>
+
+493
+00:38:57,049 --> 00:39:00,436
+<i>Mas a compreensão é uma ferramenta
+em constante crescimento,</i>
+
+494
+00:39:00,932 --> 00:39:03,859
+<i>com características únicas que variam segundo cada pessoa,</i>
+
+495
+00:39:04,870 --> 00:39:07,934
+<i>implica criar e estabelecer relações entre critérios,</i>
+
+496
+00:39:08,768 --> 00:39:12,541
+<i>e assim, resolver problemas e construir novos conhecimentos.</i>
+
+497
+00:39:13,912 --> 00:39:19,253
+As crianças não eram autômatas que simplesmente copiavam
+ou repetiam as coisas porque sim, senão que realmente havia,
+
+498
+00:39:19,958 --> 00:39:23,785
+havia como mais consciência de parte deles,
+do que estavam fazendo.
+
+499
+00:39:24,758 --> 00:39:31,857
+Esse conceito vai entrar nele, vai assumi-lo de uma maneira,
+relacionada com a sua vivência.
+
+500
+00:39:32,728 --> 00:39:36,562
+Se não se desfruta da aprendizagem,
+não existe aprendizagem autêntica.
+
+501
+00:39:36,662 --> 00:39:40,560
+E, sobretudo, a genialidade que cada um leva dentro
+não pode se manifestar,
+
+502
+00:39:40,704 --> 00:39:43,713
+e não pode enriquecer ao resto da classe,
+nem ao próprio professor.
+
+503
+00:39:45,719 --> 00:39:51,759
+<i>A aprendizagem profunda só pode estar embasada
+no interesse, na vontade, na curiosidade,</i>
+
+504
+00:39:52,380 --> 00:39:54,680
+<i>e se origina além das fronteiras da razão.</i>
+
+505
+00:39:55,870 --> 00:39:58,564
+<i>É muito mais que analizar ou relacionar conceitos.</i>
+
+506
+00:39:59,260 --> 00:40:04,902
+<i>Aprender implica um profundo processo
+onde se criam relações entre a pessoa e seu entorno.</i>
+
+507
+00:40:06,865 --> 00:40:09,411
+Porque existe um principio que também
+é utilizado pela neurociência:
+
+508
+00:40:09,863 --> 00:40:12,370
+"O que o cérebro humano mais gosta é conhecer,
+
+509
+00:40:13,296 --> 00:40:17,591
+mas quando conhece com felicidade, gozo e prazer,
+que é o aspecto lúdico."
+
+510
+00:40:18,199 --> 00:40:22,326
+Temos partido do cérebro emocional,
+para ir ao cérebro lógico,
+
+511
+00:40:23,594 --> 00:40:26,416
+e essa lógica é válida, é boa, é mais completa.
+
+512
+00:40:27,559 --> 00:40:32,323
+Existe algo maravilhoso em ver o momento do descobrimento,
+
+513
+00:40:32,896 --> 00:40:36,011
+que é o momento da aprendizagem.
+Essa criança não se esquece nunca mais
+
+514
+00:40:37,135 --> 00:40:40,745
+quando chegou a entender o porquê.
+
+515
+00:40:42,566 --> 00:40:46,592
+<i>Antigamente, o conhecimento só podia ser
+encontrado nas bibliotecas ou universidades,</i>
+
+516
+00:40:47,486 --> 00:40:49,385
+<i>ter acesso era vital para a aprendizagem.</i>
+
+517
+00:40:50,771 --> 00:40:56,496
+<i>Hoje, o livre acesso à informação, as bibliotecas 
+virtuais, a construção coletiva do conhecimento,</i>
+
+518
+00:40:57,216 --> 00:40:59,871
+<i>conseguem que não apenas o conhecimento
+esteja ao alcance de todos,</i>
+
+519
+00:41:00,551 --> 00:41:04,161
+<i>de forma aberta e plural, senão que
+ se atualiza constantemente.</i>
+
+520
+00:41:05,726 --> 00:41:09,346
+O que nós possamos aprender na escola hoje,
+
+521
+00:41:10,543 --> 00:41:15,672
+dentro de 4 anos, talvez quando
+ a criança deixe a escola, 
+
+522
+00:41:16,051 --> 00:41:18,125
+já vai estar completamente desatualizado.
+
+523
+00:41:18,771 --> 00:41:22,471
+A educação, ao se escolarizar, se meteu dentro da escola
+
+524
+00:41:22,874 --> 00:41:26,771
+e perdemos os critérios exteriores da natureza.
+
+525
+00:41:27,212 --> 00:41:29,325
+Hoje em dia, lemos critérios que saem nos livros,
+
+526
+00:41:30,938 --> 00:41:34,169
+o problema é que como muitos deles são verdadeiros,
+
+527
+00:41:36,172 --> 00:41:38,012
+para quê vou discutí-los?
+
+528
+00:41:38,343 --> 00:41:42,809
+Mas com isso, desvirtuamos o que é o 
+processo educativo, que é de descoberta,
+
+529
+00:41:42,809 --> 00:41:45,263
+não de aprendizagem das verdades.
+
+530
+00:41:45,363 --> 00:41:49,961
+Já não vai aceitar as coisas como verdades, vai apresentá-las
+
+531
+00:41:50,911 --> 00:41:58,179
+e, ao mesmo tempo, vai estar disposto
+ a duvidar delas e a revisá-las juntos, não?
+
+532
+00:41:59,756 --> 00:42:03,500
+BOLA FEITA EM CASA
+
+533
+00:42:16,827 --> 00:42:22,303
+CASA VIZINHA
+
+534
+00:42:36,574 --> 00:42:38,174
+BOLA COMPRADA
+
+535
+00:42:40,203 --> 00:42:42,660
+BOLA PERDIDA
+
+536
+00:42:48,047 --> 00:42:53,710
+"O que temos que aprender o aprendemos fazendo."
+
+537
+00:42:55,010 --> 00:43:00,490
+Em todo nível, o ser humano sempre aprende o que faz.
+
+538
+00:43:01,630 --> 00:43:04,459
+Tem que se esforçar para aprender o que não faz.
+
+539
+00:43:05,727 --> 00:43:09,124
+Primeiro foi ação, depois vem o cognitivo.
+
+540
+00:43:09,947 --> 00:43:13,654
+E, às vezes, olhamos o motriz pejorativamente,
+
+541
+00:43:13,974 --> 00:43:16,973
+e resulta que a motricidade está muito ligada à parte cognitiva.
+
+542
+00:43:17,523 --> 00:43:20,874
+O jogo é um desafio ao desconhecido.
+
+543
+00:43:21,441 --> 00:43:25,985
+Um desafio ao que pode acontecer, porque quando um menino joga
+ ou se coloca frente a isto,
+
+544
+00:43:26,210 --> 00:43:29,231
+parte do princípio de que coloca algo em movimento,
+
+545
+00:43:29,760 --> 00:43:31,984
+na educação sempre estamos colocando algo em movimento.
+
+546
+00:43:32,958 --> 00:43:35,020
+À casa do tio-escola, digo eu,
+
+547
+00:43:35,664 --> 00:43:39,900
+viemos aprender, isso é obvio
+ não viemos brincar e nada mais,
+
+548
+00:43:40,428 --> 00:43:42,577
+porém, de brincadeira em brincadeira se aprende muito.
+
+549
+00:43:58,245 --> 00:44:00,915
+Estudamos quando saímos à natureza,
+
+550
+00:44:01,148 --> 00:44:06,951
+a procurar coisas, explorar, encontrar, ter vivências.
+
+551
+00:44:07,503 --> 00:44:12,702
+Quando você trabalha e conecta às crianças
+com a natureza, tudo flui. 
+
+552
+00:44:14,541 --> 00:44:19,199
+Ir nessa escola é um prazer, porque todos os dias
+temos tantas coisas
+
+553
+00:44:19,299 --> 00:44:25,164
+para experimentar, para pesquisar
+para agradecer que estamos vivos.
+
+554
+00:44:25,677 --> 00:44:31,596
+A tarefa do educador então consistirá, em todo momento,
+em mostrar mistérios, mostrar
+
+555
+00:44:32,829 --> 00:44:38,456
+situações na natureza que, ainda que já estejam descritas pela ciência,
+não o estão para o educando. 
+
+556
+00:44:38,877 --> 00:44:43,882
+De modo que o educando, se surpreenda frente a algo
+ e trate de lhe encontrar uma explicação.
+
+557
+00:44:44,771 --> 00:44:49,605
+Se tem gerado todo um movimento de décadas
+ chamado escola ativa,
+
+558
+00:44:49,705 --> 00:44:53,847
+onde a criança faz, produz, sai da cadeira.
+
+559
+00:44:54,554 --> 00:44:59,178
+Mas isto não é novo, o escreveu Piaget
+ nos anos 50,
+
+560
+00:45:00,050 --> 00:45:03,451
+não se coloca em prática porque dá preguiça. 
+
+561
+00:45:05,528 --> 00:45:09,076
+<i>A princípios do século XX surgiram diversos
+ movimentos na pedagogia, </i>
+
+562
+00:45:09,851 --> 00:45:14,900
+<i>pensadores de diferentes partes do mundo desenvolveram
+ experiências educativas concentradas na ação, </i>
+
+563
+00:45:15,485 --> 00:45:18,474
+<i>a liberdade da criança e a construção
+ autônoma da aprendizagem, </i> 
+
+564
+00:45:19,577 --> 00:45:22,010
+<i>repensaram toda a estrutura da escola tradicional. </i>
+
+565
+00:45:23,472 --> 00:45:27,537
+<i>Porém, a mediados de século, todas estas ideias
+ transformadoras começam a cair no esquecimento </i>
+
+566
+00:45:27,537 --> 00:45:29,787
+<i>com o medo aos estados totalitários. </i>
+
+567
+00:45:29,887 --> 00:45:34,081
+Bom...o método está centrado em que a criança
+ é quem aprende, totalmente.
+
+568
+00:45:35,217 --> 00:45:39,781
+Tem que ter, necessariamente tem que
+ ter objetos físicos,
+
+569
+00:45:39,781 --> 00:45:43,136
+objetos concretos para que a criança manipule,
+que a criança experimente.
+
+570
+00:45:43,236 --> 00:45:48,685
+Tudo no ensino fundamental é operativo, tudo é operativo,
+ tudo é com material concreto.
+
+571
+00:45:48,886 --> 00:45:55,447
+A criança na medida que erra, vai se dando conta,
+porque o mesmo material leva à correção. 
+
+572
+00:45:55,447 --> 00:45:59,625
+Normalmente não é o adulto quem deveria
+estar corrigindo à criança.
+
+573
+00:46:00,055 --> 00:46:04,582
+É a própria criança quem tem que
+estar corrigindo-se a si mesma.
+
+574
+00:46:04,582 --> 00:46:08,682
+Agora também existe muito a correção
+ por parte de outras crianças
+
+575
+00:46:07,582 --> 00:46:11,546
+Eu acredito que desde o ponto de vista educacional
+ são bem-vindos os erros e os equívocos.
+
+576
+00:46:11,733 --> 00:46:15,314
+De fato, a ciência apresenta mais erros e 
+ equívocos que acertos.
+
+577
+00:46:16,201 --> 00:46:20,446
+É verdade que avança, nós sabemos que 
+pode avançar quando há um acerto,
+
+578
+00:46:21,286 --> 00:46:25,211
+mas os erros são os que permitem que 
+os cientistas possam avançar.
+
+579
+00:46:26,036 --> 00:46:31,988
+Ao ver as crianças que dizem
+"Não importa se erro porque estou aprendendo,
+
+580
+00:46:33,239 --> 00:46:38,254
+porque ninguém tem que ganhar aqui,
+senão que todos estamos para melhorar".
+
+581
+00:46:39,010 --> 00:46:44,549
+<i>O inventor da lâmpada elétrica teve mais de 
+ mil tentativas falidas antes de fazer funcionar a lâmpada. </i>
+
+582
+00:46:45,714 --> 00:46:49,663
+<i>Quando um jornalista lhe perguntou o que sentia
+ ao fracassar mil vezes ele respondeu:</i>
+
+583
+00:46:51,017 --> 00:46:55,275
+<i> "Não fracassei mil vezes, a lâmpada elétrica
+ é um invento de mil passos".</i>
+
+584
+00:46:57,220 --> 00:47:02,731
+<i>Igual que uma descoberta científica, a educação informal
+ é o resultado de um processo profundamente caótico,</i>
+
+585
+00:47:03,477 --> 00:47:09,349
+<i>onde o homem procura uma ordem causal, lógica,
+ passando do caos à ordem alternadamente. </i>
+
+586
+00:47:10,599 --> 00:47:16,447
+<i>Mas esta aprendizagem nasce da pergunta no caos,
+ não de uma resposta numa ordem.</i>
+
+587
+00:47:18,031 --> 00:47:22,123
+A sociedade quando nós nascemos, a sociedade
+
+588
+00:47:23,014 --> 00:47:26,744
+nos torna mais ignorantes porque nos dá
+ respostas a estas perguntas.
+
+589
+00:47:27,468 --> 00:47:33,831
+E nos dá respostas pré-fabricadas, pré-fabricadas na filosofia,
+na política e até nas religiões.
+
+590
+00:47:36,071 --> 00:47:39,450
+Então mata as perguntas e a capacidade de aprender.
+
+591
+00:47:40,788 --> 00:47:45,663
+Eu acredito que de maneira sintética poderíamos dizer
+ que a escola está orientada para a resposta.
+
+592
+00:47:46,910 --> 00:47:51,617
+Em troca, os processos educativos que ocorrem fora
+ do âmbito escolar, mas também dentro dela, 
+
+593
+00:47:52,158 --> 00:47:54,375
+estão orientados para a pergunta, para a indagação,
+
+594
+00:47:54,624 --> 00:47:58,886
+nos quais a resposta vem, mas não é
+o cerne no processo.
+
+595
+00:47:59,652 --> 00:48:05,659
+O que deve fazer o educador então?
+Ajudar à revelação daquilo, não impor uma resposta.
+
+596
+00:48:06,569 --> 00:48:10,610
+<i>A importância da pergunta está colocada desde
+ o começo da filosofia na antiga Grécia,</i>
+
+597
+00:48:11,443 --> 00:48:14,642
+<i>onde a aprendizagem surge do repensar
+ e do voltar a questionar.</i>
+
+598
+00:48:15,775 --> 00:48:18,870
+<i>Mas, se essa é a natureza da aprendizagem,</i>
+
+599
+00:48:18,870 --> 00:48:24,170
+<i>Por que insistimos em estruturá-lo, limitá-lo,
+ condicioná-lo, ordená-lo?</i>
+
+600
+00:48:24,270 --> 00:48:26,022
+PLANEJAMENTO CURRICULAR
+
+601
+00:48:26,022 --> 00:48:30,225
+É assim como todos os seres vivos aprendem, através de
+interagir com os outros e com o entorno,
+
+602
+00:48:30,225 --> 00:48:33,858
+não através de um currículo prévio que alguém estabelece.
+
+603
+00:48:33,958 --> 00:48:41,861
+O tempo escolar então é um tempo enganoso,
+no sentido de que nos coloca numa programação,
+
+604
+00:48:43,251 --> 00:48:47,833
+a ideia de que o educando irá progredindo
+de acordo como o programa está planejado.
+
+605
+00:48:48,987 --> 00:48:51,566
+Nesse sentido, a escolarização é linear,
+
+606
+00:48:52,636 --> 00:48:54,388
+passo um, passo dois, passo três,
+
+607
+00:48:54,849 --> 00:48:57,308
+E o décimo passo vai estar depois do nono.
+
+608
+00:48:58,147 --> 00:49:02,175
+Mas na aprendizagem a situação é diferente,
+ pode ser que a pessoa avance
+
+609
+00:49:02,275 --> 00:49:07,305
+progressivamente de maneira linear, um, dois, três
+e pula ao décimo.
+
+610
+00:49:08,602 --> 00:49:13,762
+<i>O currículo é um guia ordenado para construir
+o conhecimento baseado em experiências prévias.</i>
+
+611
+00:49:14,823 --> 00:49:18,379
+<i>Mas se a aprendizagem se caracteriza por
+processos tão diversos e individuais,</i>
+
+612
+00:49:19,628 --> 00:49:23,006
+<i>Qual é a necessidade de forçar isso e alcançar objetivos?</i>
+
+613
+00:49:25,136 --> 00:49:33,104
+Normalmente os objetivos educativos no mundo
+são colocados a partir de fora do aluno, da criança:
+
+614
+00:49:34,018 --> 00:49:42,377
+"Espera-se que seja um bom cidadão" "Espera-se que possa
+participar desta sociedade competitiva", etc, etc.
+
+615
+00:49:42,970 --> 00:49:50,836
+Portanto, a criança começa a entender que as ações
+do ser humano não partem tanto de uma força interna,
+
+616
+00:49:51,253 --> 00:49:56,348
+de uma conexão com a natureza, de uma percepção
+de uma sensibilidade pela vida.
+
+617
+00:49:56,606 --> 00:50:02,921
+Senão que estão motivadas por alguma coisa exterior,
+estudo para passar o exame,
+
+618
+00:50:03,253 --> 00:50:07,992
+não leio para aprender, não me interesso pelos animais porque
+eu gosto deles,
+
+619
+00:50:08,030 --> 00:50:10,713
+não, não, é que agora não cabem os animais, agora cabe outro tema.
+
+620
+00:50:11,405 --> 00:50:20,068
+Se eu não mudo o interesse, se não desenvolvo
+as partes criativas, estou gerando robôs com objetivos
+
+621
+00:50:20,176 --> 00:50:27,523
+e, portanto, no caminho vão ficar um 60 ou 70%
+das crianças com potencialidades maravilhosas.
+
+622
+00:50:27,975 --> 00:50:29,869
+- Novamente, repitam:
+
+623
+00:50:30,693 --> 00:50:34,438
+"Actinio ac 3 metal"
+
+624
+00:50:35,199 --> 00:50:35,362
+Vamos ver
+
+625
+00:50:35,217 --> 00:50:35,393
+"Actinio ac 3 metal,
+
+626
+00:50:35,776 --> 00:50:39,045
+Actinio ac 3 metal,
+
+627
+00:50:39,473 --> 00:50:42,996
+Actinio ac 3 metal,
+
+628
+00:50:43,524 --> 00:50:47,201
+Actinio ac 3 metal"
+
+629
+00:50:47,739 --> 00:50:53,307
+Ajo, porque se eu faço isso, conseguirei um prêmio,
+terei um carro desta maneira e tal.
+
+630
+00:50:53,529 --> 00:50:57,890
+E se isso significa que tenho que especular, ou que
+tenho que passar por cima de quem quer que seja,
+
+631
+00:50:58,026 --> 00:51:02,630
+tenho que mentir e tenho que pisotear 
+quem está ao lado, dá na mesma.
+
+632
+00:51:03,870 --> 00:51:10,547
+A que tipo de relação educativa leva isto? 
+Uma relação educativa que põe a ênfase no resultado.
+
+633
+00:51:11,030 --> 00:51:16,148
+<i>Ao crescer, a escola e a sociedade nos levam
+a assumir motivadores externos para alcançar os objetivos, </i>
+
+634
+00:51:17,241 --> 00:51:21,849
+<i>e dificilmente podemos entender que alguém
+pode realizar alguma coisa sem interesse,</i>
+
+635
+00:51:21,849 --> 00:51:25,047
+<i>mais que o próprio prazer do processo.</i>
+
+636
+00:51:25,147 --> 00:51:28,269
+<i>Mas uma criança pequena não tem um lugar aonde ir,<i>
+
+637
+00:51:29,175 --> 00:51:33,620
+<i>simplesmente desfruta de crescer, 
+caminha pelo simples prazer de caminhar e explorar,</i>
+
+638
+00:51:33,860 --> 00:51:37,672
+<i>e isso faz com que se desenvolva,</i>
+
+639
+00:51:38,497 --> 00:51:42,573
+<i>sua motivação não está no objetivo,
+nem no resultado, está no caminho.</i>
+
+640
+00:51:43,178 --> 00:51:47,725
+O que podemos dizer é que não temos 
+objetivos concretos sobre a vida das crianças,
+
+641
+00:51:48,337 --> 00:51:53,686
+que tenham que aprender determinadas coisas, 
+que tenham que ser de determinada maneira, não temos esses objetivos.
+
+642
+00:51:54,724 --> 00:52:00,959
+O currículo que se faz aqui, 
+é um que está plasmado num caminho
+
+643
+00:52:01,332 --> 00:52:05,811
+e que a criança maneja esse caminho, 
+então ela o tem e ela sabe.
+
+644
+00:52:06,059 --> 00:52:09,403
+Então o professor não é protagonista do filme,
+
+645
+00:52:10,147 --> 00:52:13,876
+o conteúdo não é o protagonista, 
+o protagonista é a criança que
+
+646
+00:52:14,324 --> 00:52:17,637
+acompanhada do adulto que faz de intermediário,
+
+647
+00:52:17,637 --> 00:52:22,596
+põe-se em contato com o conhecimento, 
+e o conhecimento já atrai e age por si só.
+
+648
+00:52:22,596 --> 00:52:28,012
+E aí, nisso que estou lhes contando,
+ se respeita o ritmo da criança,
+
+649
+00:52:28,012 --> 00:52:34,661
+ou seja, não existe a pressão fundamental de que 
+tem que chegar a este resultado em tal tempo.
+
+650
+00:52:34,661 --> 00:52:40,701
+Se eu concebo que ao longo do curso 
+tem que aprender a escrever seu nome,
+
+651
+00:52:41,129 --> 00:52:44,556
+assim vou estar preocupado e, 
+em lugar de ver à criança, vou ver ao objetivo,
+
+652
+00:52:45,788 --> 00:52:47,650
+e vou tentar adaptar a criança ao objetivo.
+
+653
+00:52:48,396 --> 00:52:52,283
+Se o que quero é que aprenda e viva,
+
+654
+00:52:53,517 --> 00:52:56,233
+digamos, de maneira espontânea, 
+pois isso ela vai aprender de qualquer maneira
+
+655
+00:52:56,222 --> 00:53:00,539
+mas eu não vou estar preocupado por isso 
+e vamos a poder fluir e desfrutar do processo.
+
+656
+00:53:01,321 --> 00:53:06,000
+Finalmente, as crianças não vão somente passar melhor, 
+quer dizer, dentro de 20 anos
+
+657
+00:53:06,000 --> 00:53:10,277
+terão uma melhor lembrança da sua escola, 
+que já é muitíssimo,
+
+658
+00:53:10,677 --> 00:53:14,733
+senão que, além do mais, têm rendimentos melhores 
+
+659
+00:53:15,312 --> 00:53:18,243
+com resultados a longo prazo melhores.
+
+660
+00:53:25,585 --> 00:53:27,964
+- Vamos, Micaela: Porquê você insiste com esse discurso?
+
+661
+00:53:28,474 --> 00:53:31,033
+- Por que eu quis me expressar, colocar o que penso, 
+o que sinto.
+
+662
+00:53:31,278 --> 00:53:36,805
+- Meu amor, todos nós queremos fazer o que sentimos 
+e muitas vezes, temos que fazer coisas que não gostamos.
+
+663
+00:53:37,102 --> 00:53:39,210
+- Não, me desculpa, mas eu não tenho a mesma opinião que você.
+
+664
+00:53:39,310 --> 00:53:43,131
+- Bem, eu te entendo, mas...
+- Me escuta Micaela: Você não quer passar de ano,
+
+665
+00:53:43,131 --> 00:53:45,514
+ter um diploma, uma profissão, ser alguém na vida?
+
+666
+00:53:45,514 --> 00:53:46,164
+- Mas...
+
+667
+00:53:47,056 --> 00:53:48,870
+eu já sou alguém na vida.
+
+668
+00:53:54,500 --> 00:53:58,598
+"Na verdade, só existe o ato de amar, (...) 
+Significa dar vida, aumentar a sua vitalidade.
+
+669
+00:53:58,598 --> 00:54:03,677
+É um processo que se desenvolve e se intensifica a si mesmo."
+
+670
+00:54:03,667 --> 00:54:07,425
+A gente se encontra com duas vias pedagógicas básicas.
+
+671
+00:54:08,200 --> 00:54:12,422
+Uma que é: "devo adaptar a criança à cultura",
+
+672
+00:54:12,822 --> 00:54:15,756
+e outra que é: "devo adaptar a cultura à criança",
+
+673
+00:54:17,271 --> 00:54:22,137
+leia-se: direita e esquerda pedagógicas, é simples assim.
+
+674
+00:54:24,134 --> 00:54:26,772
+Em algum caminho do meio deve estar a verdade.
+
+675
+00:54:27,770 --> 00:54:32,824
+<i>A escola construiu seus embasamentos sobre uma ideia 
+fundamental, que transcende toda sua estrutura:</i>
+
+676
+00:54:33,344 --> 00:54:35,437
+<i>a noção de que as crianças estão vazias,</i>
+
+677
+00:54:36,413 --> 00:54:40,233
+<i>e, em consequência,
+ a sua individualidade pode ser rompida e reformada,</i>
+
+678
+00:54:40,736 --> 00:54:42,995
+<i>interceptada de acordo com as necessidades externas.</i>
+
+679
+00:54:44,643 --> 00:54:47,281
+<i>A criança tem sido considerada como um objeto de estudo,</i>
+
+680
+00:54:47,526 --> 00:54:51,462
+</i>um rato dentro do maior laboratório 
+de socialização da história,</i>
+
+681
+00:54:51,895 --> 00:54:54,759
+</i>cujo principal objetivo foi o de modelar ao ser humano.</i>
+
+682
+00:54:57,637 --> 00:55:03,048
+Isso é muito humano, não é?
+Pensar que se não cuidarmos do bosque ele se estraga,
+
+683
+00:55:03,071 --> 00:55:06,749
+para o bosque, deixá-lo tranquilo é suficiente, sempre,
+
+684
+00:55:07,029 --> 00:55:10,141
+tudo que temos de bosque é
+porque o ser humano não tem interferido.
+
+685
+00:55:11,506 --> 00:55:16,652
+Mas o ser humano acredita que intervindo faz mais, 
+faz melhor as coisas.
+
+686
+00:55:18,240 --> 00:55:23,376
+</i>Dentro da semente de uma árvore, se encontra toda a informação 
+que este ser necessita para se desenvolver.</i>
+
+687
+00:55:23,983 --> 00:55:27,836
+<i>O ambiente que a rodeia contém tudo
+o que essa árvore necessita para crescer,</i>
+
+688
+00:55:28,162 --> 00:55:31,467
+<i> porém este desenvolvimento depende 
+da estrutura interna dessa semente.</i>
+
+689
+00:55:32,927 --> 00:55:37,535
+<i>Todas as reações às condições externas
+ estão planejadas no interior de cada ser,</i>
+
+690
+00:55:38,389 --> 00:55:40,492
+<i>tanto de uma árvore, como do homem.</i>
+
+691
+00:55:43,335 --> 00:55:46,694
+<i>A formação dos órgãos vitais,
+a estrutura óssea, os tecidos,</i>
+
+692
+00:55:46,880 --> 00:55:49,096
+<i>as características básicas de cada um de nós</i>
+
+693
+00:55:49,200 --> 00:55:52,000
+<i>são o resultado de um processo interno, autônomo,</i>
+
+694
+00:55:52,605 --> 00:55:55,003
+<i>que não requer a intervenção do ser humano,</i>
+
+695
+00:55:57,065 --> 00:56:02,203
+<i>onde a mãe satisfaz apenas
+os recursos necessários, mas não dirige</i>
+
+696
+00:56:04,915 --> 00:56:10,039
+Qualquer célula tem uma estrutura 
+interna que lhe permite saber,
+
+697
+00:56:10,380 --> 00:56:16,126
+inconscientemente, o que precisa a cada momento,
+como deve que ser o entorno ao seu redor
+
+698
+00:56:17,295 --> 00:56:23,404
+para satisfazer as necessidades internas da célula,
+expressadas geneticamente,
+
+699
+00:56:24,595 --> 00:56:28,654
+para que essa célula possa chegar a ser
+o que ela é em potência.
+
+700
+00:56:29,079 --> 00:56:32,371
+Quer dizer, o objetivo da vida é viver
+e se autorealizar
+
+701
+00:56:32,867 --> 00:56:36,598
+para isso, esse organismo precisa encontrar 
+um ambiente que respeite,
+
+702
+00:56:37,016 --> 00:56:39,470
+que satisfaça essas necessidades internas.
+
+703
+00:56:39,909 --> 00:56:42,431
+Havia um jardineiro que tinha tanto amor pelas plantas,
+
+704
+00:56:42,852 --> 00:56:48,074
+e então as cuidava tanto que ia ali,
+e enquanto começavam a brotar ia esticando seus caules.
+
+705
+00:56:49,128 --> 00:56:53,167
+O que aconteceu? Todas se deformaram ou morreram.
+
+706
+00:56:53,920 --> 00:56:58,662
+Ou seja, o crescer, é inato, não temos que esticar ninguém,
+
+707
+00:56:58,797 --> 00:57:05,071
+não temos que fazer que nada apareça,
+somente temos que procurar que lhe chegue o necessário
+
+708
+00:57:05,597 --> 00:57:09,038
+<i>Para sobreviver esta célula tem algumas necessidades básicas: </i>
+
+709
+00:57:09,532 --> 00:57:13,314
+<i>alimento, segurança e talvez o elemento mais importante,</i>
+
+710
+00:57:13,592 --> 00:57:15,662
+<i> que tem feito possível toda a evolução biológica, </i>
+
+711
+00:57:16,361 --> 00:57:17,361
+<i>o amor.</i>
+
+712
+00:57:18,372 --> 00:57:23,500
+<i>Uma vez que a célula conta com estes recursos
+começa a se desenvolver, a se autorrealizar.</i>
+
+713
+00:57:24,415 --> 00:57:27,437
+<i>O amor é necessário durante todo
+o desenvolvimento da vida,</i>
+
+714
+00:57:28,345 --> 00:57:31,575
+<i>em sua gestação é a companhia e proteção do útero, </i>
+
+715
+00:57:32,088 --> 00:57:36,720
+<i>depois é o contato corporal, apoio emocional,
+expressões, gestos, sons, </i>
+
+716
+00:57:36,919 --> 00:57:41,428
+<i>até o entendimento, a aceptação,
+o respeito e a confiança no outro.</i>
+
+717
+00:57:42,662 --> 00:57:45,562
+<i>Se o amor é vital para o desenvolvimento e o aprendizado,</i>
+
+718
+00:57:46,400 --> 00:57:52,546
+<i>Por que geralmente tentamos educar com ameaças,
+castigos, tensões, esquecendo o amor?</i>
+
+719
+00:57:53,535 --> 00:57:55,049
+E o que fazemos os adultos?
+
+720
+00:57:55,409 --> 00:57:57,978
+Temos que conseguir que faça o que nós queremos,
+
+721
+00:57:58,373 --> 00:58:01,543
+e aí entram os prêmios e os castigos:
+
+722
+00:58:01,790 --> 00:58:06,040
+"Não. Eu te avaliarei e te darei uma prova,
+e você terá que passar o exame, e se não passa
+
+723
+00:58:06,415 --> 00:58:12,255
+chegarão a tua casa umas notas, umas classificações
+ruins que quando teus pais vejam te darão uma bronca e
+
+724
+00:58:12,355 --> 00:58:14,667
+bla, bla, bla, haverá uma série de consequências."
+
+725
+00:58:14,857 --> 00:58:16,707
+Nos falta capacidad de amar, 
+
+726
+00:58:17,451 --> 00:58:20,614
+então normalmente amamos de uma forma limitada.
+
+727
+00:58:20,750 --> 00:58:25,992
+"Eu te amo se concordar comigo, senão não te amo."
+Esta é normalmente a nossa forma de amar.
+
+728
+00:58:27,096 --> 00:58:29,560
+Quando a pessoa não se sente amada
+ou tem conflito nisto,
+
+729
+00:58:30,084 --> 00:58:34,539
+cria uma representação de si mesmo.
+Vai contando algo dele que não é ele.
+
+730
+00:58:35,945 --> 00:58:41,272
+Quanto más intensa a dor,
+más distante é a representação da pessoa real.
+
+731
+00:58:42,905 --> 00:58:44,947
+Se me obrigam a fazer uma série de coisas,
+
+732
+00:58:45,548 --> 00:58:47,758
+com as quais eu não estou interessado em absoluto,
+
+733
+00:58:48,032 --> 00:58:54,643
+mesmo que tentem me motivar extrínsecamente
+através de prêmios, castigos, notas e balas,
+
+734
+00:58:55,564 --> 00:58:57,022
+minha necessidade pode ser outra.
+
+735
+00:58:57,857 --> 00:59:01,315
+Mas esta necessidade, eu não posso atendé-la
+porque estão me obrigando a fazer outra coisa.
+
+736
+00:59:01,511 --> 00:59:08,221
+Com o qual eu vou perdendo cada vez, a conexão com meus próprios recursos,
+com minha própria força vital.
+
+737
+00:59:09,252 --> 00:59:12,877
+<i>Os prêmios e castigos atuam manipulando
+as necessidades bâsicas. </i>
+
+738
+00:59:13,392 --> 00:59:17,336
+<i> Quando não recebemos amor e proteção
+fazemos o possível para obté-los,</i>
+
+739
+00:59:17,867 --> 00:59:21,881
+<i>gerando mecanismos de conduta
+e comportamento que nos permitem sobreviver</i>
+
+740
+00:59:22,408 --> 00:59:23,503
+<i>nos condicionamos. </i>
+
+741
+00:59:24,553 --> 00:59:28,729
+<i>Essa criança não estuda para aprender, 
+não trabalha por prazer, nem para se realizar,</i>
+
+742
+00:59:29,182 --> 00:59:33,676
+<i>faz isso porque senão perde a segurança,
+o amor, sente que morre.<i>
+
+743
+00:59:34,529 --> 00:59:37,842
+<i>Todo o seu acionar passa a ser controlado pelo medo.<i>
+
+744
+00:59:38,378 --> 00:59:43,037
+De alguma maneira, o que se faz na escola atual,
+estou generalizando, é semear esse medo.
+
+745
+00:59:43,792 --> 00:59:48,714
+Se coloca limites à pessoa,
+em vez de fazer o contrário, e pôr limites é o medo,
+
+746
+00:59:49,112 --> 00:59:52,256
+Em nossa mente estruturada
+quando criamos dentro de uma crença,
+
+747
+00:59:52,550 --> 00:59:56,915
+a forma que tem a mente para não sairmos
+dessa crença e criar fora, é o medo.
+
+748
+00:59:57,196 --> 01:00:00,419
+Quando nós aproximamos
+à beira de uma crença sentimos medo.
+
+749
+01:00:01,038 --> 01:00:05,267
+É um mecanismo de controle,
+é um mecanismo de manipulação ética.
+
+750
+01:00:05,731 --> 01:00:10,502
+Se você se comportar bem, eu te qualifico bem.
+É um modelo condutivista,
+
+751
+01:00:11,018 --> 01:00:14,920
+esse é o grande modelo condutivista
+que tanto mal tem feito a nossa sociedade.
+
+752
+01:00:17,884 --> 01:00:21,018
+<i>O manifesto condutivista de 1913 promovia uma psicologia<i>
+
+753
+01:00:21,118 --> 01:00:24,372
+< cujo o objetivo era a predição
+e o controle da conduta.<i>
+
+754
+01:00:25,773 --> 01:00:28,821
+<i>Mediante experimentos com ratos,
+animais e seu condicionamento,<i>
+
+755
+01:00:28,957 --> 01:00:31,189
+<i>se desenvolveu uma ciência de controle social,<i>
+
+756
+01:00:31,644 --> 01:00:34,547
+<i>utilizada para pensar as bases
+da escolarização moderna,<i>
+
+757
+01:00:34,845 --> 01:00:39,706
+<i>a publicidade, a propaganda política,
+o treinamento militar e os exercícios de tortura.<i>
+
+758
+01:00:40,815 --> 01:00:43,062
+<i>A manipulação das massas através do medo.<i>
+
+759
+01:00:48,192 --> 01:00:53,332
+Todo o que vemos na atualidade no nosso mundo,
+Todo tem como base, o medo.
+
+760
+01:00:53,634 --> 01:00:57,478
+O medo à mudança, o medo ao progresso,
+o medo de ser você mesmo,
+
+761
+01:00:57,594 --> 01:01:02,380
+o medo de amar, o medo a revelar
+teu ser perante este mundo.
+
+762
+01:01:04,116 --> 01:01:07,444
+Então, estamos criando uma sociedade
+onde a gente trabalha em coisas que não gosta
+
+763
+01:01:07,551 --> 01:01:12,923
+para conseguir dinheiro, para conseguir posição.
+ ou seja, é a sociedade de autoengano.
+
+764
+01:01:13,452 --> 01:01:16,550
+"Tenho um diploma de, tenho um título de, tenho"
+
+765
+01:01:17,236 --> 01:01:21,595
+E o " ter" é o que nos separa
+realmente de nossa identidade,
+
+766
+01:01:21,887 --> 01:01:27,075
+ o que nos leva de novo ao medo.
+"Tenho que aparentar que sou".
+
+767
+01:01:30,793 --> 01:01:34,970
+As crianças que tem ficado
+e tem saído de este tipo de escolas,
+
+768
+01:01:35,279 --> 01:01:39,207
+nos dizem muito alegres que não sentem essa pressão,
+
+769
+01:01:39,608 --> 01:01:44,775
+porque tem descoberto ao longo de sua infância 
+ e de sua adolescência que as fazem as coisas por um 
+
+770
+01:01:45,138 --> 01:01:48,466
+prazer pessoal, por um gosto pessoal,
+ por uma meta pessoal.
+
+771
+01:01:49,002 --> 01:01:53,717
+O importante é esta vontade de viver, 
+ sem esta vontade de viver
+
+772
+01:01:55,877 --> 01:01:57,455
+a vida não vale a pena, não?
+
+773
+01:01:57,833 --> 01:02:01,860
+Então as crianças nos mostram esta vontade de viver
+que como adultos temos perdido.
+
+774
+01:02:02,514 --> 01:02:04,782
+Então as primeiras perguntas teriam que ser
+
+775
+01:02:05,820 --> 01:02:08,292
+Estou cuidando da vontade de viver desta criança ou não?
+
+776
+01:02:08,938 --> 01:02:11,181
+Quer dizer, quando a criança está bem cuidada,
+
+777
+01:02:11,905 --> 01:02:17,467
+e bem cuidada significa respeitada em seus processos vitais 
+ acompanhada por adultos disponíveis,
+
+778
+01:02:17,790 --> 01:02:22,905
+com uma serie de límites que o ajudam a fortalecer-se, 
+ quando a criança está bem cuidada,
+
+779
+01:02:23,638 --> 01:02:28,511
+a criança tem vontade de construir coisas
+ com os outros desde o amor.
+
+780
+01:02:28,955 --> 01:02:32,246
+Se uma criança sempre faz o que o  adulto lhe manda, 
+
+781
+01:02:32,804 --> 01:02:34,906
+chega um momento que se desconecta-se de si mesmo.
+
+782
+01:02:35,242 --> 01:02:42,610
+No entanto, se eles estão habituados a seguir o seu próprio
+impulso, seguem relacionados com o seu interior
+
+783
+01:02:42,938 --> 01:02:44,964
+sabem o que querem, sabem quem são.
+
+784
+01:02:47,313 --> 01:02:52,692
+As crianças, além disso, te levam pela mão,
+e te mostram realmente, te dizem o que necessitam,
+
+785
+01:02:52,854 --> 01:02:58,800
+a questão é ouvi-los
+e colaborar com eles na sua busca.
+
+786
+01:02:59,698 --> 01:03:02,964
+<i>Uma descrição dos organismos vivos
+é que são autopoiéticos,</i>
+
+787
+01:03:03,650 --> 01:03:06,777
+<i>sistemas com a propriedade de produzir-se
+a si mesmos continuamente,<i>
+
+788
+01:03:07,540 --> 01:03:12,670
+<i> e as relações que se dão entre eles nunca são instrutivas,
+mas de vida, desenvolvimento e progresso.<i>
+
+789
+01:03:13,071 --> 01:03:15,815
+<i>Quer dizer, na natureza não existem ordens externas,<i>
+
+790
+01:03:16,170 --> 01:03:21,396
+<i>simplesmente organismos conscientes conectados
+mas em pleno desenvolvimento autônomo, num aparente caos.<()i>
+
+791
+01:03:22,685 --> 01:03:27,849
+Digamos que o estímulo não é necessário,
+não temos que motivar às crianças para nada.
+
+792
+01:03:28,763 --> 01:03:32,834
+Se eles querem fazer algo, fazem-no, e se não,
+não o fazem. Mas não temos que motivá-los
+
+793
+01:03:33,783 --> 01:03:35,309
+para que façam algo onde irão bem,
+
+794
+01:03:36,173 --> 01:03:37,913
+porque eles sabem se irão bem ou não.
+
+795
+01:03:38,550 --> 01:03:45,445
+E que eles possam ir escolhendo e se posicionando
+de forma instintiva naquilo que realmente
+
+796
+01:03:45,752 --> 01:03:52,984
+vai chamando sua atenção, os estimula,
+que descobram realmente o dom que cada um deles tem.
+
+797
+01:03:53,795 --> 01:03:59,522
+Se transforma em tua própria responsabilidade,
+em vez da responsabilidade de um sistema.
+
+798
+01:04:00,566 --> 01:04:04,359
+Ou seja, quem eu queira ser é minha própria responsabilidade.
+
+799
+01:04:04,790 --> 01:04:08,138
+A criança se faz consciente disto desde pequeninho.
+
+800
+01:04:09,917 --> 01:04:13,636
+<i>A célula gera uma mebrana
+que a separa do entorno exterior.<i>
+
+801
+01:04:14,185 --> 01:04:16,796
+<i>Esta membrana é semipermeável, quer dizer,<i>
+
+802
+01:04:17,232 --> 01:04:21,145
+<i>permite que ingresse o que precisa do entorno,
+quando o necessita.</i>
+
+803
+01:04:22,147 --> 01:04:25,985
+<i>Somente é necessário, que estes recursos
+estejam disponíveis no exterior,<i>
+
+804
+01:04:26,421 --> 01:04:30,732
+<i>mas sem forçar seu ingresso ao ser,
+sem violar sua segurança e bem-estar.<i>
+
+805
+01:04:32,156 --> 01:04:36,313
+<i>Desta maneira o organismo pôde criar-se
+a si mesmo, se autorealizar.<i>
+
+806
+01:04:36,965 --> 01:04:39,392
+<i> É assim como aprendemos da cultura. </i>
+
+807
+01:04:40,385 --> 01:04:43,775
+<i>O debate entre o inato
+e o adquirido não tem uma resposta,</i>
+
+808
+01:04:44,529 --> 01:04:50,187
+<i>porque ambas atuam numa complexa interação...
+que requer amor e respeito.<i>
+
+809
+01:04:50,698 --> 01:04:55,822
+Por tanto, a criatividade é a maneira
+como o organismo se expressa,
+
+810
+01:04:56,439 --> 01:05:02,623
+expressa algo que tem construido através
+do respeito a suas próprias necessidades.
+
+811
+01:05:03,239 --> 01:05:05,420
+Com os conhecimentos bases, tentar ver
+
+812
+01:05:05,609 --> 01:05:09,125
+em que momento se encontra, que é o que necessita,
+o que ele quer, o que será que lhe dará mais impulso.
+
+813
+01:05:09,298 --> 01:05:15,817
+Porque lá no fundo é a criança que vai dar os passos,
+na realidade ninguém aprende de forma forçada,
+
+814
+01:05:15,930 --> 01:05:19,290
+não é aprendizagem o que se produz quando é forçado.
+
+815
+01:05:19,817 --> 01:05:24,390
+A infância é o mais belo, ou seja  que é a alegria.
+
+816
+01:05:25,564 --> 01:05:28,045
+E neste sentido eu creio que
+
+817
+01:05:29,117 --> 01:05:33,431
+qualquer educação é boa se cuida da alegria
+e da vontade de viver da criança.
+
+818
+01:05:37,000 --> 01:05:39,655
+- Então pessoal, semana que vem é a prova final.
+
+819
+01:05:41,372 --> 01:05:43,523
+Leram o livro? Era curto, era curto
+
+820
+01:05:43,673 --> 01:05:49,207
+-Eu não o li professora, o ano já está terminando. 
+Chega, para que me serve tudo isso? eu quero ser bailarina.
+
+821
+01:05:49,316 --> 01:05:52,961
+ Não me serve de nada tudo isso.
+-Não claro, não...se as bailarinas não estudam.
+
+822
+01:05:53,068 --> 01:05:56,484
+-Para mim sim vai servir,
+eu vou estudar marketing então vai me servir.
+
+823
+01:05:56,584 --> 01:05:58,330
+-Ah, para mim também não vai servir de nada, profe
+
+824
+01:05:58,427 --> 01:06:01,979
+por qué temos que aguentar anos estudando
+coisas que depois não nos servem para nada?
+
+825
+01:06:02,091 --> 01:06:04,779
+-Não, claro. Para nada, para nada
+-É como a carta que escrevi.
+
+826
+01:06:04,901 --> 01:06:08,559
+- Ai, outra vez com o assunto da carta. Pessoal, chega.
+-Me interessa o assunto da carta.
+
+827
+01:06:09,880 --> 01:06:13,288
+O que isso, shh, hey, hey, ora, ora.
+ </i><i. (Gritos, Discussão)
+
+828
+01:06:13,388 --> 01:06:16,446
+E você, e você, eai bebê, ei falo com você.
+
+829
+01:06:16,674 --> 01:06:20,220
+Vocês dois são uns ingratos,
+porque os professores se esforçam
+
+830
+01:06:20,220 --> 01:06:21,841
+pra que lhes fique alguma coisa, e para vocês dá na mesma.
+
+831
+01:06:21,941 --> 01:06:27,581
+Ei, Ei, chega. Mariela basta, 
+ me escuta uma coisa. Vamos ver, shh. Calem-se
+
+832
+01:06:28,105 --> 01:06:31,397
+Então Martín, me explica o assunto da carta.
+Você também Micaela.
+
+833
+01:06:31,619 --> 01:06:36,158
+Falavam em nome de todos seus colegas,
+o terrível que era.
+
+834
+01:06:36,579 --> 01:06:38,742
+-Eu também concordo professora, mas como disse
+
+835
+01:06:38,932 --> 01:06:41,578
+<i>-(barulho)</i>
+
+836
+01:06:41,578 --> 01:06:44,670
+-Professora.- O que você quer Jõao?
+
+837
+01:06:44,670 --> 01:06:47,367
+-Posso sair um minuto, por favor?
+-Não, faltam dez minutos, senta, continuemos. Por favor.
+
+838
+01:06:47,467 --> 01:06:50,624
+-Viu como somos diferentes,
+este não se importa com nada, é uma ameba.
+
+839
+01:06:50,824 --> 01:06:52,553
+<i>-(Risos)<i>
+
+840
+01:06:55,980 --> 01:07:01,484
+"Sente tua alma, escuta teu coração!"
+
+841
+01:07:03,871 --> 01:07:07,173
+Por qué é necessário que as crianças
+estejam agrupados por idades?
+
+842
+01:07:07,680 --> 01:07:11,239
+Porque há algo implícito por trás disto, o implícito é que
+
+843
+01:07:11,339 --> 01:07:15,595
+as crianças da mesma idade tem as mesmas afinidades,
+
+844
+01:07:15,695 --> 01:07:19,290
+tem as mesmas capacidades, tem... são iguais.
+
+845
+01:07:19,953 --> 01:07:25,888
+Claro, se você coloca uma criança pequena num ambiente
+para fazer que ela acredite que é igual aos demais,
+
+846
+01:07:25,988 --> 01:07:28,949
+e todos os esforços estão em que ele veja que é igual,
+
+847
+01:07:29,049 --> 01:07:33,249
+a criança vai se sentir igual e vai tender a se comportar igual
+a se homogeneizar.
+
+848
+01:07:38,193 --> 01:07:41,708
+"Esta criança fala demais,
+teria que ser mais silencioso; esta criança fala pouco,
+
+849
+01:07:41,808 --> 01:07:45,956
+teria que ser mais expressivo;
+esta criança brinca pouco, teria que brincar mais;
+
+850
+01:07:46,056 --> 01:07:52,072
+esta criança se mexe demais, teria que ficar mais quieto.
+Faça o que ele faça parece que está mal.
+
+851
+01:07:52,172 --> 01:07:57,770
+que tem que terminar sendo,
+a criança protótipo que faz exatamente a metade de tudo.
+
+852
+01:08:02,170 --> 01:08:08,820
+Somos iguais como indivíduos
+em tanto biológicamente somos uma espécie,
+
+853
+01:08:10,020 --> 01:08:14,440
+mas social e culturalmente somos diferentes,
+
+854
+01:08:15,430 --> 01:08:17,242
+e isso a escola não tem podido entende-lo.
+
+855
+01:08:21,814 --> 01:08:26,306
+Têm ritmos de aprendizagem diferentes,
+têm interesses e motivações diferentes,
+
+856
+01:08:26,532 --> 01:08:28,831
+têm maneiras de se relacionar diferentes.
+
+857
+01:08:29,679 --> 01:08:36,926
+Gardner, já faz alguns anos,
+definiu que uma pessoa no tem só uma inteligência
+
+858
+01:08:37,138 --> 01:08:42,939
+linguística, verbal ou lógico-matemática,
+senão que tem inteligências muito diversas,
+
+859
+01:08:43,096 --> 01:08:45,792
+entre elas tudo o que faz referência ao emocional.
+
+860
+01:08:46,474 --> 01:08:51,933
+A diversidade, de alguma forma,
+expressamente está nos dizendo que todos somos originais.
+
+861
+01:08:52,203 --> 01:08:56,480
+Somos originais como individuos
+e somos originais como cultura e como sociedade.
+
+862
+01:09:00,111 --> 01:09:04,885
+E valorizar isto em cada um,
+e que cada criança sinta que as diferenças
+
+863
+01:09:04,985 --> 01:09:10,552
+que tem com os demais,
+são o que justamente faz mais rica a vida.
+
+864
+01:09:11,743 --> 01:09:16,024
+<i>Como conseguimos que se valorize esta diversidade,
+se nem sequer a entendemos como adultos?</i>
+
+865
+01:09:17,439 --> 01:09:21,565
+<i>Que tenhamos igualdade de direitos
+não necesessariamente implica que devamos fazer o mesmo?</i>
+
+866
+01:09:23,085 --> 01:09:27,514
+Hoje em dia muitas crianças com interesses 
+ e comportamentos diferentes ao esperado
+
+867
+01:09:27,614 --> 01:09:29,883
+<i>são diagnosticadas com condições psiquiatricas.
+
+868
+01:09:31,822 --> 01:09:36,304
+<i>Quem nos assegura que não estamos confundindo
+a diversidade nas crianças com doenças?
+
+869
+01:09:36,404 --> 01:09:40,122
+É uma autêntica epidemia, uma moda,
+
+870
+01:09:40,229 --> 01:09:45,008
+em algumas zonas há 10% de crianças nas escolas
+
+871
+01:09:45,108 --> 01:09:50,296
+tomando psicofármacos para sua suposta hiperatividade.
+
+872
+01:09:52,332 --> 01:09:58,149
+A hiperatividade não está demonstrada que neurologicamente exista
+ nem que seja sequer uma doença
+
+873
+01:09:58,249 --> 01:10:05,327
+porque você cumpre uns critérios de diagnostico,
+ então alguém decide que você é hiperativo,
+
+874
+01:10:05,427 --> 01:10:08,309
+que você é um superdotado,
+
+875
+01:10:08,309 --> 01:10:13,757
+que você está dentro do limite da normalidade aceitada
+ para considerá-lo inteligente.
+
+876
+01:10:13,857 --> 01:10:22,000
+Um de dois, ou as crianças agora são muito mais hiperativos que antes, 
+ coisa que me custa a crer,
+
+877
+01:10:22,100 --> 01:10:27,646
+mas que se for assim, teríamos que nos perguntar
+ qual é a causa desse problema.
+
+878
+01:10:27,746 --> 01:10:30,096
+e que temos feito para que as crianças estejam assim. 
+ Ou bem as crianças são igual que antes.
+
+879
+01:10:30,196 --> 01:10:32,553
+e então, Que temos feito que já não os aguentamos?
+
+880
+01:10:32,929 --> 01:10:34,137
+- Profe, posso ir buscar giz?
+
+881
+01:10:34,237 --> 01:10:35,132
+- Disse que não
+
+882
+01:10:35,745 --> 01:10:37,397
+- Profe, posso ir ao banheiro?
+
+883
+01:10:37,497 --> 01:10:39,178
+- Espera ao recreio, não
+
+884
+01:10:39,780 --> 01:10:44,458
+Quando rotulamos a uma criança de hiperativa, 
+ todo o entorno se posiciona com a criança,
+
+885
+01:10:44,827 --> 01:10:49,294
+tentando freiar, tentando acalmar, 
+ tentando tranquilizar,
+
+886
+01:10:49,394 --> 01:10:51,618
+com isso o único que você faz é por nervosa à criança.
+
+887
+01:10:53,125 --> 01:10:59,373
+Portanto você se dá conta que realmente
+ quando nos rotulam nos classificam
+
+888
+01:10:59,473 --> 01:11:05,819
+e nos cortam realmente as asas,
+ de ser pessoas e de explorar o nosso máximo potencial.
+
+889
+01:11:07,073 --> 01:11:12,267
+<i>Tradicionalmente, o teste de coeficiente intelectual 
+é utilizado para medir a inteligência de forma linear.</i>
+
+890
+01:11:13,918 --> 01:11:17,418
+<i>Da mesma forma, os exames 
+medem o rendimento em algumas condicões. </i>
+
+891
+01:11:18,127 --> 01:11:21,786
+<i> Mas estas formas de avaliar não contemplam
+ dezenas de variáveis que influem</i>
+
+892
+01:11:21,886 --> 01:11:25,205
+<i>tanto ou mais no desenvolvimento 
+ e são vitais para a educação. </i>
+
+893
+01:11:26,316 --> 01:11:32,180
+O ser humano é um todo, e requer uma visão global, 
+ uma  educação integral, holística. </i>
+
+894
+01:11:33,251 --> 01:11:39,219
+A inteligência holística levanta que é possível
+ desenvolver um tipo de inteligência unificadora,
+
+895
+01:11:39,913 --> 01:11:43,166
+porque o holismo não é outra coisa que a visão do todo.
+
+896
+01:11:43,500 --> 01:11:49,823
+Ter um equilíbrio entre o que nós chamamos: 
+ cabeça, coração e mãos,
+
+897
+01:11:50,202 --> 01:11:55,967
+para nós isso é poder desenvolver 
+ um ser humano equilibrado, digamos.
+
+898
+01:11:58,962 --> 01:12:02,906
+E por último seguimos na educação com o mesmo, 
+ fragmentando os espaços.
+
+899
+01:12:03,006 --> 01:12:07,558
+Aqui ensinamos ciências, aqui ensinamos sociais, 
+ então isso não é educação integral.
+
+900
+01:12:08,128 --> 01:12:11,691
+<i>Imaginemos que os pais de Maria
+querem que tenha uma educação integral, </i>
+
+901
+01:12:12,365 --> 01:12:14,986
+<i>então a enviam a um colégio trilíngue,</i> 
+
+902
+01:12:15,123 --> 01:12:18,730
+<i>onde tem todo tipo de esportes, 
+ mais de 10 disciplinas acadêmicas, </i>
+
+903
+01:12:19,260 --> 01:12:20,901
+<i> sala de informática, laboratório.</i>
+
+904
+01:12:21,827 --> 01:12:23,634
+<i> Realizam visitas de estudo todos os meses.</i>
+
+905
+01:12:24,869 --> 01:12:30,335
+<i>Oficinas de xadrez, teatro, artes plásticas, música, 
+dança, patinagem, horta, karaté, yoga e meditação.</i>
+
+906
+01:12:32,817 --> 01:12:34,341
+<i>Tanto dentro como fora da escola, </i>
+
+907
+01:12:34,524 --> 01:12:37,913
+<i> a educação integral não tem relação 
+com a quantidade de recursos ou materiais,</i>
+
+908
+01:12:38,385 --> 01:12:39,923
+<i> mas com um enfoque global.</i>
+
+909
+01:12:40,519 --> 01:12:43,600
+Porque funciona também com áreas integradas,
+
+910
+01:12:44,113 --> 01:12:49,803
+não segmentadas como na educação tradicional 
+onde só pensam em espanhol ou só pensam em matemática.
+
+911
+01:12:49,903 --> 01:12:57,740
+Senão, as matemáticas são história, /n e são linguajem  e são geografia ao mesmo tempo
+
+912
+01:13:09,726 --> 01:13:15,010
+É uma educação cósmica, explica Montessori, 
+em que tudo se relaciona com tudo.
+
+913
+01:13:15,254 --> 01:13:18,918
+Então se tudo tem relação com tudo, 
+eu posso estar fazendo uma coisa e aprendo disso,
+
+914
+01:13:19,018 --> 01:13:21,627
+e aprendo disso, e o tempo todo estou aprendendo.
+
+915
+01:13:37,623 --> 01:13:44,355
+E então o que tínhamos que fazer, era permitir 
+que as crianças tivessem contacto com experiências diferentes.
+
+916
+01:13:44,875 --> 01:13:53,026
+A Escola tem de ser uma base de experimentação, 
+uma base de abertura de possibilidades totais.
+
+917
+01:13:53,860 --> 01:13:58,878
+Experiências científicas, artísticas, 
+humanísticas, de diferentes tipos,
+
+918
+01:13:59,541 --> 01:14:02,123
+e ver se isto lhes despertava algo.
+
+919
+01:14:04,168 --> 01:14:09,538
+Portanto, não há um percurso único, 
+não há um caminho único, como não há uma criança igual a outra.
+
+920
+01:14:11,980 --> 01:14:17,385
+Se queremos que as crianças sejam criativas, 
+temos, por um lado, que permitir que elas criem,
+
+921
+01:14:17,485 --> 01:14:23,719
+deixar que tenham actividades em que
+possam atuar de forma espontânea.
+
+922
+01:14:33,133 --> 01:14:37,277
+<i>Neste caminho pessoal de criação e expressão, 
+a arte desempenha um papel fundamental,</i>
+
+923
+01:14:38,337 --> 01:14:41,958
+<i>já que é a maneira que temos de manifestar
+a nossa criatividade e personalidade.</i>
+
+924
+01:14:42,380 --> 01:14:47,587
+<i>A partir daqui, é imperativo que o nosso conceito de arte 
+seja o mais aberto e menos regulamentado possível.</i>
+
+925
+01:14:48,179 --> 01:14:53,162
+Então, as artes estão postas aí na lógica
+de construção de comunidade de sentido;
+
+926
+01:14:54,323 --> 01:15:00,603
+não em termos daquilo que hoje chamaríamos
+as indústrias culturais, que é a derivação das belas artes.
+
+927
+01:15:02,747 --> 01:15:05,933
+Então, ali estamos parados nós nas artes populares
+
+928
+01:15:07,355 --> 01:15:11,669
+<i>Criamos com a pintura, a música, 
+mas também a dança, o teatro, o desenho, a construção,</i>
+
+929
+01:15:11,769 --> 01:15:15,001
+<i>a história, a escultura, a literatura, o humor, o jogo,
+
+930
+01:15:15,101 --> 01:15:18,680
+<i>tudo o que surja espontaneamente da criança é criação..</i>
+
+931
+01:15:19,444 --> 01:15:22,949
+A interioridade de cada pessoa se revela 
+através da arte.
+
+932
+01:15:23,862 --> 01:15:29,188
+Não se usa a arte como ferramenta /nou intrumento de aprendizagem, a arte é em si mesma
+
+933
+01:15:30,676 --> 01:15:35,955
+já bastante válida para ser utilizada
+como ferramenta de aprendizagem.
+
+934
+01:15:36,179 --> 01:15:42,936
+Neste sentido, a arte é um direito.
+ Se você não acede à arte, não acede a uma formação integral.
+
+935
+01:15:47,373 --> 01:15:51,748
+Acho que a emoção é a base que movimenta a vida, /nas emoções nos direcionam,  
+
+936
+01:15:52,090 --> 01:15:53,851
+Antes de tomar uma decisão, eu sinto.
+
+937
+01:15:54,449 --> 01:15:57,594
+Não temos que fazer uma escola /n "educação emocional" específica.
+
+938
+01:15:57,694 --> 01:16:01,060
+Mas temos que ter em conta /nque o indivíduo é um ser emocional 
+
+939
+01:16:01,160 --> 01:16:06,504
+E que essas emoçoes são complexas. /nSe quando dirigimos as relações, os contextos de aprendizagem,
+
+940
+01:16:06,604 --> 01:16:11,399
+já temos em conta a emoção que isso gera, /njá vamos desenvolver a emoção.
+
+941
+01:16:15,511 --> 01:16:19,383
+Não existe ser humano que possa viver indiferente ou abandonado.
+
+942
+01:16:19,570 --> 01:16:23,352
+precisamos de amor, de carinho, /nde aceitação dos seres humanos. 
+
+943
+01:16:23,452 --> 01:16:27,956
+Apenas haverá um adulto equilibrado /n e emocionalmente estável e saudável,
+
+944
+01:16:28,056 --> 01:16:33,684
+quando tenha sido tratado com muito amor de criança
+e quando tiverem tido muita paciência e muito carinho;
+
+945
+01:16:33,784 --> 01:16:37,035
+e aí sinta que tiveram carinho por ele e paciência com ele.
+
+946
+01:16:37,840 --> 01:16:44,429
+Um dos fatores primordiais aqui é a atenção.  /nA escuta, o entendimento
+
+947
+01:16:44,529 --> 01:16:49,416
+E mais que uma atenção verbal, /numa atenção física, de apoio, de contenção.
+
+948
+01:16:52,291 --> 01:16:55,870
+Não somente que eles  se sintam amados, 
+ reconhecidos,
+
+949
+01:16:56,971 --> 01:17:01,745
+mas também que eles aprendam a expressar suas emoções.
+
+950
+01:17:03,475 --> 01:17:09,279
+Ao saber que as suas emoções são respeitadas,
+não têm nenhum problema em expressá-las.
+
+951
+01:17:10,081 --> 01:17:15,292
+Falo dessas questões muitas vezes com os alunos, 
+- você pode não ter trabalho,
+
+952
+01:17:15,392 --> 01:17:20,520
+o ambiente à tua volta pode não ser o mais favorável,
+ mas se você sabe
+
+953
+01:17:20,620 --> 01:17:23,720
+lidar com suas emoções, com certeza está mais a vontade, não?
+
+954
+01:17:24,418 --> 01:17:26,827
+Como seres humanos, como seres
+
+955
+01:17:28,255 --> 01:17:32,137
+é fundamental que desde pequenos
+Possam conectar-se com eles,
+
+956
+01:17:32,237 --> 01:17:36,288
+com o que sentem, possam reconhecer o que é que sentem.
+
+957
+01:17:36,683 --> 01:17:43,123
+Conhecer essas virtudes que tem. Tem que conhecer
+que é o que vai pôr a disposição da humanidade.
+
+958
+01:17:43,769 --> 01:17:47,737
+Possam desenvolver esse autoconhecimento, em vez de estar
+
+959
+01:17:47,837 --> 01:17:51,893
+o tempo todo a olhar para fora,
+como se desde fora
+
+960
+01:17:52,567 --> 01:17:58,094
+encontrássemos a solução de todos  nossos problemas,
+é o aprender a olhar o nosso interior.
+
+961
+01:18:00,865 --> 01:18:04,839
+Aprender a conhecer todas as ferramentas,
+as que temos para
+
+962
+01:18:05,915 --> 01:18:08,088
+basicamente, definir o próprio destino.
+
+963
+01:18:08,760 --> 01:18:13,586
+Para que cada um aprenda a ser artífice
+do seu próprio destino, o que cada um decide.
+
+964
+01:18:26,000 --> 01:18:30,090
+- Martin, Martin. Não queremos que saias
+da escola nestas condições.
+
+965
+01:18:30,090 --> 01:18:34,813
+- Eu também não quero ir embora da escola nestes "termos".
+Mas vamos ler o discurso de qualquer forma.
+
+966
+01:18:34,813 --> 01:18:38,444
+- Querido, daqui a pouco tempo você vai estar lá fora,
+vai ter que escolher uma profissão,
+
+967
+01:18:38,444 --> 01:18:40,870
+tomar decisões, ser responsável.
+
+968
+01:18:40,870 --> 01:18:43,548
+Você não pode continuar brincando como um bebê!
+
+969
+01:18:43,548 --> 01:18:45,627
+- Está bem, está bem...Perfeito.
+
+970
+01:18:47,376 --> 01:18:50,249
+- E quando vocês me ensinaram a escolher?
+
+971
+01:18:56,131 --> 01:19:03,343
+"... a Educação sem liberdade, dá como resultado
+uma vida que não pode ser vivida plenamente."
+
+972
+01:19:04,243 --> 01:19:07,863
+A vida está cheia de opções,
+e há que aprender a fazer escolhas.
+
+973
+01:19:08,321 --> 01:19:14,308
+Por isso, a organização de todo o material educativo
+faz com que as crianças possam tomar decisões.
+
+974
+01:19:14,817 --> 01:19:19,695
+Um ambiente que respeite as suas necessidades, que possa se mover,
+que tenha uma variedade de materiais,
+
+975
+01:19:19,795 --> 01:19:26,894
+que possa descobrir, que possa tocar,
+que possa seguir seus próprios impulsos, sem ninguém que pretenda lhe ensinar.
+
+976
+01:19:27,133 --> 01:19:30,788
+Onde os alunos podem escolher
+as disciplinas que não querem fazer,
+
+977
+01:19:31,325 --> 01:19:38,291
+as que querem fazer, onde podem
+propor atividades autogerenciadas por eles.
+
+978
+01:19:38,636 --> 01:19:43,965
+Uma escola aberta, uma escola onde os estudantes
+não tinha que dar satisfação a ninguém,
+
+979
+01:19:44,065 --> 01:19:45,944
+onde cada quem podia ser si mesmo.
+
+980
+01:19:46,283 --> 01:19:48,720
+Então, quem quiser entra aqui, quem quiser entra aqui.
+
+981
+01:19:48,820 --> 01:19:52,872
+Então, crianças com idades diferentes
+acedem a isso por seus próprios interesses
+
+982
+01:19:53,282 --> 01:19:56,350
+A liberdade de aprender o que querem aprender,
+
+983
+01:19:56,450 --> 01:20:00,409
+de aprender a seu tempo,
+e não aprender o que não querem aprender.
+
+984
+01:20:56,163 --> 01:21:02,699
+Escolher o que fazer, vai lhe ajudar
+a se dar conta o que mais necessita escolher.
+
+985
+01:21:02,799 --> 01:21:06,963
+De alguma maneira, os projetos lhe permitem
+experimentar muitas opções,
+
+986
+01:21:08,196 --> 01:21:13,702
+e, de repente, têm no final do seu processo,
+uma ideia mais clara de si mesmo.
+
+987
+01:21:13,942 --> 01:21:17,962
+A criança vai encontrando caminhos para sua vida futura
+e tem a certeza de que,
+
+988
+01:21:17,960 --> 01:21:21,688
+Ele seja sapateiro ou seja médico, vai se dar bem;
+
+989
+01:21:22,404 --> 01:21:26,338
+se ela o faz com todo o amor, e com toda a arte
+e toda a entrega possível, Está me entendendo?
+
+990
+01:21:27,529 --> 01:21:32,166
+A gente não pôde aprender a liberdade em teoria,
+e quando saem da escola
+
+991
+01:21:32,266 --> 01:21:36,411
+em seguida ser livres. As crianças tem que ser livres na escola.
+
+992
+01:21:37,500 --> 01:21:42,064
+Se a gente não pode decidir o que quer experimentar,
+o que quer viver,
+
+993
+01:21:42,633 --> 01:21:44,100
+está muito limitado na hora de aprender.
+
+994
+01:21:44,703 --> 01:21:48,537
+Somente quando você tem uma autonomia
+e se sente respeitado na sua autonomia,
+
+995
+01:21:48,637 --> 01:21:50,051
+vai poder saber o que quer.
+
+996
+01:21:51,336 --> 01:21:55,094
+Basicamente as crianças que não conseguem
+estes níveis de independência,
+
+997
+01:21:55,194 --> 01:21:57,742
+que se convertem em crianças dependentes de outras pessoas,
+
+998
+01:21:58,621 --> 01:22:02,146
+nunca vão fazer o que eles querem,
+sempre vão fazer o que outras pessoas querem,
+
+999
+01:22:05,523 --> 01:22:11,053
+Primeiro você necessita saber, resolver situações por você mesmo.
+
+1000
+01:22:12,679 --> 01:22:17,548
+E nesse processo, vai se dar a responsabilidade.
+
+1001
+01:22:18,148 --> 01:22:22,414
+Eu me proponho, eu faço, obtenho e é um ciclo já de
+
+1002
+01:22:22,514 --> 01:22:25,849
+"tomada de decisões, de vontade, de manejo da liberdade."
+
+1003
+01:22:26,059 --> 01:22:31,665
+E depois da responsabilidade, então
+você pode aspirar a essa liberdade bem entendida.
+
+1004
+01:22:33,288 --> 01:22:38,099
+<i>Talvez o maior desafio que enfrentamos
+é nossa tendência a dirigir a atividade da criança.<i>
+
+1005
+01:22:38,424 --> 01:22:43,479
+<i>A única forma que conhecemos de educar
+é dizer ao outro que fazer e como fazé-lo,<i>
+
+1006
+01:22:43,579 --> 01:22:47,219
+<i>e temos poucas experiências
+onde decidimos por conta própria.</i>
+
+1007
+01:22:51,501 --> 01:22:56,287
+Me encontro muitas vezes em aulas nas quais 
+lhes pergunto o que querem fazer, e não sabem o que fazer.
+
+1008
+01:22:57,399 --> 01:23:01,367
+Estão muito acostumados a uma diretividade na aula,
+a "vamos fazer isto, vamos fazer o outro".
+
+1009
+01:23:01,467 --> 01:23:06,724
+Porque o docente em geral,
+está acostumado a ser quem dirige tudo.
+
+1010
+01:23:06,985 --> 01:23:11,186
+Porém, de esta forma
+damos uma participação ativa à criança.
+
+1011
+01:23:11,330 --> 01:23:17,348
+Um docente que já não está lecionando aulas,
+ senão que está passando pelos grupos orientando, facilitando
+
+1012
+01:23:17,835 --> 01:23:22,478
+Os escuta, e lhes dá espaço para se desenvolver.
+
+1013
+01:23:22,879 --> 01:23:27,909
+O professor faz as propostas, não impõe, senão que propõe.
+
+1014
+01:23:28,533 --> 01:23:33,325
+Não é que você tenha a autoridade e ele não a tem.
+Se trata de semear no aluno.
+
+1015
+01:23:33,425 --> 01:23:35,971
+a ideia de que ele tem que ser
+a autoridade na sua própria vida.
+
+1016
+01:23:38,540 --> 01:23:40,038
+-¡Não vai mais...!
+
+1017
+01:23:46,553 --> 01:23:47,792
+-Um 3 Romero.
+
+1018
+01:23:49,141 --> 01:23:54,181
+Nós achamos que as notas,
+são totalmente subjetivas e imperfeitas.
+
+1019
+01:23:55,487 --> 01:24:00,039
+Primeiro porque não há um docente que avalie igual a outro.
+
+1020
+01:24:00,241 --> 01:24:05,428
+Frente cada trabalho é a criança que teria
+que avaliar como se sente com esse trabalho,
+
+1021
+01:24:06,130 --> 01:24:10,552
+se está satisfeito,
+se lhe parece que poderia té-lo melhorado.
+
+1022
+01:24:11,332 --> 01:24:16,191
+A criança também controla seu processo de aprendizado,
+leva seu controle de progresso,
+
+1023
+01:24:16,291 --> 01:24:21,818
+ele sabe a onde está, em que unidade
+em que guia, em que parte de esse processo.
+
+1024
+01:24:22,050 --> 01:24:27,918
+Ele sabe seu caminho, ele sabe e ele é quem vai se dando conta
+de como vai ele nesse caminho.
+
+1025
+01:24:29,918 --> 01:24:33,570
+Eles decidem, eles escolhem a qual idade passar,
+eles escolhem quando estão prontos.
+
+1026
+01:24:33,872 --> 01:24:38,233
+Não há um exame de saída aqui,
+senão que eles observam quando já tem completado.
+
+1027
+01:24:38,333 --> 01:24:43,457
+no informe pedagógico tudo o que tem
+que ter completado, dizem vou sair
+
+1028
+01:24:43,828 --> 01:24:48,613
+<i>Algumas experiências nos falam de informes pedagógicos
+compartilhados que se centram nos processos,</i>
+
+1029
+01:24:49,283 --> 01:24:55,180
+<i>outras trabalham desde a autoavaliação e o constante
+intercâmbio entre educadores, educandos e família.</i>
+
+1030
+01:24:55,519 --> 01:24:59,383
+<i>Esta perspectiva, muda totalmente
+nossa maneira de entender a avaliação.</i>
+
+1031
+01:25:00,249 --> 01:25:03,869
+<i> Se realmente nos interessa aprender
+respeitando o ritmo e motivação próprios,</i>
+
+1032
+01:25:04,069 --> 01:25:08,025
+<i>é importante questionar a necessidade
+dos exámes e as qualificações.</i>
+
+1033
+01:25:09,666 --> 01:25:12,632
+Não há qualificações para ver quem é melhor e pior,
+
+1034
+01:25:13,154 --> 01:25:16,050
+simplesmente há um acompanhamento no desenvolvimento da criança.
+
+1035
+01:25:16,465 --> 01:25:23,705
+Você observa sua questão emocional, sua maturidade,
+sua socialização, seu nível de independência... 
+
+1036
+01:25:24,248 --> 01:25:29,342
+E isso se materializa no que falamos
+deles nas nossas reuniões de equipe.
+
+1037
+01:25:29,835 --> 01:25:34,992
+No que compartilhamos a equipe e as famílias
+nas reuniões individuais com as famílias,
+
+1038
+01:25:35,290 --> 01:25:40,547
+mas não há uma avaliação das aprendizagens,
+do comportamento, da conduta,
+
+1039
+01:25:40,610 --> 01:25:44,653
+disso não há uma valorização, digamos. Há um acompanhamento.
+
+1040
+01:25:45,767 --> 01:25:48,272
+<i>A escola se transforma num espaço aberto,</i>
+
+1041
+01:25:48,977 --> 01:25:53,523
+<i>uma escola de portas abertas às experiências,
+ costumes, à comunidade.</i>
+
+1042
+01:25:53,959 --> 01:25:58,345
+Os conflitos e situações do espaço
+<i>comunitário são parte da escola,</i>
+
+1043
+01:25:58,495 --> 01:26:02,630
+<i>e esta passa a ser um centro educativo,
+onde todos podemos aprender de todos.</i>
+
+1044
+01:26:03,333 --> 01:26:10,107
+<i>Desta forma, não existem idades ou barreiras que nos separam,
+só experiências que nos constroem.</i>
+
+1045
+01:26:10,362 --> 01:26:16,657
+A escola não deveria ter nem sequer muros,
+ o meu sonho é toda uma cidade.
+
+1046
+01:26:16,757 --> 01:26:23,818
+Ou seja, a cidade das crianças, na qual toda a cidade
+se converte em ambientes de aprendizagem lúdicos.
+
+1047
+01:26:24,126 --> 01:26:36,711
+Bem, o primeiro é que você entra, e sente um ambiente fluído,
+sim, como fluido e de muita tranquilidade.
+
+1048
+01:26:37,253 --> 01:26:43,806
+Uns fazendo umas coisas, outros olhando pelo telescópio,
+outros lendo alí um livro,
+
+1049
+01:26:44,193 --> 01:26:48,425
+outros fazendo aqui uma experiência. Grupinhos, grupinhos,
+
+1050
+01:26:48,638 --> 01:26:52,265
+trabalhando mas com um objetivo muito claro
+e sabendo para onde eles vão.
+
+1051
+01:26:54,159 --> 01:26:56,321
+<i>As escolas rurais ou escolas unitárias</i>
+
+1052
+01:26:56,421 --> 01:27:00,064
+em geral se vêem obrigadas a trabalhar com crianças
+ de diferentes idades em conjunto.</i>
+
+1053
+01:27:00,993 --> 01:27:03,357
+<i>Geralmente se afirma que esta é uma desvantagem,</i>
+
+1054
+01:27:04,169 --> 01:27:08,902
+<i>mas, pelo contrário, a aprendizagem se potencializa
+ em experiências, vínculos e valores humanos,</i>
+
+1055
+01:27:09,458 --> 01:27:11,859
+<i>tanto para as crianças quanto para o docente.</i>
+
+1056
+01:27:12,623 --> 01:27:15,471
+<i>Geralmente sucede que estas escolas, afastadas e marginais,</i>
+
+1057
+01:27:15,661 --> 01:27:20,073
+<i>tem uma formação integral,
+difícil de encontrar nas escolas urbanas</i>
+
+1058
+01:27:20,278 --> 01:27:22,641
+<i>que insistem em separar as crianças por idades.</i>
+
+1059
+01:27:23,437 --> 01:27:28,599
+Essa temporalidade da escola, também, 
+fez com que tenhamos na escola aos alunos
+
+1060
+01:27:29,542 --> 01:27:35,837
+separados por gerações. Então, aqui estão as criancinhas
+ de 6 anos, de 7, de 18, etc. Não é mesmo?
+
+1061
+01:27:36,051 --> 01:27:41,486
+Quando o ser humano, ao longo de toda
+a sua história tem vivido em relação intergeracional,
+
+1062
+01:27:42,592 --> 01:27:47,630
+onde o pequeno compartilhou com o avô,
+o avô com o pai, uma mistura total.
+
+1063
+01:27:47,931 --> 01:27:50,153
+E aí a criança tem aprendido, e tem aprendido muito bem...
+
+1064
+01:27:51,174 --> 01:27:55,519
+Não estavam separados em cursos.
+Senão que estavam todos juntos.
+
+1065
+01:27:56,284 --> 01:28:01,260
+Então, todos subiam a montanha juntos,
+todos trabalhavamos juntos, todos faziamos projetos juntos.
+
+1066
+01:28:01,503 --> 01:28:05,818
+Crianças de diferentes idades,
+ todos numa mesma escola unitária, digamos assim.
+
+1067
+01:28:06,523 --> 01:28:15,103
+As diferentes idades também criam
+as possibilidades para que suceda a ética,
+
+1068
+01:28:15,724 --> 01:28:20,361
+sucede através das experiências do dia a dia.
+ É algo vivo.
+
+1069
+01:28:22,079 --> 01:28:25,650
+<i>Existem escolas com aulas integradas, 
+juntando crianças a cada 3 anos, </i> 
+
+1070
+01:28:25,959 --> 01:28:29,102
+<i>outras aonde existem crianças que tem 
+até 6 anos de diferença,</i>
+
+1071
+01:28:29,295 --> 01:28:34,229
+<i>e em algumas vemos adolescentes compartilhando
+o espaço com pequenos que recém começam.</i>
+
+1072
+01:28:35,287 --> 01:28:38,036
+<i>Também existem muitas escolas
+que mantém o modelo graduado,</i>
+
+1073
+01:28:38,231 --> 01:28:42,301
+<i>porém as crianças podem mudar de grupos,
+de acordo com as suas necessidades e processos.</i>
+
+1074
+01:28:43,105 --> 01:28:51,621
+De modo geral, coincidem na idade,
+porém como existem crianças que pela maturidade estão trabalhando
+
+1075
+01:28:52,374 --> 01:28:58,311
+conectados com outros temas, numa dessas
+eles trabalham em algumas matérias com alguns grupos
+
+1076
+01:28:58,827 --> 01:29:01,012
+menores e com alguns grupos maiores.
+
+1077
+01:29:01,668 --> 01:29:06,745
+A criança que não pode avançar numa matéria,
+que avance em outra. Que não tenha interrupções,
+
+1078
+01:29:06,845 --> 01:29:10,450
+é como um curso d'água, que encontra
+uma pedra e não fica esperando,
+
+1079
+01:29:10,962 --> 01:29:15,005
+busca por onde passar, e senão, cresce e passa por cima.
+
+1080
+01:29:16,135 --> 01:29:22,764
+E isso permite que a criança que é forte numa área,
+seja quem possa mostrar aos outros,
+
+1081
+01:29:23,014 --> 01:29:26,483
+e ajudar aos outros nessa área.
+
+1082
+01:29:27,059 --> 01:29:31,783
+E, ao mesmo tempo, ela pode nutrir-se
+de quem é forte em outra área.
+
+1083
+01:29:35,305 --> 01:29:39,259
+Todos podemos ser o estímulo próximo,
+mas no momento que tenha que ser.
+
+1084
+01:29:39,259 --> 01:29:43,820
+Então, existem muitas crianças,
+de diferentes idades que podem passar ao ser
+
+1085
+01:29:43,820 --> 01:29:45,220
+este estímulo próximo para a aprendizagem da criança,
+
+1086
+01:29:45,220 --> 01:29:49,092
+e não necessáriamente um grupo ou alguém específicamente.
+
+1087
+01:29:49,345 --> 01:29:53,954
+E é muito linda essa conexão que tem entre eles,
+porque os maiores cuidam aos menorizinhos,
+
+1088
+01:29:55,167 --> 01:30:00,816
+quando saem para brincar os ajudam a mudar de roupa,
+a colocar os tênis ou o agasalho.
+
+1089
+01:30:01,497 --> 01:30:06,498
+É, melhor dizendo, aprender a viver juntos,   aprender a...
+
+1090
+01:30:08,198 --> 01:30:09,752
+sim, trabalhar em equipe.
+
+1091
+01:30:10,655 --> 01:30:15,851
+Qual é objetivo da educação?
+ Aprender? Aprender o quê? Conhecimentos?
+
+1092
+01:30:16,560 --> 01:30:23,112
+Ou ir desenvolvendo umas capacidades humanas?
+que somente se desenvolvem a partir da relação com o outro,
+
+1093
+01:30:23,697 --> 01:30:28,378
+a partir do tempo, a partir do processo,
+a partir do fazer, a partir de se comunicar,
+
+1094
+01:30:29,333 --> 01:30:31,408
+a partir de se ver e se reconhecer,
+
+1095
+01:30:32,342 --> 01:30:33,557
+a partir do amor.
+
+1096
+01:30:41,722 --> 01:30:44,126
+<i>(Vozes falando)</i>
+
+1097
+01:30:51,774 --> 01:30:54,833
+<i>(Vozes falando)</i>
+
+1098
+01:31:03,137 --> 01:31:06,196
+- O que estão fazendo?-
+- Nada Sebastián. Sai.
+
+1099
+01:31:06,196 --> 01:31:09,255
+- Nada? Estão escrevendo alguma coisa.
+- Não se meta.
+
+1100
+01:31:09,255 --> 01:31:14,937
+- Bem, quero saber.
+- Você está pisando. Está pisando!
+
+1101
+01:31:14,937 --> 01:31:17,584
+<i>(Gritos)</i>
+
+1102
+01:31:21,711 --> 01:31:25,485
+- O que está acontecendo, o que está acontecendo?
+
+1103
+01:31:25,585 --> 01:31:29,376
+- Não está acontecendo nada.
+- Como nada?
+
+1104
+01:31:29,376 --> 01:31:31,476
+- Cristina, por favor, leva eles.
+- Sebastián!
+
+1105
+01:31:31,476 --> 01:31:33,306
+Você fica aqui, vocês também.
+
+1106
+01:31:36,936 --> 01:31:38,529
+O que vocês pensam que é a escola?
+
+1107
+01:31:38,994 --> 01:31:44,039
+- Posso dizer algo?
+- Não. agora não Micaela. Isto é um caos.
+
+1108
+01:31:45,897 --> 01:31:49,922
+- Do que está rindo?
+- Desses cartazes.
+
+1109
+01:31:53,053 --> 01:31:55,406
+- O que é isto?
+
+1110
+01:31:55,406 --> 01:31:59,563
+- São uns cartazes que queremos colar nas paredes,
+já que não nos deixam ler o discurso.
+
+1111
+01:31:59,663 --> 01:32:02,575
+- De maneira nenhuma. Isto assim não!
+
+1112
+01:32:03,879 --> 01:32:08,641
+Vocês acham que podem fazer qualquer coisa?
+Que podem pendurar qualquer coisa?
+
+1113
+01:32:09,227 --> 01:32:12,859
+Não pessoal, na escola existem regras.
+
+1114
+01:32:13,372 --> 01:32:16,941
+O mundo é um caos, nossas vidas são um caos.
+
+1115
+01:32:17,161 --> 01:32:21,993
+Por isso temos que lhes dar um pouco de paz,
+ tranquilidade, segurança.
+
+1116
+01:32:22,960 --> 01:32:27,068
+A escola quer lhes dar um pouco de ordem, entendem?
+
+1117
+01:32:27,735 --> 01:32:28,958
+Ordem!
+
+1118
+01:32:34,695 --> 01:32:42,781
+" Toda vivência humana acontece em conversas 
+e é nesse espaço que se cria a realidade em que vivemos."
+
+1119
+01:32:45,000 --> 01:32:53,557
+Há sempre um temor de que a liberdade
+e a falta de um sentido autoritário,
+
+1120
+01:32:54,218 --> 01:32:59,703
+mas que autoridade, gere indisciplina, ou desordem.
+
+1121
+01:33:00,369 --> 01:33:04,735
+O que ocorre é que as escolas têm tomado a disciplina como
+
+1122
+01:33:06,426 --> 01:33:08,809
+"comportar-se como eu quero que se comportem"
+
+1123
+01:33:09,879 --> 01:33:13,659
+na realidade a disciplina é a aprendizagem da conduta.
+
+1124
+01:33:14,801 --> 01:33:23,374
+Quer dizer que uma pessoa disciplinada, 
+é uma pessoa que aprende, que aprendeu a conduzir sua conduta,
+
+1125
+01:33:24,384 --> 01:33:29,253
+mas não exteriormente, senão que a gente aprende a conduzir sua conduta.
+
+1126
+01:33:29,654 --> 01:33:32,070
+<i>Podemos distinguir 3 tipos de disciplina</i>
+
+1127
+01:33:32,597 --> 01:33:37,811
+<i> Uma disciplina autoritária, normalmente com regras
+estabelecidas por uma autoridade que controla.</i>
+
+1128
+01:33:38,562 --> 01:33:42,801
+<i>Uma disciplina funcional,
+onde as regras derivam de experiências reais,</i>
+
+1129
+01:33:42,901 --> 01:33:45,712
+<i>são modificadas e estabelecidas em grupo.<i/>
+
+1130
+01:33:46,365 --> 01:33:52,184
+<i>Este tipo de disciplina é naturalmente estabelecida pela comunidade,
+já que reponde à escolha de todos.</i>
+
+1131
+01:33:53,957 --> 01:33:56,427
+<i>E finalmente uma autodisciplina,<i/>
+
+1132
+01:33:56,955 --> 01:34:00,673
+<i>onde cada pessoa é consciente
+de que constrói sua própria conduta.<i/>
+
+1133
+01:34:00,812 --> 01:34:06,650
+Eles vão aprendendo o respeito
+de uma maneira viva e fácil.
+
+1134
+01:34:07,197 --> 01:34:12,155
+Fato que, si estão todos sentados em cadeiras,
+fazendo o que o adulto manda,
+
+1135
+01:34:12,650 --> 01:34:18,196
+ai não tem aprendizagem de limites nem de respeito com o outro,
+simplesmente tem obediência.
+
+1136
+01:34:18,983 --> 01:34:24,631
+Basicamente se você ensina às crianças
+que limite é respeitar os outros,
+
+1137
+01:34:24,731 --> 01:34:26,707
+deixar trabalhar, permitir trabalhar,
+
+1138
+01:34:27,355 --> 01:34:34,834
+Eles entedem perfeitamente que um comportamento
+que impeça o trabalho deve ser "Isto você não podefazer".
+
+1139
+01:34:35,649 --> 01:34:37,707
+Quer dizer, não tem que explicar
+nada em matéria de convivência.
+
+1140
+01:34:38,726 --> 01:34:43,371
+Você não pode trabalhar seo grupo do lado
+está fazendo barulho demais e viceversa.
+
+1141
+01:34:43,873 --> 01:34:50,103
+E a questão está em que a criança começe a se fazer responsável
+das consequências que ele mesmo produz.
+
+1142
+01:34:50,681 --> 01:34:54,709
+Aquele ser que pode dominar-se,
+que pode pensar, que pode refletir,
+
+1143
+01:34:54,872 --> 01:35:02,529
+realmente não, não necesita de um limite externo
+para poder conseguir o que ele quer.
+
+1144
+01:35:03,250 --> 01:35:08,810
+<i>Não podemos pretender que um jovem possa tomar
+decisões conscientes sobre sua vida, seu entorno ou seu pais,</i>
+
+1145
+01:35:09,355 --> 01:35:12,138
+<i>se sempre decidimos por ele como deve ir vestido à escola,<i>
+
+1146
+01:35:12,336 --> 01:35:14,876
+<i>que deve aprender o que fazer em sua vida...</i>
+
+1147
+01:35:15,424 --> 01:35:19,174
+<i>Estes jóvens terão que tomar decisões numa sociedade</i>
+
+1148
+01:35:19,174 --> 01:35:22,274
+<i>onde as regras vão transformando-se
+segundo as novas necessidades,</i>
+
+1149
+01:35:22,274 --> 01:35:25,012
+<i>opiniões e formas de entender a realidade.</i>
+
+1150
+01:35:25,720 --> 01:35:28,081
+<i>Da mesma forma poderia suceder na escola,</i>
+
+1151
+01:35:28,565 --> 01:35:34,296
+<i>onde as regras seriam funcionais ao aprendizado,
+necessidades e opiniões das crianças.</i>
+
+1152
+01:35:34,744 --> 01:35:39,345
+<i>Para lograr isto, é fundamental repensar-mos
+as estruturas de poder da escola.</i>
+
+1153
+01:35:40,250 --> 01:35:46,636
+Que não deve haver estrutura de poder,
+que tem que haver uma autoridade funcional,
+
+1154
+01:35:47,145 --> 01:35:52,033
+administrativa, funcional, organizadora,mas não de poder.
+
+1155
+01:35:52,641 --> 01:35:57,270
+Quando você se atreve a questionar essa autoridade
+
+1156
+01:35:59,362 --> 01:36:05,893
+que vem de fato, você pode se converter
+num melhor diretor do processo.
+
+1157
+01:36:06,052 --> 01:36:07,915
+As vezes pedimos sua opinião
+
+1158
+01:36:08,836 --> 01:36:13,073
+e em definitiva cabe se perguntar se vamos
+levar em conta essa opinião ou não.
+
+1159
+01:36:13,723 --> 01:36:18,729
+Eu diria ver juntos. Temos uma questão e dizemos
+"Bom, vamos vê-la juntos",
+
+1160
+01:36:19,284 --> 01:36:26,405
+"E qual é a tua ideia?", "Não, vamos ver juntos
+não abordemos isto com minha ideia e tua ideia."
+
+1161
+01:36:26,774 --> 01:36:29,293
+Na natureza o que existe é a cooperação.
+
+1162
+01:36:30,752 --> 01:36:34,116
+Os organismos que cooperam
+com os outros são os que mais sobrevivem.
+
+1163
+01:36:34,586 --> 01:36:38,710
+Os organismos que acreditam que podem
+viver independentemente não sobrevivem.
+
+1164
+01:36:40,970 --> 01:36:45,822
+Então algo muito importante é como
+começamos a construir melhores cidadãos desde a escola.
+
+1165
+01:36:46,168 --> 01:36:52,235
+O conceito de participação, se não se aprende desde a aula,
+já depois é muito tarde.
+
+1166
+01:36:52,518 --> 01:36:58,520
+Porque são eles mesmos os que, através das conversações
+ou os diálogos que vão se gerando no coletivo,
+
+1167
+01:36:58,739 --> 01:37:01,442
+conseguem evidenciar que é o mínimo que necessitam
+
+1168
+01:37:01,645 --> 01:37:05,509
+para poder conviver nesse espaço comunitário.
+
+1169
+01:37:05,837 --> 01:37:09,973
+O coordenador seria quem 
+coordena que o currículo se cumpra,
+
+1170
+01:37:10,125 --> 01:37:14,354
+mas todas essas coisas pequeninhas 
+de dentro desse currículo as escolhimos entre todos.
+
+1171
+01:37:14,513 --> 01:37:18,197
+As crianças tem que aprender a trabalhar em grupo, 
+a escutar o outro,
+
+1172
+01:37:18,505 --> 01:37:22,550
+a aceitar ideias distintas, mesmo quando 
+não concordem e não usar a força,
+
+1173
+01:37:24,046 --> 01:37:28,573
+a poder resolver conflitos, a tomar decisões em grupo, 
+a procurar entendimento...
+
+1174
+01:37:28,820 --> 01:37:35,176
+Eu sinto que as crianças quando estão seguras 
+e se sentem respeitadas, estão num espaço em armonia, em equilíbrio,
+
+1175
+01:37:36,288 --> 01:37:39,575
+elas de modo geral não buscam romper o limite,
+
+1176
+01:37:39,675 --> 01:37:43,671
+sobre tudo quando tem sido e tem surgido 
+desde eles mesmos como comunidade.
+
+1177
+01:37:46,108 --> 01:37:50,985
+Por exemplo, se há um prolema, assembleia. 
+Na assembleia se discute o que acontece,
+
+1178
+01:37:51,876 --> 01:37:58,018
+então já não se discute se está contra o regulamento,
+o que está bem, o que está mal.
+
+1179
+01:37:58,306 --> 01:38:04,279
+Se discute a ação, se discute a sustentabilidade, 
+se discute a inter-relação. 
+
+1180
+01:38:04,614 --> 01:38:08,242
+Além disso há momentos durante o dia 
+em que há reuniões, há assembleias,
+
+1181
+01:38:08,916 --> 01:38:13,778
+como quiserem chamá-las, em que se tomam 
+uma série de decisões coletivamente. Em que as crianças,
+
+1182
+01:38:14,374 --> 01:38:18,396
+Que têm a maturidade necessária para isso, 
+e o desejo de participar nelas, participam.
+
+1183
+01:38:18,953 --> 01:38:24,103
+E na assembleia os facilitadores não temos voto, 
+as crianças têm voz e voto, nós só temos voz.
+
+1184
+01:38:24,523 --> 01:38:27,258
+Então participamos na assembleia, 
+mas os que decidem são eles.
+
+1185
+01:38:28,048 --> 01:38:32,477
+<i> Algumas experiências conformam 
+governos estudantis com estruturas muito complexas, </i>
+
+1186
+01:38:33,202 --> 01:38:35,615
+<i>outros tem assembleias semanais desde o ensino fundamental,</i>
+
+1187
+01:38:36,036 --> 01:38:40,142
+<i>e até espaços de reflexão que atendem 
+as necessidades e conflitos que surjam. </i>
+
+1188
+01:38:40,825 --> 01:38:45,728
+<i>Todas as crianças tomam decisões sobre sua realidade, 
+as regras, a forma de se vestir. </i>
+
+1189
+01:38:45,949 --> 01:38:50,094
+<i>as funções que entre eles se atribuem,
+propostas educativas, projetos curriculares,</i>
+
+1190
+01:38:50,501 --> 01:38:54,150
+ <i>E, em alguns casos até decidem \ nquem conformará a equipe de professores ... </ i>
+
+1191
+01:38:54,449 --> 01:39:01,315
+É perder o medo, se atrever a equilibrar
+um pouco mais a balança e confiar
+
+1192
+01:39:01,535 --> 01:39:04,799
+em que as crianças e os adolescentes têm muito o que dizer.
+
+1193
+01:39:05,581 --> 01:39:11,824
+Tudo se dá num certo caos,
+mas esse caos, é um caos construtivo
+
+1194
+01:39:11,924 --> 01:39:16,167
+onde reina, diriamos,
+um bom relacionamento entre as pessoas.
+
+1195
+01:39:16,874 --> 01:39:21,752
+Trabalhamos em roda, sentados em almofadas,
+ou com tapetes no chão.
+
+1196
+01:39:22,219 --> 01:39:28,710
+Um pouco como o sentido que tinha a roda antigamente,
+de que é um espaço no qual tomos somos iguais,
+
+1197
+01:39:28,810 --> 01:39:32,537
+todos estamos à mesma distância, todos podemos ver-nos.
+
+1198
+01:39:32,637 --> 01:39:36,566
+Pois aqui as crianças, estão dialogando
+sobre cada objetivo de aprendizado,
+
+1199
+01:39:37,066 --> 01:39:39,836
+refletindo sozinhas, em pares e em grupo.
+
+1200
+01:39:40,631 --> 01:39:42,926
+Aprendem a ajudar-se, aprendem a cuidar-se,
+
+1201
+01:39:44,337 --> 01:39:46,154
+como uma forma de vida.
+
+1202
+01:39:49,830 --> 01:39:57,239
+Então, há uma briga entre duas crianças:
+ "Ok, aconteceu isto com ele, E qual foi tua parte aí?"
+
+1203
+01:39:57,492 --> 01:40:01,158
+É como reconhecer que a gente 
+ também tem a ver numa relação.
+
+1204
+01:40:01,655 --> 01:40:06,129
+Mediar para que entre eles possam fazer esse trabalho
+
+1205
+01:40:06,522 --> 01:40:09,242
+e cada um se fazer responsável pela sua parte no conflito.
+
+1206
+01:40:09,342 --> 01:40:14,898
+Compreender que o outro, tanto como eu, 
+acha que está certo.
+
+1207
+01:40:16,298 --> 01:40:19,232
+E a partir daí, como podemos nos entender.
+
+1208
+01:40:19,332 --> 01:40:24,670
+Vai ser uma pessoa que propicia a conversação, a troca
+
+1209
+01:40:24,770 --> 01:40:31,122
+e o afeto com o outro por construir
+um vínculo que sirva para a vida toda, a ambos. 
+
+1210
+01:40:31,883 --> 01:40:35,648
+Grande parte destas experiências, 
+seja dentro ou fora das escolas, </i>
+
+1211
+01:40:35,773 --> 01:40:40,118
+<i>se vêem obrigadas a funcionar à margem
+ do sistema sendo negadas e excluídas</i>.
+
+1212
+01:40:40,771 --> 01:40:45,148
+<i>Em alguns casos, as crianças podem realizar
+exames livres para justificar a sua aprendizagem,</i>
+
+1213
+01:40:45,347 --> 01:40:49,177
+<i>e em outros não se lhes permite obter
+uma validação dos seus conhecimentos.</i>
+
+1214
+01:40:50,088 --> 01:40:53,547
+<i> É realmente necessário que um papel nos diga o que sabemos?</i>
+
+1215
+01:40:54,061 --> 01:40:58,018
+<i>Por acaso um diploma prova que
+ terminamos a nossa educação com sucesso? </i>
+
+1216
+01:40:58,706 --> 01:41:02,151
+<i>Por acaso existe alguma educação que termine ou que tenha êxito?.</i>
+
+1217
+01:41:03,573 --> 01:41:08,613
+Isso não tem a ver com aprender 
+que dois mais dois é quatro,
+
+1218
+01:41:09,159 --> 01:41:13,654
+tem a ver com poder descobrir a sua vocação, 
+a sua missão na vida.
+
+1219
+01:41:13,754 --> 01:41:20,019
+Quando você tem isso claro, pode fechar os olhos,
+ respirar fundo e  sabe por onde ir.
+
+1220
+01:41:20,119 --> 01:41:25,265
+A educação nunca termina, porque a essência 
+da nova educação é a auto-educação.
+
+1221
+01:41:25,365 --> 01:41:29,081
+E o processo final  é que o próprio 
+aluno se converta num professor.
+
+1222
+01:41:29,181 --> 01:41:32,039
+E ele aprende do seu próprio interior, aprende.
+
+1223
+01:41:32,139 --> 01:41:38,499
+E também aprende do exterior, forma-se um fluxo no qual 
+a educação se converte num entrar e sair de dentro.
+
+1224
+01:41:38,787 --> 01:41:43,089
+O aluno não é só alguém que recebe,
+mas se converte numa fonte.
+
+1225
+01:41:44,646 --> 01:41:48,303
+Então, aquela ideia que nos venderam na escola,
+
+1226
+01:41:48,403 --> 01:41:52,438
+ de que "estude para que tenha algo
+ e seja alguém na vida".
+
+1227
+01:41:53,356 --> 01:41:58,233
+A ideia de "estude para que suba na vida".
+
+1228
+01:41:58,551 --> 01:42:04,833
+A idéia da educação como única via 
+de ascensão sócio-econômico não é tão certa.
+
+1229
+01:42:05,704 --> 01:42:09,252
+Há poucas décadas, surgiu uma corrente
+crítica contra a escolaridade.
+
+1230
+01:42:09,643 --> 01:42:14,370
+<i>Educadores, pedagogos, sociólogos 
+reivindicavam a educação fora das instituições, </i>
+
+1231
+01:42:14,575 --> 01:42:16,696
+<i>no âmbito familiar e social. </i>
+
+1232
+01:42:16,944 --> 01:42:21,578
+<Destas críticas surgem as práticas 
+da educação em casa, educação sem escola,</i>
+
+1233
+01:42:21,820 --> 01:42:25,311
+<i> e com o passar do tempo começaram 
+a se pensar formas de auto-educação, </i>
+
+1234
+01:42:25,411 --> 01:42:28,936
+<i>redes de formação autodidata, 
+e educação entre pares. </i>
+
+1235
+01:42:29,368 --> 01:42:36,909
+Tratamos de que aprendam na vida cotidiana, 
+viajam conosco, vão a diversas atividades conosco.
+
+1236
+01:42:37,009 --> 01:42:42,074
+Dessas que se chamam trabalho,
+onde muitas vezes estão excluídos os meninos e as meninas.
+
+1237
+01:42:42,174 --> 01:42:47,231
+Umas ganâncias que são bastante potentes, 
+em termos de auto-descobrimento,
+
+1238
+01:42:47,483 --> 01:42:51,612
+de reconquista da autonomia, de segurança pessoal.
+
+1239
+01:42:52,954 --> 01:42:59,686
+Eu o vejo mais seguro do que quer, que explora
+muito mais, que estuda porque gosta de aprender.
+
+1240
+01:42:59,918 --> 01:43:04,138
+E consideramos que o tipo de 
+educação sem escola que nós fazemos,
+
+1241
+01:43:04,238 --> 01:43:09,182
+é um tipo de educação que poderíamos 
+denominar de auto-aprendizagem colaborativa,
+
+1242
+01:43:09,282 --> 01:43:12,824
+ou de aprendizagem auto-dirigida, ou de aprendizagem livre.
+
+1243
+01:43:13,140 --> 01:43:18,623
+<i>Desde já, há tantas formas de educação em casa 
+ou de educação sem escola com famílias que a praticam.</i>
+
+1244
+01:43:19,465 --> 01:43:22,002
+<i>Desde experiências realizadas por educadores e acadêmicos, </i>
+
+1245
+01:43:22,102 --> 01:43:25,929
+<i>até famílias com crenças religiosas
+e povos com culturas marginais.</i>
+
+1246
+01:43:26,850 --> 01:43:32,187
+<i>Estas experiências enriquecem a diversidade educativa 
+e as formas de entender a aprendizagem </i>
+
+1247
+01:43:32,805 --> 01:43:37,640
+<i>Mas para isso é necessário
+que todas elas possam existir, sejam livres</i>
+
+1248
+01:43:39,532 --> 01:43:43,015
+Eu acredito que não há que obrigar,
+a liberdade não pode se obrigar,
+
+1249
+01:43:43,201 --> 01:43:47,508
+mas sim podem se abrir espaços para ela 
+de tal forma que sejam legítimos.
+
+1250
+01:43:48,268 --> 01:43:52,025
+E  se a metade de uma nação quer 
+a educação estadual, então que possam té-la,
+
+1251
+01:43:52,125 --> 01:43:56,686
+mas se a outra metade quer, não sei, 
+30 pedagogias diferentes, que assim seja.
+
+1252
+01:43:56,985 --> 01:44:03,710
+Um novo paradigma educativo 
+deveria ser cenários onde cada um
+
+1253
+01:44:04,209 --> 01:44:10,967
+pudesse experimentar e descobrir as coisas 
+das que gosta e logo desenvolvê-las.
+
+1254
+01:44:11,874 --> 01:44:16,774
+Dai minha proposta, que o que temos que fazer 
+é desescolarizar a escola, quer dizer:
+
+1255
+01:44:16,874 --> 01:44:20,535
+tirar da escola, tudo o que tem de escolar, 
+isto significa
+
+1256
+01:44:20,635 --> 01:44:25,418
+que temos que tirar da escola 
+tudo o que impede que os estudantes aprendam.
+
+1257
+01:44:26,720 --> 01:44:29,876
+Não necessariamente tem que estar nas escolas,
+
+1258
+01:44:31,959 --> 01:44:42,479
+isto poderia estar em clubes, em conselhos comunitários, 
+organizações dos báirros, nas praças.
+
+1259
+01:44:42,579 --> 01:44:49,629
+Quer dizer, são ilimitados os locais 
+onde podemos chegar a pôr isto em funcionamento.
+
+1260
+01:44:52,806 --> 01:44:55,713
+- São adolescentes, por favor.
+Não há que dar mais crédito para isto.
+
+1261
+01:44:55,827 --> 01:44:59,003
+Eu aos 18 também queria 
+mudar o mundo, mas não é possível...
+
+1262
+01:44:59,159 --> 01:45:02,053
+- Não, não, não. Não me parece que seja tão assim.
+
+1263
+01:45:02,150 --> 01:45:04,893
+Me parece que a crítica do pessoal está bem.
+
+1264
+01:45:05,321 --> 01:45:10,620
+É uma crítica ao sistema educativo
+não assumamos isto como algo pessoal, por favor.
+
+1265
+01:45:10,704 --> 01:45:12,645
+- Eu tenho que tomar uma determinação
+
+1266
+01:45:12,911 --> 01:45:16,264
+Deixamos eles ler o discurso ou não?
+
+1267
+01:45:16,386 --> 01:45:19,718
+- Olha Alicia, eu te digo uma coisa, 
+se você deixar, vai perder autoridade.
+
+1268
+01:45:19,815 --> 01:45:22,819
+Não podem fazer o que querem, não podem. 
+- Igualmente com o tempo eles esquecem.
+
+1269
+01:45:22,819 --> 01:45:25,397
+Depois eu falo com eles e lhes explico 
+porque não podem lê-lo.
+
+1270
+01:45:25,397 --> 01:45:30,451
+- Não, não é assim. A questão não é 
+se deixamos ler o texto ou não.
+
+1271
+01:45:30,551 --> 01:45:34,606
+Me parece que temos que pensar se estamos 
+dando ou não importância ao que dizem. 
+
+1272
+01:45:34,749 --> 01:45:37,585
+É profundo o que estão dizendo, não é qualquer coisa.
+
+1273
+01:45:37,585 --> 01:45:40,184
+- Olha, eu concordo totalmente com você.
+
+1274
+01:45:40,184 --> 01:45:44,474
+Porque todos lemos() este trabalho, 
+e aqui, o que eles pedem
+
+1275
+01:45:44,474 --> 01:45:48,701
+é que exista uma mudança na educação, um crescimento.
+
+1276
+01:45:48,801 --> 01:45:55,748
+Me parece, que se temos a capacidade 
+de reverter estes nossos posicionamentos cotidianos
+
+1277
+01:45:55,906 --> 01:45:59,450
+de todos os dias. 
+Então eles vão nos levar mais a sério.
+
+1278
+01:46:00,455 --> 01:46:04,419
+E eu creio que isto é uma oportunidade.
+
+1279
+01:46:05,762 --> 01:46:07,445
+Que se nos dá na palma da mão.
+
+1280
+01:46:08,862 --> 01:46:14,136
+Se não a podemos ver, talvez seja
+porque os estamos subestimando um pouco.
+
+1281
+01:46:14,572 --> 01:46:16,503
+A pergunta seria:
+
+1282
+01:46:17,460 --> 01:46:21,125
+Estamos dispostos a aproveitar essa oportunidade?
+
+1283
+01:46:23,046 --> 01:46:27,045
+Estamos preparados para essa mudança?
+
+1284
+01:46:32,051 --> 01:46:37,851
+"Pouco a pouco foram se despojando da falsa
+roupagem com as quais a escola normal as havia vestido;
+
+1285
+01:46:37,951 --> 01:46:44,461
+adoçaram a sua voz e seu olhar e se sentaram entre
+as crianças para conversar com eles e para escutá-los conversar."
+
+1286
+01:46:44,561 --> 01:46:49,742
+Já não vai o grande professor dar a grande aula magna.
+
+1287
+01:46:49,742 --> 01:46:53,905
+Está simplesmente acompanhando um processo de aprendizagem
+
+1288
+01:46:54,590 --> 01:46:57,682
+com um grupo de pessoas que não sabem mais ou menos que ele.
+
+1289
+01:46:57,932 --> 01:47:03,389
+O professor deve entender que é uma guia,
+deve entender que vai semeando, que vai guiando, que vai
+
+1290
+01:47:03,871 --> 01:47:10,670
+colocando oportunidades e desculpas para que a criança explore,
+trabalhe e se sinta motivada e interessada.
+
+1291
+01:47:10,956 --> 01:47:15,651
+Portanto, no meu modo de ver, o termo educação é confuso,
+e parte de uma posição arrogante.
+
+1292
+01:47:16,085 --> 01:47:19,793
+Por exemplo, educação vem de </i><i>educere<i>, 
+"educere" significa tirar/sacar.
+
+1293
+01:47:20,731 --> 01:47:25,435
+Se eu sou professor, quero que a criança tire algo, 
+tire o melhor de si mesma,
+
+1294
+01:47:25,582 --> 01:47:30,765
+Mas isso também é arrogante, pois eu... 
+é um pouco violento que você tire o melhor de si,
+
+1295
+01:47:31,371 --> 01:47:34,080
+que eu te faça tirar o melhor de ti com minha educação.
+
+1296
+01:47:39,083 --> 01:47:45,974
+Eu proponho cuidar no lugar de educar. 
+De cuidar há somente uma maneira, ou você cuida ou descuida.
+
+1297
+01:47:46,368 --> 01:47:48,480
+Para educar há muitas maneiras, mas de cuidar não.
+
+1298
+01:47:50,973 --> 01:48:00,054
+Uma capacidade de aceitar o fluir da vida, 
+porque isto é a vida, não é outra coisa
+
+1299
+01:48:01,132 --> 01:48:05,607
+e não ter a intenção de ensinar a todo momento...
+
+1300
+01:48:06,787 --> 01:48:11,915
+Um bom caminho é abandonar 
+a pequena onipotência que muitas vezes têm
+
+1301
+01:48:12,387 --> 01:48:18,843
+os professores de crer que levam 
+algo algo que ensinar a seus alunos.
+
+1302
+01:48:19,561 --> 01:48:23,683
+É necessário fazer um grande trabalho de humildade,
+
+1303
+01:48:25,315 --> 01:48:28,839
+e de observação.
+
+1304
+01:48:30,809 --> 01:48:35,651
+para poder perceber cada criança no seu processo
+
+1305
+01:48:36,758 --> 01:48:39,709
+e cuidar-se para não ser um obstáculo para ele.
+
+1306
+01:48:41,214 --> 01:48:44,935
+ <i>A chave não está nos materiais,
+nos recursos, nas metodologias,</i>
+
+1307
+01:48:45,130 --> 01:48:47,483
+<i>nos conteúdos, ou nos currículos e planejamentos.</i>
+
+1308
+01:48:48,271 --> 01:48:50,684
+<i>Senão na forma, na relação</i>
+
+1309
+01:48:51,791 --> 01:48:57,583
+<i>Nas pessoas e na sua forma de ver a educação,
+sua maneira de entender a vida, a infância e a aprendizagem.</i>
+
+1310
+01:48:59,184 --> 01:49:04,097
+<i>Podemos capacitar milhares de docentes,
+e investir milhões em materiais e novas metodologias,</i>
+
+1311
+01:49:04,584 --> 01:49:10,733
+<i>mas o segredo é o olhar de cada ser humano
+sobre os outros, o que faz e o que é.</i>
+
+1312
+01:49:11,685 --> 01:49:16,276
+Abrir-se a coração puro, esse externo que se tem,
+e falar com claridade.
+
+1313
+01:49:16,417 --> 01:49:21,074
+Isso é o único que necessitam ascrianças 
+e, a partir daí, é a comunicação...
+
+1314
+01:49:22,491 --> 01:49:27,349
+Tudo que eles vêem de você através da verdade,
+eles o escutam.
+
+1315
+01:49:30,643 --> 01:49:36,765
+Um docente que não muda sua atitude, que não crê no que vai fazer,
+é muito difícil que tenha resultados.
+
+1316
+01:49:37,132 --> 01:49:46,287
+O princípio básico de toda mudança
+é questionar o que creio, e isto nos dá medo.
+
+1317
+01:49:48,056 --> 01:49:51,222
+Quer dizer, não posso mudar mantendo o que creio
+
+1318
+01:49:53,545 --> 01:49:57,736
+e, portanto, em certo sentido,
+ou de um modo simbólico, tenho que morrer,
+
+1319
+01:49:57,736 --> 01:50:02,257
+minha visão da vida tem que morrer para se fazer melhor.
+
+1320
+01:50:02,357 --> 01:50:06,027
+<i>A aprendizagem é uma contínua transformação,</i>
+
+1321
+01:50:06,027 --> 01:50:09,127
+<i>e dificilmente poderemos acompanhar
+e colaborar na aprendizagem alheia</i>
+
+1322
+01:50:09,127 --> 01:50:13,471
+<i>se não aprendermos por conta própria,
+se não enfrentarmos a mudança interna,</i>
+
+1323
+01:50:14,058 --> 01:50:16,940
+<i>a nossa história pessoal, ao que nos condiciona.</i>
+
+1324
+01:50:23,923 --> 01:50:27,290
+E a filosofia logosófica se baseia
+nisso, que é algo muito natural,
+
+1325
+01:50:27,642 --> 01:50:31,038
+Não pode se dar o que não se sente,
+ou seja, tudo que se queira ensinar
+
+1326
+01:50:31,138 --> 01:50:35,925
+tem que possuir o aval da própria experiência,
+o aval da própria vida.
+
+1327
+01:50:36,200 --> 01:50:40,688
+Os que estão ensinando vêm de uma educação repressiva.
+
+1328
+01:50:40,788 --> 01:50:45,792
+Portanto, os professores que ensinam
+não sabem como administrar suas próprias emoções,
+
+1329
+01:50:46,182 --> 01:50:48,458
+portanto, não podem ensiná-las.
+
+1330
+01:50:49,298 --> 01:50:54,789
+A chave está em que cada geração tem uma responsabilidade,
+para mim, uma responsabilidade essencial
+
+1331
+01:50:55,143 --> 01:51:00,166
+que é ser exemplo do que faz em sua vida,
+ser exemplo de uma vida o mais integral possível.
+
+1332
+01:51:05,074 --> 01:51:12,218
+É como que os educadores quando estudam
+vão se convencendo de que a educação é assim,
+
+1333
+01:51:12,560 --> 01:51:17,206
+então, têm menos capacidade de questionar a educação,
+
+1334
+01:51:18,223 --> 01:51:22,770
+mas não são felizes, mas não passam bem,
+mas não desfrutam de seu trabalho.
+
+1335
+01:51:23,384 --> 01:51:30,149
+E é muito importante começar a olhar
+o que estou sentindo eu quando estou educando.
+
+1336
+01:51:30,972 --> 01:51:36,941
+Estou me sentindo em paz, 
+ou estou me sentindo em conflito?
+
+1337
+01:51:37,612 --> 01:51:42,643
+A mudança nos professores, então,
+na mesma linha que os pais, exatamente é descobrir seu próprio ser,
+
+1338
+01:51:42,743 --> 01:51:47,324
+seu próprio potencial, em se descorbrir além
+das crenças e da educação que tenham recebido.
+
+1339
+01:51:47,424 --> 01:51:51,581
+Portanto, isso exige um trabalho interior muito grande,
+tremendamente grande.
+
+1340
+01:51:51,783 --> 01:51:54,939
+Mas, sobretudo, é um caminho de autoconhecimento,
+
+1341
+01:51:55,310 --> 01:51:59,831
+um professor para ser prodessor tem que estar
+em contínuo processo de auto-desenvolvimento.
+
+1342
+01:52:01,530 --> 01:52:03,307
+Um trabalho muito profundo
+
+1343
+01:52:05,478 --> 01:52:10,294
+de sensibilidade, de consciência, de harmonia,
+
+1344
+01:52:11,061 --> 01:52:16,472
+de alegria, para se atrever a chamar de professor.
+
+1345
+01:52:17,804 --> 01:52:24,162
+Porque se o docente continua temendo o amanhã 
+se o docente continua duvidando de suas capacidades,
+
+1346
+01:52:25,883 --> 01:52:27,782
+não vai poder orientar à criança.
+
+1347
+01:52:28,522 --> 01:52:35,462
+Se você não é realmente feliz na educação, 
+você não está educando.
+
+1348
+01:52:38,235 --> 01:52:43,714
+Então o docente também tem que amar, 
+tudo o que tem vivido até agora,
+
+1349
+01:52:44,098 --> 01:52:47,263
+para precisamente dar a volta e transformá-lo.
+
+1350
+01:52:49,658 --> 01:52:53,937
+Quando você esteve realmente conectado 
+com as crianças, você sai das aulas como rejuvenescido.
+
+1351
+01:52:54,037 --> 01:52:58,906
+longe de ir embora cansado, 
+você vai com um monte de energia.
+
+1352
+01:52:59,006 --> 01:53:02,641
+Muita gente que queira ser professor 
+porque tem vontade de brincar,
+
+1353
+01:53:02,741 --> 01:53:04,971
+que queira ser professor porque tem vontade de abraçar,
+
+1354
+01:53:05,366 --> 01:53:09,054
+que queira ser professor porque 
+tem vontade de aprender das crianças.
+
+1355
+01:53:10,363 --> 01:53:14,570
+Eu penso que realmente ser professor 
+é um privilégio nesta vida, porque
+
+1356
+01:53:14,670 --> 01:53:18,912
+é como entrar na frágua todos os dias, 
+você sai transformado...
+
+1357
+01:53:20,115 --> 01:53:24,393
+Você tem que estar muito, muito cego para não aproveitar 
+essa oportunidade de crescimento que você tem,
+
+1358
+01:53:24,493 --> 01:53:29,012
+porque é o contato com a vida mesma, 
+é como estar na natureza no seu estado mais puro.
+
+1359
+01:53:30,047 --> 01:53:36,273
+<i>Como pode um professor transmitir felicidade e realização pessoal
+se o próprio sistema o considera um número?</i>
+
+1360
+01:53:37,346 --> 01:53:40,268
+<i>O que a escola faz com as crianças,
+também o faz com os professores, </i>
+
+1361
+01:53:40,981 --> 01:53:46,268
+<i> através dos seus prémios e castigos, 
+pontuações, limitações, sua burocracia. </i>
+
+1362
+01:53:48,397 --> 01:53:51,133
+Agora quando nós dizíamos
+que as crianças cresçam em liberdade,
+
+1363
+01:53:52,192 --> 01:53:55,231
+também os professores deviam estar em liberdade.
+
+1364
+01:53:56,064 --> 01:54:00,477
+O docente tem um papel que tem que recuperar.
+
+1365
+01:54:01,193 --> 01:54:05,345
+Não porque o estado o concede, senão porque ele o toma.
+
+1366
+01:54:07,228 --> 01:54:10,604
+De fato, isso implica, por exemplo,
+que nesta escola não existe um diretor.
+
+1367
+01:54:12,598 --> 01:54:16,060
+Existe uma direção colegiada, 
+os professores temos que pôr-nos de acordo.
+
+1368
+01:54:16,956 --> 01:54:22,276
+Não há ninguém a quem culpar. 
+se uma reunião não é tão frutífera, é responsabilidade de todos,
+
+1369
+01:54:22,376 --> 01:54:27,889
+porque não há um chefe, um diretor, alguém que defina.
+
+1370
+01:54:27,989 --> 01:54:31,348
+De fato, todos os dias ao final do trabalho nos reunimos
+
+1371
+01:54:31,822 --> 01:54:37,248
+e compartilhamos mais ou menos uma hora e meia, 
+duas horas, nas que conversamos sobre os temas do dia.
+
+1372
+01:54:38,105 --> 01:54:43,555
+Eu não sei se poderia sustentar esta experiência 
+se não houvesse esse trabalho por detrás, Ne?
+
+1373
+01:54:43,655 --> 01:54:49,453
+Não só esta reunião nossa das manhãs, 
+senão que depois todos os dias no almoço também nos reunimos
+
+1374
+01:54:49,553 --> 01:54:54,802
+para falar das crianças, fazer uma avaliação 
+geral do dia e de cada um dos grupos,
+
+1375
+01:54:55,334 --> 01:54:59,135
+ou tratar algum tema se houve 
+uma situação particular que atender.
+
+1376
+01:54:59,235 --> 01:55:03,132
+A tarefa da educação é tão complexa,
+
+1377
+01:55:04,841 --> 01:55:08,970
+que sozinhos não podemos fazê-la, 
+este é um trabalho em equipe.
+
+1378
+01:55:11,371 --> 01:55:16,654
+<i> Uma educação verdadeiramente democrática 
+confia em que as crianças decidam sobre sua aprendizagem, </i>
+
+1379
+01:55:17,299 --> 01:55:20,869
+<i>em que os pais sejam livres de decidir 
+e participar na educação de seus filhos </i>
+
+1380
+01:55:21,459 --> 01:55:27,406
+<i>e em que os professores escolham que caminho 
+desejam tomar em cada aula, em cada escola. </i>
+
+1381
+01:55:27,406 --> 01:55:31,463
+<i>Somente dessa maneira, nos asseguramos
+de que a educação responda diretamente </i>
+
+1382
+01:55:31,463 --> 01:55:35,182
+<i> às necessidades de cada pessoa, família e comunidade. </i>
+
+1383
+01:55:35,282 --> 01:55:39,809
+<i>Desta maneira não há uma receita perfeita, 
+um método para todos, </i>
+
+1384
+01:55:40,017 --> 01:55:43,838
+<i>senão tantas propostas como 
+experiências livres e autônomas existam. </i>
+
+1385
+01:55:45,531 --> 01:55:52,097
+A mim como professor, muita gente me pergunta, 
+amigos, amigas, Qual é a melhor escola?
+
+1386
+01:55:52,520 --> 01:55:53,942
+Qual é o melhor modelo?
+
+1387
+01:55:54,890 --> 01:55:59,035
+E eu simplesmente lhes digo: 
+"Olha, onde tem amor, tem respeito,
+
+1388
+01:55:59,563 --> 01:56:03,287
+e onde tem respeito existe a possibilidade 
+de criar porque existe diálogo"
+
+1389
+01:56:03,594 --> 01:56:08,033
+Então uma situação onde 
+se  possa realmente amar ao outro,
+
+1390
+01:56:09,340 --> 01:56:13,660
+e amar quer dizer aceitá-lo na sua diferença 
+onde existe amor existe respeito.
+
+1391
+01:56:15,248 --> 01:56:19,987
+Muitas destas propostas pedagógicas 
+iniciaram ali, e dali construíram
+
+1392
+01:56:20,743 --> 01:56:23,999
+um discurso muito coerente
+
+1393
+01:56:26,187 --> 01:56:32,467
+No meu modo de ver, cometeram 
+um erro que é muito comum em nós seres humanos,
+
+1394
+01:56:32,765 --> 01:56:34,686
+acharam que tinham encontrado a verdade.
+
+1395
+01:56:35,943 --> 01:56:40,466
+O importante não é inventar 
+outras pedagogias, e outra, e outra,
+
+1396
+01:56:40,566 --> 01:56:45,804
+senão adequar a pedagogia 
+ao momento cultural, a esse grupo de crianças,
+
+1397
+01:56:45,904 --> 01:56:50,866
+a esse grupo de docentes. 
+Então vamos desfrutar a pedagogia.
+
+1398
+01:56:51,642 --> 01:56:54,732
+Tem que seguir seus instintos,
+
+1399
+01:56:57,030 --> 01:57:07,295
+e não ficar no que vem se fazendo, 
+simplesmente por não romper a inércia.
+
+1400
+01:57:09,283 --> 01:57:13,634
+Que esqueça tudo o que aprendeu, 
+tudo o que lhe tem dito, e todos os conceitos que lhe tem dito
+
+1401
+01:57:13,734 --> 01:57:16,733
+e que faça contato com seu coração. 
+E que cada vez que veja uma criança, 
+
+1402
+01:57:17,439 --> 01:57:20,257
+lembre quando foi uma criança 
+e lembre que o que mais gostava era de brincar
+
+1403
+01:57:20,357 --> 01:57:24,491
+e que o que mais queria era que lhe sorrissem, 
+e que o que mais queria era que lhe fizessem cócegas,
+
+1404
+01:57:24,591 --> 01:57:27,791
+e que faça contato com esse humano assim de coração a coração.
+
+1405
+01:57:27,891 --> 01:57:31,677
+Honestamente creio que a educação é questão de pessoas,
+
+1406
+01:57:32,592 --> 01:57:39,225
+além das pedagogias... A pessoa a faz.
+
+1407
+01:57:44,630 --> 01:57:49,274
+- Micaela, tive que sair do trabalho 
+para vir até aqui por semelhante estupidez.
+
+1408
+01:57:49,657 --> 01:57:51,097
+- Não é uma estupidez para mim.
+
+1409
+01:57:51,602 --> 01:57:53,132
+- Não sei para que me chamaram.
+
+1410
+01:57:53,326 --> 01:57:56,746
+- Não sei mãe, uns caras queriam 
+ler uma coisa e não os deixaram.
+
+1411
+01:57:57,087 --> 01:57:59,501
+- Você tem tudo aprovado, né?
+
+1412
+01:57:59,688 --> 01:58:01,359
+- Sim mãe. - Bem.
+
+1413
+01:58:01,473 --> 01:58:04,016
+- Você tem que se formar. 
+Como você acha que vai entrar na faculdade?
+
+1414
+01:58:04,438 --> 01:58:06,729
+- E quem disse para você que eu quero ir à faculdade?
+
+1415
+01:58:06,830 --> 01:58:08,868
+- Bom João isto terminou.
+
+1416
+01:58:09,030 --> 01:58:12,089
+Você tem seu futuro garantido...
+
+1417
+01:58:12,225 --> 01:58:17,883
+Então, agora você sai de férias, 
+curte a praia...
+
+1418
+01:58:20,268 --> 01:58:24,268
+"Os ideais não tem lugar na educação 
+porque impedem a compreensão do presente.
+
+1419
+01:58:24,268 --> 01:58:28,268
+Não há dúvidas de que podemos dar atenção ao que é,
+
+1420
+01:58:28,268 --> 01:58:32,268
+somente quando deixamos de fujir para o futuro."
+
+1421
+01:58:32,351 --> 01:58:39,259
+A família é tudo, é de onde vimos, 
+é o princípio de tudo,
+
+1422
+01:58:39,362 --> 01:58:43,819
+o local que nos acolhe. 
+A família é importantíssima.
+
+1423
+01:58:45,039 --> 01:58:49,571
+A pedagogia sistêmica diz que 
+os protagonistas da educação são os pais,
+
+1424
+01:58:49,790 --> 01:58:57,881
+então uma escola que está pouco vinculada 
+com as famílias é uma escola que tende a se fechar em si mesma, 
+
+1425
+01:58:58,098 --> 01:59:01,526
+em consequência a reproduzir 
+mecanismos de relação e aprendizagem.
+
+1426
+01:59:01,653 --> 01:59:05,655
+que seguramente estão desvinculados 
+da realidade de cada um dos alunos.
+
+1427
+01:59:05,861 --> 01:59:11,609
+Sem o envolvimento dos pais e das famílias em geral, 
+não pode haver projeto.
+
+1428
+01:59:15,093 --> 01:59:18,591
+A família não é culpável dos maus resultados escolares, 
+como diz a escola,
+
+1429
+01:59:19,205 --> 01:59:23,174
+a família é a responsável de toda a vida 
+da pessoa que está criando.
+
+1430
+01:59:25,000 --> 01:59:27,642
+é determinante na formação de um ser humano,
+
+1431
+01:59:28,707 --> 01:59:36,642
+porque você pode fazer todo o trabalho de sensibilização, 
+de respeito, de reconhecimento do outro,
+
+1432
+01:59:36,757 --> 01:59:41,953
+mas se essa criança chega em casa 
+e o pai em quanto o vê, o desconhece,
+
+1433
+01:59:42,541 --> 01:59:46,459
+e quando o reconhece é para repreendê-lo, 
+para gritar, para mandá-lo,
+
+1434
+01:59:47,710 --> 01:59:49,940
+Que vai ficando na criança?
+
+1435
+01:59:51,711 --> 01:59:55,979
+<i>Antigamente as crianças aprendiam em seus lares, 
+trabalhando com seus pais, </i>
+
+1436
+01:59:56,146 --> 01:59:58,478
+<i>de seus afazeres cotidianos, do dia a dia. </i>
+
+1437
+01:59:59,009 --> 02:00:02,236
+<i>Tudo o aprendiam de compartilhar 
+com seus pais e a comunidade. </i>
+
+1438
+02:00:03,131 --> 02:00:05,752
+<i> A escola devia acompanhar esse processo. </i>
+
+1439
+02:00:06,751 --> 02:00:09,635
+<i> Mas muitas famílias tem perdido 
+essa confiança em si mesmas, </i>
+
+1440
+02:00:10,137 --> 02:00:14,930
+<i>a confiança em que seu próprio instinto 
+pode lhes dizer como criar e educar a uma criança. </i>
+
+1441
+02:00:15,314 --> 02:00:16,819
+<i>Como temos feito milhares de anos. </i>
+
+1442
+02:00:18,578 --> 02:00:23,753
+Parece que os pais pensam 
+que criar um filho é uma atividade profissional,
+
+1443
+02:00:24,458 --> 02:00:31,301
+quer dizer, que eu para criar meu próprio filho, 
+deveria estudar, deveria me esforçar,
+
+1444
+02:00:31,840 --> 02:00:36,949
+e que, como ao final de contas, provavelmente  não acabarei 
+de fazer bem por muito que me esforçe,
+
+1445
+02:00:37,175 --> 02:00:39,686
+pois o melhor é que já diretamente
+deixe a criança com um profissional,
+
+1446
+02:00:39,790 --> 02:00:43,851
+com um pedagogo, com um pediatra, com um psicólogo, e não é assim.
+
+1447
+02:00:43,962 --> 02:00:46,462
+Os únicos que podem cuidar 
+bem dos filhos, são os pais.
+
+1448
+02:00:50,375 --> 02:00:56,863
+Quer dizer que as crianças, são uma oportunidade imensa, 
+são um presente, sinceramente são um presente.
+
+1449
+02:00:57,051 --> 02:01:05,881
+E é triste que normalmente no mundo 
+desenvolvido o que frequentemente fazemos é afastá-los.
+
+1450
+02:01:06,234 --> 02:01:11,844
+Os levamos a escola logo em seguida, 
+tem mães e pais que vêem a criança uma hora ao dia.
+
+1451
+02:01:12,663 --> 02:01:19,314
+Mas isto, Como pode ser isto? 
+Ou seja, como podemos esperar algo bonito daí?.
+
+1452
+02:01:20,340 --> 02:01:23,292
+Então, as crianças necessitam estar com seus pais,
+
+1453
+02:01:25,665 --> 02:01:31,935
+uma criança estabelece um vínculo afetivo muito forte, 
+com uma pessoa que habitualmente é sua mãe,
+
+1454
+02:01:32,461 --> 02:01:35,348
+e passa muito mal quando se separa dessa pessoa.
+
+1455
+02:01:35,949 --> 02:01:41,795
+Passa muito pior quanto menor é 
+e quantas mais horas contínuas está separada dessa pessoa.
+
+1456
+02:01:46,488 --> 02:01:51,556
+Vê que os pais o colocamos ai para que 
+en quanto nós estamos fazendo coisas interessantes,
+
+1457
+02:01:52,008 --> 02:01:56,489
+ou estamos trabalhando, eles estejam ai 
+trancados para que não incomodem,
+
+1458
+02:01:56,981 --> 02:02:03,254
+e essa é muitas vezes a sensação que eles têm, 
+e não entendem para que aprender tudo aquilo.
+
+1459
+02:02:04,785 --> 02:02:11,059
+Isto, inclusive, as creches, digamos, 
+de categoria não têm feito absolutamente nada bom.
+
+1460
+02:02:11,320 --> 02:02:15,019
+É uma coisa, separar ao filho da mãe tão cedo, isto,
+
+1461
+02:02:15,119 --> 02:02:20,584
+Quê, quem, que estudo defende isto? 
+Em fim, não há nada que defenda isto...
+
+1462
+02:02:20,857 --> 02:02:25,461
+Nós devemos estar com nossas famílias, 
+as escolas não tem sentido aí,
+
+1463
+02:02:25,674 --> 02:02:28,220
+nós devemos estar com nossos amigos brincando,
+
+1464
+02:02:28,470 --> 02:02:32,708
+com nossas turmas, entre aspas, 
+aprendendo a conhecer o mundo.
+
+1465
+02:02:33,751 --> 02:02:38,795
+<i>A pressão social, as extensas jornadas de trabalho, 
+a necessidade de não nos sentirmos excluídos, </i>
+
+1466
+02:02:39,134 --> 02:02:45,604
+<i>nos obriga dia a dia, a tomar decisões sem perguntar-nos 
+realmente se são lógicas ou coerentes para nós, </i>
+
+1467
+02:02:45,813 --> 02:02:47,703
+<i>sem pensar como nos sentimos. </i>
+
+1468
+02:02:49,436 --> 02:02:55,188
+Eu acho que as crianças são o reflexo 
+da sociedade que vivemos e se estão bem cuidados,
+
+1469
+02:02:56,616 --> 02:03:00,989
+percebe-se. E esta sociedade não cuida 
+as crianças porque também não cuida de si mesma.
+
+1470
+02:03:01,556 --> 02:03:03,427
+Eles são nosso espelho.
+
+1471
+02:03:07,054 --> 02:03:13,966
+Quando uma criança volta da escola para casa,
+a pergunta que os pais fazem: Que você fez?
+
+1472
+02:03:14,450 --> 02:03:17,762
+E como foi?
+e que aprendeu?
+
+1473
+02:03:18,814 --> 02:03:23,405
+Mas a pergunta que normalmente nunca fazemos é 
+Como você se sentiu hoje na escola?
+
+1474
+02:03:25,419 --> 02:03:31,561
+A ideia mais revolucionária que existe 
+é tentar que as pessoas sejam felizes.
+
+1475
+02:03:32,174 --> 02:03:36,518
+Quando uma pessoa é feliz, 
+tem vontade de compartilhar essa felicidade com o outro,
+
+1476
+02:03:36,732 --> 02:03:41,165
+tem vontade de compartilhar esse amor com o outro, 
+e tem vontade de ajudar e cooperar com o outro.
+
+1477
+02:03:41,391 --> 02:03:44,239
+Mas para isso, a pessoa tem que estar bem com ela mesma.
+
+1478
+02:03:44,466 --> 02:03:51,236
+Se eu estou lhe dizendo a meu filho -seja feliz, -seja feliz. 
+Mas eu estou ressentido
+
+1479
+02:03:51,757 --> 02:03:53,926
+porque meus pais me ensinaram isto,
+
+1480
+02:03:54,325 --> 02:03:58,317
+meu filho não poderá aprender realmente o que é ser feliz,
+
+1481
+02:03:58,658 --> 02:04:00,680
+porque eu não sei o que estarei demonstrando.
+
+1482
+02:04:03,873 --> 02:04:06,433
+Quando uma pessoa está bem com ela mesma?
+
+1483
+02:04:07,976 --> 02:04:14,253
+Está bem com ela mesma quando 
+é capaz de pegar seu pai e sua mãe,
+
+1484
+02:04:14,490 --> 02:04:20,919
+e dizer "Sim, este é meu pai e esta é a minha mãe 
+a pesar de tudo o que aconteceu eu estou em paz com meu passado.
+
+1485
+02:04:21,548 --> 02:04:25,223
+Eu não estou em luta contra nada, 
+nem quero defender, nem demonstrar nada a ninguém,
+
+1486
+02:04:25,458 --> 02:04:28,580
+não tenho que construir nenhum tipo de identidade falsa,
+
+1487
+02:04:28,779 --> 02:04:32,147
+sou professor, sou psicólogo, 
+sou tal, não, eu simplesmente sou."
+
+1488
+02:04:35,131 --> 02:04:38,968
+Que tentem lembrar à criança pequena que eles foram,
+
+1489
+02:04:40,142 --> 02:04:46,584
+e que lembrem que o que era mais importante 
+para eles era ver nos olhos de seus pais amor incondicional,
+
+1490
+02:04:47,325 --> 02:04:48,881
+aceitação total,
+
+1491
+02:04:58,469 --> 02:05:04,653
+e que olhem a seus filhos realmente com olhos 
+de curiosidade, com olhos de descobrimento,
+
+1492
+02:05:11,900 --> 02:05:14,907
+e que não só descubram à criança, más que também descubram
+
+1493
+02:05:15,257 --> 02:05:19,878
+o mundo através dos olhos, das mãos, da criança.
+
+1494
+02:05:28,552 --> 02:05:34,246
+Penso que aí descobrimos a autêntica 
+maternidade e a autêntica paternidade.
+
+1495
+02:05:36,706 --> 02:05:43,917
+Então, eu lhes diria que olhem seus filhos 
+ou se não tem filhos que olhem às crianças,
+
+1496
+02:05:44,946 --> 02:05:48,112
+que observem um momento às crianças desde o coração,
+
+1497
+02:05:49,041 --> 02:05:51,611
+e com isso é suficiente... para decidir...
+
+1498
+02:05:55,033 --> 02:05:59,501
+Então, dê para ele o que puder 
+de atenção, brinque, rebole com ele,
+
+1499
+02:05:59,632 --> 02:06:03,477
+participe com ele no que mais possa, 
+faça que ele participe nas suas tarefas,
+
+1500
+02:06:03,589 --> 02:06:07,057
+que aprenda das coisas da casa, 
+mas por sua vontade e como uma brincadeira.
+
+1501
+02:06:09,727 --> 02:06:14,057
+Por muito bons métodos que tenhamos, 
+a criança necessita antes de tudo amor,
+
+1502
+02:06:14,346 --> 02:06:19,705
+proximidade, sentir-se cuidada, protegida, 
+quanto menor, mais protegida.
+
+1503
+02:06:21,502 --> 02:06:25,734
+E depois por si mesmo pode proteger 
+aos demais e cuidar dos demais.
+
+1504
+02:06:26,341 --> 02:06:29,509
+Quer dizer, primeiro tem que se apegar para se desapegar.
+
+1505
+02:06:32,456 --> 02:06:35,653
+Acredito que as mães e os pais,
+
+1506
+02:06:37,778 --> 02:06:42,794
+estamos voltando a ser os educadores 
+que fomos em algum momento.
+
+1507
+02:06:43,798 --> 02:06:48,425
+Além de ir e colocar teu filho num lugar 
+onde parece que vão educá-lo.
+
+1508
+02:06:48,822 --> 02:06:53,216
+Estamos dizendo 
+"Vejamos, não, um momento, né? isto não aceito."
+
+1509
+02:06:54,611 --> 02:06:58,489
+E acredito que além disso, tem que surgir daí 
+não vai chegar de uma autoridade,
+
+1510
+02:06:58,614 --> 02:07:06,582
+isto é algo que você tem que trabalhar simplesmente , 
+em nível pessoal para alcançar.
+
+1511
+02:07:08,701 --> 02:07:12,714
+<i>Nossa história social, cultural
+e pessoal tem nos trazido a este momento.</i>
+
+1512
+02:07:13,020 --> 02:07:17,627
+<i>Adotamos e criamos uma grande quantidade de objetivos e expectativas,
+que provavelmente não sejam nossas,</i>
+
+1513
+02:07:18,080 --> 02:07:19,565
+<i>mas do mundo que nos rodeia:</i>
+
+1514
+02:07:20,603 --> 02:07:24,625
+<i>a melhor escola, a melhor universidade,
+diplomas, prestígio, dinheiro.</i>
+
+1515
+02:07:25,338 --> 02:07:27,440
+<i>tem nos feito esquecer o que realmente buscamos.</i>
+
+1516
+02:07:27,924 --> 02:07:34,234
+Que procuram? Procuram que seu filho tenha
+um diploma determinado? Para que?
+
+1517
+02:07:34,954 --> 02:07:39,669
+Para que estou nessa busca do saber?
+Que estou buscando? Que tipo de conhecimento busco?
+
+1518
+02:07:40,235 --> 02:07:45,059
+Um conhecimento que estimule à criança a ter êxito?
+Desde que ponto de vista?
+
+1519
+02:07:46,470 --> 02:07:52,740
+Meu filho tem que ser como eu quero que seja,
+ou tem que cumprir o que eu nunca tenho podido cumprir,
+
+1520
+02:07:53,206 --> 02:07:54,568
+todo isto é muito egocêntrico.
+
+1521
+02:07:55,405 --> 02:08:00,028
+Estou educando para que saibam se adaptar
+à sociedade em que lhes toca viver, que vê que vai ser dura?
+
+1522
+02:08:02,287 --> 02:08:07,163
+Ou estou educando para que eles percebam
+criticamente o que gostam, o que não gostam,
+
+1523
+02:08:07,316 --> 02:08:10,552
+em seu dia a dia, trabalhem para
+a melhora desta sociedade?
+
+1524
+02:08:10,964 --> 02:08:16,876
+Porque uma criança vem com um mundo tão fresco
+que irremediavelmente vai questionar o meu,
+
+1525
+02:08:17,260 --> 02:08:21,810
+porque para ele tudo é novo. Para ele não há nada velho.
+
+1526
+02:08:22,920 --> 02:08:27,252
+Confiem em seus filhos, eles sabem
+muito mais do que vocês acham,
+
+1527
+02:08:27,983 --> 02:08:33,354
+porque às vezes as pessoas que mais limitamos a nossos filhos,
+
+1528
+02:08:34,183 --> 02:08:37,529
+somos os pais, e depois sofremos.
+
+1529
+02:08:37,866 --> 02:08:42,132
+O que tento transmitir é que é
+tão bom poder cuidar um filho
+
+1530
+02:08:42,540 --> 02:08:48,044
+por todo o inesperado que tem, por todo o misterioso,
+por todos os problemas que nos traz,
+
+1531
+02:08:48,459 --> 02:08:52,377
+é lindíssimo porque isso
+é uma oportunidade para crescer imensa
+
+1532
+02:08:53,489 --> 02:08:57,934
+<i>Libertemos nossas expectativas,
+afastemos o que o mundo pretende das crianças,</i>
+
+1533
+02:08:58,233 --> 02:09:00,349
+<i>o que a cultura espera de cada um de nós.</i>
+
+1534
+02:09:01,919 --> 02:09:03,845
+respeitem às crianças,
+
+1535
+02:09:05,475 --> 02:09:09,191
+deem a elas a oportunidade de 
+se desenvolver como elas se desenvolvem,
+
+1536
+02:09:09,390 --> 02:09:13,094
+não como nós como adultos queremos ou
+pensamos que deva ser,
+
+1537
+02:09:13,648 --> 02:09:16,720
+senão como elas podem fazê-lo.
+
+1538
+02:09:18,411 --> 02:09:23,403
+<i>Os ideais e objetivos que temos sobre as
+crianças não nos permitem ver quem realmente são</i>
+
+1539
+02:09:23,832 --> 02:09:28,580
+<i>e que é o que necessitam...
+não amanhã ou dentro de vários anos... senão hoje.</i>
+
+1540
+02:09:30,584 --> 02:09:38,136
+Há uma coisa só que é realmente importante.
+
+1541
+02:09:47,806 --> 02:09:50,837
+É o amor que nós possamos lhe dar às crianças.
+
+1542
+02:09:53,014 --> 02:09:55,128
+Se queremos uma sociedade diferente,
+
+1543
+02:09:57,769 --> 02:10:00,159
+o único que realmente temos que fazer,
+
+1544
+02:10:01,300 --> 02:10:05,047
+é amar as crianças, a que eles aprendam a amar a outros.
+
+1545
+02:10:05,939 --> 02:10:10,516
+O conhecimento vai vir sozinho,
+os resultados do mundo vêm sozinhos,
+
+1546
+02:10:11,774 --> 02:10:16,671
+mas uma criança que não foi amada
+dificilmente vai aprender a amar.
+
+1547
+02:10:17,984 --> 02:10:22,556
+- Isto é algo que escreveram uns colegas
+para ler no final do ano, mas não os deixaram.
+
+1548
+02:10:23,710 --> 02:10:27,179
+E me parece que é importante então,
+eu gostaria de ler.
+
+1549
+02:10:30,626 --> 02:10:32,537
+"Hoje em dia a educação está proibida.
+
+1550
+02:10:33,936 --> 02:10:36,848
+Muito pouco do que acontece em nossa
+ escola é verdadeiramente importante.
+
+1551
+02:10:37,900 --> 02:10:40,868
+E as coisas que interessam não se escrevem
+ em nenhum caderno nem em nenhuma pasta.
+
+1552
+02:10:43,600 --> 02:10:44,872
+Como nos encontrarmos com a vida?
+
+1553
+02:10:46,121 --> 02:10:47,626
+Como enfrentar as dificuldades?
+
+1554
+02:10:48,832 --> 02:10:51,189
+Não sabemos. Não nos ensinaram"
+
+1555
+02:10:52,321 --> 02:10:58,972
+"Falam muito de educação, progresso, 
+democracia, liberdade, um mundo melhor...
+
+1556
+02:10:59,194 --> 02:11:01,463
+mas nada disso acontece nas aulas 
+
+1557
+02:11:02,082 --> 02:11:06,558
+Nos ensinam a estar longe uns dos outros 
+e a competir por coisas que não têm valor.
+
+1558
+02:11:07,452 --> 02:11:08,959
+Pais e professores não nos escutam.
+
+1559
+02:11:10,670 --> 02:11:12,386
+Não nos perguntam nunca o que opinamos.
+
+1560
+02:11:14,411 --> 02:11:18,179
+Não têm ideia do que sentimos, 
+o que pensamos o que queremos fazer.
+
+1561
+02:11:19,005 --> 02:11:21,866
+Não seria maravilhoso se pudéssemos 
+escolher diariamente ir à escola?
+
+1562
+02:11:23,626 --> 02:11:25,338
+Que seja nossa escolha, não de nossos pais.
+
+1563
+02:11:26,599 --> 02:11:30,859
+Que a escola seja um lugar lindo, 
+onde se possa desfrutar, onde se possa brincar,
+
+1564
+02:11:32,217 --> 02:11:34,935
+onde se possa ser livres, onde se possa escolher o que aprender 
+e como aprender."
+
+1565
+02:11:35,684 --> 02:11:39,562
+<i>Existem multiplicidade de experiências que tem se atrevido
+a transformar as estruturas da escola.</i>
+
+1566
+02:11:40,030 --> 02:11:43,684
+<i>Experiências de educadores que se atreveram
+a pensar a escola desde outros lugares.</i>
+
+1567
+02:11:44,902 --> 02:11:47,315
+<i>Muitas delas tem se convertido em métodos formais,</i>
+
+1568
+02:11:48,069 --> 02:11:50,893
+<i>outras trabalham desde espaços comunitários e populares,</i>
+
+1569
+02:11:51,209 --> 02:11:54,251
+<i>algumas tem escolhido continuar
+a experiência em forma privada</i>
+
+1570
+02:11:55,063 --> 02:11:58,498
+<i>e muitos outros o fazem dentro
+das aulas da escola pública.</i>
+
+1571
+02:11:59,945 --> 02:12:03,945
+<i>Estes exemplos são prova viva
+de que os esquemas tradicionais da escola</i>
+
+1572
+02:12:03,945 --> 02:12:06,557
+<i>podem ser reinterpretados e alterados.</i>
+
+1573
+02:12:06,657 --> 02:12:09,094
+<i>Existem experiências em toda classe e grupo social</i>
+
+1574
+02:12:09,399 --> 02:12:11,928
+<i>onde têm havido educadores com intenção de mudar.</i>
+
+1575
+02:12:12,675 --> 02:12:19,301
+<i>Educação Ativa, Popular, Libertária, Cooperativa,
+Livre, Ecológica, Democrática, Holística,</i>
+
+1576
+02:12:19,697 --> 02:12:22,844
+<i>Étnica, Educação sem Escola, Educação em Casa...</i>
+
+1577
+02:12:24,057 --> 02:12:30,005
+<Em maior ou menor medida, todas estas experiências
+apostam a pensar a aprendizagem como um contínuo crescimento,</i>
+
+1578
+02:12:30,456 --> 02:12:35,917
+<i>como o intercâmbio vivo entre o indivíduo,
+seus pares, seu entorno e sua comunidade.</i>
+
+1579
+02:12:36,444 --> 02:12:38,158
+<i>Uma Educação Viva...</i>
+
+1580
+02:12:38,763 --> 02:12:40,869
+"Ensinem-nos que as coisas podem ser diferentes.
+
+1581
+02:12:42,771 --> 02:12:44,496
+Esse é o exemplo que têm que dar-nos.
+
+1582
+02:12:45,596 --> 02:12:47,643
+Suas expectativas são suas, não são nossas.
+
+1583
+02:12:48,777 --> 02:12:51,186
+E enquanto continuem tendo-as, vamos continuar falhando."
+
+1584
+02:12:53,257 --> 02:12:56,556
+<i>Este filme expõe uma parte 
+ das ideias que encontramos, <i>
+
+1585
+02:12:56,880 --> 02:13:02,119
+<i>temos visitado algumas de todas as experiências que existem,
+e somente umas poucas conhecemos em profundidade.</i>
+
+1586
+02:13:05,195 --> 02:13:08,433
+<i>Não existe somente uma forma, não existe o melhor modelo.</i>
+
+1587
+02:13:09,104 --> 02:13:14,051
+<i> A verdadeira diversidade existe quando se respeita 
+e experimenta a diversidade em todas as suas dimensões.</i>
+
+1588
+02:13:14,720 --> 02:13:20,237
+<i>Todas estas experiências são valiosas porque são o fruto
+de pessoas que dedicaram sua vida à aprendizagem.</i>
+
+1589
+02:13:21,169 --> 02:13:27,180
+<i>Existem desencontros e coincidências, mas sem dúvida
+ todos apoiam a melhoria da educação.</i>
+
+1590
+02:13:31,063 --> 02:13:33,690
+<i>Necessitamos que suas ideias e práticas saiam à luz,</i>
+
+1591
+02:13:34,229 --> 02:13:38,380
+<i>poder conhecer suas contribuições,
+histórias, riquezas e limitações.</i>
+
+1592
+02:13:39,197 --> 02:13:44,650
+<i>Compartilhar recursos, intercambiar visões
+e construir juntos um novo paradigma educativo.</i>
+
+1593
+02:13:47,403 --> 02:13:48,695
+"Por tudo isto, dizemos CHEGA.
+
+1594
+02:13:51,076 --> 02:13:52,570
+Chega de decidir por nós,
+
+1595
+02:13:55,075 --> 02:13:57,551
+chega de qualificar-nos, chega de impor-nos.
+
+1596
+02:13:59,092 --> 02:14:03,042
+Nem as ciências, nem as provas,
+nem os diplomas nos definem."
+
+1597
+02:14:03,626 --> 02:14:07,545
+- Aqui estamos para isso, para falar,
+para compartilhar nossas ideias.
+
+1598
+02:14:07,942 --> 02:14:10,100
+- Aprender que as coisas podem se mudar.
+
+1599
+02:14:10,266 --> 02:14:14,044
+"Nós vamos decidir o que queremos
+ser, fazer, sentir, ou pensar.
+
+1600
+02:14:15,569 --> 02:14:20,331
+<i>Hoje mais do que nunca, existem os recursos para que estas
+experiências se multipliquem e diversifiquem.</i>
+
+1601
+02:14:21,264 --> 02:14:24,247
+<i>Existe a possibilidade de que a
+escola se reencontre com a educação,</i>
+
+1602
+02:14:25,095 --> 02:14:28,062
+<i>Que seja um espaço construído
+e gestionado por toda a comunidade,</i>
+
+1603
+02:14:28,537 --> 02:14:31,667
+<i>Que responda às necessidades
+das pessoas e seu entorno.</i>
+
+1604
+02:14:33,031 --> 02:14:34,904
+"Acreditamos que a educação está proibida.
+
+1605
+02:14:35,228 --> 02:14:40,137
+Não por culpa das famílias, não por culpa
+das crianças, não por culpa dos docentes."
+
+1606
+02:14:41,865 --> 02:14:43,214
+Todos proibimos a Educação.
+
+1607
+02:14:44,200 --> 02:14:48,100
+Cada vez que você escolhe olhar
+para outro lado, em vez de escutar.
+
+1608
+02:14:48,108 --> 02:14:52,400
+Cada vez que escolhemos a meta, em lugar do trajeto.
+
+1609
+02:14:52,409 --> 02:14:56,919
+Cada vez que deixamos tudo igual,
+em lugar de provar algo novo.
+
+1610
+02:14:58,086 --> 02:15:03,438
+<i>Este filme é um convite a nos encontrarmos com a educação
+além dos muros da escola que todos conhecemos,<i>
+
+1611
+02:15:03,710 --> 02:15:06,151
+<i>um convite a pensar outras formas de aprendizagem,<i>
+
+1612
+02:15:06,465 --> 02:15:10,822
+<i>a conversar e debater sobre 
+ nossas práticas escolares e educacionais<i>
+
+1613
+02:15:11,375 --> 02:15:12,299
+- Seja professor.
+
+1614
+02:15:13,154 --> 02:15:13,954
+- Seja aluno.
+
+1615
+02:15:14,512 --> 02:15:19,132
+- Seja pai, seja quem for, ajude-nos
+
+1616
+02:15:19,550 --> 02:15:20,867
+- A Educação tem que avançar.
+
+1617
+02:15:21,806 --> 02:15:22,682
+- Tem que crescer,
+
+1618
+02:15:23,135 --> 02:15:24,331
+- Tem que mudar.
+
+1619
+02:15:26,568 --> 02:15:30,350
+<i>Encontrar-nos com os outros, 
+ conhecer e explorar suas experiências,<i>
+
+1620
+02:15:30,744 --> 02:15:34,186
+<i>trocar ideias e levá-las a nossa realidade.<i>
+
+1621
+02:15:36,831 --> 02:15:41,065
+<i>Essa é a nossa proposta e começa hoje mesmo.<i>
+
+1622
+02:15:46,100 --> 02:15:47,100
+JUNTE-SE A REEVO
+Rede de Educação Viva
+
+1623
+02:15:47,101 --> 02:15:51,300
+ENCONTRO, INTERCÂMBIO, AÇÃO
+
+1624
+02:15:53,101 --> 02:15:59,300
+Créditos para legendas:
+educacionprohibida.com/creditos#sub-pt
+

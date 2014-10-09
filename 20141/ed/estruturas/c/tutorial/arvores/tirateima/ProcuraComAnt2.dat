@@ -1,0 +1,46 @@
+1{
+	criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(400,600); 
+	adicionaNoArvore arvore1 no0 "g";
+	adicionaNoArvore arvore1 no1 "d";
+	adicionaNoArvore arvore1 no2 "i";
+	adicionaNoArvore arvore1 no3 "a";
+	adicionaNoArvore arvore1 no4 "f";
+	adicionaNoArvore arvore1 no5 "h";
+	adicionaNoArvore arvore1 no6 "j";
+	ligaNoArvore arvore1 no0 no1;
+	ligaNoArvore arvore1 no0 no2;
+	ligaNoArvore arvore1 no1 no3;
+	ligaNoArvore arvore1 no1 no4;
+	ligaNoArvore arvore1 no2 no5;
+	ligaNoArvore arvore1 no2 no6;
+	adicionaPonteiro arvore1 no0 dir "*eainicio" 60 cor(0,128,0);
+	char chave cor(128,128,192) tamanho(60,30) posicao(120,50); 
+	chave = 'h';
+ }
+2;
+4 adicionaPonteiroSoloArvore arvore1 noo 5 "*eant" cor(204,0,0) posicao(53,35);
+5 adicionaPonteiro arvore1 no0 esq "a1" 60 cor(0,0,191);
+6;
+7;
+8;
+12;
+13{
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no0 diagonalSupEsq "*eant" 60 cor(204,0,0);
+  }
+14 movePonteiro arvore1 no0 esq no2 dir 60 cor(0,0,191);
+15;
+16;
+
+6;
+7;
+8;
+9 movePonteiro arvore1 no0 diagonalSupEsq no2 diagonalSupDir 60 cor(204,0,0);
+10 movePonteiro arvore1 no2 dir no5 diagonalSupEsq 60 cor(0,0,191);
+11;
+16;
+6;
+17{
+	comenta("Nesse momento o programa encerrará, retornando o ponteiro a1.");
+#	som();
+  }

@@ -1,0 +1,130 @@
+1{
+  criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(500,600); 
+  adicionaNoArvore arvore1 no0 "d";
+  adicionaNoArvore arvore1 no1 "b";
+  adicionaNoArvore arvore1 no2 "f";
+  adicionaNoArvore arvore1 no3 "a";
+  adicionaNoArvore arvore1 no4 "c";
+  adicionaNoArvore arvore1 no5 "e";
+  adicionaNoArvore arvore1 no6 "g";
+  ligaNoArvore arvore1 no0 no1;
+  ligaNoArvore arvore1 no0 no2;
+  ligaNoArvore arvore1 no1 no3;
+  ligaNoArvore arvore1 no1 no4;
+  ligaNoArvore arvore1 no2 no5;
+  ligaNoArvore arvore1 no2 no6;
+  adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+ }
+2 write("d ");
+3;
+4;
+
+1{
+	removePonteiro arvore1 no0 dir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no primeiro nível de recursividade.");
+#	som();
+ }
+2 write("b ");
+3;
+4;
+
+1{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no3 diagonalInfDir "ainicio''" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+ }
+2 write("a ");
+3;
+5;
+7;
+
+5{
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+	removePonteiro arvore1 no3 diagonalInfDir;
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ }
+6;
+
+1{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no4 diagonalInfEsq "ainicio''" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+ }
+2 write("c ");
+3;
+5;
+7;
+
+7{
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "ainicio'" 60 cor(0,128,0);
+	removePonteiro arvore1 no4 diagonalInfEsq;
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ }
+
+5{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ } 
+6;
+
+1{
+	removePonteiro arvore1 no0 dir;
+	adicionaPonteiro arvore1 no2 dir "ainicio'" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no primeiro nível de recursividade.");
+#	som();
+ }
+2 write("f ");
+3;
+4;
+
+1{
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiro arvore1 no5 diagonalInfEsq "ainicio''" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+ }
+2 write("e ");
+3;
+5;
+7;
+
+5{
+	adicionaPonteiro arvore1 no2 dir "ainicio'" 60 cor(0,128,0);
+	removePonteiro arvore1 no5 diagonalInfEsq;
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ }
+6;
+
+1{
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "ainicio''" 60 cor(0,128,0);
+	comenta("Nesse momento a função entrou no segundo nível de recursividade.");
+#	som();
+ }
+2 write("g ");
+3;
+5;
+7;
+
+7{
+	adicionaPonteiro arvore1 no2 dir "ainicio'" 60 cor(0,128,0);
+	removePonteiro arvore1 no6 diagonalSupDir;
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ }
+
+7{
+	adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+	removePonteiro arvore1 no2 dir;
+	comenta("Nesse momento a função voltou um nível de recursividade.");
+#	som();
+ }
+ 

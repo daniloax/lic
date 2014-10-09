@@ -1,0 +1,114 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,1000) ListaEncadeadaSimples;
+	
+	adicionaNoLista lista1 no1 "A" posicao(125,85);
+	adicionaNoLista lista1 no2 "110" posicao(125,205);
+	adicionaNoLista lista1 no3 "111" posicao(125,325);
+	adicionaNoLista lista1 no4 "B" posicao(295,85);
+	adicionaNoLista lista1 no5 "201" posicao(295,205);
+	adicionaNoLista lista1 no6 "C" posicao(465,85);
+	adicionaNoLista lista1 no7 "300" posicao(465,205);
+	adicionaNoLista lista1 no8 "340" posicao(465,325);
+	adicionaNoLista lista1 no9 "D" posicao(635,85);
+	
+	criaSetaLivreLista lista1 lig12 "" posicoes[(160,135)(160,205)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig23 "" posicoes[(160,255)(160,325)] cor(0,0,0);
+	ligaNoLista lista1 no1 no4 meio;
+	criaSetaLivreLista lista1 lig45 "" posicoes[(330,135)(330,205)] cor(0,0,0);
+	ligaNoLista lista1 no4 no6 meio;	
+	criaSetaLivreLista lista1 lig67 "" posicoes[(500,135)(500,205)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig78 "" posicoes[(500,255)(500,325)] cor(0,0,0);
+	ligaNoLista lista1 no6 no9 meio;
+	
+	adicionaPonteiroLista lista1 no1 70 "pacesso" cor(0,128,0) acimaEsquerda;
+}
+2;
+3;
+5;
+7;
+8 adicionaPonteiroLista lista1 no1 70 "pc1" cor(204,0,0) acimaDireita;
+9;
+10 write("A");
+11 criaSetaLivreLista lista1 ligpf1 "pf1" posicoes[(140,155)(140,205)] cor(255,159,64);
+12;
+13 write("     110");
+14{
+	removeSetaLivreLista lista1 ligpf1;
+	criaSetaLivreLista lista1 ligpf1 "pf1" posicoes[(140,275)(140,325)] cor(255,159,64);
+  }
+15;
+12;
+13 writeln("     111");
+14{
+	removeSetaLivreLista lista1 ligpf1;
+	adicionaPonteiroSoloLista lista1 noo 5 "pf1" cor(255,159,64) posicao(160,400);
+  }
+15;
+12;
+16{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "pc1" cor(204,0,0) acimaDireita;
+  }
+17;
+
+9;
+10 write("B");
+11{
+	criaSetaLivreLista lista1 ligpf1 "pf1" posicoes[(310,155)(310,205)] cor(255,159,64);
+	removePonteiroSoloLista lista1 noo;
+  }
+12;
+13 writeln("     201");
+14{
+	removeSetaLivreLista lista1 ligpf1;
+	adicionaPonteiroSoloLista lista1 noo 5 "pf1" cor(255,159,64) posicao(330,270);
+  }
+15;
+12;
+16{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no6 70 "pc1" cor(204,0,0) acimaDireita;
+  }
+17;
+
+
+9;
+10 write("C");
+11{
+	criaSetaLivreLista lista1 ligpf1 "pf1" posicoes[(480,155)(480,205)] cor(255,159,64);
+	removePonteiroSoloLista lista1 noo;
+  }
+12;
+13 write("     300");
+14{
+	removeSetaLivreLista lista1 ligpf1;
+	criaSetaLivreLista lista1 ligpf1 "pf1" posicoes[(480,275)(480,325)] cor(255,159,64);
+  }
+15;
+12;
+13 writeln("     340");
+14{
+	removeSetaLivreLista lista1 ligpf1;
+	adicionaPonteiroSoloLista lista1 noo 5 "pf1" cor(255,159,64) posicao(500,400);
+  }
+15;
+12;
+16{
+	removePonteiroLista lista1 no6 acimaDireita;
+	adicionaPonteiroLista lista1 no9 70 "pc1" cor(204,0,0) acimaDireita;
+  }
+17;
+
+9;
+10 write("D");
+11 adicionaPonteiroSoloLista lista1 noo 5 "pf1" cor(255,159,64) posicao(670,155);
+12;
+16{
+	removePonteiroLista lista1 no9 acimaDireita;
+	adicionaPonteiroSoloLista lista1 poo 5 "pc1" cor(204,0,0) posicao(730,110);
+  }
+17;
+
+9;
+18;
+19;

@@ -1,0 +1,180 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(900,500) ListaEncadeada;
+	adicionaNoLista lista1 no1 "D" posicao(150,150);
+	adicionaNoLista lista1 no2 "B" posicao(300,150);
+	adicionaNoLista lista1 no3 "C" posicao(450,150);
+	adicionaNoLista lista1 no4 "E" posicao(600,150);
+	adicionaNoLista lista1 no5 "A" posicao(750,150);
+	ligaNoLista lista1 no1 no2 "" meio;
+	ligaNoLista lista1 no2 no3 "" meio;
+	ligaNoLista lista1 no3 no4 "" meio;
+	ligaNoLista lista1 no4 no5 "" meio;
+  	adicionaPonteiroLista lista1 no1 70 "pinicio" cor(0,128,0) acimaEsquerda;
+  	adicionaPonteiroSoloLista lista1 no 5 "" cor(0,0,0) posicao(812,175);
+  }
+
+2;
+3 char aux cor(128,128,192) tamanho(60,30) posicao(520,50);
+5;
+6 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita; 
+7;
+8 adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) abaixoEsquerda; 
+9;
+10;
+11 aux = 'B';
+12 adicionaNoLista lista1 no2 "D" posicao(300,150);
+13 adicionaNoLista lista1 no1 "B" posicao(150,150);
+14;
+15{
+	removePonteiroLista lista1 no2 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) abaixoEsquerda; 
+  }
+16;
+
+9;
+10;
+15{
+	removePonteiroLista lista1 no3 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) abaixoEsquerda; 
+  }
+16;
+
+9;
+10;
+15{
+	removePonteiroLista lista1 no4 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no5 70 "p2" cor(0,0,191) abaixoEsquerda; 
+  }
+16;
+
+9;
+10;
+11 aux = 'A';
+12 adicionaNoLista lista1 no5 "B" posicao(750,150);
+13 adicionaNoLista lista1 no1 "A" posicao(150,150);
+14;
+15{
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	adicionaPonteiroSoloLista lista1 noo 5 "p2" cor(0,0,191) posicao(835,170);
+  }
+16;
+9;
+17{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita; 
+  }
+18;
+
+7;
+8{
+	removePonteiroSoloLista lista1 noo;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) abaixoEsquerda; 
+ }
+9;
+10;
+11 aux = 'C';
+12 adicionaNoLista lista1 no3 "D" posicao(450,150);
+13 adicionaNoLista lista1 no2 "C" posicao(300,150);
+14;
+15{
+	removePonteiroLista lista1 no3 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+16;
+
+9;
+10;
+15{
+	removePonteiroLista lista1 no4 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no5 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+16;
+
+9;
+10;
+11 aux = 'B';
+12 adicionaNoLista lista1 no5 "C" posicao(750,150);  
+13 adicionaNoLista lista1 no2 "B" posicao(300,150); 
+14;
+15{
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	adicionaPonteiroSoloLista lista1 noo 5 "p2" cor(0,0,191) posicao(835,170);
+  }
+16;
+9;
+
+17{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+18;
+
+7;
+8{
+	removePonteiroSoloLista lista1 noo;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) abaixoEsquerda;
+ }
+9;
+10;
+15{
+	removePonteiroLista lista1 no4 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no5 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+16;
+
+9;
+10;
+11 aux = 'C';
+12 adicionaNoLista lista1 no5 "D" posicao(750,150);  
+13 adicionaNoLista lista1 no3 "C" posicao(450,150);
+14;
+15{
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	adicionaPonteiroSoloLista lista1 noo 5 "p2" cor(0,0,191) posicao(835,170);
+  }
+16;
+
+9;
+17{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) acimaDireita;
+  }
+18;
+
+7;
+8{
+	removePonteiroSoloLista lista1 noo;
+	adicionaPonteiroLista lista1 no5 70 "p2" cor(0,0,191) abaixoEsquerda;
+ }
+9;
+10;
+11 aux = 'D';
+12 adicionaNoLista lista1 no5 "E" posicao(750,150);
+13 adicionaNoLista lista1 no4 "D" posicao(600,150);
+14;
+15{
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	adicionaPonteiroSoloLista lista1 noo 5 "p2" cor(0,0,191) posicao(835,170);
+  }
+16;
+9;
+
+17{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) acimaDireita;
+  }
+18;
+7;
+19;
+20;
+
+
+
+
+
+
+
+
+
+
+

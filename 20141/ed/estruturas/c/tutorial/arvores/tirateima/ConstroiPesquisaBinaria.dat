@@ -1,0 +1,463 @@
+1{
+	criaArvore arvore1 3 40 cor(255,219,183) posicao(250,30) tamanho(500,600);
+	text arq;
+	assign (arq, "ConstroiPesquisaBinaria.txt");
+	reset (arq);
+ }
+2 char c cor(128,128,192) tamanho(60,30) posicao(150,50);
+4 read(arq, c);
+5;
+7;
+8{
+	adicionaNoArvore arvore1 no0 "";
+	adicionaPonteiro arvore1 no0 diagonalSupEsq "*eainicio" 60 cor(0,128,0);
+  }
+9{
+	removeNo arvore1 no0;
+	adicionaNoArvore arvore1 no0 "G";
+  }
+10;
+1{
+	comenta("Nesse momento a função entra no primeiro nível de recursividade.");
+#	som();
+  }
+2{
+	removerVariavel c;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c1);
+5;
+7;
+8{
+	removePonteiro arvore1 no0 diagonalSupEsq;
+	adicionaNoArvore arvore1 no1 "";
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "*eainicio'" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no0 no1 "";
+  }
+9{
+	removeNo arvore1 no1;
+	adicionaNoArvore arvore1 no1 "D";
+	ligaNoArvore arvore1 no0 no1 "";
+  }
+10;
+1{
+	comenta("Nesse momento a função entra no segundo nível de recursividade.");
+#	som();
+  }
+  
+2{
+	removerVariavel c1;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c2);
+5;
+7;
+8{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaNoArvore arvore1 no3 "";
+	adicionaPonteiro arvore1 no3 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no1 no3 "";
+  }
+9{
+	removeNo arvore1 no3;
+	adicionaNoArvore arvore1 no3 "A";
+	ligaNoArvore arvore1 no1 no3 "";
+  }
+10;
+1{
+	comenta("Nesse momento a função entra no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	adicionaPonteiroSoloArvore arvore1 noo 5 "*eainicio'''" cor(0,128,0) posicao(73,305);
+	removePonteiro arvore1 no3 diagonalSupDir;
+ }
+12;
+13;
+11{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'A';
+	removePonteiroSoloArvore arvore1 noo;
+	adicionaPonteiro arvore1 no3 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	adicionaPonteiroSoloArvore arvore1 noo 5 "" cor(0,0,0) posicao(73,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+1{
+	comenta("A função entrou no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	adicionaPonteiroSoloArvore arvore1 poo 5 "*eainicio'''" cor(0,128,0) posicao(113,305);
+	removePonteiro arvore1 no3 diagonalSupDir;
+ }
+12;
+13;
+12{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'A';
+	removePonteiroSoloArvore arvore1 poo;
+	adicionaPonteiro arvore1 no3 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	adicionaPonteiroSoloArvore arvore1 poo 5 "" cor(0,0,0) posicao(113,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+11{
+	removePonteiro arvore1 no3 diagonalSupDir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "*eainicio'" 60 cor(0,128,0);
+	removerVariavel c2;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c1 = 'D';
+	removePonteiro arvore1 no3 diagonalSupDir;
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+
+1{
+	comenta("A função entrou no segundo nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c1;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c2);
+5;
+7;
+8{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaNoArvore arvore1 no4 "";
+	adicionaPonteiro arvore1 no4 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no1 no4 "";
+  }
+9{
+	removeNo arvore1 no4;
+	adicionaNoArvore arvore1 no4 "F";
+	ligaNoArvore arvore1 no1 no4 "";
+  }
+10;
+
+1{
+	comenta("Nesse momento a função entra no terceiro nível de recursividade.");
+#	som();
+  }
+
+2{
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiroSoloArvore arvore1 qoo 5 "*eainicio'''" cor(0,128,0) posicao(140,305);
+ }
+12;
+13;
+11{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'F';
+	removePonteiroSoloArvore arvore1 qoo;
+	adicionaPonteiro arvore1 no4 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	adicionaPonteiroSoloArvore arvore1 qoo 5 "" cor(0,0,0) posicao(140,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+1{
+	comenta("A função entrou no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6 {
+	adicionaPonteiroSoloArvore arvore1 woo 5 "*eainicio'''" cor(0,128,0) posicao(175,305);
+	removePonteiro arvore1 no4 diagonalSupDir;
+  }
+12;
+13;
+12{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'F';
+	adicionaPonteiro arvore1 no4 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	removePonteiroSoloArvore arvore1 woo;
+	adicionaPonteiroSoloArvore arvore1 woo 5 "" cor(0,0,0) posicao(175,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+12{
+	removePonteiro arvore1 no4 diagonalSupDir;
+	adicionaPonteiro arvore1 no1 diagonalSupEsq "*eainicio'" 60 cor(0,128,0);
+	removerVariavel c2;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c1 = 'D';
+	removePonteiro arvore1 no4 diagonalSupDir;
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+11{
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	adicionaPonteiro arvore1 no0 diagonalSupEsq "*eainicio" 60 cor(0,128,0);
+	removerVariavel c1;
+	char c cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c = 'G';
+	removePonteiro arvore1 no1 diagonalSupEsq;
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+
+  
+  
+  
+1{
+	comenta("Nesse momento a função entra no primeiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+	removerVariavel c;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c1);
+5;
+7;
+8{
+	removePonteiro arvore1 no0 diagonalSupEsq;
+	adicionaNoArvore arvore1 no2 "";
+	adicionaPonteiro arvore1 no2 dir "*eainicio'" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no0 no2 "";
+  }
+9{
+	removeNo arvore1 no2;
+	adicionaNoArvore arvore1 no2 "I";
+	ligaNoArvore arvore1 no0 no2 "";
+  }
+10;
+1{
+	comenta("Nesse momento a função entra no segundo nível de recursividade.");
+#	som();
+  }
+  
+2{
+	removerVariavel c1;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c2);
+5;
+7;
+8{
+	removePonteiro arvore1 no2 dir;
+	adicionaNoArvore arvore1 no5 "";
+	adicionaPonteiro arvore1 no5 dir "*eainicio''" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no2 no5 "";
+  }
+9{
+	removeNo arvore1 no5;
+	adicionaNoArvore arvore1 no5 "H";
+	ligaNoArvore arvore1 no2 no5 "";
+  }
+10;
+1{
+	comenta("Nesse momento a função entra no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	adicionaPonteiroSoloArvore arvore1 roo 5 "*eainicio'''" cor(0,128,0) posicao(200,305);
+	removePonteiro arvore1 no5 dir;
+ }
+12;
+13;
+11{
+	adicionaPonteiro arvore1 no5 dir "*eainicio''" 60 cor(0,128,0);
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'H';
+	removePonteiroSoloArvore arvore1 roo;
+	adicionaPonteiroSoloArvore arvore1 roo 5 "" cor(0,0,0) posicao(200,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+1{
+	comenta("A função entrou no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	adicionaPonteiroSoloArvore arvore1 too 5 "*eainicio'''" cor(0,128,0) posicao(235,305);
+	removePonteiro arvore1 no5 dir;
+ }	
+12;
+13;
+12{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'H';
+	adicionaPonteiro arvore1 no5 dir "*eainicio''" 60 cor(0,128,0);
+	removePonteiroSoloArvore arvore1 too;
+	adicionaPonteiroSoloArvore arvore1 too 5 "" cor(0,0,0) posicao(235,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+11{
+	adicionaPonteiro arvore1 no2 dir "*eainicio'" 60 cor(0,128,0);
+	removerVariavel c2;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c1 = 'I';
+	removePonteiro arvore1 no5 dir;
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+
+1{
+	comenta("A função entrou no segundo nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c1;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c2);
+5;
+7;
+8{
+	adicionaNoArvore arvore1 no6 "";
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	ligaNoArvore arvore1 no2 no6 "";
+  }
+9{
+	removeNo arvore1 no6;
+	adicionaNoArvore arvore1 no6 "J";
+	ligaNoArvore arvore1 no2 no6 "";
+  }
+10;
+
+1{
+	comenta("Nesse momento a função entra no terceiro nível de recursividade.");
+#	som();
+  }
+
+2{
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{
+	adicionaPonteiroSoloArvore arvore1 soo 5 "*eainicio'''" cor(0,128,0) posicao(260,305);
+	removePonteiro arvore1 no6 diagonalSupDir;
+ }
+12;
+13;
+11{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'J';
+	adicionaPonteiro arvore1 no6 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	removePonteiroSoloArvore arvore1 soo;
+	adicionaPonteiroSoloArvore arvore1 soo 5 "" cor(0,0,0) posicao(260,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+1{
+	comenta("A função entrou no terceiro nível de recursividade.");
+#	som();
+  }
+  
+2{
+
+	removerVariavel c2;
+	char c3 cor(128,128,192) tamanho(60,30) posicao(150,50);
+  }
+4 read(arq,c3);
+5;
+6{ 
+	adicionaPonteiroSoloArvore arvore1 doo 5 "*eainicio'''" cor(0,128,0) posicao(295,305);
+	removePonteiro arvore1 no6 diagonalSupDir;
+ }
+12;
+13;
+12{
+	removerVariavel c3;
+	char c2 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c2 = 'J';
+	removePonteiroSoloArvore arvore1 doo;
+	adicionaPonteiro arvore1 no6 diagonalSupDir "*eainicio''" 60 cor(0,128,0);
+	adicionaPonteiroSoloArvore arvore1 doo 5 "" cor(0,0,0) posicao(295,305);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+12{
+	removerVariavel c2;
+	char c1 cor(128,128,192) tamanho(60,30) posicao(150,50);
+	adicionaPonteiro arvore1 no2 dir "*eainicio'" 60 cor(0,128,0);
+	c1 = 'I';
+	removePonteiro arvore1 no6 diagonalSupDir;
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }
+13;
+
+11{
+	removerVariavel c1;
+	char c cor(128,128,192) tamanho(60,30) posicao(150,50);
+	c = 'G';
+	removePonteiro arvore1 no2 dir;
+	adicionaPonteiro arvore1 no0 diagonalSupEsq "*eainicio" 60 cor(0,128,0);
+	comenta("A função voltou um nível de recursividade.");
+#	som();
+  }  
+12;
+13;

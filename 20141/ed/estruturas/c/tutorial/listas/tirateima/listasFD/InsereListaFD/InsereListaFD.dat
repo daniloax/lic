@@ -1,0 +1,54 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,0) tamanho(800,500) ListaDuplamenteEncadeada;
+	adicionaNoLista lista1 no1 "A" posicao(125,200);
+	adicionaNoLista lista1 no2 "B" posicao(275,200);
+	adicionaNoLista lista1 no3 "D" posicao(425,200);
+	adicionaNoLista lista1 no4 "E" posicao(575,200);
+	criaSetaLivreLista lista1 lig12 "" posicoes[(195,235)(275,235)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig21 "" posicoes[(275,215)(195,215)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig23 "" posicoes[(345,235)(425,235)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig32 "" posicoes[(425,215)(345,215)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig34 "" posicoes[(495,235)(575,235)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig43 "" posicoes[(575,215)(495,215)] cor(0,0,0);	                                            
+	criaSetaLivreLista lista1 lig2 "" posicoes[(125,215)(78,215)(78,325)(692,325)(692,215)(645,215)] cor(0,0,0);
+	criaSetaLivreLista lista1 lig3 "" posicoes[(645,235)(680,235)(680,295)(90,295)(90,235)(125,235)] cor(0,0,0);
+	adicionaPonteiroLista lista1 no1 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+	char dadonovo cor(128,128,192) tamanho(60,30) posicao(550,50);
+  	dadonovo = 'C';
+ }
+2;
+4 { 
+	adicionaNoLista lista1 no5 "" posicao(350,85);
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) acimaDireita;
+  }
+5 {
+	removePonteiroLista lista1 no5 acimaDireita;
+	removeNo lista1 no5;
+	adicionaNoLista lista1 no5 "C" posicao(350,85);
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) acimaDireita;
+  }
+6;
+11;
+12;
+19;
+20 adicionaPonteiroLista lista1 no1 70 "p2" cor(0,0,191) acimaDireita;
+21;
+22{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) acimaEsquerda;
+  }
+21;
+23 criaSetaLivreLista lista1 lig3 "" posicoes[(420,120)(440,120)(440,150)(395,150)(395,240)(425,240)] cor(255,0,0);
+24 criaSetaLivreLista lista1 lig4 "" posicoes[(350,95)(310,95)(310,165)(360,165)(360,205)(345,205)] cor(255,0,0);
+25{
+	removeSetaLivreLista lista1 lig32;
+	criaSetaLivreLista lista1 lig5 "" posicoes[(425,210)(410,210)(410,165)(460,165)(460,95)(420,95)] cor(255,0,0);
+  }
+26{
+	removeSetaLivreLista lista1 lig23;
+	criaSetaLivreLista lista1 lig6 "" posicoes[(345,240)(375,240)(375,150)(330,150)(330,120)(350,120)] cor(255,0,0);
+  }
+27;
+28;
+
+

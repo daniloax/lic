@@ -1,0 +1,196 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Árvores - Árvores Genéricas </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="implementacoes">
+		<h4> 4.3 Árvores Genéricas representadas como Árvores Binárias </h4>
+		
+		<p>Nas árvores genéricas (não binárias) cada nó pode ter qualquer quantidade de filhos. Este fato inviabiliza a implementação de uma 
+		árvore genérica da forma feita para árvores binárias, pois não se sabe quantos ponteiros seriam necessários em cada nó.</p>
+		
+		<p>A melhor solução é implementar a árvore genérica através de uma árvore binária na qual os ponteiros da esquerda e da direita têm 
+		significados diferentes. Ao ponteiro da esquerda atribuímos o significado de "filho" e ao da direita, o significado de "irmão". Como 
+		exemplo, a árvore genérica da figura abaixo à esquerda fica representada como no desenho abaixo à direita.</p>
+		
+		<img src="imagens/genericas.png"><br>
+		
+		<p>A estrutura de dados para a implementação dessa árvore pode ser definida da seguinte forma:</p>
+		
+		<FONT face= "Courier New" size=2>
+			typedef struct nodo {<br>
+			&nbsp;char dado;<br>
+			&nbsp;struct nodo *filho, *irmao;<br>
+			} arvoreG ;<br>
+			<br><br>
+		</FONT> 
+
+		<p>Os dados de uma árvore genérica podem ser guardados em arquivo de várias formas diversas. Para os exemplos que seguem, utilizaremos 
+		o seguinte padrão: cada linha do arquivo inicia com o dado de um nó, seguido de um número inteiro que indica quantos filhos esse nó tem, 
+		e em seguida a relação de seus. A primeira linha do arquivo contém os dados da raiz da árvore. As linhas seguintes contêm dados de nós 
+		que já apareceram anteriormente como filhos de algum outro nó.</p>
+		
+		<p>A árvore utilizada como exemplo anteriormente ficaria armazenada em um arquivo da seguinte forma:</p>
+		
+		<img src="imagens/arquivo.png"><br>
+		
+		<p>Abaixo são examinados alguns dos algoritmos básicos que utilizam árvores binárias como árvores genéricas:</p>
+		
+		<p><b>a) Construção de uma árvore genérica a partir do arquivo</b></p>
+		
+		<p>Esta função constrói a estrutura de dados correspondente à árvore binária que representa uma árvore genérica, a partir de um arquivo 
+		que tem o padrão visto anteriormente. É utilizada aqui a função <i>ProcuraG</i>, que é idêntica à função de procura de um elemento já 
+		vista anteriormente (<i>Procura</i>).</p>
+		
+		<FONT face= "Courier New" size=2>
+			void ConstroiG(arvoreG **eainicio) {<br>
+			&nbsp;char c;<br>
+			&nbsp;arvoreG *a1, *a2;<br>
+			&nbsp;nt n, i;<br>
+			&nbsp;*eainicio = NULL;<br>
+			&nbsp;while ((c = getc (arq)) != EOF) {<br>
+			&nbsp;&nbsp;&nbsp; if (c != '\n') {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (*eainicio != NULL)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = ProcuraG (eainicio, c);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = malloc (sizeof (arvoreG));<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;dado = c;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;filho = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;irmao = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *eainicio = a1;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fscanf (arq, "%d ", &amp;n);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i=1; i !=n+1; i++) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = getc (arq);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a1-&gt;filho == NULL) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;filho = malloc (sizeof (arvoreG));<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2 = a1-&gt;filho;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;irmao = malloc (sizeof (arvoreG));<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a2 = a2-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;dado = c;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;filho = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;irmao = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = getc (arq);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;}<br>
+			}<br>
+			<br><br>
+		</FONT>
+		
+		<p><b>b) Leitura de uma árvore, gerando a seqüência dos elementos utilizada para armazenagem em arquivos</b></p>
+		
+		<p>Esta função faz o inverso da anterior. A partir de uma árvore dada em memória, ela gera e escreve na tela a representação da árvore, 
+		de acordo com a notação vista no item anterior. Em lugar de escrever na tela, a função poderia gravar a seqüência em um arquivo, armazenando 
+		a árvore.</p>
+		
+		<p>Observe que, como o algoritmo utilizado é recursivo, o arquivo montado não necessariamente tem a mesma forma do arquivo original, mas 
+		mantém as mesmas regras de construção. Dessa forma, se o algoritmo de construção for aplicado a este arquivo, a árvore construída será a mesma.</p>
+		
+		<FONT face= "Courier New" size=2>
+			void LeG(arvoreG **eainicio) {<br>
+			&nbsp;arvoreG *a1;<br>
+			&nbsp;&nbsp;int n;<br>
+			&nbsp;&nbsp;if (*eainicio != NULL) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; printf("%c %c", (*eainicio)-&gt;dado, ' ');<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; a1 = (*eainicio)-&gt;filho;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; n = 0;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; while (a1 != NULL) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = n + 1;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; printf ("%d", n);&nbsp;&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; a1 = (*eainicio)-&gt;filho;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; while (a1 != NULL) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf ("%c %c", ' ',a1-&gt;dado);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; printf ("\n");<br>
+			&nbsp;&nbsp;LeG (&amp;((*eainicio)-&gt;irmao));<br>
+			&nbsp;&nbsp;LeG (&amp;((*eainicio)-&gt;filho));<br>
+			&nbsp;&nbsp;}<br>
+			}<br>
+			<br><br>
+		</FONT>
+		
+		<p><b>c) Remoção de uma sub-árvore composta por um nó e seus filhos</b></p>
+		
+		<p>Esta função remove da árvore um determinado nó e todos os seus descendentes (filhos, netos, etc.). Ela utiliza a função <i>ProcuraComAntG, 
+		</i>idêntica à função de procura que marca o nó antecessor do nó procurado, vista anteriormente (<i>ProcuraComAnt</i>).</p>
+		
+		<FONT face= "Courier New" size=2>
+			void RemoveNoEFilhosG(arvoreG **eainicio, char dado) {<br>
+			&nbsp;&nbsp;arvoreG *a1, *a2;<br>
+			&nbsp;&nbsp;a2 = NULL;<br>
+			&nbsp;&nbsp;a1 = ProcuraComAntG (eainicio, dado, &amp;a2);<br>
+			&nbsp;&nbsp;if (a1 == NULL)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; printf ("no inexistente\n");<br>
+			&nbsp;&nbsp;else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; if (a1 == *eainicio)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *eainicio = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a2-&gt;filho == a1)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;filho = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a2-&gt;irmao = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;irmao = NULL;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;RemoveG (&amp;a1);<br>
+			&nbsp;}<br>
+			}<br>
+			<br><br>
+		</FONT>
+		
+		<p><b>d) Inserção de um nó em uma árvore genérica</b></p>
+		
+		<p>A função <i>InsereG</i> faz a inserção de um nó na árvore genérica. Para isso, ela deve receber como parâmetros o nó a ser inserido e o 
+		nó que vai ser o pai do nó inserido.</p>
+		
+		<FONT face= "Courier New" size=2>
+			void InsereG(arvoreG *ainicio, char dadonovo, char dadopai) {<br>
+			&nbsp;arvoreG *a1;<br>
+			&nbsp;a1 = ProcuraG (&amp;ainicio, dadopai);<br>
+			&nbsp;if (a1 == NULL)<br>
+			&nbsp;&nbsp;&nbsp; printf ("pai nao encontrado\n");<br>
+			&nbsp;else {&nbsp;&nbsp;<br>
+			&nbsp;&nbsp;&nbsp; if (a1-&gt;filho == NULL) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;filho = malloc (sizeof (arvoreG));<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;filho;<br>
+			&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp; else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;filho;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (a1-&gt;irmao != NULL)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1-&gt;irmao = malloc (sizeof (arvoreG));<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a1 = a1-&gt;irmao;<br>
+			&nbsp;&nbsp;&nbsp; }<br>
+			&nbsp;&nbsp;&nbsp; a1-&gt;dado = dadonovo;<br>
+			&nbsp;&nbsp;&nbsp; a1-&gt;filho = NULL;<br>
+			&nbsp;&nbsp;&nbsp; a1-&gt;irmao = NULL;<br>
+			&nbsp;}<br>
+			}<br>
+			<br><br>
+		</FONT>
+		
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

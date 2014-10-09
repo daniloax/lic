@@ -1,0 +1,101 @@
+1{
+  criaArvore arvore1 3 40 cor(255,219,183) posicao(350,30) tamanho(400,600); 
+  adicionaNoArvore arvore1 no0 "a";
+  adicionaNoArvore arvore1 no1 "b";
+  adicionaNoArvore arvore1 no2 "c";
+  adicionaNoArvore arvore1 no3 "d";
+  adicionaNoArvore arvore1 no4 "e";
+  adicionaNoArvore arvore1 no5 "f";
+  adicionaNoArvore arvore1 no6 "g";
+  ligaNoArvore arvore1 no0 no1;
+  ligaNoArvore arvore1 no0 no2;
+  ligaNoArvore arvore1 no1 no3;
+  ligaNoArvore arvore1 no1 no4;
+  ligaNoArvore arvore1 no2 no5;
+  ligaNoArvore arvore1 no2 no6;
+  adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+ }
+2;
+3;
+5 adicionaPonteiro arvore1 no0 esq "a1" 60 cor(204,0,0);
+6 criaPilha p1 cor(13,22,142) posicao(200,130) tamanho(60,180) cor(255,200,145) 6;
+7;
+8 push p1 "a";
+9;
+10{
+	movePonteiro arvore1 no0 esq no0 esq 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("a ");
+12;
+13 push p1 "c";
+14;
+15 push p1 "b";
+16;
+
+9;
+10{
+	movePonteiro arvore1 no0 esq no1 diagonalSupEsq 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("b ");
+12;
+13 push p1 "e";
+14;
+15 push p1 "d";
+16;
+
+9;
+10{
+	movePonteiro arvore1 no1 diagonalSupEsq no3 diagonalInfDir 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("d ");
+12;
+14;
+16;
+
+9;
+10{
+	movePonteiro arvore1 no3 diagonalInfDir no4 diagonalInfEsq 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("e ");
+12;
+14;
+16;
+
+9;
+10{
+	movePonteiro arvore1 no4 diagonalInfEsq no2 dir 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("c ");
+12;
+13 push p1 "g";
+14;
+15 push p1 "f";
+16;
+
+9;
+10{
+	movePonteiro arvore1 no2 dir no5 diagonalInfDir 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("f ");
+12;
+14;
+16;
+
+9;
+10{
+	movePonteiro arvore1 no5 diagonalInfDir no6 diagonalInfEsq 60 cor(204,0,0);
+	pop p1;
+  }
+11 write("g ");
+12;
+14;
+16;
+
+9;
+17;

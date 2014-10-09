@@ -1,0 +1,205 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Pilhas e Filas - Aplicações </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de pilhas e filas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="aplicacoes">
+		<h4> 3.3 Aplicações </h4>
+		
+		<p>Serão apresentadas agora algumas aplicações de pilhas e de filas. A partir deste ponto, as pilhas e as filas, por serem estruturas 
+		abstratas, serão manipuladas sempre através das ope-rações vistas anteriormente (InsereFila, RetiraPilha, etc...) Desta forma o usuário 
+		não precisa saber qual foi a implementação utilizada em cada caso, e não tem outro acesso às estruturas utilizadas, que não sejam as 
+		operações pré-definidas.</p>
+		
+		<p> Veremos as seguintes aplicações:</p>
+		
+		<p> - manipulação de uma seqüência de caracteres<br>
+			- avaliação de expressão totalmente parentetizada<br>
+			- avaliação de expressão na forma pós-fixada<br>
+			- conversão de expressão in-fixada para pós-fixada<br>
+			- simulação de recursividade <br>
+			- pilhas ou listas de uso geral<br><br>
+		</p>
+		
+		<h4> 3.3.1  Manipulação de uma seqüência de caracteres </h4>
+		
+		<p>É dada uma seqüência de caracteres formada por letras e algarismos alternados, começando por uma letra. A função deve construir 
+		outra seqüência que contenha todas as letras da seqüência dada, na mesma ordem e posições originais, e todos os algarismos da 
+		seqüência dada, nas posições originais, mas em ordem invertida. Como exemplo são dadas abaixo uma seqüência de entrada e outra 
+		de saída correspondente: </p>
+		
+		<p>	Entrada:      A  5  F  8  B  4  C  9  D  7<br>
+			Saída:         A  7  F  9  B  4  C  8  D  5<br><br>
+		</p>
+		
+		<p>A função ManipulaCaracteres supõe que tenham sido definidos anteriormente os tipos <b>tipofila</b> e <b>tipopilha</b>. 
+		A seqüência original é lida do arquivo <i>arq</i> e a seqüência de saída é escrita na tela. </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Manipula Caracteres" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ManipulaCaracteres.c', 'tirateima/ManipulaCaracteres.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<h4> 3.3.2 Avaliação de expressão totalmente parentetizada </h4>
+		
+		<p>É dada uma expressão numérica em que todas as operações são cercadas por parêntesis, independentemente de sua prioridade, como por 
+		exemplo:    (  2  *  (  5  -  1  )  ) </p>
+		
+		<p>Supõem-se definidos anteriormente os tipos <b>tipopilha</b> e <b>tipopilha2</b>. A expressão é lida do arquivo <i>arq</i>.  
+		A função <i>AvaliaExpressaoParentetizada</i> utiliza a função <i>ResolveOperacao</i>, que retira da pilha de operadores o 
+		último operador e, em seguida, realiza a operação desejada e volta a inserir o resultado na pilha de números. </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Avalia Expressão Parentetizada" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/AvaliaExpressaoParentizada.c', 'tirateima/AvaliaExpressaoParentizada.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<h4> 3.3.3  Avaliação de expressão na forma pós-fixada </h4>
+		
+		<p>A função deve fazer a avaliação de uma expressão dada em forma pós-fixada. A expressão se encontra no arquivo <i>arq</i>. A função 
+		supõe que tenha sido definido o tipo <b>tipopilha</b>. A função <i>AvaliaExpressaoPosfixada</i> utiliza a função 
+		<i>ResolveOperacao</i>, que executa a operação desejada entre dois operandos e retorna o resultado.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Avalia Expressão Pós-Fixada" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/AvaliaExpressaoPosFixada.c', 'tirateima/AvaliaExpressaoPosFixada.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<h4> 3.3.4  Conversão de expressão in-fixada para pós-fixada </h4>
+		
+		<p>A função <i>ConversaoParaPosFixada</i> lê de um arquivo <i>arq1</i> uma expressão algébrica em forma in-fixada, e escreve na tela a 
+		mesma expressão, na forma pós-fixada. A função utiliza os tipos <b>tipopilha</b> e <b>tipofila</b>.  A fila <i>f1</i> armazena os operandos 
+		e a pilha <i>p1</i> armazena os operadores e o sinal ‘(‘.   A função Prioridade retorna a prioridade de execução de uma operação. 
+		A variável <i>aux</i> serve apenas para eliminar o caractere ‘(‘ quando este for encontrado no topo da pilha <i>p1</i>.</p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Conversão Para Pós-Fixada" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/ConversaoParaPosFixada.c', 'tirateima/ConversaoParaPosFixada.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		
+		<h4> 3.3.5 Simulação de recursividade  </h4>
+		
+		<p>As pilhas podem ser utilizadas para simular a recursividade na resolução de certos problemas. É útil entender como as pilhas 
+		permitem a recursividade, pois é através delas que as linguagens implementam  a recursividade.</p>
+		
+		<p>Como exemplo tomemos a geração da seqüência de Fibonacci.</p>
+		
+		<p>A seqüência de Fibonacci pode ser definida do seguinte modo:</p>
+		
+		<p>	fib (0) = 1
+			fib (1) = 1
+			fib (n) = fib (n-1) + fib (n-2) , para n > 1
+		</p>
+		
+		<p>A seqüência gerada de acordo com esta definição é a seguinte:</p>
+		
+		<p>
+			n	0	1	2	3	4	5	6	...<br>
+			fib	1	1	2	3	5	8	13	...<br><br>
+		</p>
+		
+		<p>A função abaixo calcula o n-ésimo termo, que fica armazenado na variável <i>fib</i>. Supõe-se defi-nido o tipo <b>tipopilha</b>. </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Fibonacci" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Fibonacci.c', 'tirateima/Fibonacci.dat', '1')">
+		</INPUT>		
+		<p> <br> </p>
+		
+		<h4> 3.3.6  Pilhas ou listas de uso geral  </h4>
+		
+		<p>Em todas as aplicações vistas até aqui, sempre se supõe definidos os tipos tipopilha e tipofila, que são pilhas ou filas 
+		contendo caracteres. É interessante a criação de pilhas ou filas de uso geral, nas quais é possível armazenar qualquer tipo de dado. 
+		Isto é possível na linguagem C, se utilizarmos um ponteiro apontando para <i>void</i>  como informação contida na pilha ou na fila. 
+		Este ponteiro é de uso genérico, podendo apontar para qualquer tipo de estrutura.</p>
+		
+		<p>Como exemplo de aplicação de uma pilha de uso geral, vamos resolver o problema das Torres de Hanói, simulando a recursividade 
+		através de uma pilha de uso geral. </p>
+		
+		<img src="imagens/hanoi.png">
+		
+		<p>Para resolver o problema de forma recursiva, deve-se raciocinar da seguinte forma: para levar <b>n</b> discos de 
+		<b>A</b> para <b>B</b>, basta levar os <b>n – 1</b> discos superiores de <b>A</b> para <b>C</b>, em seguida levar o disco maior 
+		de <b>A</b> para <b>B</b>, e depois levar os <b>n – 1</b> discos de <b>C</b> para <b>B</b>. No entanto, a operação de transferir 
+		<b>n – 1</b> discos não é permitida pela própria regra do problema, e deve então ser abordada como uma chama da recursiva ao mesmo 
+		problema, mas com o grau de dificuldade reduzido de <b>n</b> para  <b>n – 1</b>.</p>
+		
+		<p>Definamos, então, o movimento de <b>n</b> discos, do pino <b>A</b> para o pino <b>B</b>, utilizando o pino <b>C</b> como auxiliar, 
+		através da função <b><i>Hanoi</i> (A,B,C,n)</b>. Para todo n > 1, esta função pode ser de-composta em outras três:</p>
+		
+		<p>	<b>	<i>Hanoi</i>  (A,C,B,n-1) <br>      			
+				<i>Hanoi</i>  (A,B,C, 1 )<br>								
+				<i>Hanoi</i>  (C,B,A,n-1)<br></b>
+
+		</p>
+		
+		<p>As três chamadas são recursivas, mas a primeira e a terceira diminuem o número de discos, de <b>n</b> para <b>n-1</b>, enquanto 
+		a segunda constitui um caso trivial, em que o número de discos é 1, ou seja, neste caso o movimento do disco é efetuado.</p>
+		
+		<p>Definamos um tipo registro que contenha os parâmetros de Hanoi, do seguinte modo:</p>
+		
+		<FONT face= "Courier New" size=2>
+			struct reghanoi {<br>
+			&nbsp;  char o; <br>
+			&nbsp;  char d; <br>
+			&nbsp;  char a; <br>
+			&nbsp;  int k; <br>
+			};<br><br>
+		</FONT> 
+		
+		<p>Definamos todas as operações de manipulação de uma pilha cujo tipo denominaremos <i>tipopilhageral</i>, que é uma pilha cujo 
+		elemento constituinte é um ponteiro que aponta para <i>void</i>, do seguinte modo: </p>
+		
+		<FONT face= "Courier New" size=2>
+			typedef struct tipopilhageral { {<br>
+			&nbsp;  void *dado; <br>
+			&nbsp;  struct tipopilhageral *prox; <br>
+			} pilhageral;<br><br>
+		</FONT> 
+		
+		<p>A função <i>Hanoi</i> pode então ser escrita, com a ajuda das funções <i>EmpilhaHanoi</i> e <i>DesempilhaHanoi</i>, que servem para criar ou 
+		eliminar os registros apontados pelos ponteiros da pilha de tipo <i>tipopilhageral</i>. </p>
+		
+		<p> <br> <br> </p>
+		<INPUT type="button" value="Hanói" style="width: 300px"
+		onClick = "abrirtirateima('tirateima/Hanoi.c', 'tirateima/Hanoi.dat', '1')">
+		</INPUT>		
+		
+		
+		<br><br><br><br>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de pilhas e filas</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+	<div class="applet">
+		<applet
+			name="myApplet"
+			archive="tirateima/visualed.jar"
+			code="tirateima.main.AppletJsCall" >
+			<param name="modo" value="applet" />
+		</applet>
+	</div>
+	
+</body>
+</html>

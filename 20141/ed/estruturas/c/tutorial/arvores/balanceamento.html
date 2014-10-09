@@ -1,0 +1,368 @@
+﻿<html>
+
+<script type="text/javascript" >
+function abrirtirateima(str1, str2, str3) {
+         document.myApplet.start(str1, str2, str3);
+   }
+</script >
+
+<head>
+	<title> Árvores - Balanceamento </title>
+</head>
+<body>
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+
+	<div id="balanceamento">
+		<h4> 4.5  Balanceamento de Árvores Binárias </h4>
+		
+		<p>As árvores binárias de pesquisa são construídas de modo a tornar mais eficiente a tarefa de procura de um elemento na árvore: em cada 
+		sub-árvore o elemento é procurado, ou à esquerda, ou à direita, mas não em ambos. Para que essa tarefa seja realmente eficiente é necessário 
+		que, em cada sub-árvore, o lado esquerdo tenha aproximadamente a mesma altura que o lado direito, ou seja, que a árvore esteja balanceada. 
+		Enquanto em uma lista o tempo de procura é proporcional a n (número de elementos), em uma árvore binária balanceada esse tempo cai para 
+		aproximadamente log<sub>2</sub> n.</p>
+
+		<p>Formalmente, se diz que uma árvore está balanceada quando, para cada nó, a altura da sub-árvore da esquerda não difere da altura da 
+		sub-árvore da direita em mais de uma unidade. Abaixo apresentamos alguns exemplos de árvores balanceadas e de árvores não balanceadas.</p>
+		
+		<img src="imagens/balanceamento.png"><br>
+		
+		<p>Se uma árvore binária de pesquisa for utilizada apenas para a procura de um elemento, basta construí-la balanceada, usando adequadamente 
+		o arquivo em que estão armazenados os dados. Mas na maior parte dos casos, a árvore pode sofrer alterações durante seu uso, pela inserção 
+		ou retirada de elementos, que acabam alterando também o balanceamento da árvore. Para manter a árvore balanceada, podem-se adotar duas 
+		estratégias diferentes:</p>
+		
+		<p>a) balanceamento estático: depois de certo tempo de uso, a árvore é destruída, guardando-se os dados em alguma outra estrutura, e 
+		depois reconstruída de forma balanceada;</p>
+		
+		<p>b) balanceamento dinâmico: cada vez que um elemento é retirado ou inserido na árvore, verifica-se se houve desbalanceamento, e neste 
+		caso alteram-se as posições de alguns nós, de modo a restabelecer o balanceamento.<b> <br /></b></p>
+		
+		<p><b>4.5.1 Balanceamento Estático</b></p>
+		
+		<p>O balanceamento estático consiste em, depois de certo tempo de uso, destruir a sua estrutura, guardando as informações em alguma outra 
+		estrutura, e depois reconstruí-la de forma balanceada. Veremos aqui dois algoritmos:</p>
+		
+		<p>a) o primeiro percorre a árvore, armazenando os dados em um vetor. Em vez de vetor, na prática pode-se usar uma estrutura dinâmica como 
+		uma lista, para que a solução seja mais genérica, ou um arquivo, se a quantidade de dados é grande. Escolhemos aqui um vetor para dar mais 
+		clareza à essência do método. Nosso algoritmo apenas constrói o vetor: a destruição da árvore pode ser feita como já foi visto em algoritmos 
+		anteriores.</p>
+		
+		<p>A função abaixo percorre a árvore em ordem infixada<b> </b> e gera o vetor v, que contém em cada elemento uma variável tipo char. O índice 
+		i, que percorre o vetor, deve ser inicializado fora da função, com o valor 0.</p>
+		
+		<FONT face= "Courier New" size=2>	
+			void GeraVetor(arvore **eainicio) {<br>
+			&nbsp; if (*eainicio != NULL) {<br>
+			&nbsp; &nbsp;&nbsp; GeraVetor (&amp;((*eainicio)-&gt;esq));<br>
+			&nbsp;&nbsp; &nbsp; i = i + 1;<br>
+			&nbsp; &nbsp;&nbsp; v [i] = (*eainicio)-&gt;dado;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; GeraVetor (&amp;((*eainicio)-&gt;dir));<br>
+			&nbsp; }<br>
+			<br><br>
+		</FONT>
+			
+
+		<p>&nbsp;&nbsp;&nbsp; b)o segundo algoritmo consiste em reconstruir a árvore a partir do vetor originado pelo primeiro algoritmo. A 
+		função <i>GeraArvore</i> reconstrói a árvore a partir do vetor gerado pela função anterior. O nó situado na posição média do vetor é 
+		feito raiz da árvore e, em seguida, cada uma das metades do vetor recebe tratamento análogo, recursivamente. Na primeira chamada da função, 
+		os valores de <i>pos1</i> e <i>pos2</i> correspondem aos índices da primeira e da última posição do vetor.</p>
+		
+		<FONT face= "Courier New" size=2>	
+			void GeraArvore(arvore **eainicio, int pos1, int pos2) {<br>
+			&nbsp; int posm;<br>
+			&nbsp; if (pos1 &gt; pos2)<br>
+			&nbsp; &nbsp;&nbsp; *eainicio = NULL;<br>
+			&nbsp; else {<br>
+			&nbsp; &nbsp;&nbsp; posm = (pos1 + pos2) / 2;<br>
+			&nbsp;&nbsp; &nbsp; *eainicio = malloc (sizeof (arvore));<br>
+			&nbsp; &nbsp;&nbsp; (*eainicio)-&gt;dado = v [posm];<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; GeraArvore ((&amp;((*eainicio)-&gt;esq)), pos1, posm - 1);<br>
+			&nbsp;&nbsp; &nbsp; GeraArvore ((&amp;((*eainicio)-&gt;dir)), posm + 1, pos2);&nbsp;&nbsp;<br>
+			&nbsp; }<br>
+			}<br>
+			<br><br>
+		</FONT>
+		
+		<p><b>4.5.2 Balanceamento Dinâmico</b></p>
+
+		<p>O balanceamento dinâmico consiste em reajustar os nós de uma árvore sempre que uma inserção ou remoção provoque seu desbalanceamento. 
+		Para exemplificar essa estratégia usaremos a árvore AVL (Adelson-Velskii e Landis).</p>
+
+		<p>Para cada nó, define-se um fator de balanceamento (fatbal), que é um número inteiro que pode assumir os seguintes valores, para uma 
+		árvore balanceada:</p>
+
+		<p>fatbal = -1&nbsp;&nbsp; quando a sub-árvore da esquerda é uma unidade mais alta que a da direita</p>
+
+		<p>fatbal = 0&nbsp;&nbsp; quando as duas sub-árvores têm a mesma altura</p>
+
+		<p>fatbal = 1&nbsp;&nbsp; quando a sub-árvore da direita é uma unidade mais alta que a da esquerda</p>
+
+		<p>Se o fatbal sair do intervalo (-1, + 1), isto significa que a árvore ficou desbalanceada, e deve ser “regulada” (balanceada novamente).</p>
+		
+		<img src="imagens/avl.png"><br>
+		
+		<p>Será analisado agora o processo de regulagem de uma árvore que ficou desbalanceada pela inserção ou remoçãode um novo nó. Há dois nós 
+		especialmente importantes nesse processo:</p>
+		
+		<p>P – é o nó ancestral mais próximo do nó inserido, cujo fatbal fica fora do intervalo (-1,+1) depois da inserção</p>
+		
+		<p>Q – é o filho de P na sub-árvore onde ocorreu a inserção (no caso de inserção)</p>
+		
+		<p>Ou:</p>
+		
+		<p>Q – é o filho de P na sub-árvore oposta a aquela onde ocorreu a remoção (no caso de remoção)</p>
+		
+		<p>A regulagem pode se dar por uma das quatro seguintes operações:</p>
+		
+		<p>a)rotação simples à esquerda</p>
+		<p>b)rotação simples à direita</p>
+		<p>c)rotação dupla à esquerda</p>
+		<p>d)rotação dupla à direita</p>
+		
+		<p>Nos esquemas abaixo, P é o nó que contem o valor X, e Q é o nó que contém o valor Y. Os triângulos numerados representam sub-árvores que 
+		eventualmente podem estar ligadas aos nós P e Q.</p>
+		
+		<p>Rotação simples à esquerda</p>
+		
+		<img src="imagens/rotacao_esquerda.png"><br>
+		
+		<p>Neste caso o nó Q sobe para a posição anteriormente ocupada pelo nó P. A sub-árvore 2, que estava à esquerda de Q e continha todos os 
+		elementos imediatamente menores que Y, passa a ocupar a posição à direita de P (contém todos os elementos imediatamente maiores que X, e 
+		desse modo a ordem dos elementos não se altera).</p>
+		
+		<p>Rotação simples à direita</p>
+		
+		<img src="imagens/rotacao_direita.png"><br>
+		
+		<p>Neste caso o nó também o nó Q sobe para a posição anteriormente ocupada pelo nó P. A sub-árvore 2, que estava à direita de Q e continha 
+		todos os elementos imediatamente maiores que Y, passa a ocupar a posição à esquerda de P (contém todos os elementos imediatamente maiores que 
+		X, e desse modo a ordem dos elementos não se altera).</p>
+		
+		<p>Rotação dupla à esquerda</p>
+		
+		<img src="imagens/dupla_esquerda.png"><br>
+		
+		<p>A rotação dupla à esquerda é constituída por duas rotações simples: a primeira, à direita, em torno do nó Q, e  segunda, à esquerda, 
+		em torno do nó P.</p>
+		
+		<p>Rotação dupla à direita</p>
+		
+		<img src="imagens/dupla_direita.png"><br>
+		
+		<p>A rotação dupla à direita é constituída por duas rotações simples: a primeira, à esquerda, em torno do nó Q, e segunda, à direita, em torno 
+		do nó P.</p>
+
+		<p>Os critérios para a escolha da rotação a ser utilizada são:</p>
+
+		<p>a) se o fatbal do nó P for positivo, a rotação deve ser feita para a esquerda, se for negativo, para a direita;</p>
+
+		<p>b) se o fatbal de P e o fatbal de Q tiverem o mesmo sinal, a rotação deve ser simples, se tiverem sinais contrários, a rotação deve ser dupla.</p>
+
+		<p>Apresentamos a seguir o algoritmo completo para inserir um elemento novo em uma árvore AVL. O algoritmo para retirar um elemento pode ser 
+		construído de forma análoga. O tipo árvore continua sendo o mesmo utilizado até agora, contando apenas com mais um campo em cada nó, que é o
+		<i>fatbal</i> (fator de balanceamento, inteiro).</p>
+
+			<span style="font-size: 10pt; font-family: 'Courier New';">typedef struct nodo {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; char dado;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; int fatbal;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; struct nodo *esq, *dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">} arvoreAVL;</span><br>
+
+		<p>Outra modificação na estrutura da árvore é a criação de um nó descritor (conteúdo não utilizado), cujo ponteiro <i>dir</i> aponta 
+		para a raiz da árvore. O nó descritor facilita a função dos ponteiros rastreadores, que são ponteiros que seguem o rastro dos ponteiros 
+		que percorrem a árvore. Por exemplo, <i>paux </i>é um ponteiro que percorre a árvore procurando a posição do nó a ser inserido; 
+		<i>pant</i> é seu rastreador: guarda sempre a posição do pai de <i>paux</i> na árvore. Os ponteiros <i>pP</i> e <i>pQ</i> ficarão 
+		apontando para os nós P e Q vistos anteriormente, que são os pivôs das rotações. O ponteiro <i>pantP</i> é o rastreador de <i>pP</i>. 
+		A inicialização da árvore AVL é feita pela função <i>InicializaAVL.</i></p>
+
+			<span style="font-size: 10pt; font-family: 'Courier New';">void InicializaAVL (arvoreAVL **eainicio){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; *eainicio = malloc (sizeof (arvoreAVL));</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; (*eainicio)-&gt;esq = NULL;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; (*eainicio)-&gt;dir = NULL;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';"> }</span><br>
+
+		<p>A variável <i>poschave</i> serve para indicar o lado em que houve a inserção ( +1 para a direita e –1 para a esquerda).</p>
+
+		<p>A primeira parte da função <i>InsereAVL </i> verifica se a chave já está presente na árvore, através da variável lógica <i>achou</i>. 
+		Se não estiver presente, insere o nó na posição correspondente, de forma análoga à inserção vista em outros tópicos. A novidade nesta 
+		parte do algoritmo é o posicionamento do ponteiro <i>pP</i>, que deve ficar apontando para o ancestral mais próximo do nó inserido que 
+		já tivesse fatbal &lt;&gt; 0 antes da inserção. O rastreador <i>pantP</i> também é posicionado nesta fase.</p>
+
+		<p>Depois de inserido o novo nó, e posicionados <i>pP</i> e <i>pantP</i>, a função <i>InsereAVL</i> chama as funções <i>AjustaFatoresAVL</i> 
+		e <i>BalanceiaAVL</i>, que serão examinados separadamente.</p>
+
+			<span style="font-size: 10pt; font-family: 'Courier New';">void InsereAVL (arvoreAVL *adesc, char dadonovo) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; arvoreAVL *paux, *pant, *pP, *pQ, *pantP, *pnovo;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; int poschave;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; int achou; </span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; paux = adesc-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; pP = paux;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; pant = adesc;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; pantP = adesc;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; achou = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; while ((!achou) &amp;&amp; (paux != </span><span style="font-size: 10pt; font-family: 'Courier New';">NULL)) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; if (paux-&gt;fatbal != 0) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; pP = paux;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">pantP = pant;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; pant = paux;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; if (dadonovo == paux-&gt;dado)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; achou = 1;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp; if (dadonovo &lt; paux-&gt;dado)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; paux = paux-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; paux = paux-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; if (achou)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; printf("este dado ja esta presente na arvore\n");</span><br>
+			&nbsp; <span style="font-size: 10pt; font-family: 'Courier New';"></span><span style="font-size: 10pt; font-family: 'Courier New';">else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; pnovo = malloc (sizeof (arvoreAVL));</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">pnovo-&gt;dado = dadonovo;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pnovo-&gt;esq = NULL;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; pnovo-&gt;dir = NULL;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pnovo-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; if (adesc-&gt;dir == NULL)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; adesc-&gt;dir = pnovo;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp; if (dadonovo &lt; pant-&gt;dado)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; pant-&gt;esq = pnovo;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; pant-&gt;dir = pnovo;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; AjustaFatoresAVL ();</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; BalanceiaAVL ();</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+		
+		<p><span style="font-size: 10pt; font-family: 'Courier New';"></span>A função <i>AjustaFatoresAVL</i> inicialmente posiciona <i>pQ</i> 
+		(aponta para o filho do nó P na direção da inserção) e em seguida ajusta os fatbal's dos nós situados entre <i>pQ</i> e <i>pant</i>. O nó 
+		P é o ancestral mais próximo do novo nó, com fatbal &lt;&gt; 0 antes da inserção, ou seja, depois da inserção ficaria com fatbal fora do 
+		intervalo permitido. Com a correção da rotação, o fatbal de P volta ao valor anterior. O mesmo acontece com os nós antecessores de P cujo 
+		fatbal tivesse sido alterado pela inserção. Assim sendo, não é necessário ajustar os fatbal's desses nós, já que a rotação fará com que 
+		automaticamente voltem aos valores anteriores. Por esse motivo o ajuste do fatbal só é efetuado entre Q e o nó apontado por <i>pant</i>.</p>
+		
+			<span style="font-size: 10pt; font-family: 'Courier New';">void AjustaFatoresAVL (){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; if (dadonovo &lt; pP-&gt;dado){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; pQ = pP-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; paux = pP-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; pQ = pP-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; paux = pP-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; while (paux-&gt;dado != dadonovo)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; if (dadonovo &lt; paux-&gt;dado) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; paux-&gt;fatbal = paux-&gt;fatbal - 1;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; paux = paux-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp; paux-&gt;fatbal = paux-&gt;fatbal + 1;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">paux = paux-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+
+		<p style="text-indent: 11.35pt;">A função <i>BalanceiaAVL</i> identifica o lado em que houve inserção, e atualiza a variável poschave 
+		(+1 para direita, -1 para esquerda). A seguir verifica o <i>fatbal</i> de P antes da inserção, podendo ocorrer três situações:</p>
+
+		<p>a) fatbal = 0 : significa que não havia nó ancestral do inserido, com <i>fatbal</i> &lt;&gt; 0 antes da inserção, e portanto a árvore 
+		não desbalanceou. Nesse caso deve-se corrigir o <i>fatbal</i> de P, que passa a ter o mesmo valor de <i>poschave</i>;</p>
+
+		<p>b) fatbal = - poschave : significa que P estava pendendo para o lado contrário ao lado da inserção, e portanto a inserção corrigiu essa 
+		inclinação. Nesse caso o <i>fatbal</i> de P deve ser feito igual a zero;</p>
+
+		<p>c) fatbal = poschave : significa que P estava pendendo para o mesmo lado da inserção, e portanto a inserção desbalanceou a árvore. 
+		Nesse caso deve-se aplicar uma rotação para corrigir a árvore. Se Q pende para o mesmo lado de P, a rotação é simples, se Q pende para 
+		o lado contrário ao de P, a rotação deve ser dupla. As funções <i>RotacaoSimples</i> e <i>RotacaoDupla</i> são vistas separadamente.</p>
+
+		<p>Ainda dentro da <i>BalanceiaAVL</i> é feito o ajuste do ponteiro que aponta inicialmente para P, e que deve, depois da rotação, 
+		apontar para a raiz da sub-árvore resultante da rotação.
+			
+			<span style="font-size: 10pt; font-family: 'Courier New';">void BalanceiaAVL (){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; if (dadonovo &lt; pP-&gt;dado)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; poschave = -1;</span><br>
+			&nbsp; <span style="font-size: 10pt; font-family: 'Courier New';"></span><span style="font-size: 10pt; font-family: 'Courier New';">else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; poschave = 1;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; if (pP-&gt;fatbal == 0)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; pP-&gt;fatbal = poschave;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; else </span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; if (pP-&gt;fatbal == -poschave)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; pP-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp; if (pQ-&gt;fatbal * poschave &gt; 0)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">RotacaoSimples ();</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; RotacaoDupla ();</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (pantP-&gt;dir == pP)</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;&nbsp; &nbsp; pantP-&gt;dir = paux;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; else</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pantP-&gt;esq = paux;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+
+		<p>A função <i>RotacaoSimples</i> executa a rotação simples, para a direita ou para a esquerda, de acordo com o critério visto 
+		anteriormente. No final da rotação ela ajusta os <i>fatbal</i>'s dos nós P e Q.</p>
+
+			<span style="font-size: 10pt; font-family: 'Courier New';">void RotacaoSimples (){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; if (pP-&gt;fatbal == 1) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">pP-&gt;dir = pQ-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pQ-&gt;esq = pP;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; pP-&gt;esq = pQ-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pQ-&gt;dir = pP;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; paux = pQ;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; pP-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; pQ-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+
+		<p>A função <i>RotacaoDupla</i> executa a rotação dupla, para a direita ou para a esquerda, de acordo com o critério visto anteriormente. 
+		No final da rotação ela ajusta os <i>fatbal</i>'s dos nós P e Q. Para este ajuste é necessário levar em conta 3 possibilidades para o valor 
+		de <i>fatbal</i> do nó que fica sendo a raiz da sub-árvore depois da rotação: pode ser igual a + <i>poschave</i>, igual a zero, ou igual 
+		a – <i>poschave</i>.</p>
+
+			<span style="font-size: 10pt; font-family: 'Courier New';">void RotacaoDupla (){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; if (pP-&gt;fatbal == 1) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">paux = pQ-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pQ-&gt;esq = paux-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; paux-&gt;dir = pQ;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pP-&gt;dir = paux-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; paux-&gt;esq = pP;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; paux = pQ-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pQ-&gt;dir = paux-&gt;esq;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; paux-&gt;esq = pQ;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pP-&gt;esq = paux-&gt;dir;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; paux-&gt;dir = pP;</span><br>
+			&nbsp; <span style="font-size: 10pt; font-family: 'Courier New';"></span><span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; if (paux-&gt;fatbal == -poschave){</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; pP-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; pQ-&gt;fatbal = poschave;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; else </span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; if (paux-&gt;fatbal == 0) {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; pP-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; pQ-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; }</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp; else {</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pP-&gt;fatbal = -poschave;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; pQ-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; &nbsp;&nbsp; </span><span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">&nbsp; paux-&gt;fatbal = 0;</span><br>
+			<span style="font-size: 10pt; font-family: 'Courier New';">}</span><br>
+		
+		
+		
+		<br><br><br><br>
+	</div>
+	
+	
+	<a href="index.html">Voltar para o índice de árvores</a><br>
+	<a href="../index.html">Voltar para o menu principal</a><br>
+	
+</body>
+</html>

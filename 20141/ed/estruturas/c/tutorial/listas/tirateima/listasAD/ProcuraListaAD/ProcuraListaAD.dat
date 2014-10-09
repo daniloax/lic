@@ -1,0 +1,39 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(700,500) ListaDuplamenteEncadeada;
+	adicionaNoLista lista1 no1 "B" posicao(25,135);
+	adicionaNoLista lista1 no2 "E" posicao(165,135);
+	adicionaNoLista lista1 no3 "C" posicao(305,135);
+	adicionaNoLista lista1 no4 "L" posicao(445,135);
+	adicionaNoLista lista1 no5 "A" posicao(585,135);	 
+	ligaNoLista lista1 no1 no2 "" acima;
+	ligaNoLista lista1 no2 no3 "" acima;
+	ligaNoLista lista1 no3 no4 "" acima;
+	ligaNoLista lista1 no4 no5 "" acima;
+	ligaNoLista lista1 no2 no1 "" abaixo;
+	ligaNoLista lista1 no3 no2 "" abaixo;
+	ligaNoLista lista1 no4 no3 "" abaixo;
+	ligaNoLista lista1 no5 no4 "" abaixo;
+  	adicionaPonteiroLista lista1 no1 70 "pinicio" cor(0,128,0) acimaEsquerda;
+	adicionaPonteiroSoloLista lista1 no 5 "" cor(0,0,0) posicao(647,160);
+	adicionaPonteiroSoloLista lista1 po 5 "" cor(0,0,0) posicao(27,160);
+  	char chave cor(128,128,192) tamanho(60,30) posicao(520,50);
+  	chave = 'C';
+  }
+2;
+4 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+5;
+6{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+5;
+6{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+5;
+7{
+	comenta("A função retornará o valor da variável p1.");
+#	som();
+  }
+8;

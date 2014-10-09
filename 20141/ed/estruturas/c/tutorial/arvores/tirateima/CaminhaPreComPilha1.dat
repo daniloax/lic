@@ -1,0 +1,183 @@
+1{
+  criaArvore arvore1 3 40 cor(255,219,183) posicao(350,30) tamanho(400,600); 
+  adicionaNoArvore arvore1 no0 "a";
+  adicionaNoArvore arvore1 no1 "b";
+  adicionaNoArvore arvore1 no2 "c";
+  adicionaNoArvore arvore1 no3 "d";
+  adicionaNoArvore arvore1 no4 "e";
+  adicionaNoArvore arvore1 no5 "f";
+  adicionaNoArvore arvore1 no6 "g";
+  ligaNoArvore arvore1 no0 no1;
+  ligaNoArvore arvore1 no0 no2;
+  ligaNoArvore arvore1 no1 no3;
+  ligaNoArvore arvore1 no1 no4;
+  ligaNoArvore arvore1 no2 no5;
+  ligaNoArvore arvore1 no2 no6;
+  adicionaPonteiro arvore1 no0 dir "ainicio" 60 cor(0,128,0);
+ }
+2;
+3;
+5 adicionaPonteiro arvore1 no0 esq "a1" 60 cor(204,0,0);
+6 criaPilha p1 cor(13,22,142) posicao(200,130) tamanho(60,180) cor(255,200,145) 6;
+7 push p1 "a";
+8;
+9{
+	movePonteiro arvore1 no0 esq no0 esq 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("a ");
+12 push p1 "c";
+13 push p1 "b";
+14;
+15;
+
+8;
+9{
+	movePonteiro arvore1 no0 esq no1 diagonalSupEsq 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("b ");
+12 push p1 "e";
+13 push p1 "d";
+14;
+15;
+
+8;
+9{
+	movePonteiro arvore1 no1 diagonalSupEsq no3 diagonalInfDir 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("d ");
+12 push p1 ".";
+13 push p1 ".";
+14;
+15;
+
+8;
+9{
+	removePonteiro arvore1 no3 diagonalInfDir;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(73,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(113,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiro arvore1 no4 diagonalInfEsq "a1" 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("e ");
+12 push p1 ".";
+13 push p1 ".";
+14;
+15;
+
+8;
+9{
+	removePonteiro arvore1 no4 diagonalInfEsq;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(140,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(175,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiro arvore1 no2 dir "a1" 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("c ");
+12 push p1 "g";
+13 push p1 "f";
+14;
+15;
+
+8;
+9{
+	movePonteiro arvore1 no2 dir no5 diagonalInfDir 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("f ");
+12 push p1 ".";
+13 push p1 ".";
+14;
+15;
+
+8;
+9{
+	removePonteiro arvore1 no5 diagonalInfDir;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(200,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(235,300);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiro arvore1 no6 diagonalInfEsq "a1" 60 cor(204,0,0);
+	pop p1;
+  }
+10;
+11 write("g ");
+12 push p1 ".";
+13 push p1 ".";
+14;
+15;
+
+8;
+9{
+	removePonteiro arvore1 no6 diagonalInfEsq;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(260,305);
+	pop p1;
+  }
+10;
+15;
+
+8;
+9{
+	removePonteiroSoloArvore arvore1 no;
+	adicionaPonteiroSoloArvore arvore1 no 5 "a1" cor(204,0,0) posicao(295,300);
+	pop p1;
+  }
+10;
+15;
+
+8;
+16;

@@ -1,0 +1,273 @@
+1  {
+   comenta("Esta função vai decobrir se existe algum caminho entre os nós A e E. Ao descobrir um caminho, a função escreve o caminho no console e encerra a sua execução.");
+   criaPilha pilha1 cor(197,37,14) posicao(50,300) tamanho(60,150) cor(255,200,145) 5;
+   criaPilha paux cor(13,22,142) posicao(150,300) tamanho(60,150) cor(255,200,145) 5;
+   criaGrafo grafo1 25 cor(255,255,220) posicao(0,0) tamanho(250,250);
+   criaGrafo grafo2 30 cor(220,255,255) posicao(280,0) tamanho(600,400);
+
+   adicionaNoGrafo grafo1 no1 "a" posicao(10,100);
+   adicionaNoGrafo grafo1 no2 "b" posicao(100,30);
+   adicionaNoGrafo grafo1 no3 "c" posicao(200,120);
+   adicionaNoGrafo grafo1 no4 "d" posicao(80,220);
+   adicionaNoGrafo grafo1 no5 "e" posicao(180,200);
+
+   ligaNoGrafo grafo1 no1 no2 semSeta;
+   ligaNoGrafo grafo1 no1 no4 semSeta;
+   ligaNoGrafo grafo1 no2 no3 semSeta;
+   ligaNoGrafo grafo1 no2 no4 semSeta;
+   ligaNoGrafo grafo1 no4 no5 semSeta;
+  
+   adicionaNoGrafo grafo2 no1 "a" posicao(90,80);
+   adicionaNoGrafo grafo2 no2 "b" posicao(210,80);
+   adicionaNoGrafo grafo2 no3 "c" posicao(330,80);
+   adicionaNoGrafo grafo2 no4 "d" posicao(450,80);
+   adicionaNoGrafo grafo2 no5 "e" posicao(570,80);
+   adicionaNoGrafo grafo2 no6 "b" posicao(90,180);
+   adicionaNoGrafo grafo2 no7 "a" posicao(210,180);
+   adicionaNoGrafo grafo2 no8 "b" posicao(330,180);
+   adicionaNoGrafo grafo2 no9 "a" posicao(450,180);
+   adicionaNoGrafo grafo2 no10 "d" posicao(570,180);
+   adicionaNoGrafo grafo2 no11 "d" posicao(90,240);
+   adicionaNoGrafo grafo2 no12 "c" posicao(210,240);
+   adicionaNoGrafo grafo2 no13 "b" posicao(450,240);
+   adicionaNoGrafo grafo2 no14 "d" posicao(210,300);
+   adicionaNoGrafo grafo2 no15 "e" posicao(450,300);
+
+   ligaNoGrafo grafo2 no1 no2 semSeta;
+   ligaNoGrafo grafo2 no2 no3 semSeta;
+   ligaNoGrafo grafo2 no3 no4 semSeta;
+   ligaNoGrafo grafo2 no4 no5 semSeta;
+   ligaNoGrafo grafo2 no1 no6 semSeta;
+   ligaNoGrafo grafo2 no6 no11 semSeta;
+   ligaNoGrafo grafo2 no2 no7 semSeta;
+   ligaNoGrafo grafo2 no7 no12 semSeta;
+   ligaNoGrafo grafo2 no12 no14 semSeta;
+   ligaNoGrafo grafo2 no3 no8 semSeta;
+   ligaNoGrafo grafo2 no4 no9 semSeta;
+   ligaNoGrafo grafo2 no9 no13 semSeta;
+   ligaNoGrafo grafo2 no5 no10 semSeta;
+   ligaNoGrafo grafo2 no13 no15 semSeta;
+
+   adicionaPonteiro grafo2 no1 diagonalSupEsq "p1" 80 cor(0,128,192);
+   adicionaPonteiro grafo2 no5 diagonalSupEsq "p2" 80 cor(128,0,255);
+}
+2;
+3 int achou cor(255,155,0) tamanho(60,30) posicao(350,400);
+4 char c cor(0,166,83) tamanho(60,30) posicao(450,400);
+6 push pilha1 "a";
+7 achou = 0;
+8 coloreNoGrafo grafo1 no1 cor(255,0,0);
+9 adicionaPonteiro grafo2 no6 diagonalSupEsq "pa1" 65 cor(255,0,0);
+10;
+11;
+19;
+20;
+21;
+
+1 {
+   adicionaPonteiro grafo2 no2 diagonalSupEsq "p1'" 80 cor(0,128,192);
+   comenta("Neste momento a função está entrando no primeiro nível de recursividade.");
+#   som();
+  }
+2;
+3 {
+   removerVariavel achou;
+   int achou1 cor(255,155,0) tamanho(60,30) posicao(350,400);
+   comenta("Com o nome de achou1 está representada a variável local achou nesta primeira instância da recursividade");
+  }
+4 {
+   removerVariavel c;
+   char c1 cor(0,166,83) tamanho(60,30) posicao(450,400);
+   comenta("Com o nome de c1 está representada a variável local c nesta primeira instância da recursividade");
+  }
+6 push pilha1 "b";
+7 achou1 = 0;
+8 coloreNoGrafo grafo1 no2 cor(255,0,0);
+9 adicionaPonteiro grafo2 no7 diagonalSupEsq "pa1'" 65 cor(255,0,0);
+10;
+11;
+19;
+20;
+22 movePonteiro grafo2 no7 diagonalSupEsq no12 diagonalSupEsq 65 cor(255,0,0);
+23;
+
+10;
+11;
+19;
+20;
+21;
+
+1 {adicionaPonteiro grafo2 no3 diagonalSupEsq "p1''" 80 cor(0,128,192);
+   comenta("Neste momento a função está entrando no segundo nível de recursividade.");
+#   som();
+  }
+2;
+3 {
+   removerVariavel achou1;
+   int achou2 cor(255,155,0) tamanho(60,30) posicao(350,400);
+   comenta("Com o nome de achou2 está representada a variável local achou nesta segunda instância da recursividade");
+  }
+4 {
+   removerVariavel c1;
+   char c2 cor(0,166,83) tamanho(60,30) posicao(450,400);
+   comenta("Com o nome de c2 está representada a variável local c nesta segunda instância da recursividade");
+  }
+6 push pilha1 "c";
+7 achou2 = 0;
+8 coloreNoGrafo grafo1 no3 cor(255,0,0);
+9 adicionaPonteiro grafo2 no8 diagonalSupEsq "pa1''" 65 cor(255,0,0);
+10;
+11;
+19;
+20;
+22 {
+	removePonteiro grafo2 no8 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1''" cor(255,0,0) posicao(340,230);
+   }
+23;
+
+10;
+24;
+25 {
+    pop pilha1 ; 
+    c2 = 'c';
+   } 
+26;
+27;
+
+21 {
+   comenta("Neste momento a função está saindo do segundo nível de recursividade e voltando ao primeiro. Note que as variáveis achou2 e c2 deixam de existir e voltam a estar acessíveis as variáveis achou1 e c1. A variável achou1 é feita zero, que foi o retorno da função DeterminaCaminho.");
+#   som();
+   removePonteiro grafo2 no3 diagonalSupEsq;
+   removePonteiroSoloGrafo grafo2 no;
+   removerVariavel achou2;
+   int achou1 cor(255,155,0) tamanho(60,30) posicao(350,400);
+   achou1 = 0;
+   removerVariavel c2;
+   char c1 cor(0,166,83) tamanho(60,30) posicao(450,400);
+   }
+22 movePonteiro grafo2 no12 diagonalSupEsq no14 diagonalSupEsq 65 cor(255,0,0);
+23;
+
+10;
+11;
+19;
+20;
+21;
+
+1 {
+   adicionaPonteiro grafo2 no4 diagonalSupEsq "p1''" 80 cor(0,128,192);
+   comenta("Neste momento a função está entrando novamente no segundo nível de recursividade.");
+#   som();
+  }
+2;
+3 {
+   removerVariavel achou1;
+   int achou2 cor(255,155,0) tamanho(60,30) posicao(350,400);
+  }
+4 {
+   removerVariavel c1;
+   char c2 cor(0,166,83) tamanho(60,30) posicao(450,400);
+  }
+6 push pilha1 "d";
+7 achou2 = 0;
+8 coloreNoGrafo grafo1 no4 cor(255,0,0);
+9 adicionaPonteiro grafo2 no9 diagonalSupEsq "pa1''" 65 cor(255,0,0);
+10;
+11;
+19;
+20;
+22 movePonteiro grafo2 no9 diagonalSupEsq no13 diagonalSupEsq 65 cor(255,0,0);
+23;
+10;
+11;
+19;
+20;
+22 movePonteiro grafo2 no13 diagonalSupEsq no15 diagonalSupEsq 65 cor(255,0,0);
+23;
+
+10;
+11;
+12 push pilha1 "e";
+13 achou2 = 1;
+
+14;
+15 {pop pilha1; push paux "e";}
+14;
+15 {pop pilha1; push paux "d";}
+14;
+15 {pop pilha1; push paux "b";}
+14;
+15 {pop pilha1; push paux "a";}
+
+16;
+17 {write (" a"); pop paux;}
+16;
+17 {write (" b"); pop paux;}
+16;
+17 {write (" c"); pop paux;}
+16;
+17 {write (" e"); pop paux;}
+16;
+
+18;
+22 {
+	removePonteiro grafo2 no15 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1''" cor(255,0,0) posicao(460,350);
+  	comenta("Nesse momento o ponteiro pa1 '' tem valor NULL.");
+#	som;
+   }
+23;
+10;
+24;     
+26;
+27;
+
+21 {
+   	comenta("Neste momento a função está saindo do segundo nível de recursividade e voltando ao primeiro.");
+#   	som();
+	removePonteiroSoloGrafo grafo2 no;
+   	removePonteiro grafo2 no4 diagonalSupEsq;
+   	removerVariavel achou2;
+   	int achou1 cor(255,155,0) tamanho(60,30) posicao(350,400);
+   	achou1 = 1;
+   	removerVariavel c2;
+   	char c1 cor(0,166,83) tamanho(60,30) posicao(450,400);
+   }
+
+22 {
+	removePonteiro grafo2 no14 diagonalSupEsq;
+	adicionaPonteiroSoloGrafo grafo2 no 5 "pa1'" cor(255,0,0) posicao(220,350);
+  	comenta("Nesse momento o ponteiro pa1 ' tem valor NULL.");
+#	som;
+   }
+23;
+10;
+24;
+26;
+27;
+
+21 {
+   	comenta("Neste momento a função está saindo do primeiro nível de recursividade e voltando à sua execução original.");
+#   	som();
+	removePonteiroSoloGrafo grafo2 no;
+   	removePonteiro grafo2 no2 diagonalSupEsq;
+   	removePonteiro grafo2 no14 diagonalSupEsq;
+   	removerVariavel achou1;
+   	int achou cor(255,155,0) tamanho(60,30) posicao(350,400);
+   	achou = 1;
+   	removerVariavel c1;
+   	char c cor(0,166,83) tamanho(60,30) posicao(450,400);
+   }
+22 movePonteiro grafo2 no6 diagonalSupEsq no11 diagonalSupEsq 65 cor(255,0,0);
+23;
+10{
+	comenta("Nesse momento a variável achou tem valor 1.");
+#	som();
+  }
+24;
+26;
+27 {
+   comenta("Final da execução");
+#	som();
+  }   

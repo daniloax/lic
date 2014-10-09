@@ -1,0 +1,10 @@
+cell(pam,bob).
+cell(bob,pam).
+cell(tom,bob).
+cell(tom,liz).
+cell(pam,liz).
+cell(liz,bob).
+cell(liz,pat).
+cell(bob,ann).
+cell(bob,pat).
+cell(pat,jim).

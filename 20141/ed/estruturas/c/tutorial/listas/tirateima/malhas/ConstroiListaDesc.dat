@@ -1,0 +1,118 @@
+1 criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,500) ListaSimples;
+2 text arq;
+3;
+4 char c cor(128,128,192) tamanho(60,30) posicao(120,50); 
+
+6{
+	adicionaNoLista lista1 no1 "" posicao(400,80);
+	adicionaPonteiroLista lista1 no1 70 "*epdescritor" cor(0,128,0) acimaDireita;
+  }
+7 adicionaPonteiroSoloLista lista1 noo 5 "" cor(0,0,0) posicao(405,105);
+8 adicionaPonteiroSoloLista lista1 po 5 "" cor(0,0,0) posicao(460,105);
+9 {
+   assign (arq, "ConstroiListaDesc.txt");
+   reset (arq);
+  }
+10 read(arq,c);
+11;
+12{
+	adicionaNoLista lista1 no2 "" posicao(125,185);
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+13 adicionaNoLista lista1 no2 "a" posicao(125,185);
+14;
+15{
+	removePonteiroSoloLista lista1 noo;
+	criaSetaLivreLista lista1 lig1 "" posicoes[(400,105)(165,105)(165,185)] cor(0,0,0);
+  }
+18 adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) abaixoEsquerda;
+19;
+20;
+
+10 read(arq,c);
+11;
+12{
+	adicionaNoLista lista1 no3 "" posicao(275,185);
+	removePonteiroLista lista1 no2 abaixoDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+13 adicionaNoLista lista1 no3 "b" posicao(275,185);
+14;
+16;
+17 ligaNoLista lista1 no2 no3 "" meio;
+18{
+	removePonteiroLista lista1 no2 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no3 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+19;
+20;
+
+10 read(arq,c);
+11;
+12{
+	adicionaNoLista lista1 no4 "" posicao(425,185);
+	removePonteiroLista lista1 no3 abaixoDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+13 adicionaNoLista lista1 no4 "c" posicao(425,185);
+14;
+16;
+17 ligaNoLista lista1 no3 no4 "" meio;
+18{
+	removePonteiroLista lista1 no3 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no4 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+19;
+20;
+
+10 read(arq,c);
+11;
+12{
+	adicionaNoLista lista1 no5 "" posicao(575,185);
+	removePonteiroLista lista1 no4 abaixoDireita;
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+13 adicionaNoLista lista1 no5 "d" posicao(575,185);
+14;
+16;
+17 ligaNoLista lista1 no4 no5 "" meio;
+18{
+	removePonteiroLista lista1 no4 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no5 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+19;
+20;
+
+10 read(arq,c);
+11;
+12{
+	adicionaNoLista lista1 no6 "" posicao(725,185);
+	removePonteiroLista lista1 no5 abaixoDireita;
+	adicionaPonteiroLista lista1 no6 70 "p1" cor(204,0,0) abaixoDireita;
+  }
+13 adicionaNoLista lista1 no6 "e" posicao(725,185);
+14;
+16;
+17 ligaNoLista lista1 no5 no6 "" meio;
+18{
+	removePonteiroLista lista1 no5 abaixoEsquerda;
+	adicionaPonteiroLista lista1 no6 70 "p2" cor(0,0,191) abaixoEsquerda;
+  }
+19;
+20;
+
+10 c = '\n';
+11;
+20;
+10 c = ' ';
+
+21;
+22 adicionaPonteiroSoloLista lista1 noo 5 "" cor(0,0,0) posicao(787,210);
+23{
+	criaSetaLivreLista lista1 lig2 "" posicoes[(470,105)(765,105)(765,185)] cor(0,0,0);
+	removePonteiroSoloLista lista1 po;
+  }
+24;
+25 close(arq);
+26;
+	

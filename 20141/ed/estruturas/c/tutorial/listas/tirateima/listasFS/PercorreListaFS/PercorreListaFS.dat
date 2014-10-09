@@ -1,0 +1,52 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,500) ListaEncadeada;
+	adicionaNoLista lista1 no1 "A" posicao(220,100);
+	adicionaNoLista lista1 no2 "B" posicao(370,100);
+	adicionaNoLista lista1 no3 "C" posicao(520,100);
+	adicionaNoLista lista1 no4 "D" posicao(670,100);
+	ligaNoLista lista1 no1 no2 "" meio;
+	ligaNoLista lista1 no2 no3 "" meio;
+	ligaNoLista lista1 no3 no4 "" meio;
+	criaSetaLivreLista lista1 lig41 "" posicoes[(740,125)(760,125)(760,225)(200,225)(200,125)(220,125)] cor(0,0,0);
+  	adicionaPonteiroLista lista1 no1 70 "pinicio" cor(0,128,0) acimaEsquerda;
+  }
+2;
+4;
+6;
+7 adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+8;
+9 writeln("elemento: A");
+10{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln("elemento: B");
+10{
+	removePonteiroLista lista1 no2 acimaDireita;
+	adicionaPonteiroLista lista1 no3 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln("elemento: C");
+10{
+	removePonteiroLista lista1 no3 acimaDireita;
+	adicionaPonteiroLista lista1 no4 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+8;
+9 writeln("elemento: D");
+10{
+	removePonteiroLista lista1 no4 acimaDireita;
+	adicionaPonteiroLista lista1 no1 70 "p1" cor(204,0,0) acimaDireita;
+  }
+11;
+12;
+13;
+14;
+
+

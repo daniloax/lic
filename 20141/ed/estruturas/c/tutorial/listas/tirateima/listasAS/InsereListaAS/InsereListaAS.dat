@@ -1,0 +1,44 @@
+1{
+	criaListaEncadeada lista1 tamanho(50,70) cor(255,219,183) posicao(25,50) tamanho(800,300) ListaEncadeada;
+	adicionaNoLista lista1 no1 "A" posicao(125,185);
+	adicionaNoLista lista1 no2 "B" posicao(275,185);
+	adicionaNoLista lista1 no3 "D" posicao(425,185);
+	adicionaNoLista lista1 no4 "E" posicao(575,185);
+	ligaNoLista lista1 no1 no2 "" meio;
+	ligaNoLista lista1 no2 no3 "" meio;
+	ligaNoLista lista1 no3 no4 "" meio;
+  	adicionaPonteiroLista lista1 no1 70 "*epinicio" cor(0,128,0) acimaEsquerda;
+  	adicionaPonteiroSoloLista lista1 no 5 "" cor(0,0,0) posicao(637,210);
+  	char dadonovo cor(128,128,192) tamanho(60,30) posicao(520,50);
+  	dadonovo = 'C';
+  }
+2;
+4 { 
+	adicionaNoLista lista1 no5 "" posicao(350,85);
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) acimaDireita;
+  }
+5 {
+	removePonteiroLista lista1 no5 acimaDireita;
+	removeNo lista1 no5;
+	adicionaNoLista lista1 no5 "C" posicao(350,85);
+	adicionaPonteiroLista lista1 no5 70 "p1" cor(204,0,0) acimaDireita;
+  }
+6;
+10;
+11;
+15;
+16 adicionaPonteiroLista lista1 no1 70 "p2" cor(0,0,191) acimaDireita;
+17;
+18{
+	removePonteiroLista lista1 no1 acimaDireita;
+	adicionaPonteiroLista lista1 no2 70 "p2" cor(0,0,191) acimaEsquerda;
+  }
+17;
+19 criaSetaLivreLista lista1 lig1 "" posicoes[(420,115)(450,115)(450,160)(400,160)(400,200)(425,200)] cor(255,0,0);
+20{
+	removeLigacaoLista lista1 no2 no3;
+	criaSetaLivreLista lista1 lig2 "" posicoes[(345,200)(355,200)(355,160)(310,160)(310,115)(350,115)] cor(255,0,0);
+  }
+21;
+22;
+
