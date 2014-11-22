@@ -1,0 +1,84 @@
+((X > -75) && (X < -60)) && ((Y < 45) && (Y > 30))
+((X > -75) && (X < -60)) && ((Y < 30) && (Y > 15))
+((X > -75) && (X < -60)) && ((Y < 15) && (Y > 0))
+((X > -75) && (X < -60)) && ((Y < 0) && (Y > -15))
+((X > -75) && (X < -60)) && ((Y < -15) && (Y > -30))
+((X > -75) && (X < -60)) && ((Y < -30) && (Y > -45))
+((X > -75) && (X < -60)) && ((Y < -45) && (Y > -60))
+((X > -75) && (X < -60)) && ((Y < -60) && (Y > -75))
+
+
+posicionar celula {
+
+	se (longitude < 0)
+		x = divisao inteira( longitude / 15 ) - 1	
+
+	se (longitude > 0)
+		x = divisao inteira( longitude / 15 ) + 1
+
+	se (latitude < 0)
+		y = divisao inteira( latitude / 15 ) - 1
+
+	se (latitude > 0)
+		y = divisao inteira( latitude / 15 ) + 1
+
+	posicao = (x, y)
+
+}
+
+
+se (raio de abrangência / 15 < 1)
+	matriz = 1
+
+senao se (raio de abrangência >= 1)
+	matriz = raio + raio + 1
+	varre quadrante e quadrante vizinhos -> matriz x matriz = 9
+
+senao se (raio de abrangência = 2)
+	matriz = raio + raio + 1
+
+varre(matriz)
+
+varre quadrante e quadrante vizinhos -> matriz x matriz = 25
+
+senao se (raio de abrangência = 3)
+	matriz = raio + raio + 1
+	varre quadrante e quadrante vizinhos -> matriz x matriz = 49
+
+for (Account account : account)
+	se (account.cell != cell)
+		se (account.linha == cell.linha)
+
+for (i = cell.linha - 1; i < cell.linha + 1; i++)
+	for (j = cell.coluna - 1; j < cell.coluna + 1; j++)
+
+		
+cell = this.radarDatabase.getCell(account);
+dimension = (int) cell.getRadius() / 15;
+
+if (dimension >= 1)
+	dimension = 2 * dimension + 1;
+
+cells = new Cell[dimension][dimension];
+
+for (int i = 0; i < dimension; i++) {
+	for (int j = 0; j < dimension; j++) {
+		cells[i][j] = radarDatabase.;
+	}
+}
+
+for (Account account : radarDatabase.getAccounts()) 
+	if (account.getCell().getColumn() == cell.getColumn());
+
+		account.getCell().getRow();
+	
+		account.getCell().getRow() ==  i + account.getCell().getRow() && account.getCell().getColumn() == j + account.getCell().getColumn())
+		
+		cells[i][j] = account.getCell();
+
+
+for (int i = cell.getRow() - 1; i <= cell.getRow() + 1; i++) {
+	for (int j = cell.getColumn() - 1; j <= cell.getColumn() + 1; j++)
+		System.out.printf("%d,%d\t", i, j);
+	System.out.println();
+}
