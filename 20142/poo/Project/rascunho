@@ -1,0 +1,33 @@
+		if (cells[i][j] != null) {
+			
+			if (cells[i][j] != center) {
+				
+				double xA = center.getX();
+				double yA = center.getY();
+				double raioA = center.getRadius();
+
+				double xB = cells[i][j].getX();
+				double yB = cells[i][j].getY();
+
+				boolean isIn = (Math.pow((xB - xA), 2) + Math.pow((yB - yA), 2) - Math.pow(raioA, 2)) <= 0;
+				return isIn && !cells[i][j].isOn();
+			
+			}
+			return !cells[i][j].isOn();
+
+		} else
+			return false;
+
+
+if (((i == account.getCell().getY() - center.getX()) &&
+					(center.getY() + 1 >= account.getCell().getY())) && 
+					((center.getX() -1 <= account.getCell().getX()) && 
+					(center.getX() + 1 >= account.getCell().getX()))) {
+					
+					if (account.getCell() != center) {
+						a = Math.abs(account.getCell().getY() + height);
+						b = Math.abs(account.getCell().getX() + width);
+					} else
+						account.getCell().setOn();
+					
+					cells[i][j] = account.getCell();
