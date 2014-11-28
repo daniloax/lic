@@ -31,3 +31,36 @@ if (((i == account.getCell().getY() - center.getX()) &&
 						account.getCell().setOn();
 					
 					cells[i][j] = account.getCell();
+
+
+int i, j, dimension;
+		
+		dimension = 1;
+
+		if (center.getRadius() / 15 >= 1)
+			dimension = 2 * dimension + 1;
+
+		else
+			dimension = 1;
+		
+		width = dimension;
+		height = dimension;
+
+		cells = new Cell[width][height];
+
+		for (Account account : accounts) {
+			
+			i = account.getCell().getY();
+			j = account.getCell().getX();
+			
+			if (((center.getY() - 1 <= i) && (center.getY() + 1 > i)) && ((center.getX() - 1 <= j) && (center.getX()  + 1) > j)) {
+				
+				System.out.println(center);
+				System.out.println(account.getCell());
+
+				if (validPosition(i - center.getY(), j - center.getX()))
+					cells[Math.abs(i + height)][Math.abs(j + width)] = account.getCell();
+					
+			}
+
+		}	
