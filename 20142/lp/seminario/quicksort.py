@@ -1,16 +1,22 @@
-#!/usr/bin/python
-
 """Quick Sort"""
 
-list = [3, 5, 4, 9, 8, 2, 1, 7, 6, 0];
+def quicksort(v):
 
-print list
+    if len(v) <= 1:
+        return v
 
-for i in range(len(list)):
-	for j in range(i + 1, len(list)):
-		if list[j] < list[i]:
-			temp = list[j]
-			list[j] = list[i]
-			list[i] = temp
-		
-print list
+    less, equal, greater = [], [], []
+    pivot = v[0]
+
+    for x in v:
+
+        if x < pivot:
+            less.append(x)
+
+        elif x == pivot:
+            equal.append(x)
+
+        else:
+            greater.append(x)
+
+    return quicksort(less) + equal + quicksort(greater)
