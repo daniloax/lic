@@ -1,12 +1,12 @@
 all: malha
 
-programa: main.o listas.o
-	gcc main.o auxiliar.o -o programa
+malha: main.o listas.o
+	gcc main.o listas.o -o malha
 
-main.o: main.c auxiliar.c auxiliar.h
+main.o: main.c main.h
 	gcc -c main.c
 
-auxiliar.o: auxiliar.c auxiliar.h
+listas.o: constroi.c constroi.h linear.c linear.h percorre.c percorre.h
 	gcc -c auxiliar.c
 
 limpa: 
