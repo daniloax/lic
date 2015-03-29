@@ -1,3 +1,6 @@
+#ifndef LISTAS_H
+#define LISTAS_H
+
 typedef struct lista_pre {
   struct lista_disc *ppre;
   struct lista_pre *proxp;
@@ -9,3 +12,5 @@ typedef struct lista_disc {
   struct lista_disc *proxd;
   lista2 *pacesso;
 } lista1;
+
+#endif

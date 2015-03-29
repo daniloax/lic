@@ -1,27 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct lista_pre {
-  struct lista_disc *ppre;
-  struct lista_pre *proxp;
-} lista2;
+#include "listas.h"
 
-typedef struct lista_disc {
-  int cursado;
-  char disc;
-  struct lista_disc *proxd;
-  lista2 *pacesso;
-} lista3;
-
-void ConstroiMalha(lista_disc **epinicio) {
+void ConstroiMalha(lista1 **epinicio) {
   FILE *arq;
   lista1 *pd1, *pd2;
   lista2 *pp1, *pp2;
-  char c;
+  char c, fileName[10];
   int i, n;
+  
+  do {
 
-  arq = fopen ("t103.txt", "r");
+    printf("\nEntre com o nome do arquivo: ");
+    scanf("%[^\n]s", fileName);
+    getchar();
+
+    arq = fopen(fileName, "r");
+
+    if (!arq)
+       printf("'%s' not exist\n", fileName);
+
+  } while (!arq);
+
   *epinicio = NULL;
+  
   while ((c = getc (arq)) != EOF) {
     pd1 = malloc (sizeof (lista1));
     pd1->cursado = 0;
@@ -36,7 +39,7 @@ void ConstroiMalha(lista_disc **epinicio) {
     while ((c = getc (arq)) != '\n');
   }
   fclose (arq);
-  arq = fopen ("t103.txt", "r");
+  arq = fopen (fileName, "r");
   pd1 = *epinicio;
   while ((c = getc (arq)) != EOF) {
     fscanf (arq, "%d ", &n); 
@@ -55,15 +58,4 @@ void ConstroiMalha(lista_disc **epinicio) {
     }
     pd1 = pd1->proxd;
   }
-}
-
-int main () {
-
-  struct lista_disc *pinicio;
-
-  ConstroiMalha (&pinicio);
-  //PercorreMalha (pinicio);
-  //PercursoLinear (pinicio);
-    
-  system("pause");
 }
