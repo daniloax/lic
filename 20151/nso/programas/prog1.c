@@ -11,8 +11,9 @@ main()
      printf("sou o processo filho\n");
    else
    {
-     printf("sou o processo pai\n");
-     sleep(20);
+		sleep(20);     
+		printf("sou o processo pai\n");
+     
    }
 }
      
