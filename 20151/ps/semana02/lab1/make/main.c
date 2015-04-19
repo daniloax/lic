@@ -1,17 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
-#include "constroi.h"
-#include "linear.h"
-#include "percorre.h"
-
-typedef enum {
-   CONSTRUIR = 1,
-   PERCORRE_MALHA = 2,
-   PERCURSO_LINEAR = 3,
-   FECHAR_PROGRAMA = 4} OpcaoMenu;
-
-int main () {
+int main() {
 
    int OpcaoUsuario;
    

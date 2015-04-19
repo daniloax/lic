@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "listas.h"
+#include "constroi.h"
 
 void ConstroiMalha(lista1 **epinicio) {
   FILE *arq;

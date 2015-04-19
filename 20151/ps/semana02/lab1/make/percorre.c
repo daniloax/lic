@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "listas.h"
+#include "percorre.h"
 
 void PercorreMalha(lista1 *pini) {
   lista1 *pd1;

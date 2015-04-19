@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "listas.h"
+#include "linear.h"
 
 void PercursoLinear(lista1 *pini) {
   lista1 *pd1;
