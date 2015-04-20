@@ -19,15 +19,9 @@ int ChecaData(char *data) {
       
 	for (i = 0; i < 10; i++) {
 		
-      if (i != 2 && i != 5) {
-			
-         if (data[i] != '0' && data[i] != '1' && data[i] != '2' && data[i] != '3' && data[i] != '4' && data[i] != '5' && data[i] != '6' && data[i] != '7' && data[i] != '8' && data[i] != '9') {
-				
+      if (i != 2 && i != 5)
+         if (data[i] != '0' && data[i] != '1' && data[i] != '2' && data[i] != '3' && data[i] != '4' && data[i] != '5' && data[i] != '6' && data[i] != '7' && data[i] != '8' && data[i] != '9')
             return 0;
-			
-         }
-		
-      }
 		
       if (i < 4) {
 			
@@ -55,17 +49,17 @@ int ChecaData(char *data) {
    if (anoInt < 1900)
       return 0;
 	
-   if (diaInt > 31)
+   if (diaInt < 1 || diaInt > 31)
       return 0;
 	
-   if (mesInt > 12)
+   if (mesInt < 1 || mesInt > 12)
       return 0;
       
    return 1;
       
 }
 
-/* Separa palavras */
+/* Separa nome */
 
 void Nome(char *nome, char **primeiro, char **segundo) {
    
