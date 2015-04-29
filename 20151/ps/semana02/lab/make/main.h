@@ -18,4 +18,4 @@ typedef enum {
 
 int main();
 
-#endif /* PERCORRE_H_ */
+#endif
