@@ -3,7 +3,7 @@
 
 all: main limpa
 
-main: main.o prompt.o
+main: main.o prompt.o cadastra executa
 	gcc -g -Wall main.o prompt.o -o main
 	./main
 	
@@ -11,16 +11,16 @@ main: main.o prompt.o
 #	gcc -I ./CUnit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test
 #	./test
 
-main.o: main.c main.h
+main.o: main.c
 	gcc -c -g -Wall main.c
 	
-prompt.o: prompt.c prompt.h cadastra
+prompt.o: prompt.c
 	gcc -c -g -Wall prompt.c
 	
-cadastra: cadastra.c cadastra.h executa
+cadastra: cadastra.c
 	gcc -g -Wall cadastra.c -o cadastra
 	
-executa: executa.c executa.h
+executa: executa.c
 	gcc -g -Wall executa.c -o executa
 	
 #	gcov: main.c main_test.c

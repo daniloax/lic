@@ -2,7 +2,7 @@
 
 void exibePrompt() {
 
-   char *args[3], *argv, *input;
+   char *args[3], *argv, input[64];
    int argc;
    
    while (1) {
@@ -16,9 +16,9 @@ void exibePrompt() {
          printf("%s not found. please try again.\n", input);
          
       else {
-         
-         argc = 0;
+
          argv = strtok(input, " ");
+         argc = 0;
 
          while (argv != NULL) {
             
