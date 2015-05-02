@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+   
+   printf("./%s %s\n", argv[0], argv[1]);
+   sleep(1);
+   
+   return 0;
+   
+}

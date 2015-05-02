@@ -7,6 +7,6 @@
 #include <string.h>
 #include <unistd.h>
 
-void exibePrompt();
+int main();
 
 #endif /* PROMPT_H_ */
