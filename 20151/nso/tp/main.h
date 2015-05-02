@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "cadastro/prompt.h"
+#include "prompt.h"
 
 int main();
 

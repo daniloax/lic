@@ -1,21 +1,27 @@
 #ARCH = i386
 #ARCH = amd64
 
-all: prog limpa
+all: main limpa
 
-prog: main.o prompt.o
-	gcc -g -Wall main.o -o prog
-	./prog
+main: main.o prompt.o
+	gcc -g -Wall main.o prompt.o -o main
+	./main
 	
 #	test: main.c main_test.c
 #	gcc -I ./CUnit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test
 #	./test
 
-main.o: main.c
+main.o: main.c main.h
 	gcc -c -g -Wall main.c
 	
-prompt.o: ./cadastro/prompt.c
-	gcc -c -g -Wall ./cadastro/prompt.c
+prompt.o: prompt.c prompt.h cadastra
+	gcc -c -g -Wall prompt.c
+	
+cadastra: cadastra.c cadastra.h executa
+	gcc -g -Wall cadastra.c -o cadastra
+	
+executa: executa.c executa.h
+	gcc -g -Wall executa.c -o executa
 	
 #	gcov: main.c main_test.c
 #	gcc -Wall -ftest-coverage -fprofile-args -I ./Cunit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test_gcov

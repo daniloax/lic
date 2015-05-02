@@ -2,7 +2,7 @@
 
 int main() {
 	
-	CadastraProcesso();
+	exibePrompt();
    
 	return 0;
    

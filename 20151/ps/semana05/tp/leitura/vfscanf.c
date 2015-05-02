@@ -1,15 +1,32 @@
-#include "constroi.h"
+#include <stdio.h>
+#include <stdarg.h>
 
-void ConstroiListaDiscente(ListaDiscente **epinicio) {
+void GetMatches ( const char * str, const char * format, ... )
+{
+	va_list args;
+	va_start (args, format);
+	vsscanf (str, format, args);
+	va_end (args);
+}
 
-   FILE *pFile;
-   
-   char c, separador, buffer[72], nome[30], sobreNome[30], nomeArquivo[] = "io/discentes_mestrado.txt";
+void ReadStuff (FILE * stream, const char * format, ...)
+{
+	va_list args;
+	va_start (args, format);
+	vfscanf (stream, format, args);
+	va_end (args);
+}
+
+int main ()
+{
+	FILE * pFile;
+
+	char c, separador, buffer[72], nome[30], sobreNome[30], nomeArquivo[] = "../io/discentes_mestrado.txt";
 	int i, ano, matricula, tamanhoBuffer, retornoSScanf;
-
-   pFile = fopen(nomeArquivo, "r");
-
-   if (!pFile)
+	
+	pFile = fopen (nomeArquivo,"r");
+	
+	if (!pFile)
       printf("'%s' not exist\n", nomeArquivo);
 
    else {
@@ -29,6 +46,7 @@ void ConstroiListaDiscente(ListaDiscente **epinicio) {
 			
 			for (i = 0; i < tamanhoBuffer; i++) {
 				printf("%c", buffer[i]);
+				
 			}
 			
 			while ((c = fgetc(pFile)) != 10);
@@ -38,7 +56,7 @@ void ConstroiListaDiscente(ListaDiscente **epinicio) {
 		}
 		
 	}
-	
+
 	// while ((fgets(buffer, sizeof(buffer), pFile)) != NULL ) {
 	// while ((fgetc(pFile)) != EOF) {
 	// sscanf(buffer,"%d%c%d", &ano, &separador, &matricula);
@@ -53,5 +71,4 @@ void ConstroiListaDiscente(ListaDiscente **epinicio) {
 	fclose (pFile);
 
 	return 0;
-
 }
