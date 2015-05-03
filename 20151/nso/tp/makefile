@@ -3,7 +3,7 @@
 
 all: main limpa
 
-main: main.o prompt cadastra executa filho
+main: main.o prompt cadastra executa pai filho
 	gcc -g -Wall main.o -o main
 	./main cadastra filho argumento
 	
@@ -22,7 +22,10 @@ cadastra: cadastra.c
 	
 executa: executa.c
 	gcc -g -Wall executa.c -o executa
-	
+
+pai: pai.c
+	gcc -g -Wall pai.c -o pai	
+
 filho: filho.c
 	gcc -g -Wall filho.c -o filho
 	

@@ -11,7 +11,14 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
+struct semid_ds semid_ds;
 struct sembuf operacao[2];
+
+union semun {
+   int val;
+   struct semid_ds *buf;
+   unsigned short *array;
+} arg;
 
 int idsem;
 

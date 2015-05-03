@@ -59,7 +59,7 @@ int main() {
       sleep(1);
       printf("filho - dormi\n");
       v_sem();
-      exit(0);
+      
    
    }
 

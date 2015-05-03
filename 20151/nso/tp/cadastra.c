@@ -50,30 +50,35 @@ int main(int argc, char *argv[]) {
       
       /* codigo do filho */
       p_sem();
+      
       printf("filho - obtive o semaforo, vou dormir\n");
       sleep(1);
-      
-      if (execl("executa", "executa",  argv[1], argv[2], (char *) 0) < 0)
-         printf("erro no execl = %d\n", errno);
-      
       printf("filho - dormi\n");
+      
       v_sem();
+      
       exit(0);
    
    }
 
    /* codigo do pai */
    p_sem();
+   
    printf("pai - obtive o semaforo, vou dormir\n");
    sleep(1);
-   
-   // if (execl(argv[0], argv[0], argv[1], argv[2], (char *) 0) < 0)
-      // printf("erro no execl = %d\n", errno);
-      
    printf("pai - dormi\n");
+   
    v_sem();
-
+   
    wait(&estado);
+   
+   if (semctl(idsem, 0, IPC_RMID, arg) == -1) {
+      
+      printf ("\nThe semctl call failed!, error number =  %d\n", errno);
+      exit(0);
+      
+   } else
+      printf ("\nThe semctl call succeeded!\n");
    
    exit (0);
    
