@@ -1,5 +1,5 @@
-#ifndef CADASTRA_H_
-#define CADASTRA_H_
+#ifndef PAI_H_
+#define PAI_H_
 
 #include <errno.h>
 #include <stdio.h>
@@ -15,4 +15,4 @@
 
 int main(int argc, char *argv[]);
 
-#endif /* CADASTRA_H_ */
+#endif /* PAI_H_ */

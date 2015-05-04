@@ -1,30 +1,5 @@
 #include "cadastra.h"
 
-void p_sem() {
-   
-   operacao[0].sem_num = 0;
-   operacao[0].sem_op = 0;
-   operacao[0].sem_flg = 0;
-   operacao[1].sem_num = 0;
-   operacao[1].sem_op = 1;
-   operacao[1].sem_flg = 0;
-   
-   if (semop(idsem, operacao, 2) < 0)
-      printf("erro no p=%d\n", errno);
-
-}
-
-void v_sem() {
-   
-   operacao[0].sem_num = 0;
-   operacao[0].sem_op = -1;
-   operacao[0].sem_flg = 0;
-   
-   if (semop(idsem, operacao, 1) < 0)
-      printf("erro no p=%d\n", errno);
-      
-}
-
 int main(int argc, char *argv[]) {
    
    int estado, pid;
@@ -49,36 +24,43 @@ int main(int argc, char *argv[]) {
    if (pid == 0) {
       
       /* codigo do filho */
-      p_sem();
+      p_sem(idsem);
       
+      /* if (execl(argv[1], argv[1], argv[2], (char *) 0) < 0)
+         printf("erro no execl = %d\n", errno); */
+         
       printf("filho - obtive o semaforo, vou dormir\n");
       sleep(1);
       printf("filho - dormi\n");
-      
-      v_sem();
+      v_sem(idsem);
       
       exit(0);
    
    }
+   
+   sleep(1);
 
    /* codigo do pai */
-   p_sem();
+   p_sem(idsem);
+   
+   /* if (execl(argv[1], argv[1], argv[2], (char *) 0) < 0)
+      printf("erro no execl = %d\n", errno); */
    
    printf("pai - obtive o semaforo, vou dormir\n");
    sleep(1);
    printf("pai - dormi\n");
    
-   v_sem();
+   v_sem(idsem);
    
    wait(&estado);
    
    if (semctl(idsem, 0, IPC_RMID, arg) == -1) {
       
-      printf ("\nThe semctl call failed!, error number =  %d\n", errno);
+      printf ("The semctl call failed!, error number =  %d\n", errno);
       exit(0);
       
    } else
-      printf ("\nThe semctl call succeeded!\n");
+      printf ("The semctl call succeeded!\n");
    
    exit (0);
    

@@ -1,0 +1,202 @@
+SEMOP(2)                                            Linux Programmer's Manual                                           SEMOP(2)
+
+
+
+NAME
+       semop, semtimedop - operações de semáforo
+
+SYNOPSIS
+       #include <sys/types.h>
+       #include <sys/ipc.h>
+       #include <sys/sem.h>
+
+       int semop(int semid, struct sembuf *sops, unsigned nsops);
+
+       int semtimedop(int semid, struct sembuf *sops, unsigned nsops,
+                      struct timespec *timeout);
+
+   Requisitos de recurso de teste de macro para glibc (ver feature_test_macros(7)):
+
+       semtimedop(): _GNU_SOURCE
+
+DESCRIPTION
+       Cada semáforo em um conjunto de semáforos tem os seguintes valores associados:
+
+           unsigned short  semval;   /* valor do semáforo */
+           unsigned short  semzcnt;  /* # espera por zero */
+           unsigned short  semncnt;  /* # espera por incremento */
+           pid_t           sempid;   /* ID do processo que fez a última op */
+
+       semop() executa operações no semáforo selecionado na configuração indicada por semid. Cada um dos elementos sops no array
+       apontado por nsops especifica uma operação a ser realizada em um único semáforo. Os elementos dessa estrutura são do tipo
+       struct sembuf, contendo os seguintes membros:
+
+           unsigned short sem_num;  /* número do semáforo */
+           short          sem_op;   /* operação do semáforo */
+           short          sem_flg;  /* flags de operação */
+
+       Flags reconhecidas em sem_flg são IPC_NOWAIT e SEM_UNDO. Se uma operação especifica SEM_UNDO, ela será desfeita automaticamente
+       quando o processo termina.
+
+       O conjunto de operações contido em sops é executado na ordem do array, e atomicamente, isto é, as operações são executadas 
+       quer como uma unidade completa, ou não para todos. O comportamento da chamada de sistema se todas as operações não puderem
+       ser executadas imediatamente depende da presença da flag IPC_NOWAIT nos campos individuais sem_flg, como indicado abaixo.
+
+       Cada operação é executada no semáforo sem_num-th do semáforo estabelecido, onde o primeiro semáforo do conjunto é numerado
+       como 0. Existem três tipos de operações, distintas pelo valor de sem_op.
+
+       Se sem_op é um inteiro positivo, a operação adiciona este valor ao valor do semáforo (semval). Além disso, se SEM_UNDO
+       é especificado para esta operação, o sistema desfaz a contagem (semadj) para este semáforo. Esta operação sempre pode 
+       proceder — ela nunca força uma thread a esperar. O processo chamador deve ter permissão de escrita no semáforo estabelecido.
+
+       Se sem_op é zero, o processo precisa ter permissão de leitura no conjunto de semáforos. Esta é uma operação "wait-for-zero": se
+       semval é zero, a operação pode prosseguir imediatamente. Caso contrário, se IPC_NOWAIT é especificado em sem_flg, semop()
+       falha com errno configurado como EAGAIN (e nenhuma das operações em sops é executada). Caso contrário semzcnt (o contador de
+       threads esperando que valor de semáforo torne-se zero) é incrementado por um e a thread dorme até um dos seguintes ocorrer:
+
+       ·  semval torna-se 0, altura em que o valor de semzcnt é decrementado.
+
+       ·  o conjunto de semáforos é removido: semop() falha, com errno configurado para EIDRM.
+
+       ·  O thread chamado captura um sinal: o valor de semzcnt é decrementado e semop() falha, com errno configurado para EINTR.
+
+       ·  O limite de tempo especificado pelo tempo limite em uma chamada semtimedop() expira: semop() falha, com errno
+       configurado para EAGAIN.
+
+       Se sem_op é menor que zero, o processo deve ter permissão de escrita no conjunto de semáforos. Se semval é maior ou igual
+       ao valor absoluto de sem_op, a operação pode executar imediatamente: o valor absoluto de sem_op é subtraído
+       de semval, e, se SEM_UNDO é especificado para esta operação, o sistema desfaz a atualização de contagem (semadj) para este
+       semáforo. Se o valor absoluto de sem_op é maior que semval, e IPC_NOWAIT é especificado em sem_flg, semop() falha,
+       com errno configurado para EAGAIN (e nenhuma das operações em sops é executada). Caso contrário semncnt (o contador of threads
+       esperando por este valor do semáforo ser incrementado) é incrementado por um e a thread dorme até um dos seguintes ocorrer:
+
+       ·  semval tornar-se maior ou igual ao valor absoluto de sem_op, altura em que o valor de semncnt é decrementado,
+          o valor absoluto de sem_op é subtraído de semval e, se SEM_UNDO é especificado por esta operação, o
+          sistema desfaz a atualização de contagem (semadj) para este semáforo.
+
+       ·  O conjunto de semáforos é removido do sistema: semop() falha, com errno configurado para EIDRM.
+
+       ·  O thread chamado captura um sinal: o valor de semncnt é decrementado e semop() falha, com errno configurado para EINTR.
+
+       ·  O tempo limite especificado pelo tempo limite in uma chamada semtimedop() expira: a chamada de sistema falha, com errno
+          configurado para EAGAIN.
+
+       Em uma conclusão bem-sucedida, o valor sempid para cada semáforo especificado no array apontado por sops é configurado com
+       o ID do processo chamador. Adicionalmente, o sem_otime é configurado com a hora atual.
+
+       semtimedop() behaves identically to semop() except that in those cases were the calling thread would sleep, the  duration
+       of that sleep is limited by the amount of elapsed time specified by the timespec structure whose address is passed in the
+       timeout argument.  (This sleep interval will be rounded up to the system clock granularity, and kernel scheduling  delays
+       mean  that the interval may overrun by a small amount.)  If the specified time limit has been reached, semtimedop() fails
+       with errno set to EAGAIN (and none of the operaçãos in sops is performed).  If the timeout argument is NULL,  then  sem‐
+       timedop() behaves exactly like semop().
+
+RETURN VALUE
+       If successful semop() and semtimedop() return 0; otherwise they return -1 with errno indicating the error.
+
+ERRORS
+       On failure, errno is set to one of the following:
+
+       E2BIG  The argument nsops is greater than SEMOPM, the maximum number of operaçãos allowed per system call.
+
+       EACCES The calling process does not have the permissions required to perform the specified semáforo operaçãos, and does
+              not have the CAP_IPC_OWNER capability.
+
+       EAGAIN An operação could not proceed immediately and either IPC_NOWAIT was specified in sem_flg or the time limit speci‐
+              fied in timeout expired.
+
+       EFAULT An address specified in either the sops or the timeout argument isn't accessible.
+
+       EFBIG  For some operação the value of sem_num is less than 0 or greater than or equal to the number of semáforos in the
+              set.
+
+       EIDRM  The semáforo set was removed.
+
+       EINTR  While blocked in this system call, the thread caught a signal; see signal(7).
+
+       EINVAL The semáforo set doesn't exist, or semid is less than zero, or nsops has a nonpositive value.
+
+       ENOMEM The sem_flg of some operação specified SEM_UNDO and the system does not have enough memory to allocate  the  undo
+              structure.
+
+       ERANGE For some operação sem_op+semval is greater than SEMVMX, the implementation dependent maximum value for semval.
+
+VERSIONS
+       semtimedop()  first appeared in Linux 2.5.52, and was subsequently backported into kernel 2.4.22.  Glibc support for sem‐
+       timedop() first appeared in version 2.3.3.
+
+CONFORMING TO
+       SVr4, POSIX.1-2001.
+
+NOTES
+       The inclusion of <sys/types.h> and <sys/ipc.h> isn't required on Linux or by any version of  POSIX.   However,  some  old
+       implementations required the inclusion of these header files, and the SVID also documented their inclusion.  Applications
+       intended to be portable to such old systems may need to include these header files.
+
+       The sem_undo structures of a process aren't inherited by the child produced by fork(2), but they are inherited across  an
+       execve(2) system call.
+
+       semop()  is  never  automatically restarted after being interrupted by a signal handler, regardless of the setting of the
+       SA_RESTART flag when establishing a signal handler.
+
+       semadj is a per-process integer which is simply the (negative) count of all semáforo operaçãos performed specifying the
+       SEM_UNDO flag.  When a semáforo's value is directly set using the SETVAL or SETALL request to semctl(2), the correspond‐
+       ing semadj values in all processes are cleared.
+
+       The semval, sempid, semzcnt, and semnct values for a semáforo can all be retrieved using appropriate semctl(2) calls.
+
+       The following limits on semáforo set resources affect the semop() call:
+
+       SEMOPM Maximum number of operaçãos allowed for one semop() call (32) (on Linux, this limit can be read and modified  via
+              the third field of /proc/sys/kernel/sem).
+
+       SEMVMX Maximum allowable value for semval: implementation dependent (32767).
+
+       The  implementation has no intrinsic limits for the adjust on exit maximum value (SEMAEM), the system wide maximum number
+       of undo structures (SEMMNU) and the per-process maximum number of undo entries system parameters.
+
+BUGS
+       When a process terminates, its set of associated semadj structures is used to undo the effect of  all  of  the  semáforo
+       operaçãos  it  performed  with the SEM_UNDO flag.  This raises a difficulty: if one (or more) of these semáforo adjust‐
+       ments would result in an attempt to decrease a semáforo's value below zero, what should an implementation do?  One  pos‐
+       sible  approach  would  be  to block until all the semáforo adjustments could be performed.  This is however undesirable
+       since it could force process termination to block for arbitrarily long periods.  Another possibility is that  such  sema‐
+       phore  adjustments  could be ignored altogether (somewhat analogously to failing when IPC_NOWAIT is specified for a sema‐
+       phore operação).  Linux adopts a third approach: decreasing the semáforo value as far as possible (i.e., to  zero)  and
+       allowing process termination to proceed immediately.
+
+       In  kernels  2.6.x,  x <= 10, there is a bug that in some circumstances prevents a thread that is waiting for a semáforo
+       value to become zero from being woken up when the value does actually become zero.  This bug is fixed in kernel 2.6.11.
+
+EXAMPLE
+       The following code segment uses semop() to atomically wait for the value of semáforo 0 to become zero, and  then  incre‐
+       ment the semáforo value by one.
+
+           struct sembuf sops[2];
+           int semid;
+
+           /* Code to set semid omitted */
+
+           sops[0].sem_num = 0;        /* Operate on semáforo 0 */
+           sops[0].sem_op = 0;         /* Wait for value to equal 0 */
+           sops[0].sem_flg = 0;
+
+           sops[1].sem_num = 0;        /* Operate on semáforo 0 */
+           sops[1].sem_op = 1;         /* Increment value by one */
+           sops[1].sem_flg = 0;
+
+           if (semop(semid, sops, 2) == -1) {
+               perror("semop");
+               exit(EXIT_FAILURE);
+           }
+
+SEE ALSO
+       clone(2), semctl(2), semget(2), sigaction(2), capabilities(7), sem_overview(7), svipc(7), time(7)
+
+COLOPHON
+       This  page  is  part of release 3.44 of the Linux man-pages project.  A description of the project, and information about
+       reporting bugs, can be found at http://www.kernel.org/doc/man-pages/.
+
+
+
+Linux                                                      2012-08-27                                                   SEMOP(2)

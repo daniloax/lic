@@ -1,9 +1,10 @@
-#ifndef CADASTRA_H_
-#define CADASTRA_H_
+#ifndef FILHO_H_
+#define FILHO_H_
 
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <sys/shm.h>
@@ -15,4 +16,4 @@
 
 int main(int argc, char *argv[]);
 
-#endif /* CADASTRA_H_ */
+#endif /* FILHO_H_ */

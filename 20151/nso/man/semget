@@ -1,0 +1,113 @@
+SEMGET(2)                                           Linux Programmer's Manual                                          SEMGET(2)
+
+
+
+NAME
+       semget - obtém um identificador de um conjunto de semáforos
+
+SYNOPSIS
+       #include <sys/types.h>
+       #include <sys/ipc.h>
+       #include <sys/sem.h>
+
+       int semget(key_t key, int nsems, int semflg);
+
+DESCRIPTION
+       A chamada de sistema semget() retorna o identificador de um semáforo estabelecido associado ao argumento key. Um novo con
+       junto nsems de semáforos é criado se a chave tem o valor IPC_PRIVATE ou se nenhum conjunto de semáforos corresponde à key
+       e IPC_CREAT está especificado em semflg.
+
+       Se  semflg  especifica  ambas IPC_CREAT e IPC_EXCL e um conjunto de semáforos já existe para a chave, então semget() falha
+       e errno é configurado para EEXIST. (Isto é análogo ao efeito da combinação O_CREAT | O_EXCL para open(2).)
+
+       Sobre a criação, os 9 bits menos significativos do argumento semflg define as permissões (para proprietário, grupo e outros)
+       para o conjunto de semáforos. Esses bits tem o mesmo formato, e o mesmo signifificado, como o argumento mode de open(2) (embora
+       as permissões de execução não sejam significativas para semáforos, e permissões de escrita significam permissões para alterar
+       valores do semáforo).
+
+       Os valores dos semáforos em um conjunto recém-criado são ideterminados. (POSIX.1-2001 é explícita neste ponto.)
+       Embora o Linux, como muitas outras implementações, initializa os valores dos semáforos em 0, uma aplicação portátil não pode
+       depender disto: elas devem inicializar explicitamente os semáforos para os valores desejados.
+
+       Ao criar um novo conjunto de semáforos, semget() inicializa o conjunto de estrutura de dados associada, semid_ds (see semctl(2)),
+       como segue:
+
+              sem_perm.cuid e sem_perm.uid são configurados com o ID do usuário que efetuou a chamada de processo.
+
+              sem_perm.cgid e sem_perm.gid são configurados com o ID do grupo que efetuou a chamada de processo.
+
+              Os 9 bits menos significativos de sem_perm.mode são configurados com os 9 bits menos significativos de semflg.
+
+              sem_nsems é configurado com o conjunto de valores de nsems.
+
+              sem_otime é configurado para 0.
+
+              sem_ctime é configurado para a hora atual.
+
+       O argumento nsems pode ser 0 (um não se importa) quando um conjunto de semáforos não está sendo criado. Caso contrário nsems deve
+       ser maior que 0 e meno ou igual ao número máximum de semáforos por conjunto de semáforos (SEMMSL).
+
+       Se o conjunto de semáforos já existe, as permissões são verificadas.
+
+RETURN VALUE
+       If  successful,  the return value will be the semaphore set identifier (a nonnegative integer), otherwise -1 is returned,
+       with errno indicating the error.
+
+ERRORS
+       On failure errno will be set to one of the following:
+
+       EACCES A semaphore set exists for key, but the calling process does not have permission to access the set, and  does  not
+              have the CAP_IPC_OWNER capability.
+
+       EEXIST A semaphore set exists for key and semflg specified both IPC_CREAT and IPC_EXCL.
+
+       EINVAL nsems  is less than 0 or greater than the limit on the number of semaphores per semaphore set (SEMMSL), or a sema‐
+              phore set corresponding to key already exists, and nsems is larger than the number of semaphores in that set.
+
+       ENOENT No semaphore set exists for key and semflg did not specify IPC_CREAT.
+
+       ENOMEM A semaphore set has to be created but the system does not have enough memory for the new data structure.
+
+       ENOSPC A semaphore set has to be created but the system limit for the maximum number of semaphore sets (SEMMNI),  or  the
+              system wide maximum number of semaphores (SEMMNS), would be exceeded.
+
+CONFORMING TO
+       SVr4, POSIX.1-2001.
+
+NOTES
+       The  inclusion  of  <sys/types.h>  and <sys/ipc.h> isn't required on Linux or by any version of POSIX.  However, some old
+       implementations required the inclusion of these header files, and the SVID also documented their inclusion.  Applications
+       intended to be portable to such old systems may need to include these header files.
+
+       IPC_PRIVATE  isn't  a flag field but a key_t type.  If this special value is used for key, the system call ignores every‐
+       thing but the least significant 9 bits of semflg and creates a new semaphore set (on success).
+
+       The following limits on semaphore set resources affect the semget() call:
+
+       SEMMNI System wide maximum number of semaphore sets: policy dependent (on Linux, this limit can be read and modified  via
+              the fourth field of /proc/sys/kernel/sem).
+
+       SEMMSL Maximum  number  of  semaphores per semid: implementation dependent (on Linux, this limit can be read and modified
+              via the first field of /proc/sys/kernel/sem).
+
+       SEMMNS System wide maximum number of semaphores: policy dependent (on Linux, this limit can be read and modified via  the
+              second field of /proc/sys/kernel/sem).  Values greater than SEMMSL * SEMMNI makes it irrelevant.
+
+BUGS
+       The name choice IPC_PRIVATE was perhaps unfortunate, IPC_NEW would more clearly show its function.
+
+       The  semaphores  in a set are not initialized by semget().  In order to initialize the semaphores, semctl(2) must be used
+       to perform a SETVAL or a SETALL operation on the semaphore set.  (Where multiple peers do not know who will be the  first
+       to  initialize  the  set,  checking  for  a  nonzero  sem_otime in the associated data structure retrieved by a semctl(2)
+       IPC_STAT operation can be used to avoid races.)
+
+SEE ALSO
+       semctl(2), semop(2), ftok(3), capabilities(7), sem_overview(7), svipc(7)
+
+COLOPHON
+       This page is part of release 3.44 of the Linux man-pages project.  A description of the project,  and  information  about
+       reporting bugs, can be found at http://www.kernel.org/doc/man-pages/.
+
+
+
+Linux                                                      2012-05-31                                                  SEMGET(2)

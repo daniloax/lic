@@ -17,17 +17,29 @@ main.o: main.c
 prompt: prompt.c
 	gcc -g -Wall prompt.c -o prompt
 	
-cadastra: cadastra.c
-	gcc -g -Wall cadastra.c -o cadastra
+cadastra: cadastra.o semaforo.o
+	gcc -g -Wall cadastra.o semaforo.o -o cadastra
 	
-executa: executa.c
-	gcc -g -Wall executa.c -o executa
+executa: executa.o
+	gcc -g -Wall executa.o -o executa
+	
+cadastra.o: cadastra.c
+	gcc -c -Wall cadastra.c
+	
+executa.o: executa.c
+	gcc -c -Wall executa.c
 
 pai: pai.c
 	gcc -g -Wall pai.c -o pai	
 
-filho: filho.c
-	gcc -g -Wall filho.c -o filho
+filho: filho.o semaforo.o
+	gcc -g -Wall filho.o semaforo.o -o filho
+	
+filho.o: filho.c
+	gcc -c -Wall filho.c
+	
+semaforo.o: semaforo.c
+	gcc -c -Wall semaforo.c
 	
 #	gcov: main.c main_test.c
 #	gcc -Wall -ftest-coverage -fprofile-args -I ./Cunit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test_gcov
