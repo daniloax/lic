@@ -29,12 +29,15 @@ cadastra.o: cadastra.c
 executa.o: executa.c
 	gcc -c -Wall executa.c
 
-pai: pai.c
-	gcc -g -Wall pai.c -o pai	
+pai: pai.o semaforo.o
+	gcc -g -Wall pai.o semaforo.o -o pai	
 
 filho: filho.o semaforo.o
 	gcc -g -Wall filho.o semaforo.o -o filho
 	
+pai.o: pai.c
+	gcc -c -Wall pai.c
+
 filho.o: filho.c
 	gcc -c -Wall filho.c
 	
@@ -46,5 +49,6 @@ semaforo.o: semaforo.c
 #	./test_gcov
 	
 limpa: 
-	rm *.o 
+	rm *.o
+	ipcrm -S 0x068f60b1
 #	rm *.gcda *.gcno *gcov

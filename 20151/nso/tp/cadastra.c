@@ -2,21 +2,29 @@
 
 int main(int argc, char *argv[]) {
    
-   int estado, pid;
+   char chave[10];
+   int estado, key = 0x68f60b1, pid;
    
    printf("./%s %s %s\n", argv[0], argv[1], argv[2]);
+   printf("%x\n", key);
+   
    sleep(1);
    
    /* if (execl("main", "main", (char *) 0) < 0)
       printf("erro no execl = %d\n", errno); */
 
    /* cria semaforo */
-   if ((idsem = semget(0x68f60b1, 1, IPC_CREAT|0x1ff)) < 0) {
+   if ((idsem = semget(key, 1, IPC_CREAT|0x1ff)) < 0) {
       
       printf("erro na criacao do semaforo\n");
       exit(1);
    
    }
+   
+   // itoa(idsem, semid, 10);
+   sprintf(chave, "%d", key);
+   
+   printf("%s\n", chave);
 
    /* cria processo filho */
    pid = fork();
@@ -26,15 +34,8 @@ int main(int argc, char *argv[]) {
       /* codigo do filho */
       p_sem(idsem);
       
-      /* if (execl(argv[1], argv[1], argv[2], (char *) 0) < 0)
-         printf("erro no execl = %d\n", errno); */
-         
-      printf("filho - obtive o semaforo, vou dormir\n");
-      sleep(1);
-      printf("filho - dormi\n");
-      v_sem(idsem);
-      
-      exit(0);
+      if (execl(argv[1], argv[1], argv[2], chave, (char *) 0) < 0)
+         printf("erro no execl = %d\n", errno);
    
    }
    
@@ -43,14 +44,8 @@ int main(int argc, char *argv[]) {
    /* codigo do pai */
    p_sem(idsem);
    
-   /* if (execl(argv[1], argv[1], argv[2], (char *) 0) < 0)
-      printf("erro no execl = %d\n", errno); */
-   
-   printf("pai - obtive o semaforo, vou dormir\n");
-   sleep(1);
-   printf("pai - dormi\n");
-   
-   v_sem(idsem);
+   if (execl("pai", "pai", argv[2], chave, (char *) 0) < 0)
+      printf("erro no execl = %d\n", errno);
    
    wait(&estado);
    
