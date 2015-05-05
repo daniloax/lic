@@ -25,15 +25,13 @@ int main() {
          
          args[argc] = argv;
          
-         printf("argv[%d]: ", argc);
-         printf("%s\n", argv);
+         // printf("argv[%d]: ", argc);
+         // printf("%s\n", argv);
          
          argv = strtok(NULL, " ");
          argc++;
       
       }
-      
-      printf("programa: %s\nparametro: %s\n", args[1], args[2]);
       
       if (execl(args[0], args[0], args[1], args[2], (char *) 0) < 0)
             printf("erro no execl = %d\n", errno);
@@ -41,6 +39,6 @@ int main() {
 
    }
    
-   return 0;
+   return 1;
 
 }

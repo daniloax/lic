@@ -5,7 +5,9 @@ all: main limpa
 
 main: main.o prompt cadastra executa pai filho
 	gcc -g -Wall main.o -o main
-	./main cadastra filho argumento
+	./main prompt
+	
+#	./main cadastra filho argumento
 	
 #	test: main.c main_test.c
 #	gcc -I ./CUnit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test
