@@ -1,10 +1,7 @@
 #ARCH = i386
 #ARCH = amd64
 
-all: main limpa
-
-main: main.o prompt cadastra executa pai filho
-	gcc -g -Wall main.o -o main
+all: cadastra executa filho main prompt pai limpa
 	./main prompt
 	
 #	./main cadastra filho argumento
@@ -13,35 +10,41 @@ main: main.o prompt cadastra executa pai filho
 #	gcc -I ./CUnit -L ./CUnit main_test.c -lcunit_$(ARCH) -o test
 #	./test
 
-main.o: main.c
-	gcc -c -g -Wall main.c
+main: main.o semaforo.o
+	gcc -g -Wall main.o semaforo.o -o main
 	
-prompt: prompt.c
-	gcc -g -Wall prompt.c -o prompt
+prompt: prompt.o semaforo.o
+	gcc -g -Wall prompt.o semaforo.o -o prompt
 	
 cadastra: cadastra.o semaforo.o
 	gcc -g -Wall cadastra.o semaforo.o -o cadastra
 	
-executa: executa.o
-	gcc -g -Wall executa.o -o executa
+executa: executa.o semaforo.o
+	gcc -g -Wall executa.o semaforo.o -o executa
 	
-cadastra.o: cadastra.c
-	gcc -c -Wall cadastra.c
-	
-executa.o: executa.c
-	gcc -c -Wall executa.c
-
 pai: pai.o semaforo.o
 	gcc -g -Wall pai.o semaforo.o -o pai	
 
 filho: filho.o semaforo.o
 	gcc -g -Wall filho.o semaforo.o -o filho
 	
+cadastra.o: cadastra.c
+	gcc -c -Wall cadastra.c
+	
+executa.o: executa.c
+	gcc -c -Wall executa.c
+	
 pai.o: pai.c
 	gcc -c -Wall pai.c
 
 filho.o: filho.c
 	gcc -c -Wall filho.c
+	
+main.o: main.c
+	gcc -c -g -Wall main.c
+	
+prompt.o: prompt.c
+	gcc -c -g -Wall prompt.c
 	
 semaforo.o: semaforo.c
 	gcc -c -Wall semaforo.c
@@ -52,5 +55,5 @@ semaforo.o: semaforo.c
 	
 limpa: 
 	rm *.o
-	ipcrm -S 0x068f60b1
+#	ipcrm -S 0x068f60b1
 #	rm *.gcda *.gcno *gcov

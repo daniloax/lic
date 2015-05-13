@@ -1,6 +1,6 @@
 #include "semaforo.h"
 
-void p_sem(unsigned int idsem) {
+void v_sem(unsigned int idsem) {
    
    operacao[0].sem_num = 0;
    operacao[0].sem_op = 0;
@@ -14,7 +14,7 @@ void p_sem(unsigned int idsem) {
 
 }
 
-void v_sem(unsigned int idsem) {
+void p_sem(unsigned int idsem) {
    
    operacao[0].sem_num = 0;
    operacao[0].sem_op = -1;
