@@ -2,7 +2,7 @@
 
 int main() {
    
-   struct shmid_ds buf;
+   struct shmid_ds *buf;
    
    char *args[3], *argv, chave[10], input[64], *pshm;
    int argc, idsem, idshm, key = 0x68f60b1, pid, status;
@@ -45,24 +45,28 @@ int main() {
       // if (execl("executa", "executa", chave, (char *) 0) < 0)
       //   printf("erro no execl = %d\n", errno);
       
-      /** obtem semaforo */
+      while (1) {
       
-      v_sem(idsem);
-      
-      /** attach */
-      pshm = shmat(idshm, (char *) 0, 0);
-      
-      printf("filho - obtive o semaforo, vou dormir\n");
-      sleep(1);
-      printf("filho - dormi\n");
-      sleep(1);
-      printf("filho - valor lido = %s\n", pshm);
-      
-      p_sem(idsem);
+         /** obtem semaforo */
+         
+         v_sem(idsem);
+         
+         /** attach */
+         pshm = shmat(idshm, (char *) 0, 0);
+         
+         printf("filho - obtive o semaforo, vou dormir\n");
+         sleep(1);
+         printf("filho - dormi\n");
+         sleep(1);
+         printf("filho - valor lido = %s\n", pshm);
+         
+         p_sem(idsem);
+         
+      }
       
       /** detach */
-      if (shmdt(idshm) == -1)
-         printf("The shmdt call failed!, error number =  %d\n", errno);
+      if (shmdt(pshm) == -1)
+         printf("The shmdt call failed!, error number = %d\n", errno);
 
       else
          printf("The shmdt call succeeded!\n");
@@ -130,7 +134,7 @@ int main() {
       *pshm = calloc(strlen(input), sizeof(char));
       strcpy(pshm, input);
       
-      printf("pai - escrevi\n");
+      printf("\npai - escrevi\n");
       sleep(1);
       
       // if (execl(args[0], args[0], args[1], args[2], (char *) 0) < 0)
@@ -142,6 +146,13 @@ int main() {
    
    wait(&status);
    
+   /** desvincula memoria compartilhada */
+	if (shmdt(pshm) == -1)
+		printf("\nThe shmdt call failed!, error number = %d\n", errno);
+
+	else
+		printf("The shmdt call succeeded!\n");
+   
    /** remove semaforo */
    if (semctl(idsem, 0, IPC_RMID, arg) == -1)
       printf("The semctl call failed!, error number = %d\n", errno);
@@ -149,12 +160,12 @@ int main() {
    else
       printf("The semctl call succeeded!\n");
       
-   /** detach */
-   if (shmdt(idshm) == -1)
-      printf("The shmdt call failed!, error number = %d\n", errno);
+   /** remove memoria compartilhada */
+   if ((shmctl(idshm, IPC_RMID, buf)) == -1)
+		printf("The shmctl call failed!, error number = %d\n", errno);
    
    else
-      printf("The shmdt call succeeded!\n");
+      printf("The shmctl call succeeded!\n");
    
    return 0;
 

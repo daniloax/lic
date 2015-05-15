@@ -1,0 +1,28 @@
+Listas.c: (in function Insere)
+Listas.c:21:11: Suspected infinite loop.  No value used in loop test (aux,
+                   aux->prox) is modified by test or loop body.
+  This appears to be an infinite loop. Nothing in the body of the loop or the
+  loop test modifies the value of the loop test. Perhaps the specification of a
+  function called in the loop body is missing a modification. (Use -infloops to
+  inhibit warning)
+Listas.c:29:14: Return expression from function declared void: NULL
+  Types are incompatible. (Use -type to inhibit warning)
+Listas.c: (in function Mostra)
+Listas.c:33:10: Suspected infinite loop.  No value used in loop test (inicio)
+                   is modified by test or loop body.
+Listas.c: (in function Avanca)
+Listas.c:40:9: Return expression from function declared void: inicio
+Listas.c:4:13: File static function Avanca declared but not used
+  A function is declared but not used. Use /*@unused@*/ in front of function
+  header to suppress message. (Use -fcnuse to inhibit warning)
+   Listas.c:41:1: Definition of Avanca
+Main.c: (in function main)
+Main.c:8:9: Passed storage &inicio not completely defined: Inicia (&inicio)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+Main.c:10:10: Function Get_C expects arg 1 to be int * gets int: tamanho
+Main.c:10:3: Return value (type char *) ignored: Get_C(tamanho)
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+
