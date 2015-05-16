@@ -1,10 +1,14 @@
 #include "prompt.h"
 
+finalizaProcesso() {
+   
+}
+
 int main() {
    
    struct shmid_ds *buf;
    
-   char *args[3], *argv, chave[10], input[64], *pshm;
+   char *args[3], *argv, chave[10], childid[10], input[64], *pshm;
    int argc, idsem, idshm, key = 0x68f60b1, pid, status;
    
    /* printf("sou o programa %s\nparametro 1: %s\nparametro 2: %s\nparametro 3: %s\n", argv[0], argv[1], argv[2], argv[3]);
@@ -54,11 +58,24 @@ int main() {
          /** attach */
          pshm = shmat(idshm, (char *) 0, 0);
          
-         printf("filho - obtive o semaforo, vou dormir\n");
+         printf("\nfilho - obtive o semaforo, vou dormir\n");
          sleep(1);
          printf("filho - dormi\n");
          sleep(1);
+         printf("filho - vou ler\n");
+         sleep(1);
+         printf("filho - li\n");
+         sleep(1);
          printf("filho - valor lido = %s\n", pshm);
+         sleep(1);
+         printf("filho - vou escrever\n");
+         sleep(1);
+         
+         sprintf(childid, "%d", getpid());
+         *pshm = calloc(strlen(childid), sizeof(char));
+         strcpy(pshm, childid);
+         
+         printf("filho - escrevi\n");
          
          p_sem(idsem);
          
@@ -102,11 +119,17 @@ int main() {
       
       v_sem(idsem);
       
-      printf("pai - obtive o semaforo, vou dormir\n");
+      printf("\npai - obtive o semaforo, vou dormir\n");
       sleep(1);
       printf("pai - dormi\n");
       sleep(1);
-      printf("pai - vou escrever\n");
+      printf("pai - vou ler\n");
+      sleep(1);
+      printf("pai - li\n");
+      sleep(1);
+      printf("pai - valor lido = %s\n", pshm);
+      sleep(1);
+      printf("pai - entre com um valor\n");
       sleep(1);
       
       input[0] = "\0";
@@ -134,15 +157,18 @@ int main() {
       *pshm = calloc(strlen(input), sizeof(char));
       strcpy(pshm, input);
       
-      printf("\npai - escrevi\n");
-      sleep(1);
-      
       // if (execl(args[0], args[0], args[1], args[2], (char *) 0) < 0)
       //   printf("erro no execl = %d\n", errno);
       
       p_sem(idsem);
          
    }
+   
+   v_sem(idsem);
+   
+   kill(atoi(pshm), SIGKILL);
+   
+   p_sem(idsem);
    
    wait(&status);
    

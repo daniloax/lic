@@ -1,7 +1,7 @@
 #ARCH = i386
 #ARCH = amd64
 
-all: cadastra executa filho main prompt pai limpa
+all: main prompt cadastra executa pai filho limpa
 	./main prompt
 	
 #	./main cadastra filho argumento
@@ -27,7 +27,13 @@ pai: pai.o semaforo.o
 
 filho: filho.o semaforo.o
 	gcc -g -Wall filho.o semaforo.o -o filho
+
+main.o: main.c
+	gcc -c -g -Wall main.c
 	
+prompt.o: prompt.c
+	gcc -c -g -Wall prompt.c
+
 cadastra.o: cadastra.c
 	gcc -c -Wall cadastra.c
 	
@@ -39,12 +45,6 @@ pai.o: pai.c
 
 filho.o: filho.c
 	gcc -c -Wall filho.c
-	
-main.o: main.c
-	gcc -c -g -Wall main.c
-	
-prompt.o: prompt.c
-	gcc -c -g -Wall prompt.c
 	
 semaforo.o: semaforo.c
 	gcc -c -Wall semaforo.c

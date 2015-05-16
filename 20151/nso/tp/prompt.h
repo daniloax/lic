@@ -2,6 +2,7 @@
 #define PROMPT_H_
 
 #include <errno.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
