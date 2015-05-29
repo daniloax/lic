@@ -20,11 +20,6 @@ union semun {
    unsigned short *array;
 } arg;
 
-static unsigned int idsem;
-
-unsigned int getIdSem();
-void setIdSem(unsigned int idsem);
-
 void p_sem(unsigned int idsem);
 void v_sem(unsigned int idsem);
 

@@ -1,54 +1,119 @@
 #include "main.h"
 
-int main(int argc, char *argv[]) {
+int main() {
    
-   char *chave[10];
-   int idsem, key = 0x68f60b1, pid, status;
+   struct shmid_ds *shmbuf;
+   struct msqid_ds *msqbuf;
+   
+   char chave[10], shmid[10];
+   int executa, idmsq, idsem, idshm, key = 0x68f60b1, prompt, estadoExecuta, estadoPrompt;
+   
+   shmbuf = NULL;
+   msqbuf = NULL;
    
    /** cria semaforo */
-   /* if ((idsem = semget(key, 1, IPC_CREAT|0x1ff)) < 0) {
+   if ((idsem = semget(key, 1, IPC_CREAT|0x180)) < 0) {
       
-      printf("erro na criacao do semaforo\n");
-      exit(1);
+      perror("semget");
+      exit(EXIT_FAILURE);
    
-   } */
+   }
    
-   // sprintf(chave, "%d", key);   
+   /** cria memoria */
+   if ((idshm = shmget(key, sizeof(int), IPC_CREAT|0x180)) < 0) {
+      
+      perror("shmget");
+      exit(EXIT_FAILURE);
+      
+   }
    
-   if (( pid = fork()) < 0) {
+   /** cria fila */
+   if ((idmsq = msgget(key, IPC_CREAT|0x180)) < 0) {
      
-     printf("erro no fork\n");
-     exit(1);
+      perror("msgget");
+      exit(EXIT_FAILURE);
    
    }
    
-   if (pid == 0) {
+   sprintf(chave, "%d", key);
+   sprintf(shmid, "%d", idshm);
+   
+   v_sem(idsem);
+   
+   /** cria processo */
+   if ((executa = fork()) < 0) {
+     
+      perror("fork");
+      exit(EXIT_FAILURE);
+   
+   }
+   
+   if (executa == 0) {
       
-      /** codigo do filho */
-      /* v_sem(idsem);
+      /** executa processo */
+      if (execl("executa", "executa", chave, shmid, (char *) 0) < 0) {
+         
+         perror("execl");
+         exit(EXIT_FAILURE);
       
-      printf("filho - obtive o semaforo, vou dormir\n");
-      sleep(1);
-      printf("filho - dormi\n");
-      
-      p_sem(idsem);
-      exit(0); */
-      
-      if (execl(argv[1], argv[1], (char *) 0) < 0)
-         printf("erro no execl = %d\n", errno);
+      }
       
    }
    
-   /** codigo do pai */
-   /* v_sem(idsem);
+   /** cria processo */
+   if ((prompt = fork()) < 0) {
+     
+      perror("fork");
+      exit(EXIT_FAILURE);
    
-   printf("pai - obtive o semaforo, vou dormir\n");
-   sleep(1);
-   printf("pai - dormi\n");
+   }
    
-   p_sem(idsem); */
-
-   wait(&status);
+   if (prompt == 0) {
+      
+      /** executa processo */
+      if (execl("prompt", "prompt", chave, shmid, (char *) 0) < 0) {
+         
+         perror("execl");
+         exit(EXIT_FAILURE);
+         
+      }
+      
+   }
+   
+   p_sem(idsem);
+   
+   /** aguarda prompt */
+   wait(&estadoPrompt);
+   
+   /** finaliza executa */
+   kill(executa, SIGKILL);
+   
+   /** aguarda executa */
+   wait(&estadoExecuta);
+   
+   /** saida prompt */
+   printf("\n%d exited, status = %d\n", executa, WEXITSTATUS(estadoExecuta));
+   
+   /** saida executa */
+   printf("%d exited, status = %d\n\n", prompt, WEXITSTATUS(estadoPrompt));
+   
+   /** remove memoria */
+   if ((shmctl(idshm, IPC_RMID, shmbuf)) == -1) {
+      perror("shmctl");
+      exit(EXIT_FAILURE);
+   }
+   
+   /** remove semaforo */
+   if (semctl(idsem, 0, IPC_RMID, arg) == -1) {
+      perror("semctl");
+      exit(EXIT_FAILURE);
+   }
+      
+   /** remove fila */
+   if (msgctl(idmsq, IPC_RMID, msqbuf) == -1) {
+      perror("msgctl");
+      exit(EXIT_FAILURE);
+   }
    
 	return 0;
    

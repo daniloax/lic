@@ -10,7 +10,7 @@ void v_sem(unsigned int idsem) {
    operacao[1].sem_flg = 0;
    
    if (semop(idsem, operacao, 2) < 0)
-      printf("erro no p=%d\n", errno);
+      printf("erro no p = %d\n", errno);
 
 }
 
@@ -21,6 +21,6 @@ void p_sem(unsigned int idsem) {
    operacao[0].sem_flg = 0;
    
    if (semop(idsem, operacao, 1) < 0)
-      printf("erro no p=%d\n", errno);
+      printf("erro no p = %d\n", errno);
       
 }

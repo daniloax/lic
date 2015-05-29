@@ -1,8 +1,8 @@
 #ifndef STRING_H
 #define STRING_H
 
-struct String {
+typedef struct String {
    char *value;
-};
+} TipoString;
 
 #endif

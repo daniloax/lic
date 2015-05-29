@@ -3,9 +3,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "../estrutura/lista.h"
+#include "../estrutura/pessoa.h"
+#include "../estrutura/string.h"
 
-void ConstroiListaDiscente(ListaDiscente **epinicio);
+void ConstroiListaDiscente(ListaDiscente **epinicio, char *arquivo);
+void OrdenaListaDiscente(ListaDiscente **epinicio);
+void PercorreListaDiscente(ListaDiscente *pinicio);
 
 #endif /* CONSTROI_H_ */

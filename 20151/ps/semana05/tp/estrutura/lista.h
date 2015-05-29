@@ -16,17 +16,17 @@ typedef struct NomeCitacao {
 } ListaNomeCitacao;
 
 typedef struct Projeto {
-   struct Atividade *projeto;
+   struct TipoAtividade *projeto;
    struct Projeto *proximoProjeto;
 } ListaProjeto;
 
 typedef struct Discente {
-   struct Pessoa *discente;
+   struct TipoPessoa *discente;
    struct Discente *proximoDiscente;
 } ListaDiscente;
 
 typedef struct Docente {
-   struct Pessoa *docente;
+   struct TipoPessoa *docente;
    struct Docente *proximoDocente;
 } ListaDocente;
 

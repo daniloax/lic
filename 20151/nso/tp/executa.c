@@ -2,51 +2,76 @@
 
 int main(int argc, char *argv[]) {
    
-   char chave[10];
-   int status, pid, semid;
+   int idmsq, idsem, key, pid, estado, w, msgrcvreturn;
    
-   // printf("./%s\n", argv[0]);
-   // printf("%s\n", argv[1]);
-   // sprintf(chave, "%d", argv[1]);
+   key = atoi(argv[1]);
+   w = 0;
+   
+   /** obtem fila */
+   if ((idmsq = msgget(key, 0x180)) < 0) {
+     
+      perror("msgget");
+      exit(EXIT_FAILURE);
+   
+   }
    
    /** obtem semaforo */
-   /* if ((idsem = semget(chave, 1, 0)) < 0) {
+   if ((idsem = semget(key, 1, 0)) < 0) {
       
-      printf("erro ao obter semaforo\n");
-      exit(1);
-
-   } */
+      perror("semget");
+      exit(EXIT_FAILURE);
    
-   /** cria processo filho */
-   /* pid = fork();
-   
-   if (pid == 0) {
-      
-      v_sem(idsem);
-      
-      printf("filho - obtive o semaforo, vou dormir\n");
-      sleep(1);
-      printf("filho - dormi\n");
-      
-      p_sem(idsem);
-      
-      exit(0);
-      
-   } */
-   
-   /** codigo do pai */
-   /* v_sem(idsem);
-   
-   printf("pai - obtive o semaforo, vou dormir\n");
-   sleep(1);
-   printf("pai - dormi\n");
-   
-   p_sem(idsem);
-   
-   wait(&status); */
+   }
    
    while (1) {
-      sleep(1);
+            
+      if ((msgrcv(idmsq, &mensagem_rec, sizeof(mensagem_rec) - sizeof(long), 0, IPC_NOWAIT) < 0) && (w == 0))
+         sleep(1);
+         
+      else {
+      
+         /** cria processo */
+         if ((pid = fork()) < 0) {
+           
+            perror("fork");
+            exit(EXIT_FAILURE);
+         
+         }
+
+         /** executa comando */
+         if (pid == 0) {
+            
+            // printf("child PID is %ld\n", (long) getpid());
+
+            if (execl(mensagem_rec.executa, mensagem_rec.executa, argv[1], mensagem_rec.parametro, (char *) 0) < 0) {
+               
+               perror("execl");
+               exit(EXIT_FAILURE);
+               
+            }
+            
+         } else {
+            
+            mensagem_env.pid = pid;
+            strcpy(mensagem_env.executa, mensagem_rec.executa);
+            msgsnd(idmsq, &mensagem_env, sizeof(mensagem_env) - sizeof(long), IPC_NOWAIT);
+            
+            w = waitpid(pid, &estado, 0);
+            
+            if (w == -1) {
+               perror("waitpid");
+               exit(EXIT_FAILURE);
+            }
+            
+            if (WIFEXITED(estado)) {
+               // printf("exited, status = %d\n", WEXITSTATUS(estado));
+               sleep(1);
+            }
+            
+         }
+         
+      }
+      
    }
    
    return 0;

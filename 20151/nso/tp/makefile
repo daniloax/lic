@@ -1,8 +1,8 @@
 #ARCH = i386
 #ARCH = amd64
 
-all: main prompt cadastra executa pai filho limpa
-	./main prompt
+all: main prompt cadastra executa fibonacci hanoi limpa
+	./main
 	
 #	./main cadastra filho argumento
 	
@@ -22,11 +22,11 @@ cadastra: cadastra.o semaforo.o
 executa: executa.o semaforo.o
 	gcc -g -Wall executa.o semaforo.o -o executa
 	
-pai: pai.o semaforo.o
-	gcc -g -Wall pai.o semaforo.o -o pai	
+fibonacci: fibonacci.o semaforo.o
+	gcc -g -Wall fibonacci.o semaforo.o -o fibonacci	
 
-filho: filho.o semaforo.o
-	gcc -g -Wall filho.o semaforo.o -o filho
+hanoi: hanoi.o semaforo.o
+	gcc -g -Wall hanoi.o semaforo.o -o hanoi
 
 main.o: main.c
 	gcc -c -g -Wall main.c
@@ -40,11 +40,11 @@ cadastra.o: cadastra.c
 executa.o: executa.c
 	gcc -c -Wall executa.c
 	
-pai.o: pai.c
-	gcc -c -Wall pai.c
+fibonacci.o: fibonacci.c
+	gcc -c -Wall fibonacci.c
 
-filho.o: filho.c
-	gcc -c -Wall filho.c
+hanoi.o: hanoi.c
+	gcc -c -Wall hanoi.c
 	
 semaforo.o: semaforo.c
 	gcc -c -Wall semaforo.c

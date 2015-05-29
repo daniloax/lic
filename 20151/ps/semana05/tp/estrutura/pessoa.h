@@ -3,11 +3,14 @@
 
 #include "atividade.h"
 #include "lista.h"
+#include "string.h"
 
-struct Pessoa {
-  struct String *nome;
-  struct String *vinculo;
+typedef struct Pessoa {
+  int anoMatricula;
+  int matricula;
+  struct TipoString *nome;
+  struct TipoString *vinculo;
   struct ListaNomeCitacao *nomesCitacao;
-};
+} TipoPessoa;
 
 #endif

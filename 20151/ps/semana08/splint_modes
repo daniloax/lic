@@ -1,0 +1,246 @@
+Splint 3.1.2 --- 20 Feb 2009
+
+Flag                    weak     standard checks   strict   
+
+abstractcompare                     +        +        +        
+aliasunique                         +        +        +        
+allglobs                                     +        +        
+allocmismatch                       +        +        +        
+assignexpose                                 +        +        
+bitwisesigned                                         +        
+boolcompare                         +        +        +        
+boolint                    +                                   
+boolops                             +        +        +        
+boundsread                                            +        
+boundswrite                                           +        
+branchstate                         +        +        +        
+bufferoverflow                      +        +        +        
+bufferoverflowhigh         +        +        +        +        
+casebreak                           +        +        +        
+castexpose                                   +        +        
+charindex                  +                                   
+charint                    +                                   
+charintliteral             +                                   
+charunsignedchar           +                                   
+checkedglobalias                    +        +        +        
+checkmodglobalias                   +        +        +        
+checkpost                                             +        
+checkstrictglobalias                +        +        +        
+checkstrictglobs           +        +        +        +        
+compdef                             +        +        +        
+compdestroy                         +        +        +        
+compmempass                         +        +        +        
+constuse                            +        +        +        
+controlnestdepth                                      +        
+cppnames                                     +        +        
+declundef                                    +        +        
+deparrays                                    +        +        
+dependenttrans                      +        +        +        
+elseifcomplete                                        +        
+enumindex                                                      
+enumint                    +        +                          
+enummembers                                                    
+enummemuse                          +        +        +        
+evalorder                           +        +        +        
+evalorderuncon                                        +        
+exitarg                             +        +        +        
+exportconst                                           +        
+exportfcn                                             +        
+exportheader                                 +        +        
+exportheadervar                              +        +        
+exportiter                                            +        
+exportlocal                         +        +        +        
+exportmacro                                           +        
+exporttype                                            +        
+exportvar                                             +        
+exposetrans                         +        +        +        
+fcnderef                                     +        +        
+fcnuse                     +        +        +        +        
+fielduse                            +        +        +        
+firstcase                           +        +        +        
+floatdouble                +                                   
+forblock                                              +        
+forempty                                              +        
+formatconst                         +        +        +        
+forwarddecl                +                                   
+freshtrans                          +        +        +        
+globnoglobs                                           +        
+globsimpmodsnothing                          +        +        
+globstate                           +        +        +        
+globuse                    +        +        +        +        
+ifblock                                               +        
+ifempty                    +        +        +        +        
+ignorequals                                                    
+ignoresigns                                                    
+immediatetrans                      +        +        +        
+impcheckedglobs                                                
+impcheckedspecglobs                 +        +        +        
+impcheckedstatics                                              
+impcheckedstrictglobs                                 +        
+impcheckedstrictspecglobs                             +        
+impcheckedstrictstatics                               +        
+impcheckmodglobs                                               
+impcheckmodinternals                         +        +        
+impcheckmodspecglobs                                           
+impcheckmodstatics                                             
+implementationoptional                       +        +        
+impouts                                                        
+imptype                             +        +        +        
+includenest                                  +        +        
+incondefs                           +        +        +        
+incondefslib                        +        +        +        
+infloops                            +        +        +        
+infloopsuncon                                +        +        
+internalglobs                                         +        
+internalglobsnoglobs                                  +        
+isoreserved                                  +        +        
+isoreservedinternal                                   +        
+keeptrans                           +        +        +        
+kepttrans                           +        +        +        
+legacy                                                         
+likelyboundsread                                      +        
+likelyboundswrite                                     +        
+longint                    +                                   
+longintegral                                                   
+longsignedintegral                                             
+longunsignedintegral       +                                   
+longunsignedunsignedintegra+                                   
+looploopbreak                                +        +        
+looploopcontinue                                      +        
+loopswitchbreak                                       +        
+macroassign                         +        +        +        
+macroconstdecl                      +        +        +        
+macrodecl                                                      
+macroempty                                            +        
+macrofcndecl                        +        +        +        
+macromatchname             +        +        +        +        
+macroparams                         +        +        +        
+macroparens                         +        +        +        
+macroredef                          +        +        +        
+macroret                                                       
+macrostmt                           +        +        +        
+macrounrecog                        +        +        +        
+matchanyintegral                                               
+matchfields                         +        +        +        
+mayaliasunique                      +        +        +        
+memimp                              +        +        +        
+misplacedsharequal                  +        +        +        
+misscase                            +        +        +        
+modfilesys                                            +        
+modglobs                            +        +        +        
+modglobsnomods                                        +        
+modglobsunchecked                                     +        
+modinternalstrict                                     +        
+modnomods                                             +        
+modobserveruncon                                      +        
+modsimpnoglobs                                                 
+modstrictglobsnomods                                  +        
+moduncon                                              +        
+modunconnomods                                        +        
+multithreaded                                +        +        
+mustdefine                          +        +        +        
+mustfreefresh                       +        +        +        
+mustfreeonly                        +        +        +        
+mustmod                                      +        +        
+mustnotalias                        +        +        +        
+mutrep                              +        +        +        
+nestedextern                        +        +        +        
+newreftrans                         +        +        +        
+noeffect                            +        +        +        
+noeffectuncon                                         +        
+noparams                                     +        +        
+noret                               +        +        +        
+nullassign                          +        +        +        
+nullderef                           +        +        +        
+nullpass                            +        +        +        
+nullptrarith                                 +        +        
+nullret                             +        +        +        
+nullstate                           +        +        +        
+nullterminated                                                 
+numabstractcast                     +        +        +        
+numabstractindex           +                                   
+numabstractlit             +                                   
+numabstractprint                             +        +        
+numenummembers                                        +        
+numliteral                 +        +                          
+numstructfields                                       +        
+observertrans                       +        +        +        
+oldstyle                                              +        
+onlytrans                           +        +        +        
+onlyunqglobaltrans                           +        +        
+overload                                                       
+ownedtrans                          +        +        +        
+paramuse                            +        +        +        
+passunknown                                                    
+portability                                  +        +        
+predboolint                         +        +        +        
+predboolothers             +        +        +        +        
+predboolptr                                  +        +        
+protoparammatch                              +        +        
+protoparamname                                        +        
+ptrarith                                              +        
+ptrcompare                          +        +        +        
+ptrnegate                  +        +                          
+readonlystrings                     +        +        +        
+readonlytrans                                +        +        
+realcompare                         +        +        +        
+realrelatecompare                            +        +        
+redecl                                       +        +        
+redundantsharequal                           +        +        
+refcounttrans                       +        +        +        
+relaxquals                 +        +                          
+relaxtypes                                                     
+retalias                                     +        +        
+retexpose                                    +        +        
+retvalbool                          +        +        +        
+retvalint                           +        +        +        
+retvalother                +        +        +        +        
+sefparams                           +        +        +        
+sefuncon                                     +        +        
+shadow                              +        +        +        
+sharedtrans                         +        +        +        
+shiftimplementation                 +        +        +        
+shiftnegative                       +        +        +        
+shortint                   +                                   
+sizeoftype                                            +        
+specundef                           +        +        +        
+stackref                   +        +        +        +        
+statemerge                 +        +        +        +        
+statetransfer              +        +        +        +        
+staticinittrans                              +        +        
+statictrans                         +        +        +        
+strictbranchstate                                     +        
+strictdestroy                                         +        
+strictops                                             +        
+strictusereleased                                     +        
+stringliterallen                                      +        
+stringliteralnoroom        +        +        +        +        
+stringliteralnoroomfinalnul+        +        +        +        
+stringliteralsmaller                         +        +        
+superuser                                    +        +        
+switchloopbreak                              +        +        
+switchswitchbreak                                     +        
+sysdirerrors                                          +        
+temptrans                           +        +        +        
+tmpcomments                                                    
+toctou                                                +        
+topuse                                                +        
+typeuse                    +        +        +        +        
+uncheckedglobalias                           +        +        
+uniondef                            +        +        +        
+unixstandard                                                   
+unqualifiedinittrans                         +        +        
+unqualifiedtrans                    +        +        +        
+unreachable                         +        +        +        
+unsignedcompare                     +        +        +        
+unusedspecial                                         +        
+usedef                              +        +        +        
+usereleased                         +        +        +        
+varuse                     +        +        +        +        
+voidabstract               +                                   
+warnlintcomments                    +        +        +        
+warnmissingglobs                                      +        
+warnmissingglobsnoglobs                               +        
+whileblock                                            +        
+whileempty                                   +        +        
+zerobool                   +        +                          

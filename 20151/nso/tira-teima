@@ -1,0 +1,48 @@
+pid[0] = 9491
+pid[0] = 9492
+pid[1] = 9491
+pid[1] = 9493
+pid[1] = 9492
+pid[1] = 9494
+
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  9491  7969  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9492  9491  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9493  9491  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9494  9492  0  80   0 -   427 -      pts/1    00:00:00 prog1
+0 R  1000  9495  7969  0  80   0 -  1033 -      pts/1    00:00:00 ps
+
+pai - 9491
+filho - 9493
+filho - 9492
+filho - 9494
+
+9493 exited, status = 0
+9492 exited, status = 0
+
+-------------
+
+pid[0] = 9677
+pid[0] = 0
+pid[1] = 9678
+pid[1] = 0
+pid[1] = 9679
+pid[1] = 0
+
+pai - 9676
+filho - 9678
+filho - 9677
+filho - 9679
+
+9678 exited, status = 0
+9678 exited, status = 0
+9678 exited, status = 0
+
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  9676  7969  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9677  9676  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9678  9676  0  80   0 -   427 -      pts/1    00:00:00 prog1
+1 S  1000  9679  9677  0  80   0 -   427 -      pts/1    00:00:00 prog1
+0 R  1000  9680  7969  0  80   0 -  1033 -      pts/1    00:00:00 ps
+
+

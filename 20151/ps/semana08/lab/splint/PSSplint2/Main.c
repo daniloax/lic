@@ -1,15 +1,20 @@
-#include"Input.h"
-#include"Listas.h"
+#include "Input.h"
+#include "Listas.h"
 
 int main(){
-	Lista *inicio;
+	
+   Lista *inicio;
 	char *c;
-	int tamanho;
-	Inicia(&inicio);
-	while ( Tem_Input(3) ){
-		Get_C( tamanho );
+	int *tamanho;
+	
+   Inicia(&inicio);
+	
+   while ( Tem_Input(3) ){
+		c = Get_C( &tamanho );
 		Insere(&inicio, c, tamanho);
 	}
-	Mostra(inicio);
-	return 0;
+	
+   Mostra(inicio);
+	
+   return 0;
 }

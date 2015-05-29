@@ -1,198 +1,68 @@
 #include "prompt.h"
 
-finalizaProcesso() {
+int main(int argc, char *argv[]) {
    
-}
-
-int main() {
+   char *inputs[3], input[64], *inputv;
+   int idsem, inputc, key, cadastra, estadoCadastra;
    
-   struct shmid_ds *buf;
-   
-   char *args[3], *argv, chave[10], childid[10], input[64], *pshm;
-   int argc, idsem, idshm, key = 0x68f60b1, pid, status;
-   
-   /* printf("sou o programa %s\nparametro 1: %s\nparametro 2: %s\nparametro 3: %s\n", argv[0], argv[1], argv[2], argv[3]);
-   sleep(1);
-   
-   if (execl(argv[1], argv[1], argv[2], argv[3], (char *) 0) < 0)
-      printf("erro no execl = %d\n", errno); */
-      
-   sprintf(chave, "%d", key);
-    
-   /** cria semaforo */
-   if ((idsem = semget(key, 1, IPC_CREAT|0x1ff)) < 0) {
-      
-      printf("erro na criacao do semaforo\n");
-      exit(1);
-   
-   }
-   
-   /** cria memoria */
-   if ((idshm = shmget(key, sizeof(int), IPC_CREAT|0x1ff)) < 0) {
-      
-      printf("erro na criacao da memoria\n");
-      exit(1);
-      
-   }
+   key = atoi(argv[1]);
    
    /** obtem semaforo */
-   /* if ((idsem = semget(key, 1, 0)) < 0) {
-      printf("erro ao obter semaforo\n");
-      exit(1);
-   } */
-   
-   /** cria processo filho */
-   pid = fork();
-   
-   if (pid == 0) {
-         
-      // if (execl("executa", "executa", chave, (char *) 0) < 0)
-      //   printf("erro no execl = %d\n", errno);
+   if ((idsem = semget(key, 1, 0)) < 0) {
       
-      while (1) {
-      
-         /** obtem semaforo */
-         
-         v_sem(idsem);
-         
-         /** attach */
-         pshm = shmat(idshm, (char *) 0, 0);
-         
-         printf("\nfilho - obtive o semaforo, vou dormir\n");
-         sleep(1);
-         printf("filho - dormi\n");
-         sleep(1);
-         printf("filho - vou ler\n");
-         sleep(1);
-         printf("filho - li\n");
-         sleep(1);
-         printf("filho - valor lido = %s\n", pshm);
-         sleep(1);
-         printf("filho - vou escrever\n");
-         sleep(1);
-         
-         sprintf(childid, "%d", getpid());
-         *pshm = calloc(strlen(childid), sizeof(char));
-         strcpy(pshm, childid);
-         
-         printf("filho - escrevi\n");
-         
-         p_sem(idsem);
-         
-      }
-      
-      /** detach */
-      if (shmdt(pshm) == -1)
-         printf("The shmdt call failed!, error number = %d\n", errno);
-
-      else
-         printf("The shmdt call succeeded!\n");
-      
-      exit(0);
-      
-      // if (execl("executa", "executa", chave, (char *) 0) < 0)
-      //   printf("erro no execl = %d\n", errno);
-      
-   }
-   
-   /* v_sem(idsem);
-   
-   printf("pai - obtive o semaforo, vou dormir\n");
-   sleep(1);
-   printf("pai - dormi\n");
-   
-   p_sem(idsem); */
-   
-   /** codigo do pai */
-   
-   /** attach */
-   pshm = shmat(idshm, (char *) 0, 0);
-   
-   if (*pshm == -1) {
-      
-      printf("erro no attach\n");
-      exit(1);
+      perror("semget");
+      exit(EXIT_FAILURE);
    
    }
    
+   /** exibe prompt */
    while (strcmp(input, "termina") != 0) {
       
-      v_sem(idsem);
-      
-      printf("\npai - obtive o semaforo, vou dormir\n");
-      sleep(1);
-      printf("pai - dormi\n");
-      sleep(1);
-      printf("pai - vou ler\n");
-      sleep(1);
-      printf("pai - li\n");
-      sleep(1);
-      printf("pai - valor lido = %s\n", pshm);
-      sleep(1);
-      printf("pai - entre com um valor\n");
-      sleep(1);
-      
-      input[0] = "\0";
+      strcpy(input, "\0");
 
       printf("\n> ");
       scanf("%[^\n]s", input);
       getchar();
-      // printf("%s\n", input);
 
-      argv = strtok(input, " ");
-      argc = 0;
+      inputv = strtok(input, " ");
+      inputc = 0;
 
-      while (argv != NULL) {
+      while (inputv != NULL) {
          
-         args[argc] = argv;
-         
-         // printf("argv[%d]: ", argc);
-         // printf("%s\n", argv);
-         
-         argv = strtok(NULL, " ");
-         argc++;
+         inputs[inputc] = inputv;
+         inputv = strtok(NULL, " ");
+         inputc++;
+      
+      }
+
+      /** cria processo */
+      if ((cadastra = fork()) < 0) {
+        
+         perror("fork");
+         exit(EXIT_FAILURE);
       
       }
       
-      *pshm = calloc(strlen(input), sizeof(char));
-      strcpy(pshm, input);
-      
-      // if (execl(args[0], args[0], args[1], args[2], (char *) 0) < 0)
-      //   printf("erro no execl = %d\n", errno);
-      
-      p_sem(idsem);
+      /** cadastra programa */
+      if ((cadastra == 0) && (strcmp(inputs[0], "termina") != 0)) {
+                  
+         if (execl(inputs[0], inputs[0], argv[1], argv[2], inputs[1], inputs[2], (char *) 0) < 0) {
+            
+            perror("execl");
+            exit(EXIT_FAILURE);
+            
+         }
          
-   }
-   
-   v_sem(idsem);
-   
-   kill(atoi(pshm), SIGKILL);
-   
-   p_sem(idsem);
-   
-   wait(&status);
-   
-   /** desvincula memoria compartilhada */
-	if (shmdt(pshm) == -1)
-		printf("\nThe shmdt call failed!, error number = %d\n", errno);
-
-	else
-		printf("The shmdt call succeeded!\n");
-   
-   /** remove semaforo */
-   if (semctl(idsem, 0, IPC_RMID, arg) == -1)
-      printf("The semctl call failed!, error number = %d\n", errno);
-   
-   else
-      printf("The semctl call succeeded!\n");
+      } else if ((cadastra == 0) && (strcmp(inputs[0], "termina") == 0)) {
+         
+         exit(0);
+         
+      }
       
-   /** remove memoria compartilhada */
-   if ((shmctl(idshm, IPC_RMID, buf)) == -1)
-		printf("The shmctl call failed!, error number = %d\n", errno);
-   
-   else
-      printf("The shmctl call succeeded!\n");
-   
+      wait(&estadoCadastra);
+
+   }
+      
    return 0;
 
 }

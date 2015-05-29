@@ -1,18 +1,15 @@
-UNIVERSIDADE DE BRASÍLIA
-DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO
-ALBA CRISTINA MAGALHÃES ALVES DE MELO
-NOÇÕES DE SISTEMAS OPERACIONAIS
-TURMA: A
-PERIODO: 2015/1
+leiame.txt
 
-TRABALHO PRÁTICO
+Universidade de Brasilia
+Departamento de Ciência da Computacao
+Alba Cristina Magalhaes Alves de Melo
+Nocoes de Sistemas Operacionais
+Trabalho Pratico
+Turma A
+Periodo 2015/1
+Aluno Danilo Alves Xavier
+Matricula 2011/0059697
 
-ALUNOS:
+Compilacao:
 
-DANILO ALVES XAVIER
-
-LEIAME.TXT
-
-PASSOS PARA COMPILAÇÃO:
-
-1) executar o comando make.
+1) make
