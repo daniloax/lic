@@ -6,18 +6,18 @@
 #include "string.h"
 
 typedef struct Integrante {
-   struct Pessoa *integrante;
+   struct TipoPessoa *integrante;
    struct Integrante *proximoIntegrante;
 } ListaIntegrante;
 
 typedef struct NomeCitacao {
-   struct String *nomeCitacao;
-   struct NomeCitacao *proximoNome;
+   struct TipoString *nomeCitacao;
+   struct NomeCitacao *proximaCitacao;
 } ListaNomeCitacao;
 
 typedef struct Projeto {
    struct TipoAtividade *projeto;
-   struct Projeto *proximoProjeto;
+   struct Atividade *proximoProjeto;
 } ListaProjeto;
 
 typedef struct Discente {

@@ -6,9 +6,9 @@
 #include "string.h"
 
 typedef struct Pessoa {
+  struct TipoString *nome;
   int anoMatricula;
   int matricula;
-  struct TipoString *nome;
   struct TipoString *vinculo;
   struct ListaNomeCitacao *nomesCitacao;
 } TipoPessoa;

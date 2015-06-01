@@ -5,9 +5,10 @@
 #include "pessoa.h"
 
 typedef struct Atividade {
-  struct String *nome;
-  struct ListaIntegrante *integrantes;
+  struct TipoString *nome;
+  struct TipoString *tipo;
   struct Pessoa *coordenador;
+  struct ListaIntegrante *integrantes;
 } TipoAtividade;
 
 #endif

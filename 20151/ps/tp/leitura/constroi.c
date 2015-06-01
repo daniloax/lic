@@ -1,22 +1,38 @@
 #include "constroi.h"
 
+void ConstroiListaProjeto(ListaProjeto **epinicio, char *arquivo) {
+ 
+   FILE *pArquivo;
+   
+   char c;
+   
+   pArquivo = fopen(arquivo, "r");
+   
+   if (!pArquivo)
+      printf("'%s' not exist\n", arquivo);
+      
+   else
+      while ((c = getc(pArquivo)) != EOF)
+         printf("%c", c);
+   
+}
+
 void ConstroiListaDiscente(ListaDiscente **epinicio, char *arquivo) {
 
    FILE *pArquivo;
    
-   char separador; // separador do formato ano/matricula
-   char buffer[78]; // buffer temporario
+   char separador;
+   char buffer[78];
    char nome[30];
 
 	int anoMatricula;
 	int matricula;
 	
-	ListaDiscente *pd1; // ponteiro para a estrutura ListaDiscente
-	ListaDiscente *pd2; // ponteiro para a estrutura ListaDiscente
+	ListaDiscente *pd1;
+	ListaDiscente *pd2;
 	
-	TipoPessoa *discente; // ponteiro para a estrutura TipoPessoa
+   TipoPessoa *discente;
 
-   /* abre arquivo */
    pArquivo = fopen(arquivo, "r");
 
    if (!pArquivo)
@@ -28,38 +44,38 @@ void ConstroiListaDiscente(ListaDiscente **epinicio, char *arquivo) {
        *  ate encontrar a palavra Matricula */
 		while (strcmp("Matricula", nome) != 0) {
 				
-			fgets(buffer, sizeof(buffer), pArquivo); // grava em buffer os primeiros 77 caracteres da linha do arquivo
-			sscanf(buffer,"%s", &nome); // le de buffer um formato string qualquer e grava em nome
+			fgets(buffer, sizeof(buffer), pArquivo);
+			sscanf(buffer,"%s", &nome);
 			
 		}
 		
 		/** filtra informacoes e constroi lista de discentes */
-		while ((fgets(buffer, sizeof(buffer), pArquivo)) != NULL ) { // grava em buffer os primeiros 77 caracteres da linha do arquivo
+		while ((fgets(buffer, sizeof(buffer), pArquivo)) != NULL ) {
 			
-			if (sscanf(buffer,"%d%c%d %[^\n]s", &anoMatricula, &separador, &matricula, nome) == 4) { // le de buffer o formato <ano></><matricula><espaco><nome> e grava respectivamente em ano, separador, matricula e nome
+			if (sscanf(buffer,"%d%c%d %[^\n]s", &anoMatricula, &separador, &matricula, nome) == 4) {
 				
-				discente = malloc(sizeof(TipoPessoa)); // atribui a discente a alocacao de memoria para a estrutura TipoPessoa
+				discente = malloc(sizeof(TipoPessoa));
 				 
-				discente->anoMatricula = anoMatricula; // atribui o ano de matricula ao ano de matricula do discente 
-				discente->matricula = matricula; // atribui o numero de matricula do buffer ao ano de matricula do discente
+				discente->anoMatricula = anoMatricula;
+				discente->matricula = matricula;
 				
-            discente->nome = calloc(strlen(nome), sizeof(char)); // atribui ao nome do discente a alocacao de um array de caracteres do tamanho de nome, obtido a partir do buffer
-            strcpy(discente->nome, nome); // copia os caracteres de nome para o nome do discente
+            discente->nome = calloc(strlen(nome), sizeof(char));
+            strcpy(discente->nome, nome);
 				
-				pd1 = malloc(sizeof(ListaDiscente)); // atribui a pd1 a alocacao de memoria para a estrutura ListaDiscente
+				pd1 = malloc(sizeof(ListaDiscente));
 				
-				pd1->discente = discente; // atribui ao elemento discente da ListaDiscente o discente recem criado
-				pd1->proximoDiscente = NULL; // atribui ao elemento proximoDiscente o valor nulo
+				pd1->discente = discente;
+				pd1->proximoDiscente = NULL;
 				
-				if (*epinicio == NULL) // se a lista estiver vazia, ou seja, se o valor do ponteiro para a lista de discentes for nulo
-					*epinicio = pd1; // atribui o elemento do tipo ListaDiscente recem criado ao ponteiro de inicio da lista
+				if (*epinicio == NULL)
+					*epinicio = pd1;
 				
-				else // senao, se a lista nao estiver vazia
-					pd2->proximoDiscente = pd1; // atribui o elemento do tipo ListaDiscente recem criado ao ponteiro de proximo elemento da lista
+				else
+					pd2->proximoDiscente = pd1;
 					
-				pd2 = pd1; // atribui o elemento do tipo ListaDiscente recem criado ao ponteiro auxiliar
+				pd2 = pd1;
 				
-				while (getc(pArquivo) != 10); // enquanto getc nao encontrar caracter de nova linha descarta o caracter lido
+				while (getc(pArquivo) != 10);
 		
 			}
 			
