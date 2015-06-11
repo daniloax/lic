@@ -2,18 +2,116 @@
 
 void ConstroiListaProjeto(ListaProjeto **epinicio, char *arquivo) {
  
-   FILE *pArquivo;
+   FILE *pFile;
    
-   char c;
+   char *args[2], *argv, c, buffer[256], bufferIntegrante[256], *ints, *intv;
+   int argc, i, integrante, flagIntegrantes;
    
-   pArquivo = fopen(arquivo, "r");
+   pFile = fopen(arquivo, "r");
    
-   if (!pArquivo)
+   if (!pFile)
       printf("'%s' not exist\n", arquivo);
       
-   else
-      while ((c = getc(pArquivo)) != EOF)
-         printf("%c", c);
+   else { 
+      
+      printf("\n");
+      
+      while ((c = getc(pFile)) != EOF) {
+      
+         argc = 0;
+         i = 0;
+         
+         /** leitura de linha */
+         do {
+            
+            buffer[i] = c;
+            i++;
+         
+         } while ((c = getc(pFile)) != '\n');
+         
+         buffer[i] = '\0';
+         
+         /** separa buffer */
+         argv = strtok(buffer, "=");
+         
+         /** chave = valor */
+         while (argv != NULL) {
+         
+            args[argc] = argv;
+            printf("%s\n", args[argc]);
+            argv = strtok(NULL, "=");
+            argc++;
+      
+         }
+         
+         /** integrantes do projeto */
+         if (strcmp("INTEGRANTES-DO-PROJETO", buffer) == 0) {
+            
+            do {
+            
+               flagIntegrantes = 0;
+               i = 0;
+               
+               /** leitura de linha */
+               do {
+
+                  buffer[i] = c;
+                  i++;
+
+               } while ((c = getc(pFile)) != '\n');
+               
+               buffer[i] = '\0';
+               
+               /** integrante */
+               if (sscanf(buffer, "%d%[^\n]s", &integrante, &bufferIntegrante) == 2) {
+                  
+                  printf("%d\n", integrante);
+                  
+                  /** separa buffer */
+                  intv = strtok(bufferIntegrante, " ="  );
+                  
+                  /** sinaliza */
+                  if (strcmp("NOME-COMPLETO", intv) == 0)
+                     flagIntegrantes = 1;
+                  
+                  /** nao identifica chaves e valores */
+                  while (intv != NULL) {
+               
+                     ints = intv;
+                     printf("%s\n", ints);
+                     intv = strtok(NULL, " =");
+               
+                  }
+                  
+               /** linha entre projetos */
+               } else {
+                  
+                  argc = 0;
+                  i = 0;
+                  
+                  argv = strtok(buffer, "=");
+
+                  while (argv != NULL) {
+         
+                     args[argc] = argv;
+                     argv = strtok(NULL, "=");
+                     argc++;
+               
+                  }
+                  
+               }
+               
+            } while (flagIntegrantes);
+            
+         }
+         
+      }
+       
+      printf("\n");
+      
+      fclose(pFile);
+      
+   }
    
 }
 
