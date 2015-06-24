@@ -1,0 +1,67 @@
+.:: Usando va_list (Lista de Argumentos) ::.
+
+.:: Introdução ::.
+Várias vezes você já deve ter visto o printf, com sua lista "infinita" de parâmetros, e aquele protótipo com os "...":
+int printf(const char *format, ...);
+E então você se pergunta: "como diabos eu faço essa porra!?".
+A resposta é mais simples doque parece: va_list (Lista de Argumentos). E é oque explicarei nesse artigo :)
+
+.:: Declarar ::.
+Para declarar uma lista de argumentos é simples, PRIMEIRO inclua a header stdarg.h:
+#include <stdarg.h>
+Então crie a lista:
+va_list lista;
+Pronto, agora entenda como ter a função:
+int func(PARÂMETROS, const char *format, ...)
+format seria a lista, exemplo: "%s, %d", etc, os ... seriam as direções dos argumentos :)
+Agora como iniciar a lista?
+va_start(format, lista); 
+fechar a lista
+va_end(lista);
+Mas...
+Como usar agora?
+Simples, você dispara alguma I/O que use va_list direto, entre essas estão:
+int vprintf(const char *format, va_list ap);
+int vfprintf(FILE *stream, const char *format, va_list ap);
+int vsprintf(char *str, const char *format, va_list ap);
+int vsnprintf(char *str, size_t size, const char *format, va_list ap);
+int vscanf(const char *format, va_list ap);
+int vsscanf(const char *str, const char *format, va_list ap);
+int vfscanf(FILE *stream, const char *format, va_list ap);
+
+Agora fica fácil entender como usar não? 
+Um exemplo prático:
+
+[code va_arg.c]
+#include <stdarg.h>
+#include <stdio.h>
+
+int falar(const char *format, ...)
+{
+    char buffer[512];
+    va_list l;
+
+    va_start(l, format);
+    vsprintf(buffer, format, l);
+    va_end(l);
+    printf("%s", buffer);
+    return 0;
+}
+
+int main()
+{
+    falar("IDHSAUIhdsuia %s %d\n", "dashdasui", 543);
+    return 0;
+}
+[/code]
+
+Existe também a va_copy que copia uma va_list inteira para outra, se usa va_copy(dest, str)
+Então o uso ficaria bem diversificado, aproveitem :)
+
+.:: Bibliografia ::.
+Source code da GlibC :D
+
+.:: Finalização ::.
+Gostaria de agradecer ao DVD pela ajuda em ERs, e a todos os meus amigos de verdade.
+E também um beijo para a khizzy =~
+Meu contato é: todesskrahe@gmail.com
