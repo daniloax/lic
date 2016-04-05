@@ -1,0 +1,13 @@
+leiame.txt
+
+Universidade de Brasilia
+Departamento de Ciência da Computação
+Linguagens de Programação
+Trabalho Prático
+
+Aluno: Danilo Alves Xavier
+Matrícula: 11/0059697
+
+Compilação:
+
+1) make
