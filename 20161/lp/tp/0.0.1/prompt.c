@@ -43,7 +43,7 @@ int main() {
       /** executa programa */
       if ((execute == 0) && (strcmp(args[0], "exit") != 0)) {
                   
-         if (execl("execute", "execute", args[0], args[1], args[2], (char *) 0) < 0) {
+         if (execl("execute", "execute", args[0], args[1], (char *) 0) < 0) {
             
             perror("execl");
             exit(EXIT_FAILURE);
