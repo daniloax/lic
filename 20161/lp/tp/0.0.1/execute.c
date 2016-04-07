@@ -11,6 +11,8 @@ int main(int argc, char *argv[]) {
 		exit(EXIT_FAILURE);
 
 	}
+	
+	printf("execute: %d\n", getpid());
 
 	/** executa programa */
 	if (pid == 0) {
@@ -21,8 +23,6 @@ int main(int argc, char *argv[]) {
 			exit(EXIT_FAILURE);
 			
 		}
-		
-	} else if (pid != 0) {
 		
 		exit(0);
 		

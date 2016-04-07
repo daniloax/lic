@@ -40,6 +40,8 @@ int main() {
       
       }
       
+      printf("prompt: %d\n", getpid());
+      
       /** executa programa */
       if ((execute == 0) && (strcmp(args[0], "exit") != 0)) {
                   
