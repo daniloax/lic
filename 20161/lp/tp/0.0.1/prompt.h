@@ -1,16 +1,41 @@
+/**	
+*	@file prompt.h 
+*	@brief Arquivo cabeçalho para prompt de comandos.
+*	@author Danilo Alves.
+*	@since 14/04/16.
+*	@version 1.0.
+*
+*/
+
+/**
+*	Controle visando evitar inclusões múltiplas.
+*/
+
 #ifndef PROMPT_H_
 #define PROMPT_H_
 
-#include <errno.h>
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/ipc.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <unistd.h>
+/**
+*	Controle visando identificar o servidor.
+*/
+
+#ifdef PROMPT_C_
+#define EXT_PROMPT_H_
+#else
+#define EXT_PROMPT_H_ extern
+#endif
+
+/** 
+*	Inclusão de módulos de definição.
+*/
+
+#include "keypad.h"
+
+/**
+*	Declaração de protótipo de função.
+*/
 
 int main();
 
-#endif /* PROMPT_H_ */
+#undef PROMPT_H_
+
+#endif

@@ -7,8 +7,8 @@ main: main.o
 execute: execute.o
 	gcc -g -Wall execute.o -o execute
 	
-prompt: prompt.o
-	gcc -g -Wall prompt.o -o prompt
+prompt: prompt.o keypad.o
+	gcc -g -Wall prompt.o keypad.o -o prompt
 
 main.o: main.c
 	gcc -c -g -Wall main.c
@@ -18,6 +18,9 @@ execute.o: execute.c
 	
 prompt.o: prompt.c
 	gcc -c -g -Wall prompt.c
+	
+keypad.o: keypad.c
+	gcc -c -g -Wall keypad.c
 	
 clean: 
 	rm *.o

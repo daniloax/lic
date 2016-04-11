@@ -1,4 +1,43 @@
+/**	
+*	@file main.c
+* 	@brief Programa principal.
+*	@author Danilo Alves.
+*	@since 14/04/16.
+*	@version 1.0.
+*
+*/
+
+/**
+*	Declaração visando identificar o módulo como servidor.
+*/
+
+#define MAIN_C_
+
+/**
+*	Inclusão de bibliotecas do compilador.
+*/
+
+#include <errno.h>
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/ipc.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+/**
+*	Inclusão de módulos de definição.
+*/
+
 #include "main.h"
+
+/** 
+*	Término de processamento de módulo de implementação.
+*/
+
+#undef MAIN_C_
 
 int main() {
    

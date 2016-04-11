@@ -1,16 +1,35 @@
+/**	
+*	@file main.h
+* 	@brief Arquivo cabeçalho para o programa principal.
+*	@author Danilo Alves.
+*	@since 14/04/16.
+*	@version 1.0.
+*
+*/
+
+/**
+*	Controle visando evitar inclusões múltiplas.
+*/
+
 #ifndef MAIN_H_
 #define MAIN_H_
 
-#include <errno.h>
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/ipc.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <unistd.h>
+/**
+*	Controle visando identificar o servidor.
+*/
+
+#ifdef MAIN_C_
+#define EXT_MAIN_H_
+#else
+#define EXT_MAIN_H_ extern
+#endif
+
+/**
+*	Declaração de protótipo de função.
+*/
 
 int main();
 
-#endif /* MAIN_H_ */
+#undef MAIN_H_
+
+#endif

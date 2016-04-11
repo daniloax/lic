@@ -1,8 +1,47 @@
+/**	
+*	@file main.c
+* 	@brief Prompt de comandos.
+*	@author Danilo Alves.
+*	@since 14/04/16.
+*	@version 1.0.
+*
+*/
+
+/**
+*	Inclusão de bibliotecas do compilador.
+*/
+
+#include <errno.h>
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/ipc.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+/**
+*	Declaração visando identificar o módulo como servidor.
+*/
+
+#define PROMPT_C_
+
+/** 
+*	Inclusão de módulos de definição.
+*/
+
 #include "prompt.h"
+
+/** 
+*	Término de processamento de módulo de implementação.
+*/
+
+#undef PROMPT_C_
 
 int main() {
    
-   char *args[2], *argv, *buf, *ptr, input[64];
+   char *args[2], *argv, *buf, *ptr;
    int argc, execute, executeStatus;
    long size;
    
@@ -18,8 +57,7 @@ int main() {
       strcpy(input, "\0");
 
       printf("\n%s$ ", ptr);
-      scanf("%[^\n]s", input);
-      getchar();
+      getInput();
 
       argv = strtok(input, " ");
       argc = 0;

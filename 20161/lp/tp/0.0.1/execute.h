@@ -1,16 +1,35 @@
+/**	
+*	@file execute.h
+*	@brief Arquivo cabeçalho para execução de programas.
+*	@author Danilo Alves.
+*	@since 14/04/16.
+*	@version 1.0.
+*
+*/
+
+/**
+*	Controle visando evitar inclusões múltiplas.
+*/
+
 #ifndef EXECUTE_H_
 #define EXECUTE_H_
 
-#include <errno.h>
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/ipc.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <unistd.h>
+/**
+*	Controle visando identificar o servidor.
+*/
+
+#ifdef EXECUTE_C_
+#define EXT_EXECUTE_H_
+#else
+#define EXT_EXECUTE_H_ extern
+#endif
+
+/**
+*	Declaração de protótipo de função.
+*/
 
 int main(int argc, char *argv[]);
 
-#endif /* EXECUTE_H_ */
+#undef EXECUTE_H_
+
+#endif
