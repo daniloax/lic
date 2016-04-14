@@ -40,13 +40,7 @@
 
 int main(int argc, char *argv[]) {
    
-   int pipe_fd[2], pid, status;
-   char buffer[32];
-   
-   if (pipe(pipe_fd) < 0) {
-		perror("pipe");
-      exit(EXIT_FAILURE);
-	}
+   int pid, status;
    
 	/** cria processo */
 	if ((pid = fork()) < 0) {
@@ -56,35 +50,26 @@ int main(int argc, char *argv[]) {
 
 	}
 	
-	/** localiza programa */
+	/** executa programa */
 	if (pid == 0) {
 		
-		printf("i'm the child used for whereis\nmy pid is %d\n", getpid());
-		dup2(pipe_fd[1], STDOUT_FILENO);
+		printf("child: %d\n", getpid());
+		printf("argv[1]: %s\n", argv[1]);
 		
-		if (execl("/usr/bin/whereis", "/usr/bin/whereis", argv[1], (char *) 0) < 0) {
+		if (execl(argv[1], argv[1], (char *) 0) < 0) {
 			
 			perror("execl");
 			exit(EXIT_FAILURE);
 			
 		}
 		
+		exit(0);
+		
 	}
 	
+	printf("execute: %d\n", getpid());
+	
 	wait(&status);
-	
-	printf("i'm in the excecute process, which will be used to run whereis stdout\nmy pid is %d\n", getpid());
-	
-	if (read(pipe_fd[1], buffer, sizeof(buf)) < 0) {
-		perror("read");
-      exit(EXIT_FAILURE);
-   }
-   
-   close(pipe_fd[1]);
-	
-	printf("whereis %s: %s\n", argv[1], buffer);
-	
-	
 	
 	return 0;
 
