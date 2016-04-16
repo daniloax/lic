@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
 		printf("argv[2]: %s\n", argv[2]);
 		
 		/** executa args[1] */
-		if (execl(args[1], argv[1], argv[2], (char *) 0) < 0) {
+		if (execl(args[1], args[1], argv[2], (char *) 0) < 0) {
 			
 			perror("execl");
 			exit(EXIT_FAILURE);
