@@ -41,11 +41,15 @@
 
 int main() {
    
-   char *args[2], *argv, *buf, *ptr;
-   int argc, execute, executeStatus;
+   char *args[2], *argv, *buf, input[64], *ptr;
+   int argno, execute, executeStatus;
    long size;
    
    size = pathconf(".", _PC_PATH_MAX);
+   
+   displayMessageLine("Programming Languages SHell 0.0.1 (Apr 14 2016)");
+	displayMessageLine("[GCC 4.9.2] on linux2");
+	displayMessageLine("Type \"help\" or \"man\" for more information.");
 	
 	if ((buf = (char *)malloc((size_t)size)) == NULL)
 		perror("malloc");
@@ -53,22 +57,30 @@ int main() {
    /** exibe prompt */
    while (strcmp(input, "exit") != 0) {
 		
-		ptr = getcwd(buf, (size_t)size);
+		args[0] = NULL;
+		args[1] = NULL;
+		
       strcpy(input, "\0");
-
-      printf("\n%s$ ", ptr);
-      getInput();
-
-      argv = strtok(input, " ");
-      argc = 0;
-
-      while (argv != NULL) {
-         
-         args[argc] = argv;
-         argv = strtok(NULL, " ");
-         argc++;
       
-      }
+      ptr = getcwd(buf, (size_t)size);
+      
+		displayMessage("\n");
+		displayMessage(ptr);
+		displayMessage("$ ");
+
+      scanf("%[^\n]s", input);
+		getchar();
+		
+		argno = 0;
+		argv = strtok(input, " ");
+
+		while (argv != NULL) {
+			
+			args[argno] = argv;
+			argv = strtok(NULL, " ");
+			argno++;
+		
+		}
 
       /** cria processo */
       if ((execute = fork()) < 0) {
@@ -82,19 +94,56 @@ int main() {
       
       /** executa programa */
       if ((execute == 0) && (strcmp(args[0], "exit") != 0)) {
+			
+			/** exibe ajuda */
+			if (strcmp(input, "help") == 0) {
+								
+				if (execl("help", "help", (char *) 0) < 0) {
+								
+					perror("execl");
+					exit(EXIT_FAILURE);
+					
+				}
+				
+			/** exibe manual */
+			} else if ((strcmp(args[0], "man") == 0) && (args[1] == NULL)) {
+				
+				if (execl("/usr/bin/less", "less", "PLSH.txt", (char *) 0) < 0) {
+								
+					perror("execl");
+					exit(EXIT_FAILURE);
+					
+				}
+				
+			/** altera diretorio */
+			} else if ((strcmp(args[0], "cd") == 0)  && (args[1] != NULL)) {
+				
+				if (chdir(args[1]) < 0) {
+					
+					perror("chdir");
+					exit(EXIT_FAILURE);
+				
+				}
+				
+				exit(0);
+				
+			/** localiza programa */
+			} else {
                   
-         if (execl("execute", "execute", args[0], args[1], (char *) 0) < 0) {
-                     
-            perror("execl");
-            exit(EXIT_FAILURE);
-            
-         }
-         
-      } else if ((execute == 0) && (strcmp(args[0], "exit") == 0)) {
-         
-         exit(0);
-         
-      }
+				if (execl("execute", "execute", input, (char *) 0) < 0) {
+								
+					perror("execl");
+					exit(EXIT_FAILURE);
+					
+				}
+				
+			}
+			
+		} else if ((execute == 0) && (strcmp(input, "exit") == 0)) {
+				
+				exit(0);
+				
+		}
       
       wait(&executeStatus);
 

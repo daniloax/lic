@@ -28,7 +28,7 @@
 *	Inclusão de módulos de definição.
 */
 
-#include "keypad.h"
+#include "screen.h"
 
 /**
 *	Declaração de protótipo de função.
