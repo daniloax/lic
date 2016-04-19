@@ -1,0 +1,42 @@
+PLSH(1)                    General Commands Manual                     PLSH(1)
+
+NAME
+       plsh - PROGRAMMING LANGUAGES SHELL
+
+SYNOPSIS
+       [COMMAND] [OPTIONS]
+
+COPYLEFT
+       PLSH está sob a licença Copyleft (ɔ) 2016.
+
+DESCRIPTION
+       PLSH é programa que apresenta uma interface entre o Bash e comandos
+       lidos a partir da entrada padrão.
+       
+COMMAND
+       O PLSH inclui em sua lista de comandos aceitos a maioria dos comandos
+       aceitos pelo BASH.
+
+OPTIONS
+       O PLSH aceita como parâmetros os mesmos aceitos pelos programas
+       executados pelo BASH.
+       
+AUTHOR
+       Escrito por Danilo Alves Xavier
+       
+SEE ALSO
+       man [COMMAND]
+       
+EXAMPLES
+       cat [OPTION]... [FILE]...
+       ls [OPTION]... [FILE]...
+       mkdir [OPTION]... DIRECTORY...
+       pwd [OPTION]...
+       rmdir [OPTION]... DIRECTORY...
+       find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]
+       who [OPTION]... [ FILE | ARG1 ARG2 ]
+       
+GNU PLSH 0.0.1                     April 2015                          PLSH(1)
+       
+       
+

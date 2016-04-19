@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
 	/** localiza programa */
 	if (pid == 0) {
 		
-		printf("child: %d\n", getpid());
+		printf("execute child: %d\n", getpid());
 		printf("argv[1]: %s\n", argv[1]);
 		printf("argv[2]: %s\n", argv[2]);
 		
@@ -106,7 +106,6 @@ int main(int argc, char *argv[]) {
 	} else {
 
 		buffer[len] = 0;
-		printf("Buffer received: %s\n", buffer);
 
 	}
 	
@@ -116,7 +115,7 @@ int main(int argc, char *argv[]) {
 	args[0] = strtok(buffer, ":");
 	args[1] = strtok(NULL, " ");
 	
-	printf("whereis %s: %s", args[0], args[1]);	
+	printf("whereis %s: %s\n", args[0], args[1]);	
 	
 	/** cria processo */
 	if ((pid = fork()) < 0) {
