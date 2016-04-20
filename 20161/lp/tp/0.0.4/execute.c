@@ -34,12 +34,6 @@
 #include "execute.h"
 
 /** 
-*	Definição de constantes.
-*/
-
-#define MAXARGS 31
-
-/** 
 *	Término de processamento de módulo de implementação.
 */
 
@@ -49,14 +43,6 @@ int main(int argc, char *argv[]) {
    
    char *args, buffer[1024];
    int fd[2], pid, status;
-   
-   printf("execute: %d\n", getpid());
-   
-   printf("argc: %d\n", argc);
-   printf("argv[0]: %s\n", argv[0]);
-	printf("argv[1]: %s\n", argv[1]);
-	printf("argv[2]: %s\n", argv[2]);
-	printf("argv[3]: %s\n", argv[3]);
 	
 	if ((pipe(fd)) < 0) {
 
@@ -75,12 +61,6 @@ int main(int argc, char *argv[]) {
 	
 	/** localiza programa */
 	if (pid == 0) {
-		
-		printf("execute child: %d\n", getpid());
-		printf("argv[0]: %s\n", argv[0]);
-		printf("argv[1]: %s\n", argv[1]);
-		printf("argv[2]: %s\n", argv[2]);
-		printf("argv[3]: %s\n", argv[3]);
 			
 		/** fecha pipe de leitura */
 		close(fd[0]);           
@@ -91,7 +71,7 @@ int main(int argc, char *argv[]) {
 		/** fecha pipe de escrita */
 		close(fd[1]);
 		
-		/** localiza args[0] */
+		/** localiza programa */
 		if (execl("/usr/bin/whereis", "whereis", argv[1], (char *) 0) < 0) {
 			
 			perror("execl");
@@ -103,6 +83,7 @@ int main(int argc, char *argv[]) {
 			
 	}
 	
+	/** aguarda whereis */
 	wait(&status);
 
 	/** fecha pipe de escrita */
@@ -124,13 +105,9 @@ int main(int argc, char *argv[]) {
 	/** fecha pipe de leitura */
 	close(fd[0]);
 	
+	/** separa localização  */
 	args = strtok(buffer, ":");
-	
-	printf("whereis %s: ", argv[1]);
-	
 	args = strtok(NULL, " ");
-	
-	printf("%s\n", args);
 	
 	/** cria processo */
 	if ((pid = fork()) < 0) {
@@ -142,9 +119,6 @@ int main(int argc, char *argv[]) {
 	
 	/** executa programa */
 	if (pid == 0) {
-		
-		printf("execute child: %d\n", getpid());
-		printf("%s %s %s\n", args, argv[2], argv[3]);
 		
 		/** executa args */
 		if (execl(args, argv[1], argv[2], argv[3], (char *) 0) < 0) {
@@ -158,6 +132,7 @@ int main(int argc, char *argv[]) {
 		
 	}
 	
+	/** aguarda execução */
 	wait(&status);
 	
 	return 0;
