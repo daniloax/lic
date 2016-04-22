@@ -163,7 +163,7 @@ int main() {
 		} else if (strcmp(argv[0], "help") == 0) {
 									
 			displayMessageLine("");
-			displayMessageLine("List of classes of commands:");
+			displayMessageLine("Lista de comandos:");
 			displayMessageLine("");
 			displayMessageLine("cd -- altera diretório de trabalho");
 			displayMessageLine("pwd -- imprime o caminho do diretório corrente");
@@ -200,12 +200,7 @@ int main() {
 					
 				/** executa programa */
 				} else {
-					
-					printf("execute: %d\n", getpid());
-					printf("argv[0]: %s\n", argv[0]);
-					printf("argv[1]: %s\n", argv[1]);
-					printf("argv[2]: %s\n", argv[2]);
-					
+
 					if ((pipe(fd)) < 0) {
 
 						perror("pipe");
@@ -300,6 +295,7 @@ int main() {
 					
 				}
 				
+			/** sai do programa */
 			} else if ((execute == 0) && (strcmp(input, "quit") == 0)) {
 					
 					displayMessageLine("");
