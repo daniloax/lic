@@ -1,0 +1,29 @@
+vetor[3,2,4,1,5]
+
+(vetor, 0, 4)
+
+pivo = vetor[len(vetor) / 2]
+pivo = vetor[2]
+pivo = 4
+
+i = 0
+j = 4
+
+(4 > 3) {i++}
+
+i = 1
+
+(4 > 2) {i++}
+
+i = 2
+
+(4 > 4) False
+
+(4 < 2) {i++}
+
+(4 < 1) {j = }
+
+(1 <= 3) {
+
+	temp = 4;
+	vetor[2] = vetor
