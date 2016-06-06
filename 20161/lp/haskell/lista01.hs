@@ -42,5 +42,5 @@ qsort03 (x : xs) = qsort03 larger ++[x]++ qsort03 smaller
 --	a.
 second :: [[a]] -> [a]
 second [] = []
-second (x:xs) = head (tail xs)
+second (x:xs) = head (tail a)
 	

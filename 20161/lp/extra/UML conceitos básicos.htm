@@ -1,0 +1,1268 @@
+<html><head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>UML conceitos básicos</title>
+<style>
+<!--
+.r{display:inline;font-weight:normal;margin:0}.r{font-size:100%}a{font-family:arial,sans-serif}
+a:link{color:#00c}
+-->
+</style>
+</head>
+
+<body>
+
+<p><img src="UML%20conceitos%20b%C3%A1sicos_arquivos/maco10.gif" border="0" height="32" width="233"><b><font color="#800080" size="5" face="Verdana">&nbsp; 
+ 
+</font><font color="#800080" size="5" face="Trebuchet MS">UML - Conceitos Básicos II</font></b></p>
+<hr>
+<p><font size="4" face="Segoe UI">Este artigo , recebido como colaboração , visa 
+complementar os conceitos desta importante linguagem para modelagem - UML. Para 
+saber mais sobre o assunto leia também:</font></p>
+<ul>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/net_uml2.htm"><b>UML - 
+  Modelando sistemas - Casos de Uso</b></a> </font> </p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/uml_vb.htm"><b>UML - 
+  Unified Modeling Language e Visual Modeler.</b></a> </font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/vbn_roop.htm"><b>VB.NET 
+  - Revisitando conceitos OOP</b></a> </font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left"><b><a href="http://www.macoratti.net/vbn_oopc.htm">
+  <font face="Segoe UI"><font size="4">VB 
+  .NET<u> &nbsp;- <font color="#0000ff">Conceitos OOP.</font></u></font></font></a><font size="4" face="Segoe UI">&nbsp;</font></b><font size="4" face="Segoe UI">
+	</font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/vbn_bas6.htm"><b>VB 
+  .NET - Primeiros passos - Conceitos - VI.</b></a> </font>
+  </p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/vbn_oop.htm"><b>VB .NET 
+  - Finalmente uma linguagem orientada a objetos.</b></a> </font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/oop_trd.htm"><b>OOP noções para iniciantes</b></a> </font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/oo_conc2.htm"><b>O que 
+  significa&nbsp; "orientação a objetos"&nbsp; ?</b></a><b>&nbsp;</b> </font></p></li>
+  <li>
+  <p style="margin-top: 0; margin-bottom: 0" align="left">
+  <font size="4" face="Segoe UI"><b><a href="http://www.macoratti.net/oo_conc1.htm">
+  Conceitos sobre Projetos&nbsp;-&nbsp; Decomposição de software. </a>&nbsp;</b> </font></p></li>
+</ul>
+<p align="left"><font size="4" face="Segoe UI">Para efetuar a modelagem UML 
+podemos usar uma das seguintes ferramentas:</font></p>
+<ul>
+  <li><font size="4" face="Segoe UI"><a href="http://www.gentleware.com/"><b>
+  Poseidon</b> </a>- existe um versão <i>opensource</i> (Community version) </font> </li>
+  <li><font size="4" face="Segoe UI"><b><a href="http://www.pacestar.com/">
+  Pacestar UML</a></b> - Uma versão shareware de uma ferramenta mais simples. </font>
+  </li>
+  <li><font size="4" face="Segoe UI"><b>
+  <a href="http://www.labes.icmc.sc.usp.br/%7Ertvbraga/rosecppdemo.exe">Rational 
+  Rose</a> </b>- Cópia demo do (<b>Rational Rose Limited Edition</b>).(Tem 10 
+  MB) </font> </li>
+  <li><font size="4" face="Segoe UI"><font color="#0000ff"><b>Dia</b> </font>-
+  <a href="http://www.lysator.liu.se/%7Ealla/dia/" target="_blank">
+  http://www.lysator.liu.se/~alla/dia/</a> </font></li>
+  <li><font size="4" face="Segoe UI"><font color="#0000ff"><b>ArgoUML</b></font> 
+  - <a href="http://www.argouml.tigris.org/" target="_blank">
+  http://www.argoUML.tigris.org</a> </font> </li>
+</ul>
+<p><font size="4" face="Segoe UI">Agora ao artigo:</font></p>
+<p><b><font color="#800080" size="5" face="Segoe UI">Histórico da UML</font></b></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Os estudos sobre a tecnologia 
+de objetos iniciaram-se na década de 1980 com ênfase nas linguagens de 
+programação. No final da mesma década começaram a surgir os métodos de análise e 
+projeto. Os principais métodos foram de:</font></p>
+<ul>
+  <li><font color="#0000FF" size="4" face="Segoe UI">SHLAER &amp; MELLOR (1989 e 1991);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">COAD &amp; YOURDON (1991);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">COAD &amp; NICOLA (1993);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">COAD et al. (1995);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">WIRFS-BROCK et al. (1990);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">BOOCH (1994 e 1995);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">RUMBAUGH et al. (1991 e 1996);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">MARTIN &amp; ODELL (1994 e 1995);</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">JACOBSON (1994 e 1995).</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Todos os métodos eram muito 
+similares, apesar da existência de diferentes notações para representar o mesmo 
+conceito, o que na verdade, causava muita confusão entre os técnicos e 
+competição entre os metodologistas, o que provocou a "guerra dos métodos".</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Em 1994 <b>James Rumbaugh e Grady 
+Booch</b> iniciaram o trabalho de unificação dos métodos Booch e OMT.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Em 1995 no <b>OOPSLA</b> ,<b> Booch e 
+Rumbaught </b>apresentaram a documentação da versão 0.8 do método unificado e 
+anunciaram a integração de Ivar Jacobson na equipe, formando assim o que eles 
+denominaram de <b>"Three amigos"</b>. </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Durante 1996 eles trabalharam 
+no método que passou a chamar de<b> Unified Modeling Language (UML)</b> e a <b>Object 
+Management Group (OMG)</b> iniciou um esforço para padronização na área de métodos.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Os esforços de Rumbaugh, Booch 
+e Jacobson resultaram as versões 0.9 e 0.91 da UML em junho e outubro de 1996 
+respectivamente.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A UML é a sucessora da 
+linguagem de modelagem encontrada nos métodos <b>Booch, OOSE/Jacobson, OMT</b> e outros 
+como Modelos de Entidades e Relacionamentos. </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Cada um desses métodos era 
+reconhecido mediante alguma forte característica. O <b>OOSE</b> é orientado a ‘use 
+case’ e provê um excelente recurso para a análise de requisitos. A OMT foi 
+expressiva para análise e sistemas centrados a dados.  </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Durante 1996 a <b>Rational 
+Software Corporation</b> contou com a participação de outras Instituições parceiras 
+como: Hewlett-Packard, IBM, Microsoft, Oracle, Unisys, Platinum Technology, etc. 
+Essa colaboração contribuiu para a produção da versão 1.0, uma versão bem 
+definida, expressiva, poderosa e aplicável, a qual foi submetida a OMG para 
+adoção. </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Em setembro de 1997 liberaram a 
+versão 1. 1 da UML e em dezembro a mesma foi aprovada como padrão pela OMG.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Com a unificação dos métodos a 
+UML alcançou dois objetivos:</font></p>
+<ul>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Acabou com as diferenças existentes entre os 
+  métodos anteriores; </font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Unificaram as perspectivas entre os 
+  diferentes tipos de sistemas, fases de desenvolvimento e conceitos internos.</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p><b><font color="#800080" size="5" face="Segoe UI">Método</font></b></p>
+<dir>
+  <i>
+  <p align="JUSTIFY"></p>
+</i></dir><i>
+</i>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A UML não é um método é uma 
+linguagem de modelagem designada para especificar, visualizar, construir e 
+documentar um sistema. A linguagem de modelagem é a notação que o método utiliza 
+para expressar projetos enquanto que o processo indica quais passos seguir para 
+desenvolver um projeto.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A especificação da UML consiste 
+de duas partes:</font></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Semântica - especifica a sintaxe abstrata e 
+  a semântica dos conceitos de modelagem estática e dinâmica de objetos;</font></li>
+  <li><font size="4" face="Segoe UI">Notação – especifica a notação gráfica para 
+  a representação visual da semântica.</font></li>
+</ul>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A UML suporta o desenvolvimento 
+iterativo e incremental. Desenvolvimento iterativo e incremental é o processo de 
+desenvolvimento de sistemas em pequenos passos. Uma iteração é um laço de 
+desenvolvimento que resulta na liberação de um subconjunto de produtos que 
+evolui até o produto final percorrendo as seguintes atividades:</font></p>
+<p align="JUSTIFY"></p>
+<ul>
+  <li><b><font size="4" face="Segoe UI">Análise de requisitos</font></b></li>
+  <li><b><font size="4" face="Segoe UI">Análise</font></b></li>
+  <li><b><font size="4" face="Segoe UI">Projeto</font></b></li>
+  <li><b><font size="4" face="Segoe UI">Implementação</font></b></li>
+  <li><b><font size="4" face="Segoe UI">Teste</font></b></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O detalhamento de cada etapa 
+destas atividades define o método de desenvolvimento de sistemas.</font></p>
+<i>
+<p align="JUSTIFY"></p>
+</i><a name="_Toc421675928">
+</a><p><a name="_Toc421675928"><b><font color="#800080" size="5" face="Segoe UI">Análise</font></b></a><b><font color="#800080" size="5" face="Segoe UI"> 
+de requisitos</font></b></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Esta etapa se caracteriza pela 
+definição do comportamento do sistema, ou seja, como o sistema age ou reage, 
+descrevendo o relacionamento entre o ambiente e o sistema. Deve ser uma 
+definição de necessidades do usuário e não uma proposta de solução. O usuário 
+deve indicar os requisitos prioritários para o sistema.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O grupo de análise deve 
+identificar as necessidades do usuário. Decisões do projeto impostas não são 
+características essenciais do domínio do problema.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A análise de requisitos 
+compõe-se dos seguintes diagramas:</font></p>
+<p align="JUSTIFY"></p>
+<ul>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Diagrama de caso de uso;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Diagrama de seqüência;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Diagrama de colaboração;</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Para realizar a análise de 
+requisitos, primeiramente deve-se:</font></p>
+<p align="JUSTIFY"></p>
+<ul>
+  <li><font size="4" face="Segoe UI">I<font color="#0000FF">dentificar objetivo e características do 
+  sistema;</font></font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Identificar os requisitos essenciais;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Descrever as necessidades do usuário;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Elaborar diagrama de caso de uso;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Elaborar diagrama de seqüência;</font></li>
+  <li><font color="#0000FF" size="4" face="Segoe UI">Elaborar diagrama de colaboração</font></li>
+</ul>
+<p></p>
+<p><b><font color="#800080" size="4" face="Segoe UI">Conceitos</font></b></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">UML é uma linguagem visual para 
+especificação (modelagem) de sistemas orientados a objeto. A UML privilegia a 
+descrição de um sistema seguindo três perspectivas:</font></p>
+<ol>
+  <ol>
+    <li><font size="4" face="Segoe UI">Os diagramas de classes - (Dados 
+    estruturais);</font></li>
+    <li><font size="4" face="Segoe UI">Os diagramas de casos de uso (Operações 
+    funcionais);</font></li>
+    <li><font size="4" face="Segoe UI">Os diagramas de seqüência, atividades e 
+    transição de Estados (Eventos temporais).</font></li>
+  </ol>
+</ol>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Os casos de uso de um projeto 
+de software são descritos na linguagem UML através de Diagramas de Casos de Uso 
+(Use Case). Diagrama de "Use Case": É um diagrama usado para se identificar como 
+o sistema se comporta em várias situações que podem ocorrer durante sua 
+operação. Descrevem o sistema, seu ambiente e a relação entre os dois. Os 
+componentes deste diagrama são os atores, os "Use Case" e os relacionamentos. 
+Casos de uso e Relacionamentos. Ainda pode-se usar as primitivas Pacotes e 
+Notas.</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Ator: Representa qualquer 
+entidade que interage com o sistema durante sua execução essa interação se dá 
+através de comunicações (troca de mensagens). Um ator pode ser uma pessoa 
+(usuário, secretaria, aluno...), um dispositivo (impressora, máquina...), 
+hardware (placa de modem, scaner...), softwares (sistema de bd, aplicativos...), 
+etc. </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Algumas de suas características 
+são descritas abaixo:</font></p>
+<p align="JUSTIFY"></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Ator não é parte do sistema. Representa os 
+  papéis que o usuário do sistema pode desempenhar.</font></li>
+  <li><font size="4" face="Segoe UI">Ator pode interagir ativamente com o 
+  sistema.</font></li>
+  <li><font size="4" face="Segoe UI">Ator pode ser um receptor passivo de 
+  informação.</font></li>
+  <li><font size="4" face="Segoe UI">Ator pode representar um ser humano, uma 
+  máquina ou outro sistema.</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Representação:</font></p>
+<p><font size="4" face="Segoe UI"><img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml21.gif" border="0" height="144" width="265"></font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI"><b>OBS</b>: Atores representam, 
+na verdade, papeis desempenhados por pessoas, dispositivos ou outros quando 
+interagem com o sistema. Um ator cujo identificador seja ALUNO não representa um 
+aluno, mais sim um aluno qualquer, uma pessoa que esteja interagindo com o 
+sistema na qualidade de aluno.</font></p>
+<u><b>
+<p align="JUSTIFY"></p>
+</b></u><p align="JUSTIFY"><u><b><font size="4" face="Segoe UI">Use Case</font></b></u><font size="4" face="Segoe UI">: 
+Como foi exemplificado acima, é uma seqüência de ações que o sistema executa e 
+produz um resultado de valor para o ator. Modela o dialogo entre os atores e o 
+sistema; é um fluxo de eventos completos. Algumas de suas características são 
+descritas abaixo:</font></p>
+<p align="JUSTIFY"></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Um "Use Case" modela o diálogo entre atores 
+  e o sistema.</font></li>
+  <li><font size="4" face="Segoe UI">Um "Use Case" é iniciado por um ator para 
+  invocar uma certa funcionalidade do sistema.</font></li>
+  <li><font size="4" face="Segoe UI">Um "Use Case" é fluxo de eventos completo e 
+  consistente.</font></li>
+  <li><font size="4" face="Segoe UI">O conjunto de todos os "Use Case" representa 
+  todas as situações possíveis de utilização do sistema.</font></li>
+</ul>
+<u><b>
+</b></u><p><u><b><font size="4" face="Segoe UI">Relacionamento</font></b></u><font size="4" face="Segoe UI">: 
+Os relacionamentos ligam as classes/objetos entre si criando relações lógicas 
+entre estas entidades. Os relacionamentos podem ser dos seguintes tipos:</font></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Associação: É uma conexão entre classes, e 
+  também significa que é uma conexão entre objetos daquelas classes. Em UML, uma 
+  associação é definida com um relacionamento que descreve uma série de 
+  ligações, onde a ligação é definida como a semântica entre as duplas de 
+  objetos ligados. </font></li>
+  <li><font size="4" face="Segoe UI">Generalização: É um relacionamento de um 
+  elemento mais geral e outro mais específico. O elemento mais específico pode 
+  conter apenas informações adicionais. Uma instância (um objeto é uma instância 
+  de uma classe) do elemento mais específico pode ser usada onde o elemento mais 
+  geral seja permitido. </font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"></p>
+<p><font size="4" face="Segoe UI">Os relacionamentos em um diagrama de casos de 
+uso podem envolver dois atores e dois casos de uso ou um ator e um caso de uso e 
+assim sucessivamente. O relacionamento é representado através de uma seta :
+<img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml22.gif" border="0" height="11" width="117"></font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Exemplo: Diagrama de "Use 
+Cases" para um sistema automatizado de <b>Matrícula num Curso</b></font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p><font size="4" face="Segoe UI">
+          <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml23.gif" border="0" height="318" width="416"></font></p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p><b><font size="4" face="Segoe UI">Tipo de Relacionamento - 
+              Associações</font></b></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><font size="4" face="Segoe UI">Uma associação representa que duas classes 
+possuem uma ligação (link) entre elas, significando, por exemplo, que elas 
+"conhecem uma a outra", "estão conectadas com", "para cada X existe um Y" e 
+assim por diante. Classes e associações são muito poderosas quando modeladas em 
+sistemas complexos</font></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">Associações Normais</font></b></p>
+<font face="Arial">
+<p align="JUSTIFY"></p>
+</font>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O tipo mais comum de associação 
+é apenas uma conexão entre classes. É representada por uma linha sólida entre 
+duas classes. A associação possui um nome (junto à linha que representa a 
+associação), normalmente um verbo, mas substantivos também são permitidos.
+</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Pode-se também colocar uma seta 
+no final da associação indicando que esta só pode ser usada para o lado onde a 
+seta aponta. Mas associações também podem possuir dois nomes, significando um 
+nome para cada sentido da associação.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Para expressar a multiplicidade 
+entre os relacionamentos, um intervalo indica quantos objetos estão relacionados 
+no link. O intervalo pode ser de zero para um (0..1), zero para vários (0..* ou 
+apenas *), um para vários (1..*), dois (2), cinco para 11 (5..11) e assim por 
+diante. É também possível expressar uma série de números como (1, 4, 6..12). Se 
+não for descrita nenhuma multiplicidade, então é considerado o padrão de um para 
+um (1..1 ou apenas 1).</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p><font size="4" face="Segoe UI">
+              <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml24.gif" border="0" height="45" width="399"></font></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="left"><b><font size="4" face="Segoe UI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a name="_Toc436909130">Duas 
+classes se relacionando por associação normal</a></font></b></p>
+<font face="Arial">
+<p align="CENTER"></p>
+</font>
+<p><font size="4" face="Segoe UI">No exemplo acima vemos um relacionamento entre 
+as classes Cliente e Conta Corrente que se relacionam por associação. </font>
+</p>
+<p><b><font size="4" face="Segoe UI">Associação Recursiva</font></b></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">É possível conectar uma classe 
+a ela mesma através de uma associação e que ainda representa semanticamente a 
+conexão entre dois objetos, mas os objetos conectados são da mesma classe. Uma 
+associação deste tipo é chamada de associação recursiva. </font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p align="JUSTIFY"><font size="4" face="Segoe UI">
+                    <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml25.gif" border="0" height="150" width="180"></font></p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="left"><b><font size="4" face="Segoe UI">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a name="_Toc436909131">Exemplo de uma associação recursiva</a></font></b></p>
+<p><b><font size="4" face="Segoe UI">Associação Ternária</font></b></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Mais de duas classes podem ser 
+associadas entre si, a associação ternária associa três classes. Ela é mostrada 
+como uma grade losango (diamante) e ainda suporta uma associação de classe 
+ligada a ela, traçaria-se, então, uma linha tracejada a partir do losango para a 
+classe onde seria feita a associação ternária.</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p align="JUSTIFY"><font size="4" face="Segoe UI">
+              <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml26.gif" border="0" height="145" width="427"></font></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="left"><b><font size="4" face="Segoe UI">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a name="_Toc436909135">Exemplo de uma associação ternária</a></font></b></p>
+<p><font size="4" face="Segoe UI">No exemplo acima a associação ternária 
+especifica que um cliente poderá possuir 1 ou mais contratos e cada contrato 
+será composto de 1 ou várias regras contratuais.</font></p>
+<p><b><font size="4" face="Segoe UI">Agregação</font></b></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A agregação é um caso 
+particular da associação. A agregação indica que uma das classes do 
+relacionamento é uma parte, ou está contida em outra classe. As palavras chaves 
+usadas para identificar uma agregação são: "consiste em", "contém", "é parte 
+de". </font></p>
+<ul>
+  <li><font size="4" face="Segoe UI">É uma forma especializada de associação na 
+  qual um todo é relacionado com suas partes. Também conhecida como relação de 
+  conteúdo.</font></li>
+  <li><font size="4" face="Segoe UI">É representada como uma linha de associação 
+  com um diamante junto à Classe agregadora.</font></li>
+  <li><font size="4" face="Segoe UI">A multiplicidade é representada da mesma 
+  maneira que nas associações.</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <p align="JUSTIFY">
+            <font size="4" face="Segoe UI">
+            <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml27.gif" border="0" height="55" width="364"></font></p>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><b><font size="4" face="Segoe UI">Tipo de Relacionamento - Generalizações</font></b></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A generalização é um 
+relacionamento entre um elemento geral e um outro mais específico. O elemento 
+mais específico possui todas as características do elemento geral e contém ainda 
+mais particularidades. Um objeto mais específico pode ser usado como uma 
+instância do elemento mais geral. A generalização, também chamada de herança, 
+permite a criação de elementos especializados em outros.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Existem alguns tipos de 
+generalizações que variam em sua utilização a partir da situação. São elas: 
+generalização normal e restrita. As generalizações restritas se dividem em 
+generalização de sobreposição, disjuntiva, completa e incompleta.</font></p>
+<font face="Arial">
+<p align="JUSTIFY"></p>
+</font>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">Generalização Normal</font></b></p>
+<font face="Arial">
+<p align="JUSTIFY"></p>
+</font>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Na generalização normal a 
+classe mais específica, chamada de subclasse, herda tudo da classe mais geral, 
+chamada de superclasse. Os atributos, operações e todas as associações são 
+herdados. </font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <p align="JUSTIFY">
+                <font size="4" face="Segoe UI">
+                <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml27.gif" border="0" height="55" width="364"></font></p>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<font size="4" face="Segoe UI"><b>
+<p align="CENTER"><a name="_Toc436909139">Exemplo de uma generalização normal</a></p>
+</b></font>
+<p align="JUSTIFY"></p>
+<p><font size="4" face="Segoe UI">Uma classe pode ser tanto uma subclasse quanto 
+uma superclasse, se ela estiver numa hierarquia de classes que é um gráfico onde 
+as classes estão ligadas através de generalizações.</font></p>
+<p><font size="4" face="Segoe UI">A generalização normal é representada por uma 
+linha entre as duas classes que fazem o relacionamento, sendo que se coloca uma 
+seta no lado da linha onde se encontra a superclasse indicando a generalização.</font></p>
+<font face="Arial">
+<p></p>
+</font>
+<p><b><font size="4" face="Segoe UI">Generalização Restrita</font></b></p>
+<font face="Arial">
+<p></p>
+</font>
+<p><font size="4" face="Segoe UI">Uma restrição aplicada a uma generalização 
+especifica informações mais precisas sobre como a generalização deve ser usada e 
+estendida no futuro. As restrições a seguir definem as generalizações restritas 
+com mais de uma subclasse:</font></p>
+<font face="Arial">
+<p></p>
+</font>
+<p><font size="4" face="Segoe UI">Generalizações de Sobreposição e Disjuntiva: 
+Generalização de sobreposição significa que quando subclasses herdam de uma 
+superclasse por sobreposição, novas subclasses destas podem herdar de mais de 
+uma subclasse. A generalização disjuntiva é exatamente o contrário da 
+sobreposição e a generalização é utilizada como padrão</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p align="JUSTIFY">
+              <font size="4" face="Segoe UI">
+              <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml29.gif" border="0" height="278" width="269"></font></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<dir>
+  <dir>
+    <dir>
+      <dir>
+        <dir>
+          <dir>
+            <font size="4" face="Segoe UI"><b>
+            <p align="JUSTIFY"><a name="_Toc436909140">Exemplo de uma 
+            generalização de sobreposição</a></p>
+            </b></font><font face="Arial">
+            <p align="JUSTIFY"></p>
+          </font></dir><font face="Arial">
+        </font></dir><font face="Arial">
+      </font></dir><font face="Arial">
+    </font></dir><font face="Arial">
+  </font></dir><font face="Arial">
+</font></dir><font face="Arial">
+</font>
+<ul>
+  <li><font size="4" face="Segoe UI">Generalizações Completa e Incompleta: Uma 
+  restrição simbolizando que uma generalização é completa significa que todas as 
+  subclasses já foram especificadas, e não existe mais possibilidade de outra 
+  generalização a partir daquele ponto. A generalização incompleta é exatamente 
+  o contrário da completa e é assumida como padrão da linguagem.</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p align="JUSTIFY">
+              <font size="4" face="Segoe UI">
+              <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml2a.gif" border="0" height="154" width="248"></font></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<b><u>
+</u></b><p><b><u><font size="4" face="Segoe UI">D</font></u><font size="4" face="Segoe UI">iagrama de Seqüência</font></b></p>
+<p><font size="4" face="Segoe UI">Em um sistema computacional orientado a objeto 
+os serviços (casos de uso) são fornecidos através da colaboração de grupos. Os 
+objetos interagem através de comunicações de forma que juntos, cada um com suas 
+responsabilidades, realizem os casos de uso.</font></p>
+<p><font size="4" face="Segoe UI">O Diagrama de seqüência é uma ferramenta 
+importante no projeto de sistemas orientados a objetos. Embora a elaboração dos 
+diagramas possa consumir um tempo considerável para sistemas maiores ou mais 
+complexos, eles oferecem a seguir as bases para a definição de uma boa parte do 
+projeto como: os relacionamentos necessários entre as classes, métodos e 
+atributos das classes e comportamento dinâmico dos objetos.</font></p>
+<p><font size="4" face="Segoe UI">Um diagrama de seqüência é um diagrama de 
+objetos, ou seja, ele contém como primitiva principal um conjunto de objetos de 
+diferentes classes. O objetivo dos diagramas de seqüência é descrever as 
+comunicações necessárias entre objetos para a realização dos processos em um 
+sistema computacional. Os diagramas de seqüência têm este nome porque descrevem 
+ao longo de uma linha de tempo a seqüência de comunicações entre objetos. Como 
+podem existir muitos processos em um sistema computacional, sugere-se proceder à 
+construção dos diagramas de seqüência por caso de uso. Assim, tomar-se-ia 
+separadamente cada caso de uso para a construção de seus diagramas de seqüência. 
+De uma forma geral, para cada caso de uso constrói-se um diagrama de seqüência 
+principal descrevendo as seqüências normais de comunicação entre objetos e 
+diagramas complementares descrevendo seqüências alternativas e tratamento de 
+situações de erro. </font></p>
+<p><font size="4" face="Segoe UI">Utiliza-se também o termo cenário associado com 
+os diagramas de seqüência. Um cenário é uma forma de ocorrência de um caso de 
+uso. Como o processo de um caso de uso pode ser realizado de diferentes formas, 
+para descrever a realização de um caso de uso pode ser necessário estudar vários 
+cenários. Cada cenário pode ser descrito por um diagrama de seqüência. No 
+exemplo do caso de uso Cadastrar Aluno do sistema de controle acadêmico, 
+podem-se considerar os cenários de inclusão, alteração e exclusão de aluno.</font></p>
+<p></p>
+<p><b><font size="4" face="Segoe UI">Notação UML para Diagramas de Seqüência</font></b></p>
+<p></p>
+<p><font size="4" face="Segoe UI">A notação UML para descrição de diagramas de 
+seqüência envolve a indicação do conjunto de objetos envolvidos em um cenário e 
+a especificação das mensagens trocadas entre estes objetos ao longo de uma linha 
+de tempo. Os objetos são colocados em linha na parte superior do diagrama. 
+Linhas verticais tracejadas são traçadas da base dos objetos até a parte 
+inferior do diagrama representando a linha de tempo. O ponto superior destas 
+linhas indica um instante inicial e, à medida que se avança para baixo evolui-se 
+o tempo. Retângulos colocados sobre as linhas de tempo dos objetos indicam os 
+períodos de ativação do objeto. Durante um período de ativação, o objeto 
+respectivo esta em execução realizando algum processamento. Nos períodos em que 
+o objeto não esta ativo, ele esta alocada (ele existe), mas não esta executando 
+nenhuma instrução. A figura abaixo ilustra a estrutura básica de um diagrama de 
+seqüência para o cenário Inclusão de Aluno do caso de uso Cadastrar Aluno.</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p><font size="4" face="Segoe UI"><img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml2b.gif" border="0" height="208" width="516"></font></p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Outra primitiva importante dos 
+diagramas de seqüência é a troca de mensagem. Esta primitiva é utilizada para 
+indicar os momentos de interação ou comunicação entre os objetos. Utiliza-se 
+como notação para trocas de mensagens segmentos de retas direcionadas da linha 
+de tempo de um objeto origem para a linha de tempo de um objeto destino. Uma 
+seta é colocada na extremidade do objeto destino. As linhas representando troca 
+de mensagens são desenhadas na horizontal, pois se presume que a troca de uma 
+mensagem consome um tempo desprezível.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O objeto destino de uma 
+mensagem deve receber a mensagem e processa-la. Desta forma, no recebimento de 
+uma mensagem o objeto destino é ativado para tratamento da mensagem. A figura 
+abaixo ilustra a troca de mensagens entre objetos e entre atores e objetos.</font></p>
+<p align="JUSTIFY"></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p><font size="4" face="Segoe UI">
+          <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml2c.gif" border="0" height="290" width="354"></font></p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">As mensagens trocadas entre um 
+objeto ou entre um objeto e um ator podem ter três significados:</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Chamada de Função ou 
+Procedimento</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Uma das interações mais 
+freqüentes entre objetos é a chamada de função. Uma chamada de função significa 
+que um objeto esta solicitando a execução de uma função (um método) de um outro 
+objeto. Este conceito segue estritamente o processo de chamada de função ou de 
+procedimento utilizado nas linguagens de programação. Obviamente, para que um 
+objeto possa chamar um método de outro objeto é necessário que o método seja 
+declarado como publico na classe respectiva. Como será visto a seguir, a 
+sintaxe, no caso de mensagens que representem chamadas de função, é semelhante 
+àquela das linguagens de programação.</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Envio de Mensagem</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Objetos também podem 
+comunicar-se com outros objetos através do envio expl&#305;cito de uma mensagem. O 
+envio de uma mensagem, ao contrario da chamada de função, não é uma interação 
+direta entre dois objetos. Na verdade, quando um objeto envia uma mensagem a 
+outro objeto, a mensagem é roteada ou encaminhada por algum mecanismo de entrega 
+de mensagens. Normalmente, este serviço é prestado pelo sistema operacional 
+através de mecanismos como <b>Message Queries</b> (filas de mensagens) ou 
+serviços de notificação.</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Ocorrência de Evento</font></b></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Existem também outras formas de 
+interação entre objetos através de eventos. Esta é também a forma padrão de 
+interação entre objetos e atores. Basicamente, um evento é algum acontecimento 
+externo ao software, mas que é a ele notificado, pois lhe diz respeito. A 
+notificação, ou seja, a indicação de que um determinado evento ocorreu é, na 
+maioria dos casos, feita pelo sistema operacional. Eventos podem também ser 
+gerados pelo software para o sistema operacional. Exemplos são as saídas para 
+dispositivos (monitor, porta serial, disco) feitos através de serviços do 
+sistema operacional.</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Alguns exemplos de eventos são:</font></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<table style="border-collapse: collapse" bgcolor="#FFFFE1" border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" height="593" width="668">
+  <tbody><tr>
+    <td bgcolor="#FFFF00" height="16" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b>
+    <font size="4" face="Segoe UI">Evento</font></b></p></td>
+    <td bgcolor="#FFFF00" height="16" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b>
+    <font size="4" face="Segoe UI">Origem</font></b></p></td>
+    <td bgcolor="#FFFF00" height="16" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b>
+    <font size="4" face="Segoe UI">Destino</font></b></p>
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Clique do mouse</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">mouse</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Movimentação do mouse</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">mouse</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Dados no buffer do teclado</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">teclado</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Dados no buffer da serial</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">porta serial</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Projeção de dados no monitor.</font></p>
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Bip do alto-falante.</font></p></td>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <font size="3" face="Arial">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"></p>
+    </font>
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    monitor</font></p>
+    <b>
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"></p>
+    </b>
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">alto-falante</font></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Colocação de dados no buffer da serial</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p></td>
+    <td bgcolor="#FFFFE1" height="56" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    Porta serial</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Interrupção</font></p></td>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    Dispositivo de</font></p>
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    hardware</font></p>
+    <b>
+    </b><p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY"><b></b></p></td>
+    <td bgcolor="#FFFFE1" height="91" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFE1" height="34" valign="TOP" width="297">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Eventos do sistema operacional (timer)</font></p></td>
+    <td bgcolor="#FFFFE1" height="34" valign="TOP" width="210">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Sistema operacional</font></p></td>
+    <td bgcolor="#FFFFE1" height="34" valign="TOP" width="125">
+    <p style="margin-top: 0; margin-bottom: 0" align="JUSTIFY">
+    <font size="4" face="Segoe UI">Algum objeto</font></p></td>
+  </tr>
+</tbody></table>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">Tipos de Mensagens</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Nos exemplos das figuras 
+utilizou-se como notação gráfica para as trocas de mensagens segmentos de reta 
+com uma seta aberta em uma das extremidades. Esta é a notação genérica para 
+mensagens que pode ser utilizada nas primeiras versões dos diagramas de 
+seqüência. Em diagramas mais detalhados, entretanto, será utilizada outra 
+notação deforma a indicar também o tipo das mensagens. Existem dois tipos de 
+mensagens chamadas mensagens síncronas e assíncronas.</font></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Mensagens Síncronas</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Mensagens síncronas são 
+mensagens que implicam um sincronismo rígido entre os estados do objeto que 
+envia a mensagem e os do objeto de destino da mensagem. Um sincronismo entre 
+objetos pode ser entendido, de uma forma geral, como uma dependência na evolução 
+de estado de um objeto sobre o estado de um segundo objeto. De uma forma mais 
+direta, pode-se dizer que uma mensagem síncrona implica que o objeto que enviou 
+a mensagem aguarde a conclusão do processamento da mensagem (entendida como um 
+sinal de sincronismo) feito pelo objeto destino, para então prosseguir seu fluxo 
+de execução. O exemplo mais comum de mensagem síncrona é a chamada de função. Em 
+uma chamada de função o objeto que faz a chamada ü empilhado e fica neste estado 
+até a conclusão do processamento da função chamada. Trata-se, portanto, de um 
+sincronismo rígido entre o objeto chamador e o objeto chamado. Alguns sistemas 
+operacionais oferecem também mecanismos de troca de mensagens síncronas de forma 
+que o objeto que envia a mensagem fique em estado de espera até a conclusão do 
+tratamento da mensagem.</font></p>
+<p align="JUSTIFY"></p>
+<p><font size="4" face="Segoe UI">A notação UML para uma mensagem síncrona é a de 
+um segmento de reta com uma seta cheia em uma das extremidades </font></p>
+<p></p>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Mensagens Assíncronas</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Mensagens assíncronas são 
+mensagens enviadas de um objeto a outro sem que haja uma dependência de estado 
+entre os dois objetos. O objeto de origem envia a mensagem e prossegue seu 
+processamento independentemente do tratamento da mensagem feita no objeto 
+destino. Os mecanismos de envio de mensagens suportados pelos sistemas 
+operacionais são o exemplo mais comum deste tipo de mensagem. Além disso, de uma 
+forma geral, todas as comunicações entre atores e objetos representam trocas de 
+mensagem assíncronas. Considere, por exemplo, uma operação para apresentação de 
+uma mensagem no monitor. Um objeto executa uma instrução print (ou print ou 
+write) e o sistema despacha a mensagem para o ator (o monitor). O objeto 
+prossegue seu processamento independentemente do desfecho na operação. Observe 
+que os softwares não bloqueiam quando o monitor não apresenta alguma informação. 
+A notação UML para uma mensagem assíncrona é a de um segmento de reta com uma 
+meia seta em uma das extremidades.</font></p>
+<p align="JUSTIFY"><b><font size="4" face="Segoe UI">· Autodelegação</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Um objeto pode enviar mensagens 
+para outros objetos e pode também enviar mensagens para ele próprio. Uma 
+mensagem enviada de um objeto para ele próprio chama-se uma Autodelegação. 
+Mensagens de Autodelegação podem ser síncronas ou assíncronas. O caso mais comum 
+de mensagens assíncronas é o envio de uma mensagem de um objeto para ele mesmo 
+através de mecanismos de envio de mensagens do sistema operacional. O caso mais 
+comum de mensagens de Autodelegação síncronas é a chamada de função de um objeto 
+pelo próprio objeto.</font></p>
+<p align="JUSTIFY"></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p><font size="4" face="Segoe UI">
+                    <img src="UML%20conceitos%20b%C3%A1sicos_arquivos/vb_uml2d.gif" border="0" height="247" width="125"></font></p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><b><font size="5" face="Segoe UI">Diagrama de Colaboração</font></b></p>
+<b>
+<p align="JUSTIFY"></p>
+</b>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Mostra a interação organizada 
+ao lado de cada classe de objetos e a ligação entre elas. Como o diagrama de 
+seqüência, o diagrama de colaboração mostra as mensagens trocadas por um 
+conjunto de objetos durante um cenário. É uma representação gráfica alternativa 
+para mostrar um cenário. Descrevem grupos de objetos que colaboram através de 
+comunicação.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Um diagrama de colaboração 
+contém:</font></p>
+<p></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Objetos, que são representados por 
+  retângulos.</font></li>
+  <li><font size="4" face="Segoe UI">Ligações entre objetos, representadas por 
+  uma linha conectando os objetos.</font></li>
+  <li><font size="4" face="Segoe UI">Mensagens trocadas entre objetos em uma 
+  seqüência ordenada</font></li>
+  <li><font size="4" face="Segoe UI">Fluxo de dados entre objetos, se houver.</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Através do diagrama de 
+colaboração é mais fácil visualizar as mensagens trocadas entre os objetos, 
+subsidiando assim a elaboração do diagrama de classes de objetos. Os objetos e 
+as mensagens são as mesmas do diagrama de seqüência. Utilizando o diagrama de 
+colaboração é possível identificar se existe algum objeto que não troca 
+mensagens com outro. Caso isto aconteça deve-se analisar o modelo de origem e 
+verificar se este objeto é mesmo necessário. Os diagramas de seqüência e de 
+colaboração serão mais utilizados no desenvolvimento do projeto quando são 
+projetadas as implementações dos relacionamentos.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O objetivo do diagrama de 
+colaboração é agrupar as mensagens entre pares de objetos de forma a fazer-se um 
+levantamento das necessidades de comunicação.</font></p>
+<p><b><font size="5" face="Segoe UI">Diagrama de Estado</font></b></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O comportamento de uma classe 
+de objetos é representado através de um diagrama de transição de estado, que 
+descreve o ciclo de vida de uma dada classe, os eventos que causam a transição 
+de estado para o outro e as ações resultantes da mudança de estado.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">O estado de um objeto é uma das 
+possíveis condições na qual o objeto pode existir. O estado compreende todas as 
+propriedades do objeto associadas aos valores correntes de cada uma dessas 
+propriedades.</font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Segundo a UML a especificação 
+da dinâmica do sistema deve ser feita através de diagramas de estados. 
+Constrói-se um diagrama de estado descrevendo o comportamento de cada classe e 
+eventuais diagramas comportamentais para descrever a dinâmica de todo o sistema 
+ou de certos módulos.</font></p>
+<ul>
+  <li><font size="4" face="Segoe UI">Diagrama de estado é uma descrição global do 
+  comportamento dos objetos desta classe em todo o sistema;</font></li>
+  <li><font size="4" face="Segoe UI">Diagrama de estado; a especificação da 
+  dinâmica do sistema deve ser feita através de diagramas de classe;</font></li>
+  <li><font size="4" face="Segoe UI">Descreve-se o conjunto de estados de um 
+  objeto e também o conjunto de transações de estados existentes.</font></li>
+</ul>
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">A UML utiliza como notação para 
+diagramas de estados a notação proposta por Harel. </font></p>
+<p align="JUSTIFY"><font size="4" face="Segoe UI">Nesta notação, um diagrama de 
+estados e um grafo dirigido cujos nodos representam estados e cujos arcos 
+representam transições entre estados. Estados são representados graficamente por 
+elipses ou retângulos com bordas arredondadas e transições são representadas por 
+segmento de retas dirigidas. </font></p>
+
+<table style="border-collapse: collapse" bgcolor="#FFFFE1" border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" width="52%">
+  <tbody><tr>
+    <td bordercolor="#FFFFE1" width="82%"><font face="Trebuchet MS">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+	<a href="http://www.macoratti.net/destaque.htm" style="color: #00c; font-family: arial,sans-serif">
+    Veja os </a>
+<a href="http://www.macoratti.net/destaques.htm" style="color: #00c; font-family: arial,sans-serif">
+    Destaques e novidades do SUPER DVD Visual Basic (sempre atualizado) : clique 
+	e confira !</a> </span></font>
+<p align="left"><font color="#800080" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">Quer 
+migrar para o VB .NET ?</span></font></p>
+    <ul>
+      <li>
+<p align="left"><font face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">Veja mais sistemas 
+completos para a plataforma .NET no <b>
+<a href="http://www.macoratti.net/superdvd.htm" style="color: #00c; font-family: arial,sans-serif">
+Super DVD .NET</a></b> 
+, confira...</span></font></p>
+      </li>
+      <li>
+
+<p align="left">
+<a href="http://www.macoratti.net/curso_vbnet_basico.htm" style="color: #00c; font-family: arial,sans-serif">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">
+<font size="4" face="Trebuchet MS">Curso Básico VB .NET - Vídeo Aulas</font></span></a></p>
+
+      </li>
+    </ul>
+<p align="left"><font color="#800080" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">Quer 
+aprender C# ??</span></font></p>
+    <ul>
+      <li>
+<p align="left"><font face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">Chegou o <b>
+<a href="http://www.macoratti.net/superdvdc.htm" style="color: #00c; font-family: arial,sans-serif">
+Super DVD C#</a></b> com exclusivo material de suporte e vídeo aulas com curso 
+básico sobre C#.</span></font></p>
+
+      </li>
+      <li>
+<p align="left">
+<a class="dt" title="ir para Curso C# Basico " href="http://www.macoratti.net/curso_cshp_basico.htm">
+<font size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">
+Curso C# Basico - Video Aulas</span></font></a></p>
+
+      </li>
+    </ul>
+
+<p align="left"><font color="#800080" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">Quer 
+aprender os conceitos da Programação Orientada a objetos ?</span></font></p>
+    <ul>
+      <li>
+<p align="left"><font color="#0000FF" size="4" face="Trebuchet MS">
+<span style="font-weight: 700; letter-spacing: 0,05em">
+<a href="http://www.macoratti.net/15/10/curso_fundamentos_oop.htm" style="color: #00c; font-family: arial,sans-serif">Curso Fundamentos da Programação 
+Orientada a Objetos com VB .NET</a> </span></font>
+<img src="UML%20conceitos%20b%C3%A1sicos_arquivos/new.gif" border="0" height="12" width="31"></p>
+      </li>
+    </ul>
+
+<p align="left"><font color="#800080" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">Quer 
+aprender o gerar relatórios com o ReportViewer no VS 2013 ?</span></font></p>
+    <ul>
+      <li>
+<p align="left"><font color="#FF0000" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">
+<a href="http://www.macoratti.net/curso_reportviewer.htm" style="color: #00c; font-family: arial,sans-serif">&nbsp;Curso - Gerando 
+Relatórios com o ReportViewer no VS 2013 - Vídeo Aulas</a></span></font></p>
+      </li>
+    </ul>
+
+<p align="left"><font color="#800080" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">Quer 
+aprender a criar aplicações Web Dinâmicas usando a ASP .NET MVC 5 ?</span></font></p>
+    <ul>
+      <li>
+<p align="left"><font color="#FF0000" size="4" face="Trebuchet MS">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 700">
+<a href="http://www.macoratti.net/curso_aspnet_mvc5_basico.htm" style="color: #00c; font-family: arial,sans-serif">&nbsp;Curso ASP .NET MVC 5 - Vídeo Aulas</a></span></font></p>
+      </li>
+    </ul>
+
+    </td>
+  </tr>
+</tbody></table>
+
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gostou ?
+&nbsp;<img src="UML%20conceitos%20b%C3%A1sicos_arquivos/face32.jpg" border="0" height="32" width="32">
+
+<a href="#" onclick="
+window.open(
+'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+'facebook-share-dialog',
+'width=626,height=436');
+return false;">
+Compartilhe no Facebook
+</a>
+
+&nbsp; 
+<img src="UML%20conceitos%20b%C3%A1sicos_arquivos/twiter32.jpg" border="0" height="32" width="32"> 
+<a href="javascript:%20void(0);" onclick="window.open('https://twitter.com/intent/tweet?original_referer=http://macoratti.net&amp;source=tweetbutton&amp;text=Quase tudo para VB - &amp;url=http://macoratti.net','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">Compartilhe no Twitter</a>
+<br>
+&nbsp;</span></font></p>
+
+<p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">Referências:</span></font></p>
+
+<ul>
+    <li style="BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 1.2; PADDING-TOP: 0px; BORDER-BOTTOM: 0px">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+    <font size="4" face="Segoe UI">
+    <a href="http://www.macoratti.net/pageview.aspx?catid=1">Seção VB .NET do Site Macoratti.net</a>
+    </font></span></p></li>
+    <li style="BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 1.2; PADDING-TOP: 0px; BORDER-BOTTOM: 0px">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+    <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/superdvd.htm">Super DVD .NET - A sua
+        porta de entrada na plataforma .NET</a> </font></span></p></li>
+    <li>
+    <p style="margin-top: 0; margin-bottom: 0">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+    <font size="4" face="Segoe UI"><a href="http://www.macoratti.net/Vendas/Produtos.aspx?ID=22">Super DVD Vídeo Aulas - Vídeo
+        Aula sobre VB .NET, ASP .NET e C#</a> </font></span></p></li>
+    <li>
+    <p style="margin-top: 0; margin-bottom: 0">
+    <a href="http://www.macoratti.net/pageview.aspx?catid=18" style="letter-spacing:0.05em; line-height:1.6875">
+    <font size="4" face="Segoe UI">Seção C# do site Macoratti.net</font></a></p></li>
+    <li>
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+    <a class="dt" title="ir para Super DVD C# " href="http://www.macoratti.net/superdvdc.htm">
+    Super DVD C#</a> </span></font></p></li>
+    <li>
+    <p style="margin-top: 0; margin-bottom: 0"><font size="4" face="Segoe UI">
+    <span style="letter-spacing: 0.05em; line-height: 1.6875">
+    <a class="dt" title="ir para Super CD Visual Basic " href="http://www.macoratti.net/supercd.htm">
+    Super DVD Visual Basic</a> </span></font></p></li>
+    <li>
+    <p style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/curso_vbnet_basico.htm">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; ">
+    <font size="4" face="Segoe UI">Curso Básico VB .NET - 
+Vídeo Aulas</font></span></a></p></li>
+    <li>
+
+<p style="margin-top: 0; margin-bottom: 0" align="left">
+<a href="http://www.macoratti.net/curso_cshp_basico.htm">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; ">
+<font size="4" face="Segoe UI">Curso C# Básico - Vídeo Aulas</font></span></a></p>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a onmousedown="return rwt(this,'','','','1','AFQjCNFdqyfIhDlLCSHVE0PDVmDyq88bCA','','0CCoQFjAA','','',event)" href="http://www.macoratti.net/07/06/aspn_smt.htm">
+<font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 400">ASP 
+- Navegação com Site Map , Menu , TreeView e Master ...</span></font></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/11/12/vbn_tvw1.htm" onmousedown="return rwt(this,'','','','2','AFQjCNEXIqnhIscbsTdaeiFY-a0t7nuK_A','','0CDAQFjAB','','',event)">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 400">
+<font size="4" face="Segoe UI">VB .NET - Populando o controle TreeView com 
+tabelas e ...</font></span></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/11/11/c_tvw1.htm" onmousedown="return rwt(this,'','','','3','AFQjCNFbjEPZJJwKOZN_Fx3CikEFSTrBjQ','','0CDYQFjAC','','',event)">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 400">
+<font size="4" face="Segoe UI">C # - Usando o controle TreeView - Macoratti.net</font></span></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/aspn_cvd.htm" onmousedown="return rwt(this,'','','','4','AFQjCNGBlUUmTHtBcP4Csm-TDCI0CIb7Qg','','0CD4QFjAD','','',event)">
+<font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 400">Os 
+novos controles de vinculação de dados - Macoratti.net</span></font></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/net2_xml.htm" onmousedown="return rwt(this,'','','','1','AFQjCNEQJWvUPv9Fn_hBEi_4D1VawqszNg','','0CCwQFjAA','','',event)">
+<font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; font-weight: 400">
+Usando XmlDataSource - Macoratti.net</span></font></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<a href="http://www.macoratti.net/07/11/aspn_edx.htm" onmousedown="return rwt(this,'','','','2','AFQjCNFNNS6IfpD_Ze2ArL4N8PlPrNuijw','','0CDIQFjAB','','',event)">
+<span style="letter-spacing: 0.05em; line-height: 1.6875; ">
+<font size="4" face="Segoe UI">Exibindo dados XML e filtrando com XPath - Macoratti.net</font></span></a></h3>
+
+    </li>
+    <li>
+
+<h3 class="r" style="margin-top: 0; margin-bottom: 0">
+<font size="4" face="Segoe UI">
+<a href="http://www.macoratti.net/net_uml3.htm">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">UML 
+                        - Apresentando os principais diagramas da linguagem</span></a></font></h3>
+
+    </li>
+  <li>
+
+<p style="margin-top: 0; margin-bottom: 0"><a href="http://www.macoratti.net/net_uml2.htm">
+<font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">UML - Modelando sistemas - Casos de Uso</span></font></a></p>
+
+  </li>
+  <li>
+
+<p style="margin-top: 0; margin-bottom: 0"><a href="http://www.macoratti.net/vb_uml2.htm">
+<font size="4" face="Segoe UI">
+<span style="letter-spacing: 0.05em; line-height: 1.6875">UML&nbsp;- Conceitos Básicos</span></font></a></p>
+
+  </li>
+  <li>
+
+<p style="margin-top: 0; margin-bottom: 0">
+                <a href="http://www.macoratti.net/uml_vb.htm"><font size="4" face="Segoe UI">
+                <span style="letter-spacing: 0.05em; line-height: 1.6875">UML - Unified Modeling Language e Visual 
+                Modeler.</span></font></a></p>
+
+  </li>
+</ul>
+
+<hr size="0">
+
+<p align="center"><a href="http://www.macoratti.net/">
+<font size="4" face="Segoe UI">José Carlos Macoratti</font></a></p>
+
+  
+
+</body></html>
